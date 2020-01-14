@@ -1,0 +1,126 @@
+2020-01-14-05-53-18
+train_hm.py
+--------------------------------------------------------------------------------------------------------------------
+alpha: 0.7
+batchSize: 16
+bottleneckFeatures: 0
+dir_lf: D:\Data\cs-8395-dl
+dir_project: C:\Users\Reasat\Projects\cs-8395-dl\Assignment_1_detection
+encoder: hm_net
+epoch: 100
+folderData: assignment1_data
+gamma: 2
+lr: 0.001
+resume_from: None
+--------------------------------------------------------------------------------------------------------------------
+creating directory to save model at D:\Data\cs-8395-dl\model\2020-01-14-05-53-18
+loading images to RAM
+train samples 105
+loading images to RAM
+validation samples 10
+HM_Net(
+  (conv1): conv_bn_3x3(
+    (block): Sequential(
+      (0): Conv2d(3, 8, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (1): ReLU()
+      (2): BatchNorm2d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (conv2): conv_bn_3x3(
+    (block): Sequential(
+      (0): Conv2d(8, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (1): ReLU()
+      (2): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (conv3): conv_bn_3x3(
+    (block): Sequential(
+      (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (1): ReLU()
+      (2): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (conv4): conv_bn_3x3(
+    (block): Sequential(
+      (0): Conv2d(16, 8, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (1): ReLU()
+      (2): BatchNorm2d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (conv5): conv_bn_3x3(
+    (block): Sequential(
+      (0): Conv2d(8, 1, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (1): ReLU()
+      (2): BatchNorm2d(1, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+)
+tensor(0.0143, device='cuda:0', dtype=torch.float64, grad_fn=<DivBackward0>)
+train >>> epoch: 1/100, batch: 1/7, mean_loss: 0.0551
+tensor(0.0144, device='cuda:0', dtype=torch.float64, grad_fn=<DivBackward0>)
+train >>> epoch: 1/100, batch: 2/7, mean_loss: 0.0550
+tensor(0.0145, device='cuda:0', dtype=torch.float64, grad_fn=<DivBackward0>)
+train >>> epoch: 1/100, batch: 3/7, mean_loss: 0.0549
+tensor(0.0145, device='cuda:0', dtype=torch.float64, grad_fn=<DivBackward0>)
+train >>> epoch: 1/100, batch: 4/7, mean_loss: 0.0548
+tensor(0.0144, device='cuda:0', dtype=torch.float64, grad_fn=<DivBackward0>)
+train >>> epoch: 1/100, batch: 5/7, mean_loss: 0.0548
+tensor(0.0149, device='cuda:0', dtype=torch.float64, grad_fn=<DivBackward0>)
+train >>> epoch: 1/100, batch: 6/7, mean_loss: 0.0547
+tensor(0.0143, device='cuda:0', dtype=torch.float64, grad_fn=<DivBackward0>)
+train >>> epoch: 1/100, batch: 7/7, mean_loss: 0.0546
+tensor(0.0146, device='cuda:0', dtype=torch.float64)
+valid >>> epoch: 1/100, mean_loss: 0.0519
+criteria decreased from inf to 0.0519, saving best model at D:\Data\cs-8395-dl\model\2020-01-14-05-53-18\2020-01-14-05-53-18_hm_net_best.pt
+tensor(0.0146, device='cuda:0', dtype=torch.float64, grad_fn=<DivBackward0>)
+train >>> epoch: 2/100, batch: 1/7, mean_loss: 0.0541
+tensor(0.0147, device='cuda:0', dtype=torch.float64, grad_fn=<DivBackward0>)
+train >>> epoch: 2/100, batch: 2/7, mean_loss: 0.0541
+tensor(0.0149, device='cuda:0', dtype=torch.float64, grad_fn=<DivBackward0>)
+train >>> epoch: 2/100, batch: 3/7, mean_loss: 0.0540
+tensor(0.0147, device='cuda:0', dtype=torch.float64, grad_fn=<DivBackward0>)
+train >>> epoch: 2/100, batch: 4/7, mean_loss: 0.0540
+tensor(0.0146, device='cuda:0', dtype=torch.float64, grad_fn=<DivBackward0>)
+train >>> epoch: 2/100, batch: 5/7, mean_loss: 0.0539
+tensor(0.0149, device='cuda:0', dtype=torch.float64, grad_fn=<DivBackward0>)
+train >>> epoch: 2/100, batch: 6/7, mean_loss: 0.0539
+tensor(0.0144, device='cuda:0', dtype=torch.float64, grad_fn=<DivBackward0>)
+train >>> epoch: 2/100, batch: 7/7, mean_loss: 0.0538
+tensor(0.0158, device='cuda:0', dtype=torch.float64)
+valid >>> epoch: 2/100, mean_loss: 0.0500
+criteria decreased from 0.0519 to 0.0500, saving best model at D:\Data\cs-8395-dl\model\2020-01-14-05-53-18\2020-01-14-05-53-18_hm_net_best.pt
+tensor(0.0149, device='cuda:0', dtype=torch.float64, grad_fn=<DivBackward0>)
+train >>> epoch: 3/100, batch: 1/7, mean_loss: 0.0533
+tensor(0.0151, device='cuda:0', dtype=torch.float64, grad_fn=<DivBackward0>)
+train >>> epoch: 3/100, batch: 2/7, mean_loss: 0.0533
+tensor(0.0149, device='cuda:0', dtype=torch.float64, grad_fn=<DivBackward0>)
+train >>> epoch: 3/100, batch: 3/7, mean_loss: 0.0532
+tensor(0.0150, device='cuda:0', dtype=torch.float64, grad_fn=<DivBackward0>)
+train >>> epoch: 3/100, batch: 4/7, mean_loss: 0.0531
+tensor(0.0153, device='cuda:0', dtype=torch.float64, grad_fn=<DivBackward0>)
+train >>> epoch: 3/100, batch: 5/7, mean_loss: 0.0531
+tensor(0.0157, device='cuda:0', dtype=torch.float64, grad_fn=<DivBackward0>)
+train >>> epoch: 3/100, batch: 6/7, mean_loss: 0.0531
+tensor(0.0151, device='cuda:0', dtype=torch.float64, grad_fn=<DivBackward0>)
+train >>> epoch: 3/100, batch: 7/7, mean_loss: 0.0530
+tensor(0.0161, device='cuda:0', dtype=torch.float64)
+valid >>> epoch: 3/100, mean_loss: 0.0498
+criteria decreased from 0.0500 to 0.0498, saving best model at D:\Data\cs-8395-dl\model\2020-01-14-05-53-18\2020-01-14-05-53-18_hm_net_best.pt
+tensor(0.0155, device='cuda:0', dtype=torch.float64, grad_fn=<DivBackward0>)
+train >>> epoch: 4/100, batch: 1/7, mean_loss: 0.0526
+tensor(0.0155, device='cuda:0', dtype=torch.float64, grad_fn=<DivBackward0>)
+train >>> epoch: 4/100, batch: 2/7, mean_loss: 0.0525
+tensor(0.0151, device='cuda:0', dtype=torch.float64, grad_fn=<DivBackward0>)
+train >>> epoch: 4/100, batch: 3/7, mean_loss: 0.0524
+tensor(0.0154, device='cuda:0', dtype=torch.float64, grad_fn=<DivBackward0>)
+train >>> epoch: 4/100, batch: 4/7, mean_loss: 0.0524
+tensor(0.0155, device='cuda:0', dtype=torch.float64, grad_fn=<DivBackward0>)
+train >>> epoch: 4/100, batch: 5/7, mean_loss: 0.0523
+tensor(0.0158, device='cuda:0', dtype=torch.float64, grad_fn=<DivBackward0>)
+train >>> epoch: 4/100, batch: 6/7, mean_loss: 0.0523
+tensor(0.0157, device='cuda:0', dtype=torch.float64, grad_fn=<DivBackward0>)
+train >>> epoch: 4/100, batch: 7/7, mean_loss: 0.0522
+tensor(0.0154, device='cuda:0', dtype=torch.float64)
+valid >>> epoch: 4/100, mean_loss: 0.0513
+tensor(0.0156, device='cuda:0', dtype=torch.float64, grad_fn=<DivBackward0>)
+train >>> epoch: 5/100, batch: 1/7, mean_loss: 0.0518

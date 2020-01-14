@@ -1,0 +1,82 @@
+2020-01-13-07-08-02
+train_hm.py
+--------------------------------------------------------------------------------------------------------------------
+batchSize: 8
+bottleneckFeatures: 0
+dir_lf: D:\Data\cs-8395-dl
+dir_project: C:\Users\Reasat\Projects\cs-8395-dl\Assignment_1_detection
+encoder: hm_net
+epoch: 300
+folderData: assignment1_data
+lr: 0.1
+resume_from: None
+--------------------------------------------------------------------------------------------------------------------
+creating directory to save model at D:\Data\cs-8395-dl\model\2020-01-13-07-08-02
+loading images to RAM
+train samples 105
+loading images to RAM
+validation samples 10
+HM_Net(
+  (conv1): conv_bn_3x3(
+    (block): Sequential(
+      (0): Conv2d(3, 8, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (1): ReLU()
+      (2): BatchNorm2d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (conv2): conv_bn_3x3(
+    (block): Sequential(
+      (0): Conv2d(8, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (1): ReLU()
+      (2): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (conv3): conv_bn_3x3(
+    (block): Sequential(
+      (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (1): ReLU()
+      (2): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (conv4): conv_bn_3x3(
+    (block): Sequential(
+      (0): Conv2d(16, 8, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (1): ReLU()
+      (2): BatchNorm2d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (conv5): conv_bn_3x3(
+    (block): Sequential(
+      (0): Conv2d(8, 1, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (1): ReLU()
+      (2): BatchNorm2d(1, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+)
+train >>> epoch: 1/300, batch: 1/14, mean_loss: 518679.7966
+train >>> epoch: 1/300, batch: 2/14, mean_loss: 450089.7720
+train >>> epoch: 1/300, batch: 3/14, mean_loss: 382039.6879
+train >>> epoch: 1/300, batch: 4/14, mean_loss: 312576.8085
+train >>> epoch: 1/300, batch: 5/14, mean_loss: 251532.0320
+train >>> epoch: 1/300, batch: 6/14, mean_loss: 210548.4963
+train >>> epoch: 1/300, batch: 7/14, mean_loss: 182672.3865
+train >>> epoch: 1/300, batch: 8/14, mean_loss: 160046.9000
+train >>> epoch: 1/300, batch: 9/14, mean_loss: 142427.4687
+train >>> epoch: 1/300, batch: 10/14, mean_loss: 128527.2961
+train >>> epoch: 1/300, batch: 11/14, mean_loss: 117155.9140
+train >>> epoch: 1/300, batch: 12/14, mean_loss: 107544.2501
+train >>> epoch: 1/300, batch: 13/14, mean_loss: 99293.9223
+train >>> epoch: 1/300, batch: 14/14, mean_loss: 92202.4894
+3732214.284785718
+2306432.1466354677
+valid >>> epoch: 1/300, mean_loss: 3019323.2157
+criteria decreased from inf to 3019323.2157, saving best model at D:\Data\cs-8395-dl\model\2020-01-13-07-08-02\2020-01-13-07-08-02_hm_net_best.pt
+train >>> epoch: 2/300, batch: 1/14, mean_loss: 82383.8235
+train >>> epoch: 2/300, batch: 2/14, mean_loss: 42324.0288
+train >>> epoch: 2/300, batch: 3/14, mean_loss: 28926.1146
+train >>> epoch: 2/300, batch: 4/14, mean_loss: 21966.3795
+train >>> epoch: 2/300, batch: 5/14, mean_loss: 17605.0923
+train >>> epoch: 2/300, batch: 6/14, mean_loss: 14684.6468
+train >>> epoch: 2/300, batch: 7/14, mean_loss: 31198.8423
+train >>> epoch: 2/300, batch: 8/14, mean_loss: 27453.5575
+train >>> epoch: 2/300, batch: 9/14, mean_loss: 24529.8714

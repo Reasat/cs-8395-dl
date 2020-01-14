@@ -1,0 +1,828 @@
+2020-01-14-03-25-46
+train_hm.py
+--------------------------------------------------------------------------------------------------------------------
+batchSize: 8
+bottleneckFeatures: 0
+dir_lf: D:\Data\cs-8395-dl
+dir_project: C:\Users\Reasat\Projects\cs-8395-dl\Assignment_1_detection
+encoder: hm_net
+epoch: 100
+folderData: assignment1_data
+lr: 0.001
+resume_from: None
+--------------------------------------------------------------------------------------------------------------------
+creating directory to save model at D:\Data\cs-8395-dl\model\2020-01-14-03-25-46
+loading images to RAM
+train samples 105
+loading images to RAM
+validation samples 10
+HM_Net(
+  (conv1): conv_bn_3x3(
+    (block): Sequential(
+      (0): Conv2d(3, 8, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (1): ReLU()
+      (2): BatchNorm2d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (conv2): conv_bn_3x3(
+    (block): Sequential(
+      (0): Conv2d(8, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (1): ReLU()
+      (2): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (conv3): conv_bn_3x3(
+    (block): Sequential(
+      (0): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (1): ReLU()
+      (2): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (conv4): conv_bn_3x3(
+    (block): Sequential(
+      (0): Conv2d(16, 8, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (1): ReLU()
+      (2): BatchNorm2d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (conv5): conv_bn_3x3(
+    (block): Sequential(
+      (0): Conv2d(8, 1, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (1): ReLU()
+      (2): BatchNorm2d(1, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+)
+train >>> epoch: 1/100, batch: 1/14, mean_loss: 155077.9372
+train >>> epoch: 1/100, batch: 2/14, mean_loss: 154602.4679
+train >>> epoch: 1/100, batch: 3/14, mean_loss: 154151.5136
+train >>> epoch: 1/100, batch: 4/14, mean_loss: 153666.2980
+train >>> epoch: 1/100, batch: 5/14, mean_loss: 153191.8781
+train >>> epoch: 1/100, batch: 6/14, mean_loss: 152731.3446
+train >>> epoch: 1/100, batch: 7/14, mean_loss: 152260.2412
+train >>> epoch: 1/100, batch: 8/14, mean_loss: 151747.3071
+train >>> epoch: 1/100, batch: 9/14, mean_loss: 151225.4838
+train >>> epoch: 1/100, batch: 10/14, mean_loss: 150709.1247
+train >>> epoch: 1/100, batch: 11/14, mean_loss: 150045.1096
+train >>> epoch: 1/100, batch: 12/14, mean_loss: 149515.5008
+train >>> epoch: 1/100, batch: 13/14, mean_loss: 148385.7232
+train >>> epoch: 1/100, batch: 14/14, mean_loss: 139046.4820
+209.77417943819705
+52.443544858943696
+valid >>> epoch: 1/100, mean_loss: 131.1089
+criteria decreased from inf to 131.1089, saving best model at D:\Data\cs-8395-dl\model\2020-01-14-03-25-46\2020-01-14-03-25-46_hm_net_best.pt
+train >>> epoch: 2/100, batch: 1/14, mean_loss: 126151.7550
+train >>> epoch: 2/100, batch: 2/14, mean_loss: 132747.1040
+train >>> epoch: 2/100, batch: 3/14, mean_loss: 134975.8044
+train >>> epoch: 2/100, batch: 4/14, mean_loss: 134918.6693
+train >>> epoch: 2/100, batch: 5/14, mean_loss: 133978.4835
+train >>> epoch: 2/100, batch: 6/14, mean_loss: 129977.9580
+train >>> epoch: 2/100, batch: 7/14, mean_loss: 123582.8892
+train >>> epoch: 2/100, batch: 8/14, mean_loss: 118969.5414
+train >>> epoch: 2/100, batch: 9/14, mean_loss: 111217.2882
+train >>> epoch: 2/100, batch: 10/14, mean_loss: 106129.6253
+train >>> epoch: 2/100, batch: 11/14, mean_loss: 99987.6144
+train >>> epoch: 2/100, batch: 12/14, mean_loss: 92069.2051
+train >>> epoch: 2/100, batch: 13/14, mean_loss: 89047.7059
+train >>> epoch: 2/100, batch: 14/14, mean_loss: 83430.6655
+88.89218533040221
+21.939106547149166
+valid >>> epoch: 2/100, mean_loss: 55.4156
+criteria decreased from 131.1089 to 55.4156, saving best model at D:\Data\cs-8395-dl\model\2020-01-14-03-25-46\2020-01-14-03-25-46_hm_net_best.pt
+train >>> epoch: 3/100, batch: 1/14, mean_loss: 113579.6575
+train >>> epoch: 3/100, batch: 2/14, mean_loss: 112688.3880
+train >>> epoch: 3/100, batch: 3/14, mean_loss: 75868.5257
+train >>> epoch: 3/100, batch: 4/14, mean_loss: 57169.3968
+train >>> epoch: 3/100, batch: 5/14, mean_loss: 45923.9459
+train >>> epoch: 3/100, batch: 6/14, mean_loss: 38298.7555
+train >>> epoch: 3/100, batch: 7/14, mean_loss: 32841.4413
+train >>> epoch: 3/100, batch: 8/14, mean_loss: 28814.4938
+train >>> epoch: 3/100, batch: 9/14, mean_loss: 25672.0296
+train >>> epoch: 3/100, batch: 10/14, mean_loss: 23161.7715
+train >>> epoch: 3/100, batch: 11/14, mean_loss: 21072.5195
+train >>> epoch: 3/100, batch: 12/14, mean_loss: 19349.9840
+train >>> epoch: 3/100, batch: 13/14, mean_loss: 17903.9001
+train >>> epoch: 3/100, batch: 14/14, mean_loss: 17746.3469
+48.4162550964097
+8.557053469817955
+valid >>> epoch: 3/100, mean_loss: 28.4867
+criteria decreased from 55.4156 to 28.4867, saving best model at D:\Data\cs-8395-dl\model\2020-01-14-03-25-46\2020-01-14-03-25-46_hm_net_best.pt
+train >>> epoch: 4/100, batch: 1/14, mean_loss: 810.7629
+train >>> epoch: 4/100, batch: 2/14, mean_loss: 597.1544
+train >>> epoch: 4/100, batch: 3/14, mean_loss: 487.3892
+train >>> epoch: 4/100, batch: 4/14, mean_loss: 671.8146
+train >>> epoch: 4/100, batch: 5/14, mean_loss: 559.8213
+train >>> epoch: 4/100, batch: 6/14, mean_loss: 474.1100
+train >>> epoch: 4/100, batch: 7/14, mean_loss: 471.5727
+train >>> epoch: 4/100, batch: 8/14, mean_loss: 845.0756
+train >>> epoch: 4/100, batch: 9/14, mean_loss: 773.3170
+train >>> epoch: 4/100, batch: 10/14, mean_loss: 1024.2694
+train >>> epoch: 4/100, batch: 11/14, mean_loss: 937.5878
+train >>> epoch: 4/100, batch: 12/14, mean_loss: 869.8743
+train >>> epoch: 4/100, batch: 13/14, mean_loss: 806.0286
+train >>> epoch: 4/100, batch: 14/14, mean_loss: 757.6512
+7.266264603921494
+1.816048736772398
+valid >>> epoch: 4/100, mean_loss: 4.5412
+criteria decreased from 28.4867 to 4.5412, saving best model at D:\Data\cs-8395-dl\model\2020-01-14-03-25-46\2020-01-14-03-25-46_hm_net_best.pt
+train >>> epoch: 5/100, batch: 1/14, mean_loss: 58.0061
+train >>> epoch: 5/100, batch: 2/14, mean_loss: 82.5620
+train >>> epoch: 5/100, batch: 3/14, mean_loss: 55.4530
+train >>> epoch: 5/100, batch: 4/14, mean_loss: 47.0717
+train >>> epoch: 5/100, batch: 5/14, mean_loss: 58.7379
+train >>> epoch: 5/100, batch: 6/14, mean_loss: 52.2145
+train >>> epoch: 5/100, batch: 7/14, mean_loss: 54.5290
+train >>> epoch: 5/100, batch: 8/14, mean_loss: 48.8508
+train >>> epoch: 5/100, batch: 9/14, mean_loss: 44.3136
+train >>> epoch: 5/100, batch: 10/14, mean_loss: 54.7379
+train >>> epoch: 5/100, batch: 11/14, mean_loss: 55.4769
+train >>> epoch: 5/100, batch: 12/14, mean_loss: 52.2876
+train >>> epoch: 5/100, batch: 13/14, mean_loss: 50.2305
+train >>> epoch: 5/100, batch: 14/14, mean_loss: 49.4191
+1.98996550518749
+0.4700665369192282
+valid >>> epoch: 5/100, mean_loss: 1.2300
+criteria decreased from 4.5412 to 1.2300, saving best model at D:\Data\cs-8395-dl\model\2020-01-14-03-25-46\2020-01-14-03-25-46_hm_net_best.pt
+train >>> epoch: 6/100, batch: 1/14, mean_loss: 2.9223
+train >>> epoch: 6/100, batch: 2/14, mean_loss: 20.6910
+train >>> epoch: 6/100, batch: 3/14, mean_loss: 38.5057
+train >>> epoch: 6/100, batch: 4/14, mean_loss: 40.6817
+train >>> epoch: 6/100, batch: 5/14, mean_loss: 32.7153
+train >>> epoch: 6/100, batch: 6/14, mean_loss: 27.9776
+train >>> epoch: 6/100, batch: 7/14, mean_loss: 30.1495
+train >>> epoch: 6/100, batch: 8/14, mean_loss: 26.3878
+train >>> epoch: 6/100, batch: 9/14, mean_loss: 24.0226
+train >>> epoch: 6/100, batch: 10/14, mean_loss: 22.7038
+train >>> epoch: 6/100, batch: 11/14, mean_loss: 22.4476
+train >>> epoch: 6/100, batch: 12/14, mean_loss: 20.7651
+train >>> epoch: 6/100, batch: 13/14, mean_loss: 21.2403
+train >>> epoch: 6/100, batch: 14/14, mean_loss: 23.7298
+1.4180574783920918
+0.24352889478476183
+valid >>> epoch: 6/100, mean_loss: 0.8308
+criteria decreased from 1.2300 to 0.8308, saving best model at D:\Data\cs-8395-dl\model\2020-01-14-03-25-46\2020-01-14-03-25-46_hm_net_best.pt
+train >>> epoch: 7/100, batch: 1/14, mean_loss: 24.6764
+train >>> epoch: 7/100, batch: 2/14, mean_loss: 60.5260
+train >>> epoch: 7/100, batch: 3/14, mean_loss: 40.6619
+train >>> epoch: 7/100, batch: 4/14, mean_loss: 84.3141
+train >>> epoch: 7/100, batch: 5/14, mean_loss: 69.9794
+train >>> epoch: 7/100, batch: 6/14, mean_loss: 60.3042
+train >>> epoch: 7/100, batch: 7/14, mean_loss: 55.5077
+train >>> epoch: 7/100, batch: 8/14, mean_loss: 77.1020
+train >>> epoch: 7/100, batch: 9/14, mean_loss: 70.5286
+train >>> epoch: 7/100, batch: 10/14, mean_loss: 68.2838
+train >>> epoch: 7/100, batch: 11/14, mean_loss: 62.0765
+train >>> epoch: 7/100, batch: 12/14, mean_loss: 57.6721
+train >>> epoch: 7/100, batch: 13/14, mean_loss: 53.3629
+train >>> epoch: 7/100, batch: 14/14, mean_loss: 1129.3456
+96.21734345042324
+23.87956011620337
+valid >>> epoch: 7/100, mean_loss: 60.0485
+train >>> epoch: 8/100, batch: 1/14, mean_loss: 1.2017
+train >>> epoch: 8/100, batch: 2/14, mean_loss: 0.6646
+train >>> epoch: 8/100, batch: 3/14, mean_loss: 6.6274
+train >>> epoch: 8/100, batch: 4/14, mean_loss: 21.1355
+train >>> epoch: 8/100, batch: 5/14, mean_loss: 23.5116
+train >>> epoch: 8/100, batch: 6/14, mean_loss: 19.5935
+train >>> epoch: 8/100, batch: 7/14, mean_loss: 17.1356
+train >>> epoch: 8/100, batch: 8/14, mean_loss: 16.5858
+train >>> epoch: 8/100, batch: 9/14, mean_loss: 14.8997
+train >>> epoch: 8/100, batch: 10/14, mean_loss: 15.5627
+train >>> epoch: 8/100, batch: 11/14, mean_loss: 14.2592
+train >>> epoch: 8/100, batch: 12/14, mean_loss: 13.5915
+train >>> epoch: 8/100, batch: 13/14, mean_loss: 13.7124
+train >>> epoch: 8/100, batch: 14/14, mean_loss: 104.0301
+17.682025056340972
+5.601964201795339
+valid >>> epoch: 8/100, mean_loss: 11.6420
+train >>> epoch: 9/100, batch: 1/14, mean_loss: 20.7058
+train >>> epoch: 9/100, batch: 2/14, mean_loss: 15.9565
+train >>> epoch: 9/100, batch: 3/14, mean_loss: 43.2212
+train >>> epoch: 9/100, batch: 4/14, mean_loss: 32.4693
+train >>> epoch: 9/100, batch: 5/14, mean_loss: 30.4109
+train >>> epoch: 9/100, batch: 6/14, mean_loss: 25.8870
+train >>> epoch: 9/100, batch: 7/14, mean_loss: 22.3108
+train >>> epoch: 9/100, batch: 8/14, mean_loss: 20.7911
+train >>> epoch: 9/100, batch: 9/14, mean_loss: 19.0644
+train >>> epoch: 9/100, batch: 10/14, mean_loss: 17.2218
+train >>> epoch: 9/100, batch: 11/14, mean_loss: 16.1964
+train >>> epoch: 9/100, batch: 12/14, mean_loss: 14.8548
+train >>> epoch: 9/100, batch: 13/14, mean_loss: 14.1501
+train >>> epoch: 9/100, batch: 14/14, mean_loss: 14.0869
+6.344445088307614
+0.3527824564031815
+valid >>> epoch: 9/100, mean_loss: 3.3486
+train >>> epoch: 10/100, batch: 1/14, mean_loss: 11.6069
+train >>> epoch: 10/100, batch: 2/14, mean_loss: 7.7109
+train >>> epoch: 10/100, batch: 3/14, mean_loss: 6.7162
+train >>> epoch: 10/100, batch: 4/14, mean_loss: 7.2504
+train >>> epoch: 10/100, batch: 5/14, mean_loss: 5.9584
+train >>> epoch: 10/100, batch: 6/14, mean_loss: 5.4212
+train >>> epoch: 10/100, batch: 7/14, mean_loss: 4.7035
+train >>> epoch: 10/100, batch: 8/14, mean_loss: 14.1144
+train >>> epoch: 10/100, batch: 9/14, mean_loss: 13.4133
+train >>> epoch: 10/100, batch: 10/14, mean_loss: 12.1556
+train >>> epoch: 10/100, batch: 11/14, mean_loss: 11.0514
+train >>> epoch: 10/100, batch: 12/14, mean_loss: 10.6837
+train >>> epoch: 10/100, batch: 13/14, mean_loss: 10.0010
+train >>> epoch: 10/100, batch: 14/14, mean_loss: 10.0671
+2.244746664999358
+0.02487294229464487
+valid >>> epoch: 10/100, mean_loss: 1.1348
+train >>> epoch: 11/100, batch: 1/14, mean_loss: 63.8441
+train >>> epoch: 11/100, batch: 2/14, mean_loss: 33.1854
+train >>> epoch: 11/100, batch: 3/14, mean_loss: 25.1881
+train >>> epoch: 11/100, batch: 4/14, mean_loss: 18.9379
+train >>> epoch: 11/100, batch: 5/14, mean_loss: 23.4165
+train >>> epoch: 11/100, batch: 6/14, mean_loss: 22.7842
+train >>> epoch: 11/100, batch: 7/14, mean_loss: 19.5975
+train >>> epoch: 11/100, batch: 8/14, mean_loss: 17.1769
+train >>> epoch: 11/100, batch: 9/14, mean_loss: 16.9809
+train >>> epoch: 11/100, batch: 10/14, mean_loss: 19.2915
+train >>> epoch: 11/100, batch: 11/14, mean_loss: 20.0909
+train >>> epoch: 11/100, batch: 12/14, mean_loss: 18.4169
+train >>> epoch: 11/100, batch: 13/14, mean_loss: 17.0690
+train >>> epoch: 11/100, batch: 14/14, mean_loss: 15.8498
+2.6378005875284662
+0.1431374829269173
+valid >>> epoch: 11/100, mean_loss: 1.3905
+train >>> epoch: 12/100, batch: 1/14, mean_loss: 10.1627
+train >>> epoch: 12/100, batch: 2/14, mean_loss: 13.4829
+train >>> epoch: 12/100, batch: 3/14, mean_loss: 11.4905
+train >>> epoch: 12/100, batch: 4/14, mean_loss: 9.2128
+train >>> epoch: 12/100, batch: 5/14, mean_loss: 12.9115
+train >>> epoch: 12/100, batch: 6/14, mean_loss: 10.7756
+train >>> epoch: 12/100, batch: 7/14, mean_loss: 39.8157
+train >>> epoch: 12/100, batch: 8/14, mean_loss: 34.8391
+train >>> epoch: 12/100, batch: 9/14, mean_loss: 30.9684
+train >>> epoch: 12/100, batch: 10/14, mean_loss: 30.9058
+train >>> epoch: 12/100, batch: 11/14, mean_loss: 29.3305
+train >>> epoch: 12/100, batch: 12/14, mean_loss: 32.0007
+train >>> epoch: 12/100, batch: 13/14, mean_loss: 29.5394
+train >>> epoch: 12/100, batch: 14/14, mean_loss: 517.7797
+40.95513728362923
+7.449525094691219
+valid >>> epoch: 12/100, mean_loss: 24.2023
+train >>> epoch: 13/100, batch: 1/14, mean_loss: 131.8259
+train >>> epoch: 13/100, batch: 2/14, mean_loss: 65.9144
+train >>> epoch: 13/100, batch: 3/14, mean_loss: 51.6436
+train >>> epoch: 13/100, batch: 4/14, mean_loss: 38.7537
+train >>> epoch: 13/100, batch: 5/14, mean_loss: 33.7733
+train >>> epoch: 13/100, batch: 6/14, mean_loss: 31.9248
+train >>> epoch: 13/100, batch: 7/14, mean_loss: 38.8367
+train >>> epoch: 13/100, batch: 8/14, mean_loss: 93.0911
+train >>> epoch: 13/100, batch: 9/14, mean_loss: 142.2347
+train >>> epoch: 13/100, batch: 10/14, mean_loss: 139.8999
+train >>> epoch: 13/100, batch: 11/14, mean_loss: 131.6869
+train >>> epoch: 13/100, batch: 12/14, mean_loss: 165.2914
+train >>> epoch: 13/100, batch: 13/14, mean_loss: 165.0945
+train >>> epoch: 13/100, batch: 14/14, mean_loss: 178.6733
+186.70702030960933
+2.3561196339531914
+valid >>> epoch: 13/100, mean_loss: 94.5316
+train >>> epoch: 14/100, batch: 1/14, mean_loss: 149.1078
+train >>> epoch: 14/100, batch: 2/14, mean_loss: 113.3327
+train >>> epoch: 14/100, batch: 3/14, mean_loss: 89.9086
+train >>> epoch: 14/100, batch: 4/14, mean_loss: 82.2947
+train >>> epoch: 14/100, batch: 5/14, mean_loss: 92.2319
+train >>> epoch: 14/100, batch: 6/14, mean_loss: 96.8407
+train >>> epoch: 14/100, batch: 7/14, mean_loss: 90.9016
+train >>> epoch: 14/100, batch: 8/14, mean_loss: 86.5734
+train >>> epoch: 14/100, batch: 9/14, mean_loss: 77.9535
+train >>> epoch: 14/100, batch: 10/14, mean_loss: 72.3018
+train >>> epoch: 14/100, batch: 11/14, mean_loss: 65.8468
+train >>> epoch: 14/100, batch: 12/14, mean_loss: 60.4488
+train >>> epoch: 14/100, batch: 13/14, mean_loss: 64.6916
+train >>> epoch: 14/100, batch: 14/14, mean_loss: 60.0708
+0.9444178992306911
+0.03408833261337002
+valid >>> epoch: 14/100, mean_loss: 0.4893
+criteria decreased from 0.8308 to 0.4893, saving best model at D:\Data\cs-8395-dl\model\2020-01-14-03-25-46\2020-01-14-03-25-46_hm_net_best.pt
+train >>> epoch: 15/100, batch: 1/14, mean_loss: 6.8930
+train >>> epoch: 15/100, batch: 2/14, mean_loss: 5.5707
+train >>> epoch: 15/100, batch: 3/14, mean_loss: 8.6828
+train >>> epoch: 15/100, batch: 4/14, mean_loss: 10.4597
+train >>> epoch: 15/100, batch: 5/14, mean_loss: 10.0091
+train >>> epoch: 15/100, batch: 6/14, mean_loss: 16.2654
+train >>> epoch: 15/100, batch: 7/14, mean_loss: 16.2405
+train >>> epoch: 15/100, batch: 8/14, mean_loss: 14.2108
+train >>> epoch: 15/100, batch: 9/14, mean_loss: 13.3758
+train >>> epoch: 15/100, batch: 10/14, mean_loss: 12.2009
+train >>> epoch: 15/100, batch: 11/14, mean_loss: 11.0920
+train >>> epoch: 15/100, batch: 12/14, mean_loss: 27.4988
+train >>> epoch: 15/100, batch: 13/14, mean_loss: 25.3875
+train >>> epoch: 15/100, batch: 14/14, mean_loss: 23.9430
+0.10861533736764128
+1.1770453716415523
+valid >>> epoch: 15/100, mean_loss: 0.6428
+train >>> epoch: 16/100, batch: 1/14, mean_loss: 9.0582
+train >>> epoch: 16/100, batch: 2/14, mean_loss: 4.5781
+train >>> epoch: 16/100, batch: 3/14, mean_loss: 17.4595
+train >>> epoch: 16/100, batch: 4/14, mean_loss: 13.1140
+train >>> epoch: 16/100, batch: 5/14, mean_loss: 10.5231
+train >>> epoch: 16/100, batch: 6/14, mean_loss: 9.1590
+train >>> epoch: 16/100, batch: 7/14, mean_loss: 13.2432
+train >>> epoch: 16/100, batch: 8/14, mean_loss: 12.1027
+train >>> epoch: 16/100, batch: 9/14, mean_loss: 10.7583
+train >>> epoch: 16/100, batch: 10/14, mean_loss: 9.7008
+train >>> epoch: 16/100, batch: 11/14, mean_loss: 14.9454
+train >>> epoch: 16/100, batch: 12/14, mean_loss: 14.3251
+train >>> epoch: 16/100, batch: 13/14, mean_loss: 13.2234
+train >>> epoch: 16/100, batch: 14/14, mean_loss: 12.4281
+0.0036563788718169347
+0.0008536964601245963
+valid >>> epoch: 16/100, mean_loss: 0.0023
+criteria decreased from 0.4893 to 0.0023, saving best model at D:\Data\cs-8395-dl\model\2020-01-14-03-25-46\2020-01-14-03-25-46_hm_net_best.pt
+train >>> epoch: 17/100, batch: 1/14, mean_loss: 15.7824
+train >>> epoch: 17/100, batch: 2/14, mean_loss: 18.9684
+train >>> epoch: 17/100, batch: 3/14, mean_loss: 12.8076
+train >>> epoch: 17/100, batch: 4/14, mean_loss: 15.6957
+train >>> epoch: 17/100, batch: 5/14, mean_loss: 13.2194
+train >>> epoch: 17/100, batch: 6/14, mean_loss: 11.1767
+train >>> epoch: 17/100, batch: 7/14, mean_loss: 9.5813
+train >>> epoch: 17/100, batch: 8/14, mean_loss: 10.0818
+train >>> epoch: 17/100, batch: 9/14, mean_loss: 8.9619
+train >>> epoch: 17/100, batch: 10/14, mean_loss: 8.1300
+train >>> epoch: 17/100, batch: 11/14, mean_loss: 7.5245
+train >>> epoch: 17/100, batch: 12/14, mean_loss: 6.9017
+train >>> epoch: 17/100, batch: 13/14, mean_loss: 6.6398
+train >>> epoch: 17/100, batch: 14/14, mean_loss: 14.6650
+3.5661566881433413
+0.003178363280267985
+valid >>> epoch: 17/100, mean_loss: 1.7847
+train >>> epoch: 18/100, batch: 1/14, mean_loss: 0.0028
+train >>> epoch: 18/100, batch: 2/14, mean_loss: 1.4846
+train >>> epoch: 18/100, batch: 3/14, mean_loss: 1.9571
+train >>> epoch: 18/100, batch: 4/14, mean_loss: 1.4685
+train >>> epoch: 18/100, batch: 5/14, mean_loss: 4.3879
+train >>> epoch: 18/100, batch: 6/14, mean_loss: 3.7713
+train >>> epoch: 18/100, batch: 7/14, mean_loss: 3.2605
+train >>> epoch: 18/100, batch: 8/14, mean_loss: 2.9365
+train >>> epoch: 18/100, batch: 9/14, mean_loss: 3.0050
+train >>> epoch: 18/100, batch: 10/14, mean_loss: 2.7048
+train >>> epoch: 18/100, batch: 11/14, mean_loss: 4.1255
+train >>> epoch: 18/100, batch: 12/14, mean_loss: 4.6789
+train >>> epoch: 18/100, batch: 13/14, mean_loss: 8.0144
+train >>> epoch: 18/100, batch: 14/14, mean_loss: 13.7168
+0.01685780386414161
+0.20835534147606324
+valid >>> epoch: 18/100, mean_loss: 0.1126
+train >>> epoch: 19/100, batch: 1/14, mean_loss: 1.1099
+train >>> epoch: 19/100, batch: 2/14, mean_loss: 3.4424
+train >>> epoch: 19/100, batch: 3/14, mean_loss: 3.1205
+train >>> epoch: 19/100, batch: 4/14, mean_loss: 2.5340
+train >>> epoch: 19/100, batch: 5/14, mean_loss: 2.0277
+train >>> epoch: 19/100, batch: 6/14, mean_loss: 1.6902
+train >>> epoch: 19/100, batch: 7/14, mean_loss: 1.8977
+train >>> epoch: 19/100, batch: 8/14, mean_loss: 2.2157
+train >>> epoch: 19/100, batch: 9/14, mean_loss: 3.4895
+train >>> epoch: 19/100, batch: 10/14, mean_loss: 3.1409
+train >>> epoch: 19/100, batch: 11/14, mean_loss: 3.1876
+train >>> epoch: 19/100, batch: 12/14, mean_loss: 3.0117
+train >>> epoch: 19/100, batch: 13/14, mean_loss: 2.7802
+train >>> epoch: 19/100, batch: 14/14, mean_loss: 2.6387
+0.21128898206886454
+0.0007672544127847764
+valid >>> epoch: 19/100, mean_loss: 0.1060
+train >>> epoch: 20/100, batch: 1/14, mean_loss: 0.0028
+train >>> epoch: 20/100, batch: 2/14, mean_loss: 16.5221
+train >>> epoch: 20/100, batch: 3/14, mean_loss: 14.7980
+train >>> epoch: 20/100, batch: 4/14, mean_loss: 11.0992
+train >>> epoch: 20/100, batch: 5/14, mean_loss: 8.9434
+train >>> epoch: 20/100, batch: 6/14, mean_loss: 7.4559
+train >>> epoch: 20/100, batch: 7/14, mean_loss: 6.5049
+train >>> epoch: 20/100, batch: 8/14, mean_loss: 7.3044
+train >>> epoch: 20/100, batch: 9/14, mean_loss: 6.9402
+train >>> epoch: 20/100, batch: 10/14, mean_loss: 6.4091
+train >>> epoch: 20/100, batch: 11/14, mean_loss: 5.8284
+train >>> epoch: 20/100, batch: 12/14, mean_loss: 5.3429
+train >>> epoch: 20/100, batch: 13/14, mean_loss: 4.9321
+train >>> epoch: 20/100, batch: 14/14, mean_loss: 399.4689
+21.525309432257075
+5.433026522547765
+valid >>> epoch: 20/100, mean_loss: 13.4792
+train >>> epoch: 21/100, batch: 1/14, mean_loss: 2.4682
+train >>> epoch: 21/100, batch: 2/14, mean_loss: 1.2355
+train >>> epoch: 21/100, batch: 3/14, mean_loss: 0.8246
+train >>> epoch: 21/100, batch: 4/14, mean_loss: 0.9836
+train >>> epoch: 21/100, batch: 5/14, mean_loss: 3.5551
+train >>> epoch: 21/100, batch: 6/14, mean_loss: 16.6234
+train >>> epoch: 21/100, batch: 7/14, mean_loss: 14.2491
+train >>> epoch: 21/100, batch: 8/14, mean_loss: 12.4683
+train >>> epoch: 21/100, batch: 9/14, mean_loss: 11.1843
+train >>> epoch: 21/100, batch: 10/14, mean_loss: 10.8661
+train >>> epoch: 21/100, batch: 11/14, mean_loss: 9.8785
+train >>> epoch: 21/100, batch: 12/14, mean_loss: 9.0556
+train >>> epoch: 21/100, batch: 13/14, mean_loss: 8.3900
+train >>> epoch: 21/100, batch: 14/14, mean_loss: 12.6962
+1.2137339919352188
+0.303433499407342
+valid >>> epoch: 21/100, mean_loss: 0.7586
+train >>> epoch: 22/100, batch: 1/14, mean_loss: 67.4794
+train >>> epoch: 22/100, batch: 2/14, mean_loss: 33.7411
+train >>> epoch: 22/100, batch: 3/14, mean_loss: 23.9409
+train >>> epoch: 22/100, batch: 4/14, mean_loss: 17.9564
+train >>> epoch: 22/100, batch: 5/14, mean_loss: 17.7596
+train >>> epoch: 22/100, batch: 6/14, mean_loss: 19.1043
+train >>> epoch: 22/100, batch: 7/14, mean_loss: 20.6441
+train >>> epoch: 22/100, batch: 8/14, mean_loss: 18.1753
+train >>> epoch: 22/100, batch: 9/14, mean_loss: 16.4685
+train >>> epoch: 22/100, batch: 10/14, mean_loss: 32.2753
+train >>> epoch: 22/100, batch: 11/14, mean_loss: 29.4560
+train >>> epoch: 22/100, batch: 12/14, mean_loss: 27.0558
+train >>> epoch: 22/100, batch: 13/14, mean_loss: 24.9965
+train >>> epoch: 22/100, batch: 14/14, mean_loss: 23.2110
+0.06943845465310383
+0.017359613057704434
+valid >>> epoch: 22/100, mean_loss: 0.0434
+train >>> epoch: 23/100, batch: 1/14, mean_loss: 9.7669
+train >>> epoch: 23/100, batch: 2/14, mean_loss: 9.3508
+train >>> epoch: 23/100, batch: 3/14, mean_loss: 16.3403
+train >>> epoch: 23/100, batch: 4/14, mean_loss: 12.2559
+train >>> epoch: 23/100, batch: 5/14, mean_loss: 9.8832
+train >>> epoch: 23/100, batch: 6/14, mean_loss: 16.3358
+train >>> epoch: 23/100, batch: 7/14, mean_loss: 14.4615
+train >>> epoch: 23/100, batch: 8/14, mean_loss: 12.6541
+train >>> epoch: 23/100, batch: 9/14, mean_loss: 11.6731
+train >>> epoch: 23/100, batch: 10/14, mean_loss: 10.6337
+train >>> epoch: 23/100, batch: 11/14, mean_loss: 9.8565
+train >>> epoch: 23/100, batch: 12/14, mean_loss: 9.1444
+train >>> epoch: 23/100, batch: 13/14, mean_loss: 8.4912
+train >>> epoch: 23/100, batch: 14/14, mean_loss: 8.5510
+0.006885311880245765
+0.0017213273644899143
+valid >>> epoch: 23/100, mean_loss: 0.0043
+train >>> epoch: 24/100, batch: 1/14, mean_loss: 6.5734
+train >>> epoch: 24/100, batch: 2/14, mean_loss: 3.3282
+train >>> epoch: 24/100, batch: 3/14, mean_loss: 3.2197
+train >>> epoch: 24/100, batch: 4/14, mean_loss: 2.9770
+train >>> epoch: 24/100, batch: 5/14, mean_loss: 4.9879
+train >>> epoch: 24/100, batch: 6/14, mean_loss: 5.0685
+train >>> epoch: 24/100, batch: 7/14, mean_loss: 4.5776
+train >>> epoch: 24/100, batch: 8/14, mean_loss: 4.0057
+train >>> epoch: 24/100, batch: 9/14, mean_loss: 3.5609
+train >>> epoch: 24/100, batch: 10/14, mean_loss: 16.5855
+train >>> epoch: 24/100, batch: 11/14, mean_loss: 15.0780
+train >>> epoch: 24/100, batch: 12/14, mean_loss: 15.2957
+train >>> epoch: 24/100, batch: 13/14, mean_loss: 14.1193
+train >>> epoch: 24/100, batch: 14/14, mean_loss: 49.0473
+0.04445536605344603
+0.0111138429368988
+valid >>> epoch: 24/100, mean_loss: 0.0278
+train >>> epoch: 25/100, batch: 1/14, mean_loss: 0.0058
+train >>> epoch: 25/100, batch: 2/14, mean_loss: 0.0043
+train >>> epoch: 25/100, batch: 3/14, mean_loss: 0.6610
+train >>> epoch: 25/100, batch: 4/14, mean_loss: 0.4994
+train >>> epoch: 25/100, batch: 5/14, mean_loss: 0.8414
+train >>> epoch: 25/100, batch: 6/14, mean_loss: 2.4632
+train >>> epoch: 25/100, batch: 7/14, mean_loss: 3.0093
+train >>> epoch: 25/100, batch: 8/14, mean_loss: 2.6350
+train >>> epoch: 25/100, batch: 9/14, mean_loss: 3.5194
+train >>> epoch: 25/100, batch: 10/14, mean_loss: 3.2025
+train >>> epoch: 25/100, batch: 11/14, mean_loss: 2.9116
+train >>> epoch: 25/100, batch: 12/14, mean_loss: 3.2003
+train >>> epoch: 25/100, batch: 13/14, mean_loss: 3.0380
+train >>> epoch: 25/100, batch: 14/14, mean_loss: 2.8210
+0.005075089775160248
+0.00126877283696735
+valid >>> epoch: 25/100, mean_loss: 0.0032
+train >>> epoch: 26/100, batch: 1/14, mean_loss: 10.1307
+train >>> epoch: 26/100, batch: 2/14, mean_loss: 5.0668
+train >>> epoch: 26/100, batch: 3/14, mean_loss: 14.2373
+train >>> epoch: 26/100, batch: 4/14, mean_loss: 10.9055
+train >>> epoch: 26/100, batch: 5/14, mean_loss: 8.7249
+train >>> epoch: 26/100, batch: 6/14, mean_loss: 7.2712
+train >>> epoch: 26/100, batch: 7/14, mean_loss: 6.7909
+train >>> epoch: 26/100, batch: 8/14, mean_loss: 5.9424
+train >>> epoch: 26/100, batch: 9/14, mean_loss: 5.4509
+train >>> epoch: 26/100, batch: 10/14, mean_loss: 4.9991
+train >>> epoch: 26/100, batch: 11/14, mean_loss: 4.5735
+train >>> epoch: 26/100, batch: 12/14, mean_loss: 4.3571
+train >>> epoch: 26/100, batch: 13/14, mean_loss: 4.1840
+train >>> epoch: 26/100, batch: 14/14, mean_loss: 10.0056
+0.0055182518916198535
+0.0013795623673334364
+valid >>> epoch: 26/100, mean_loss: 0.0034
+train >>> epoch: 27/100, batch: 1/14, mean_loss: 0.1442
+train >>> epoch: 27/100, batch: 2/14, mean_loss: 10.9532
+train >>> epoch: 27/100, batch: 3/14, mean_loss: 7.3337
+train >>> epoch: 27/100, batch: 4/14, mean_loss: 5.5010
+train >>> epoch: 27/100, batch: 5/14, mean_loss: 5.6699
+train >>> epoch: 27/100, batch: 6/14, mean_loss: 5.1804
+train >>> epoch: 27/100, batch: 7/14, mean_loss: 5.2615
+train >>> epoch: 27/100, batch: 8/14, mean_loss: 6.7993
+train >>> epoch: 27/100, batch: 9/14, mean_loss: 6.4762
+train >>> epoch: 27/100, batch: 10/14, mean_loss: 5.8288
+train >>> epoch: 27/100, batch: 11/14, mean_loss: 5.5477
+train >>> epoch: 27/100, batch: 12/14, mean_loss: 5.2939
+train >>> epoch: 27/100, batch: 13/14, mean_loss: 4.8869
+train >>> epoch: 27/100, batch: 14/14, mean_loss: 4.5402
+0.002960520597256297
+0.0007401305424913622
+valid >>> epoch: 27/100, mean_loss: 0.0019
+criteria decreased from 0.0023 to 0.0019, saving best model at D:\Data\cs-8395-dl\model\2020-01-14-03-25-46\2020-01-14-03-25-46_hm_net_best.pt
+train >>> epoch: 28/100, batch: 1/14, mean_loss: 7.6938
+train >>> epoch: 28/100, batch: 2/14, mean_loss: 3.9262
+train >>> epoch: 28/100, batch: 3/14, mean_loss: 2.6184
+train >>> epoch: 28/100, batch: 4/14, mean_loss: 1.9645
+train >>> epoch: 28/100, batch: 5/14, mean_loss: 1.7793
+train >>> epoch: 28/100, batch: 6/14, mean_loss: 3.0233
+train >>> epoch: 28/100, batch: 7/14, mean_loss: 5.2600
+train >>> epoch: 28/100, batch: 8/14, mean_loss: 5.2862
+train >>> epoch: 28/100, batch: 9/14, mean_loss: 4.7086
+train >>> epoch: 28/100, batch: 10/14, mean_loss: 4.2395
+train >>> epoch: 28/100, batch: 11/14, mean_loss: 3.8814
+train >>> epoch: 28/100, batch: 12/14, mean_loss: 4.2233
+train >>> epoch: 28/100, batch: 13/14, mean_loss: 3.8987
+train >>> epoch: 28/100, batch: 14/14, mean_loss: 3.6202
+0.0027954912757710373
+0.0006988722133712323
+valid >>> epoch: 28/100, mean_loss: 0.0017
+criteria decreased from 0.0019 to 0.0017, saving best model at D:\Data\cs-8395-dl\model\2020-01-14-03-25-46\2020-01-14-03-25-46_hm_net_best.pt
+train >>> epoch: 29/100, batch: 1/14, mean_loss: 0.0441
+train >>> epoch: 29/100, batch: 2/14, mean_loss: 0.0276
+train >>> epoch: 29/100, batch: 3/14, mean_loss: 0.0193
+train >>> epoch: 29/100, batch: 4/14, mean_loss: 1.1047
+train >>> epoch: 29/100, batch: 5/14, mean_loss: 1.0817
+train >>> epoch: 29/100, batch: 6/14, mean_loss: 1.3599
+train >>> epoch: 29/100, batch: 7/14, mean_loss: 1.1660
+train >>> epoch: 29/100, batch: 8/14, mean_loss: 1.0206
+train >>> epoch: 29/100, batch: 9/14, mean_loss: 0.9679
+train >>> epoch: 29/100, batch: 10/14, mean_loss: 0.9005
+train >>> epoch: 29/100, batch: 11/14, mean_loss: 1.0956
+train >>> epoch: 29/100, batch: 12/14, mean_loss: 1.1450
+train >>> epoch: 29/100, batch: 13/14, mean_loss: 1.0571
+train >>> epoch: 29/100, batch: 14/14, mean_loss: 0.9816
+0.0027820803836863996
+0.000695519490350073
+valid >>> epoch: 29/100, mean_loss: 0.0017
+criteria decreased from 0.0017 to 0.0017, saving best model at D:\Data\cs-8395-dl\model\2020-01-14-03-25-46\2020-01-14-03-25-46_hm_net_best.pt
+train >>> epoch: 30/100, batch: 1/14, mean_loss: 0.0028
+train >>> epoch: 30/100, batch: 2/14, mean_loss: 0.0036
+train >>> epoch: 30/100, batch: 3/14, mean_loss: 0.0813
+train >>> epoch: 30/100, batch: 4/14, mean_loss: 2.5497
+train >>> epoch: 30/100, batch: 5/14, mean_loss: 2.0404
+train >>> epoch: 30/100, batch: 6/14, mean_loss: 1.7078
+train >>> epoch: 30/100, batch: 7/14, mean_loss: 2.1894
+train >>> epoch: 30/100, batch: 8/14, mean_loss: 1.9161
+train >>> epoch: 30/100, batch: 9/14, mean_loss: 1.7035
+train >>> epoch: 30/100, batch: 10/14, mean_loss: 1.5365
+train >>> epoch: 30/100, batch: 11/14, mean_loss: 1.3970
+train >>> epoch: 30/100, batch: 12/14, mean_loss: 1.3188
+train >>> epoch: 30/100, batch: 13/14, mean_loss: 1.2844
+train >>> epoch: 30/100, batch: 14/14, mean_loss: 1.1960
+0.0027808351439288295
+0.0006952091791594955
+valid >>> epoch: 30/100, mean_loss: 0.0017
+criteria decreased from 0.0017 to 0.0017, saving best model at D:\Data\cs-8395-dl\model\2020-01-14-03-25-46\2020-01-14-03-25-46_hm_net_best.pt
+train >>> epoch: 31/100, batch: 1/14, mean_loss: 0.0028
+train >>> epoch: 31/100, batch: 2/14, mean_loss: 0.0028
+train >>> epoch: 31/100, batch: 3/14, mean_loss: 0.0028
+train >>> epoch: 31/100, batch: 4/14, mean_loss: 0.0028
+train >>> epoch: 31/100, batch: 5/14, mean_loss: 0.1170
+train >>> epoch: 31/100, batch: 6/14, mean_loss: 0.4228
+train >>> epoch: 31/100, batch: 7/14, mean_loss: 0.3628
+train >>> epoch: 31/100, batch: 8/14, mean_loss: 0.3178
+train >>> epoch: 31/100, batch: 9/14, mean_loss: 0.4765
+train >>> epoch: 31/100, batch: 10/14, mean_loss: 0.4292
+train >>> epoch: 31/100, batch: 11/14, mean_loss: 0.3960
+train >>> epoch: 31/100, batch: 12/14, mean_loss: 0.5104
+train >>> epoch: 31/100, batch: 13/14, mean_loss: 0.4713
+train >>> epoch: 31/100, batch: 14/14, mean_loss: 4.2129
+0.002900238346063097
+0.0007250589809442473
+valid >>> epoch: 31/100, mean_loss: 0.0018
+train >>> epoch: 32/100, batch: 1/14, mean_loss: 0.0028
+train >>> epoch: 32/100, batch: 2/14, mean_loss: 0.0028
+train >>> epoch: 32/100, batch: 3/14, mean_loss: 1.3244
+train >>> epoch: 32/100, batch: 4/14, mean_loss: 0.9940
+train >>> epoch: 32/100, batch: 5/14, mean_loss: 2.8984
+train >>> epoch: 32/100, batch: 6/14, mean_loss: 2.4158
+train >>> epoch: 32/100, batch: 7/14, mean_loss: 2.1375
+train >>> epoch: 32/100, batch: 8/14, mean_loss: 4.7051
+train >>> epoch: 32/100, batch: 9/14, mean_loss: 4.1827
+train >>> epoch: 32/100, batch: 10/14, mean_loss: 3.7647
+train >>> epoch: 32/100, batch: 11/14, mean_loss: 4.3474
+train >>> epoch: 32/100, batch: 12/14, mean_loss: 4.3933
+train >>> epoch: 32/100, batch: 13/14, mean_loss: 4.0556
+train >>> epoch: 32/100, batch: 14/14, mean_loss: 3.7659
+0.002794937870741502
+0.0006987338621138484
+valid >>> epoch: 32/100, mean_loss: 0.0017
+train >>> epoch: 33/100, batch: 1/14, mean_loss: 0.0028
+train >>> epoch: 33/100, batch: 2/14, mean_loss: 0.1501
+train >>> epoch: 33/100, batch: 3/14, mean_loss: 0.1010
+train >>> epoch: 33/100, batch: 4/14, mean_loss: 0.0764
+train >>> epoch: 33/100, batch: 5/14, mean_loss: 0.0617
+train >>> epoch: 33/100, batch: 6/14, mean_loss: 0.1032
+train >>> epoch: 33/100, batch: 7/14, mean_loss: 0.0888
+train >>> epoch: 33/100, batch: 8/14, mean_loss: 0.1759
+train >>> epoch: 33/100, batch: 9/14, mean_loss: 0.2703
+train >>> epoch: 33/100, batch: 10/14, mean_loss: 0.6011
+train >>> epoch: 33/100, batch: 11/14, mean_loss: 1.1675
+train >>> epoch: 33/100, batch: 12/14, mean_loss: 1.0705
+train >>> epoch: 33/100, batch: 13/14, mean_loss: 0.9883
+train >>> epoch: 33/100, batch: 14/14, mean_loss: 0.9178
+0.002782405909100176
+0.0006956018704523321
+valid >>> epoch: 33/100, mean_loss: 0.0017
+train >>> epoch: 34/100, batch: 1/14, mean_loss: 0.0028
+train >>> epoch: 34/100, batch: 2/14, mean_loss: 0.0028
+train >>> epoch: 34/100, batch: 3/14, mean_loss: 0.0028
+train >>> epoch: 34/100, batch: 4/14, mean_loss: 0.0028
+train >>> epoch: 34/100, batch: 5/14, mean_loss: 8.3857
+train >>> epoch: 34/100, batch: 6/14, mean_loss: 6.9886
+train >>> epoch: 34/100, batch: 7/14, mean_loss: 5.9906
+train >>> epoch: 34/100, batch: 8/14, mean_loss: 5.7389
+train >>> epoch: 34/100, batch: 9/14, mean_loss: 5.5421
+train >>> epoch: 34/100, batch: 10/14, mean_loss: 5.0941
+train >>> epoch: 34/100, batch: 11/14, mean_loss: 5.8603
+train >>> epoch: 34/100, batch: 12/14, mean_loss: 5.3733
+train >>> epoch: 34/100, batch: 13/14, mean_loss: 5.0517
+train >>> epoch: 34/100, batch: 14/14, mean_loss: 4.6909
+0.0027826628342188676
+0.0006956651029831898
+valid >>> epoch: 34/100, mean_loss: 0.0017
+train >>> epoch: 35/100, batch: 1/14, mean_loss: 0.9129
+train >>> epoch: 35/100, batch: 2/14, mean_loss: 0.8780
+train >>> epoch: 35/100, batch: 3/14, mean_loss: 0.9347
+train >>> epoch: 35/100, batch: 4/14, mean_loss: 0.7691
+train >>> epoch: 35/100, batch: 5/14, mean_loss: 12.6487
+train >>> epoch: 35/100, batch: 6/14, mean_loss: 10.5415
+train >>> epoch: 35/100, batch: 7/14, mean_loss: 9.0360
+train >>> epoch: 35/100, batch: 8/14, mean_loss: 7.9068
+train >>> epoch: 35/100, batch: 9/14, mean_loss: 7.0485
+train >>> epoch: 35/100, batch: 10/14, mean_loss: 6.3713
+train >>> epoch: 35/100, batch: 11/14, mean_loss: 5.7924
+train >>> epoch: 35/100, batch: 12/14, mean_loss: 5.3099
+train >>> epoch: 35/100, batch: 13/14, mean_loss: 5.1739
+train >>> epoch: 35/100, batch: 14/14, mean_loss: 4.8043
+0.002782050249227966
+0.0006955119567354644
+valid >>> epoch: 35/100, mean_loss: 0.0017
+train >>> epoch: 36/100, batch: 1/14, mean_loss: 0.0242
+train >>> epoch: 36/100, batch: 2/14, mean_loss: 0.0135
+train >>> epoch: 36/100, batch: 3/14, mean_loss: 0.0099
+train >>> epoch: 36/100, batch: 4/14, mean_loss: 0.2982
+train >>> epoch: 36/100, batch: 5/14, mean_loss: 0.2391
+train >>> epoch: 36/100, batch: 6/14, mean_loss: 0.6960
+train >>> epoch: 36/100, batch: 7/14, mean_loss: 1.1682
+train >>> epoch: 36/100, batch: 8/14, mean_loss: 2.2941
+train >>> epoch: 36/100, batch: 9/14, mean_loss: 2.3184
+train >>> epoch: 36/100, batch: 10/14, mean_loss: 2.1043
+train >>> epoch: 36/100, batch: 11/14, mean_loss: 10.4285
+train >>> epoch: 36/100, batch: 12/14, mean_loss: 9.5597
+train >>> epoch: 36/100, batch: 13/14, mean_loss: 8.8246
+train >>> epoch: 36/100, batch: 14/14, mean_loss: 8.1943
+0.0027824935403033386
+0.0006956227795043077
+valid >>> epoch: 36/100, mean_loss: 0.0017
+train >>> epoch: 37/100, batch: 1/14, mean_loss: 0.0028
+train >>> epoch: 37/100, batch: 2/14, mean_loss: 2.6458
+train >>> epoch: 37/100, batch: 3/14, mean_loss: 4.3278
+train >>> epoch: 37/100, batch: 4/14, mean_loss: 3.2465
+train >>> epoch: 37/100, batch: 5/14, mean_loss: 2.5978
+train >>> epoch: 37/100, batch: 6/14, mean_loss: 2.2017
+train >>> epoch: 37/100, batch: 7/14, mean_loss: 1.8876
+train >>> epoch: 37/100, batch: 8/14, mean_loss: 4.1637
+train >>> epoch: 37/100, batch: 9/14, mean_loss: 3.7014
+train >>> epoch: 37/100, batch: 10/14, mean_loss: 3.3315
+train >>> epoch: 37/100, batch: 11/14, mean_loss: 3.0319
+train >>> epoch: 37/100, batch: 12/14, mean_loss: 2.7954
+train >>> epoch: 37/100, batch: 13/14, mean_loss: 2.5806
+train >>> epoch: 37/100, batch: 14/14, mean_loss: 2.3963
+0.002781270728758425
+0.0006953191057268993
+valid >>> epoch: 37/100, mean_loss: 0.0017
+train >>> epoch: 38/100, batch: 1/14, mean_loss: 0.0028
+train >>> epoch: 38/100, batch: 2/14, mean_loss: 0.0028
+train >>> epoch: 38/100, batch: 3/14, mean_loss: 0.4626
+train >>> epoch: 38/100, batch: 4/14, mean_loss: 0.3477
+train >>> epoch: 38/100, batch: 5/14, mean_loss: 0.2787
+train >>> epoch: 38/100, batch: 6/14, mean_loss: 0.2327
+train >>> epoch: 38/100, batch: 7/14, mean_loss: 0.1999
+train >>> epoch: 38/100, batch: 8/14, mean_loss: 0.3085
+train >>> epoch: 38/100, batch: 9/14, mean_loss: 1.5064
+train >>> epoch: 38/100, batch: 10/14, mean_loss: 1.5836
+train >>> epoch: 38/100, batch: 11/14, mean_loss: 2.7607
+train >>> epoch: 38/100, batch: 12/14, mean_loss: 2.5309
+train >>> epoch: 38/100, batch: 13/14, mean_loss: 2.3364
+train >>> epoch: 38/100, batch: 14/14, mean_loss: 2.1695
+0.002781761233643756
+0.0006954397028394121
+valid >>> epoch: 38/100, mean_loss: 0.0017
+train >>> epoch: 39/100, batch: 1/14, mean_loss: 0.0296
+train >>> epoch: 39/100, batch: 2/14, mean_loss: 0.0190
+train >>> epoch: 39/100, batch: 3/14, mean_loss: 0.0136
+train >>> epoch: 39/100, batch: 4/14, mean_loss: 0.1129
+train >>> epoch: 39/100, batch: 5/14, mean_loss: 0.0909
+train >>> epoch: 39/100, batch: 6/14, mean_loss: 0.1649
+train >>> epoch: 39/100, batch: 7/14, mean_loss: 0.1418
+train >>> epoch: 39/100, batch: 8/14, mean_loss: 0.1244
+train >>> epoch: 39/100, batch: 9/14, mean_loss: 0.1109
+train >>> epoch: 39/100, batch: 10/14, mean_loss: 0.2381
+train >>> epoch: 39/100, batch: 11/14, mean_loss: 0.2285
+train >>> epoch: 39/100, batch: 12/14, mean_loss: 0.2097
+train >>> epoch: 39/100, batch: 13/14, mean_loss: 0.1938
+train >>> epoch: 39/100, batch: 14/14, mean_loss: 0.1799
+0.0027802399772122286
+0.0006950603874803452
+valid >>> epoch: 39/100, mean_loss: 0.0017
+criteria decreased from 0.0017 to 0.0017, saving best model at D:\Data\cs-8395-dl\model\2020-01-14-03-25-46\2020-01-14-03-25-46_hm_net_best.pt
+train >>> epoch: 40/100, batch: 1/14, mean_loss: 0.3877
+train >>> epoch: 40/100, batch: 2/14, mean_loss: 0.1953
+train >>> epoch: 40/100, batch: 3/14, mean_loss: 0.1311
+train >>> epoch: 40/100, batch: 4/14, mean_loss: 0.0990
+train >>> epoch: 40/100, batch: 5/14, mean_loss: 0.1445
+train >>> epoch: 40/100, batch: 6/14, mean_loss: 0.1208
+train >>> epoch: 40/100, batch: 7/14, mean_loss: 0.1040
+train >>> epoch: 40/100, batch: 8/14, mean_loss: 1.2592
+train >>> epoch: 40/100, batch: 9/14, mean_loss: 1.1248
+train >>> epoch: 40/100, batch: 10/14, mean_loss: 1.0126
+train >>> epoch: 40/100, batch: 11/14, mean_loss: 0.9208
+train >>> epoch: 40/100, batch: 12/14, mean_loss: 0.8443
+train >>> epoch: 40/100, batch: 13/14, mean_loss: 0.7796
+train >>> epoch: 40/100, batch: 14/14, mean_loss: 0.8427
+0.002781849820539476
+0.0006954618495633421
+valid >>> epoch: 40/100, mean_loss: 0.0017
+train >>> epoch: 41/100, batch: 1/14, mean_loss: 2.3650
+train >>> epoch: 41/100, batch: 2/14, mean_loss: 1.5654
+train >>> epoch: 41/100, batch: 3/14, mean_loss: 1.0662
+train >>> epoch: 41/100, batch: 4/14, mean_loss: 0.8003
+train >>> epoch: 41/100, batch: 5/14, mean_loss: 0.6408
+train >>> epoch: 41/100, batch: 6/14, mean_loss: 0.5345
+train >>> epoch: 41/100, batch: 7/14, mean_loss: 0.4585
+train >>> epoch: 41/100, batch: 8/14, mean_loss: 0.7275
+train >>> epoch: 41/100, batch: 9/14, mean_loss: 0.6470
+train >>> epoch: 41/100, batch: 10/14, mean_loss: 0.5922
+train >>> epoch: 41/100, batch: 11/14, mean_loss: 1.0867
+train >>> epoch: 41/100, batch: 12/14, mean_loss: 1.2104
+train >>> epoch: 41/100, batch: 13/14, mean_loss: 1.1175
+train >>> epoch: 41/100, batch: 14/14, mean_loss: 2.2062
+0.0028043683906332434
+0.0007010914920867839
+valid >>> epoch: 41/100, mean_loss: 0.0018
+train >>> epoch: 42/100, batch: 1/14, mean_loss: 0.0028
+train >>> epoch: 42/100, batch: 2/14, mean_loss: 0.0028
+train >>> epoch: 42/100, batch: 3/14, mean_loss: 0.3421
+train >>> epoch: 42/100, batch: 4/14, mean_loss: 0.2572
+train >>> epoch: 42/100, batch: 5/14, mean_loss: 0.2164
+train >>> epoch: 42/100, batch: 6/14, mean_loss: 0.2124
+train >>> epoch: 42/100, batch: 7/14, mean_loss: 0.1825
+train >>> epoch: 42/100, batch: 8/14, mean_loss: 0.1600
+train >>> epoch: 42/100, batch: 9/14, mean_loss: 0.1425
+train >>> epoch: 42/100, batch: 10/14, mean_loss: 0.1286
+train >>> epoch: 42/100, batch: 11/14, mean_loss: 0.1171
+train >>> epoch: 42/100, batch: 12/14, mean_loss: 0.1076
+train >>> epoch: 42/100, batch: 13/14, mean_loss: 0.0995
+train >>> epoch: 42/100, batch: 14/14, mean_loss: 0.0924
+0.0027813675816691402
+0.000695341289845758
+valid >>> epoch: 42/100, mean_loss: 0.0017
+train >>> epoch: 43/100, batch: 1/14, mean_loss: 0.0028
+train >>> epoch: 43/100, batch: 2/14, mean_loss: 0.0028
+train >>> epoch: 43/100, batch: 3/14, mean_loss: 0.0028
+train >>> epoch: 43/100, batch: 4/14, mean_loss: 0.0600
+train >>> epoch: 43/100, batch: 5/14, mean_loss: 3.2362
+train >>> epoch: 43/100, batch: 6/14, mean_loss: 3.4373
+train >>> epoch: 43/100, batch: 7/14, mean_loss: 2.9467
+train >>> epoch: 43/100, batch: 8/14, mean_loss: 2.5787
+train >>> epoch: 43/100, batch: 9/14, mean_loss: 2.2925
+train >>> epoch: 43/100, batch: 10/14, mean_loss: 2.0706
+train >>> epoch: 43/100, batch: 11/14, mean_loss: 1.8826
+train >>> epoch: 43/100, batch: 12/14, mean_loss: 1.7377
+train >>> epoch: 43/100, batch: 13/14, mean_loss: 1.6042
+train >>> epoch: 43/100, batch: 14/14, mean_loss: 1.4897
+0.0027803908142014972
+0.0006950970979788472
+valid >>> epoch: 43/100, mean_loss: 0.0017
+train >>> epoch: 44/100, batch: 1/14, mean_loss: 0.0028
+train >>> epoch: 44/100, batch: 2/14, mean_loss: 0.0028
+train >>> epoch: 44/100, batch: 3/14, mean_loss: 0.0028
+train >>> epoch: 44/100, batch: 4/14, mean_loss: 0.0028
+train >>> epoch: 44/100, batch: 5/14, mean_loss: 0.0028
+train >>> epoch: 44/100, batch: 6/14, mean_loss: 0.1967
+train >>> epoch: 44/100, batch: 7/14, mean_loss: 1.0452
+train >>> epoch: 44/100, batch: 8/14, mean_loss: 0.9149
+train >>> epoch: 44/100, batch: 9/14, mean_loss: 0.8136
+train >>> epoch: 44/100, batch: 10/14, mean_loss: 0.7345
+train >>> epoch: 44/100, batch: 11/14, mean_loss: 0.6898
+train >>> epoch: 44/100, batch: 12/14, mean_loss: 0.7206
+train >>> epoch: 44/100, batch: 13/14, mean_loss: 0.6654
+train >>> epoch: 44/100, batch: 14/14, mean_loss: 0.6228
+0.002780369322942125
+0.0006950927239128192
+valid >>> epoch: 44/100, mean_loss: 0.0017
+train >>> epoch: 45/100, batch: 1/14, mean_loss: 1.2710
+train >>> epoch: 45/100, batch: 2/14, mean_loss: 0.6369
+train >>> epoch: 45/100, batch: 3/14, mean_loss: 0.4400
+train >>> epoch: 45/100, batch: 4/14, mean_loss: 0.3307
+train >>> epoch: 45/100, batch: 5/14, mean_loss: 0.2651
+train >>> epoch: 45/100, batch: 6/14, mean_loss: 0.2214
+train >>> epoch: 45/100, batch: 7/14, mean_loss: 0.1902
+train >>> epoch: 45/100, batch: 8/14, mean_loss: 0.1668
+train >>> epoch: 45/100, batch: 9/14, mean_loss: 0.1485
+train >>> epoch: 45/100, batch: 10/14, mean_loss: 0.1340
+train >>> epoch: 45/100, batch: 11/14, mean_loss: 0.1383
+train >>> epoch: 45/100, batch: 12/14, mean_loss: 0.1271

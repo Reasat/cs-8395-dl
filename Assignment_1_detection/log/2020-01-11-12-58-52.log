@@ -1,0 +1,15 @@
+2020-01-11-12-58-52
+train.py
+--------------------------------------------------------------------------------------------------------------------
+batchSize: 16
+dir_lf: D:\Data\cs-8395-dl
+dir_project: C:\Users\Reasat\Projects\cs-8395-dl\Assignment_1_detection
+encoder: resnet18
+epoch: 3
+folderData: assignment1_data
+lr: 0.001
+--------------------------------------------------------------------------------------------------------------------
+creating directory to save model at D:\Data\cs-8395-dl\model\2020-01-11-12-58-52
+loading images to RAM
+loading images to RAM
+freezing feature extracting layers

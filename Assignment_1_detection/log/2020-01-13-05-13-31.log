@@ -1,0 +1,651 @@
+2020-01-13-05-13-31
+train.py
+--------------------------------------------------------------------------------------------------------------------
+batchSize: 32
+bottleneckFeatures: 0
+dir_lf: D:\Data\cs-8395-dl
+dir_project: C:\Users\Reasat\Projects\cs-8395-dl\Assignment_1_detection
+encoder: resnet18
+epoch: 500
+folderData: assignment1_data
+lr: 0.001
+resume_from: None
+--------------------------------------------------------------------------------------------------------------------
+creating directory to save model at D:\Data\cs-8395-dl\model\2020-01-13-05-13-31
+loading images to RAM
+train samples 105
+loading images to RAM
+validation samples 10
+ResNet18_flat_conv(
+  (resnet18_fc_stripped): Sequential(
+    (0): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+    (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace)
+    (3): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+    (4): Sequential(
+      (0): BasicBlock(
+        (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+        (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (1): BasicBlock(
+        (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+        (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (5): Sequential(
+      (0): BasicBlock(
+        (conv1): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+        (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (downsample): Sequential(
+          (0): Conv2d(64, 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+          (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (1): BasicBlock(
+        (conv1): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+        (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (6): Sequential(
+      (0): BasicBlock(
+        (conv1): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (downsample): Sequential(
+          (0): Conv2d(128, 256, kernel_size=(1, 1), stride=(2, 2), bias=False)
+          (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (1): BasicBlock(
+        (conv1): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (7): Sequential(
+      (0): BasicBlock(
+        (conv1): Conv2d(256, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+        (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (downsample): Sequential(
+          (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+          (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (1): BasicBlock(
+        (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+        (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+  )
+  (fc1): Linear(in_features=90112, out_features=2, bias=True)
+)
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 1/500, batch: 1/4, mean_loss: 1.2161
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 1/500, batch: 2/4, mean_loss: 912.6630
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 1/500, batch: 3/4, mean_loss: 1517.9963
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 1/500, batch: 4/4, mean_loss: 1338.5377
+torch.Size([10, 512, 11, 16])
+5831.48388671875
+valid >>> epoch: 1/500, mean_loss: 5831.4839
+criteria decreased from inf to 5831.4839, saving best model at D:\Data\cs-8395-dl\model\2020-01-13-05-13-31\2020-01-13-05-13-31_resnet18_best.pt
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 2/500, batch: 1/4, mean_loss: 83.6284
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 2/500, batch: 2/4, mean_loss: 134.1751
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 2/500, batch: 3/4, mean_loss: 223.0912
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 2/500, batch: 4/4, mean_loss: 236.4456
+torch.Size([10, 512, 11, 16])
+37051.7734375
+valid >>> epoch: 2/500, mean_loss: 37051.7734
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 3/500, batch: 1/4, mean_loss: 60.4969
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 3/500, batch: 2/4, mean_loss: 90.4135
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 3/500, batch: 3/4, mean_loss: 112.3250
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 3/500, batch: 4/4, mean_loss: 165.8623
+torch.Size([10, 512, 11, 16])
+56406.17578125
+valid >>> epoch: 3/500, mean_loss: 56406.1758
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 4/500, batch: 1/4, mean_loss: 95.2220
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 4/500, batch: 2/4, mean_loss: 67.3975
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 4/500, batch: 3/4, mean_loss: 60.3616
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 4/500, batch: 4/4, mean_loss: 75.7276
+torch.Size([10, 512, 11, 16])
+11028.2685546875
+valid >>> epoch: 4/500, mean_loss: 11028.2686
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 5/500, batch: 1/4, mean_loss: 77.0328
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 5/500, batch: 2/4, mean_loss: 60.2848
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 5/500, batch: 3/4, mean_loss: 50.6798
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 5/500, batch: 4/4, mean_loss: 75.1482
+torch.Size([10, 512, 11, 16])
+741.7614135742188
+valid >>> epoch: 5/500, mean_loss: 741.7614
+criteria decreased from 5831.4839 to 741.7614, saving best model at D:\Data\cs-8395-dl\model\2020-01-13-05-13-31\2020-01-13-05-13-31_resnet18_best.pt
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 6/500, batch: 1/4, mean_loss: 20.8063
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 6/500, batch: 2/4, mean_loss: 33.9709
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 6/500, batch: 3/4, mean_loss: 29.4627
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 6/500, batch: 4/4, mean_loss: 42.7874
+torch.Size([10, 512, 11, 16])
+8.323653221130371
+valid >>> epoch: 6/500, mean_loss: 8.3237
+criteria decreased from 741.7614 to 8.3237, saving best model at D:\Data\cs-8395-dl\model\2020-01-13-05-13-31\2020-01-13-05-13-31_resnet18_best.pt
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 7/500, batch: 1/4, mean_loss: 18.9379
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 7/500, batch: 2/4, mean_loss: 13.3303
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 7/500, batch: 3/4, mean_loss: 40.6201
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 7/500, batch: 4/4, mean_loss: 71.0157
+torch.Size([10, 512, 11, 16])
+1.9269951581954956
+valid >>> epoch: 7/500, mean_loss: 1.9270
+criteria decreased from 8.3237 to 1.9270, saving best model at D:\Data\cs-8395-dl\model\2020-01-13-05-13-31\2020-01-13-05-13-31_resnet18_best.pt
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 8/500, batch: 1/4, mean_loss: 42.4741
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 8/500, batch: 2/4, mean_loss: 48.8429
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 8/500, batch: 3/4, mean_loss: 47.8332
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 8/500, batch: 4/4, mean_loss: 63.7535
+torch.Size([10, 512, 11, 16])
+2.33034610748291
+valid >>> epoch: 8/500, mean_loss: 2.3303
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 9/500, batch: 1/4, mean_loss: 13.0388
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 9/500, batch: 2/4, mean_loss: 9.0312
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 9/500, batch: 3/4, mean_loss: 24.7139
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 9/500, batch: 4/4, mean_loss: 25.3329
+torch.Size([10, 512, 11, 16])
+0.22569265961647034
+valid >>> epoch: 9/500, mean_loss: 0.2257
+criteria decreased from 1.9270 to 0.2257, saving best model at D:\Data\cs-8395-dl\model\2020-01-13-05-13-31\2020-01-13-05-13-31_resnet18_best.pt
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 10/500, batch: 1/4, mean_loss: 110.2519
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 10/500, batch: 2/4, mean_loss: 64.4145
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 10/500, batch: 3/4, mean_loss: 57.7761
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 10/500, batch: 4/4, mean_loss: 47.3556
+torch.Size([10, 512, 11, 16])
+9.310301780700684
+valid >>> epoch: 10/500, mean_loss: 9.3103
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 11/500, batch: 1/4, mean_loss: 38.6725
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 11/500, batch: 2/4, mean_loss: 29.1670
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 11/500, batch: 3/4, mean_loss: 24.5605
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 11/500, batch: 4/4, mean_loss: 25.7150
+torch.Size([10, 512, 11, 16])
+5.462085247039795
+valid >>> epoch: 11/500, mean_loss: 5.4621
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 12/500, batch: 1/4, mean_loss: 7.4418
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 12/500, batch: 2/4, mean_loss: 16.8628
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 12/500, batch: 3/4, mean_loss: 23.6124
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 12/500, batch: 4/4, mean_loss: 26.8714
+torch.Size([10, 512, 11, 16])
+6.056121826171875
+valid >>> epoch: 12/500, mean_loss: 6.0561
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 13/500, batch: 1/4, mean_loss: 18.4875
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 13/500, batch: 2/4, mean_loss: 21.2263
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 13/500, batch: 3/4, mean_loss: 16.5475
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 13/500, batch: 4/4, mean_loss: 14.5438
+torch.Size([10, 512, 11, 16])
+3.4377593994140625
+valid >>> epoch: 13/500, mean_loss: 3.4378
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 14/500, batch: 1/4, mean_loss: 16.4645
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 14/500, batch: 2/4, mean_loss: 12.0859
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 14/500, batch: 3/4, mean_loss: 14.8498
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 14/500, batch: 4/4, mean_loss: 16.6703
+torch.Size([10, 512, 11, 16])
+1.448789119720459
+valid >>> epoch: 14/500, mean_loss: 1.4488
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 15/500, batch: 1/4, mean_loss: 2.4033
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 15/500, batch: 2/4, mean_loss: 3.4843
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 15/500, batch: 3/4, mean_loss: 4.3121
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 15/500, batch: 4/4, mean_loss: 5.8092
+torch.Size([10, 512, 11, 16])
+2.1486124992370605
+valid >>> epoch: 15/500, mean_loss: 2.1486
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 16/500, batch: 1/4, mean_loss: 5.5697
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 16/500, batch: 2/4, mean_loss: 3.3655
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 16/500, batch: 3/4, mean_loss: 4.9768
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 16/500, batch: 4/4, mean_loss: 6.5680
+torch.Size([10, 512, 11, 16])
+4.09518575668335
+valid >>> epoch: 16/500, mean_loss: 4.0952
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 17/500, batch: 1/4, mean_loss: 1.5141
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 17/500, batch: 2/4, mean_loss: 1.5431
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 17/500, batch: 3/4, mean_loss: 1.4588
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 17/500, batch: 4/4, mean_loss: 2.4821
+torch.Size([10, 512, 11, 16])
+0.8384675979614258
+valid >>> epoch: 17/500, mean_loss: 0.8385
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 18/500, batch: 1/4, mean_loss: 6.6887
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 18/500, batch: 2/4, mean_loss: 4.7117
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 18/500, batch: 3/4, mean_loss: 3.7268
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 18/500, batch: 4/4, mean_loss: 3.2107
+torch.Size([10, 512, 11, 16])
+0.7099847793579102
+valid >>> epoch: 18/500, mean_loss: 0.7100
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 19/500, batch: 1/4, mean_loss: 2.7433
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 19/500, batch: 2/4, mean_loss: 1.8437
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 19/500, batch: 3/4, mean_loss: 1.4164
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 19/500, batch: 4/4, mean_loss: 2.2983
+torch.Size([10, 512, 11, 16])
+0.4760308265686035
+valid >>> epoch: 19/500, mean_loss: 0.4760
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 20/500, batch: 1/4, mean_loss: 0.9121
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 20/500, batch: 2/4, mean_loss: 1.0694
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 20/500, batch: 3/4, mean_loss: 1.9974
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 20/500, batch: 4/4, mean_loss: 2.1044
+torch.Size([10, 512, 11, 16])
+0.17744030058383942
+valid >>> epoch: 20/500, mean_loss: 0.1774
+criteria decreased from 0.2257 to 0.1774, saving best model at D:\Data\cs-8395-dl\model\2020-01-13-05-13-31\2020-01-13-05-13-31_resnet18_best.pt
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 21/500, batch: 1/4, mean_loss: 0.7607
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 21/500, batch: 2/4, mean_loss: 1.3497
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 21/500, batch: 3/4, mean_loss: 1.5422
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 21/500, batch: 4/4, mean_loss: 1.6047
+torch.Size([10, 512, 11, 16])
+0.5557088255882263
+valid >>> epoch: 21/500, mean_loss: 0.5557
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 22/500, batch: 1/4, mean_loss: 0.8779
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 22/500, batch: 2/4, mean_loss: 1.8147
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 22/500, batch: 3/4, mean_loss: 1.3852
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 22/500, batch: 4/4, mean_loss: 1.6010
+torch.Size([10, 512, 11, 16])
+0.5467254519462585
+valid >>> epoch: 22/500, mean_loss: 0.5467
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 23/500, batch: 1/4, mean_loss: 1.1397
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 23/500, batch: 2/4, mean_loss: 0.9704
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 23/500, batch: 3/4, mean_loss: 0.9586
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 23/500, batch: 4/4, mean_loss: 10.7356
+torch.Size([10, 512, 11, 16])
+1.167169451713562
+valid >>> epoch: 23/500, mean_loss: 1.1672
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 24/500, batch: 1/4, mean_loss: 24.2868
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 24/500, batch: 2/4, mean_loss: 14.7059
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 24/500, batch: 3/4, mean_loss: 11.1028
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 24/500, batch: 4/4, mean_loss: 8.9337
+torch.Size([10, 512, 11, 16])
+0.26285916566848755
+valid >>> epoch: 24/500, mean_loss: 0.2629
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 25/500, batch: 1/4, mean_loss: 7.1930
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 25/500, batch: 2/4, mean_loss: 14.8257
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 25/500, batch: 3/4, mean_loss: 10.6886
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 25/500, batch: 4/4, mean_loss: 9.2825
+torch.Size([10, 512, 11, 16])
+0.4105183780193329
+valid >>> epoch: 25/500, mean_loss: 0.4105
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 26/500, batch: 1/4, mean_loss: 0.7146
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 26/500, batch: 2/4, mean_loss: 1.9326
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 26/500, batch: 3/4, mean_loss: 2.6489
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 26/500, batch: 4/4, mean_loss: 54.6915
+torch.Size([10, 512, 11, 16])
+1.7112175226211548
+valid >>> epoch: 26/500, mean_loss: 1.7112
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 27/500, batch: 1/4, mean_loss: 4.2980
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 27/500, batch: 2/4, mean_loss: 5.7462
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 27/500, batch: 3/4, mean_loss: 9.3017
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 27/500, batch: 4/4, mean_loss: 10.7244
+torch.Size([10, 512, 11, 16])
+1.3356283903121948
+valid >>> epoch: 27/500, mean_loss: 1.3356
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 28/500, batch: 1/4, mean_loss: 5.5767
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 28/500, batch: 2/4, mean_loss: 6.8134
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 28/500, batch: 3/4, mean_loss: 9.0722
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 28/500, batch: 4/4, mean_loss: 7.9200
+torch.Size([10, 512, 11, 16])
+0.1708989143371582
+valid >>> epoch: 28/500, mean_loss: 0.1709
+criteria decreased from 0.1774 to 0.1709, saving best model at D:\Data\cs-8395-dl\model\2020-01-13-05-13-31\2020-01-13-05-13-31_resnet18_best.pt
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 29/500, batch: 1/4, mean_loss: 8.8365
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 29/500, batch: 2/4, mean_loss: 6.5532
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 29/500, batch: 3/4, mean_loss: 5.8849
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 29/500, batch: 4/4, mean_loss: 7.9687
+torch.Size([10, 512, 11, 16])
+0.38868629932403564
+valid >>> epoch: 29/500, mean_loss: 0.3887
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 30/500, batch: 1/4, mean_loss: 0.3806
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 30/500, batch: 2/4, mean_loss: 2.5511
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 30/500, batch: 3/4, mean_loss: 3.9922
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 30/500, batch: 4/4, mean_loss: 8.0381
+torch.Size([10, 512, 11, 16])
+0.34112849831581116
+valid >>> epoch: 30/500, mean_loss: 0.3411
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 31/500, batch: 1/4, mean_loss: 2.9569
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 31/500, batch: 2/4, mean_loss: 1.7855
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 31/500, batch: 3/4, mean_loss: 1.9426
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 31/500, batch: 4/4, mean_loss: 3.0348
+torch.Size([10, 512, 11, 16])
+1.0194942951202393
+valid >>> epoch: 31/500, mean_loss: 1.0195
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 32/500, batch: 1/4, mean_loss: 1.2102
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 32/500, batch: 2/4, mean_loss: 1.6218
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 32/500, batch: 3/4, mean_loss: 2.7898
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 32/500, batch: 4/4, mean_loss: 2.3464
+torch.Size([10, 512, 11, 16])
+0.2832968533039093
+valid >>> epoch: 32/500, mean_loss: 0.2833
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 33/500, batch: 1/4, mean_loss: 0.7844
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 33/500, batch: 2/4, mean_loss: 0.7945
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 33/500, batch: 3/4, mean_loss: 1.6453
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 33/500, batch: 4/4, mean_loss: 2.1895
+torch.Size([10, 512, 11, 16])
+0.06715995818376541
+valid >>> epoch: 33/500, mean_loss: 0.0672
+criteria decreased from 0.1709 to 0.0672, saving best model at D:\Data\cs-8395-dl\model\2020-01-13-05-13-31\2020-01-13-05-13-31_resnet18_best.pt
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 34/500, batch: 1/4, mean_loss: 0.7765
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 34/500, batch: 2/4, mean_loss: 1.4942
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 34/500, batch: 3/4, mean_loss: 1.2691
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 34/500, batch: 4/4, mean_loss: 6.7049
+torch.Size([10, 512, 11, 16])
+0.48380857706069946
+valid >>> epoch: 34/500, mean_loss: 0.4838
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 35/500, batch: 1/4, mean_loss: 2.4155
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 35/500, batch: 2/4, mean_loss: 2.2660
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 35/500, batch: 3/4, mean_loss: 1.8669
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 35/500, batch: 4/4, mean_loss: 2.8576
+torch.Size([10, 512, 11, 16])
+0.11797328293323517
+valid >>> epoch: 35/500, mean_loss: 0.1180
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 36/500, batch: 1/4, mean_loss: 1.2961
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 36/500, batch: 2/4, mean_loss: 1.6435
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 36/500, batch: 3/4, mean_loss: 1.2843
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 36/500, batch: 4/4, mean_loss: 1.5767
+torch.Size([10, 512, 11, 16])
+0.2510695457458496
+valid >>> epoch: 36/500, mean_loss: 0.2511
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 37/500, batch: 1/4, mean_loss: 0.6897
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 37/500, batch: 2/4, mean_loss: 0.5968
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 37/500, batch: 3/4, mean_loss: 0.6074
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 37/500, batch: 4/4, mean_loss: 0.7138
+torch.Size([10, 512, 11, 16])
+0.06525148451328278
+valid >>> epoch: 37/500, mean_loss: 0.0653
+criteria decreased from 0.0672 to 0.0653, saving best model at D:\Data\cs-8395-dl\model\2020-01-13-05-13-31\2020-01-13-05-13-31_resnet18_best.pt
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 38/500, batch: 1/4, mean_loss: 0.4308
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 38/500, batch: 2/4, mean_loss: 0.5165
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 38/500, batch: 3/4, mean_loss: 0.5498
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 38/500, batch: 4/4, mean_loss: 0.5684
+torch.Size([10, 512, 11, 16])
+0.17260614037513733
+valid >>> epoch: 38/500, mean_loss: 0.1726
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 39/500, batch: 1/4, mean_loss: 0.3271
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 39/500, batch: 2/4, mean_loss: 0.3453
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 39/500, batch: 3/4, mean_loss: 0.4754
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 39/500, batch: 4/4, mean_loss: 6.5367
+torch.Size([10, 512, 11, 16])
+0.8369752764701843
+valid >>> epoch: 39/500, mean_loss: 0.8370
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 40/500, batch: 1/4, mean_loss: 0.8991
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 40/500, batch: 2/4, mean_loss: 1.2645
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 40/500, batch: 3/4, mean_loss: 1.4678
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 40/500, batch: 4/4, mean_loss: 1.2888
+torch.Size([10, 512, 11, 16])
+0.6708900332450867
+valid >>> epoch: 40/500, mean_loss: 0.6709
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 41/500, batch: 1/4, mean_loss: 1.6229
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 41/500, batch: 2/4, mean_loss: 1.3555
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 41/500, batch: 3/4, mean_loss: 1.1700
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 41/500, batch: 4/4, mean_loss: 0.9195
+torch.Size([10, 512, 11, 16])
+0.8330335021018982
+valid >>> epoch: 41/500, mean_loss: 0.8330
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 42/500, batch: 1/4, mean_loss: 0.7257
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 42/500, batch: 2/4, mean_loss: 1.3919
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 42/500, batch: 3/4, mean_loss: 1.1673
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 42/500, batch: 4/4, mean_loss: 0.9812
+torch.Size([10, 512, 11, 16])
+0.3730557858943939
+valid >>> epoch: 42/500, mean_loss: 0.3731
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 43/500, batch: 1/4, mean_loss: 2.1977
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 43/500, batch: 2/4, mean_loss: 1.3136
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 43/500, batch: 3/4, mean_loss: 1.0406
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 43/500, batch: 4/4, mean_loss: 1.9562
+torch.Size([10, 512, 11, 16])
+0.6150962710380554
+valid >>> epoch: 43/500, mean_loss: 0.6151
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 44/500, batch: 1/4, mean_loss: 0.4374
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 44/500, batch: 2/4, mean_loss: 0.8928
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 44/500, batch: 3/4, mean_loss: 1.5717
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 44/500, batch: 4/4, mean_loss: 1.5215
+torch.Size([10, 512, 11, 16])
+0.4641938805580139
+valid >>> epoch: 44/500, mean_loss: 0.4642
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 45/500, batch: 1/4, mean_loss: 0.7299
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 45/500, batch: 2/4, mean_loss: 1.6398
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 45/500, batch: 3/4, mean_loss: 1.8458
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 45/500, batch: 4/4, mean_loss: 3.2480
+torch.Size([10, 512, 11, 16])
+1.1455364227294922
+valid >>> epoch: 45/500, mean_loss: 1.1455
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 46/500, batch: 1/4, mean_loss: 0.9768
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 46/500, batch: 2/4, mean_loss: 3.1756
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 46/500, batch: 3/4, mean_loss: 2.9273
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 46/500, batch: 4/4, mean_loss: 2.3631
+torch.Size([10, 512, 11, 16])
+1.8022381067276
+valid >>> epoch: 46/500, mean_loss: 1.8022
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 47/500, batch: 1/4, mean_loss: 2.2245
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 47/500, batch: 2/4, mean_loss: 2.7730
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 47/500, batch: 3/4, mean_loss: 2.4683
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 47/500, batch: 4/4, mean_loss: 1.9495
+torch.Size([10, 512, 11, 16])
+1.6545730829238892
+valid >>> epoch: 47/500, mean_loss: 1.6546
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 48/500, batch: 1/4, mean_loss: 1.0584
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 48/500, batch: 2/4, mean_loss: 1.9036
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 48/500, batch: 3/4, mean_loss: 1.5932
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 48/500, batch: 4/4, mean_loss: 1.6308
+torch.Size([10, 512, 11, 16])
+1.080998420715332
+valid >>> epoch: 48/500, mean_loss: 1.0810
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 49/500, batch: 1/4, mean_loss: 1.0919
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 49/500, batch: 2/4, mean_loss: 1.5696
+torch.Size([32, 512, 11, 16])
+train >>> epoch: 49/500, batch: 3/4, mean_loss: 1.4992
+torch.Size([9, 512, 11, 16])
+train >>> epoch: 49/500, batch: 4/4, mean_loss: 1.2439
+torch.Size([10, 512, 11, 16])
+0.4927844703197479
+valid >>> epoch: 49/500, mean_loss: 0.4928

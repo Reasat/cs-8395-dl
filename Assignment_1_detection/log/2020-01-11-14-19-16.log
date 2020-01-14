@@ -1,0 +1,436 @@
+2020-01-11-14-19-16
+train.py
+--------------------------------------------------------------------------------------------------------------------
+batchSize: 32
+dir_lf: D:\Data\cs-8395-dl
+dir_project: C:\Users\Reasat\Projects\cs-8395-dl\Assignment_1_detection
+encoder: resnet18
+epoch: 100
+folderData: assignment1_data
+lr: 0.001
+resume_from: D:\Data\cs-8395-dl\model\2020-01-11-13-31-47\2020-01-11-13-31-47_resnet18_best.pt
+--------------------------------------------------------------------------------------------------------------------
+creating directory to save model at D:\Data\cs-8395-dl\model\2020-01-11-14-19-16
+loading images to RAM
+loading images to RAM
+freezing feature extracting layers
+ResNet18(
+  (resnet18): ResNet(
+    (conv1): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+    (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu): ReLU(inplace)
+    (maxpool): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+    (layer1): Sequential(
+      (0): BasicBlock(
+        (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+        (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (1): BasicBlock(
+        (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+        (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (layer2): Sequential(
+      (0): BasicBlock(
+        (conv1): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+        (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (downsample): Sequential(
+          (0): Conv2d(64, 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+          (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (1): BasicBlock(
+        (conv1): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+        (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (layer3): Sequential(
+      (0): BasicBlock(
+        (conv1): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (downsample): Sequential(
+          (0): Conv2d(128, 256, kernel_size=(1, 1), stride=(2, 2), bias=False)
+          (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (1): BasicBlock(
+        (conv1): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (layer4): Sequential(
+      (0): BasicBlock(
+        (conv1): Conv2d(256, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+        (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (downsample): Sequential(
+          (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+          (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (1): BasicBlock(
+        (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+        (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (avgpool): AdaptiveAvgPool2d(output_size=(1, 1))
+    (fc): Linear(in_features=512, out_features=1000, bias=True)
+  )
+  (resnet18_fc_stripped): Sequential(
+    (0): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+    (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace)
+    (3): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+    (4): Sequential(
+      (0): BasicBlock(
+        (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+        (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (1): BasicBlock(
+        (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+        (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (5): Sequential(
+      (0): BasicBlock(
+        (conv1): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+        (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (downsample): Sequential(
+          (0): Conv2d(64, 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+          (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (1): BasicBlock(
+        (conv1): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+        (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (6): Sequential(
+      (0): BasicBlock(
+        (conv1): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (downsample): Sequential(
+          (0): Conv2d(128, 256, kernel_size=(1, 1), stride=(2, 2), bias=False)
+          (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (1): BasicBlock(
+        (conv1): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (7): Sequential(
+      (0): BasicBlock(
+        (conv1): Conv2d(256, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+        (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (downsample): Sequential(
+          (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+          (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (1): BasicBlock(
+        (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+        (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (8): AdaptiveAvgPool2d(output_size=(1, 1))
+  )
+  (fc1): Linear(in_features=512, out_features=2, bias=True)
+)
+resuming training from D:\Data\cs-8395-dl\model\2020-01-11-13-31-47\2020-01-11-13-31-47_resnet18_best.pt
+train >>> epoch: 94/193, batch: 1/4, mean_loss: 0.0242
+train >>> epoch: 94/193, batch: 2/4, mean_loss: 0.0215
+train >>> epoch: 94/193, batch: 3/4, mean_loss: 0.0291
+train >>> epoch: 94/193, batch: 4/4, mean_loss: 0.0362
+valid >>> epoch: 94/193, mean_loss: 0.0237
+train >>> epoch: 95/193, batch: 1/4, mean_loss: 0.0377
+train >>> epoch: 95/193, batch: 2/4, mean_loss: 0.0322
+train >>> epoch: 95/193, batch: 3/4, mean_loss: 0.0387
+train >>> epoch: 95/193, batch: 4/4, mean_loss: 0.0388
+valid >>> epoch: 95/193, mean_loss: 0.0159
+train >>> epoch: 96/193, batch: 1/4, mean_loss: 0.0217
+train >>> epoch: 96/193, batch: 2/4, mean_loss: 0.0323
+train >>> epoch: 96/193, batch: 3/4, mean_loss: 0.0278
+train >>> epoch: 96/193, batch: 4/4, mean_loss: 0.0294
+valid >>> epoch: 96/193, mean_loss: 0.0163
+train >>> epoch: 97/193, batch: 1/4, mean_loss: 0.0269
+train >>> epoch: 97/193, batch: 2/4, mean_loss: 0.0253
+train >>> epoch: 97/193, batch: 3/4, mean_loss: 0.0215
+train >>> epoch: 97/193, batch: 4/4, mean_loss: 0.0307
+valid >>> epoch: 97/193, mean_loss: 0.0159
+train >>> epoch: 98/193, batch: 1/4, mean_loss: 0.0266
+train >>> epoch: 98/193, batch: 2/4, mean_loss: 0.0276
+train >>> epoch: 98/193, batch: 3/4, mean_loss: 0.0314
+train >>> epoch: 98/193, batch: 4/4, mean_loss: 0.0312
+valid >>> epoch: 98/193, mean_loss: 0.0141
+criteria decreased from 0.0158 to 0.0141, saving best model at D:\Data\cs-8395-dl\model\2020-01-11-14-19-16\2020-01-11-14-19-16_resnet18_best.pt
+train >>> epoch: 99/193, batch: 1/4, mean_loss: 0.0223
+train >>> epoch: 99/193, batch: 2/4, mean_loss: 0.0239
+train >>> epoch: 99/193, batch: 3/4, mean_loss: 0.0241
+train >>> epoch: 99/193, batch: 4/4, mean_loss: 0.0336
+valid >>> epoch: 99/193, mean_loss: 0.0238
+train >>> epoch: 100/193, batch: 1/4, mean_loss: 0.0222
+train >>> epoch: 100/193, batch: 2/4, mean_loss: 0.0266
+train >>> epoch: 100/193, batch: 3/4, mean_loss: 0.0240
+train >>> epoch: 100/193, batch: 4/4, mean_loss: 0.0327
+valid >>> epoch: 100/193, mean_loss: 0.0151
+train >>> epoch: 101/193, batch: 1/4, mean_loss: 0.0217
+train >>> epoch: 101/193, batch: 2/4, mean_loss: 0.0294
+train >>> epoch: 101/193, batch: 3/4, mean_loss: 0.0316
+train >>> epoch: 101/193, batch: 4/4, mean_loss: 0.0339
+valid >>> epoch: 101/193, mean_loss: 0.0186
+train >>> epoch: 102/193, batch: 1/4, mean_loss: 0.0289
+train >>> epoch: 102/193, batch: 2/4, mean_loss: 0.0245
+train >>> epoch: 102/193, batch: 3/4, mean_loss: 0.0272
+train >>> epoch: 102/193, batch: 4/4, mean_loss: 0.0389
+valid >>> epoch: 102/193, mean_loss: 0.0156
+train >>> epoch: 103/193, batch: 1/4, mean_loss: 0.0193
+train >>> epoch: 103/193, batch: 2/4, mean_loss: 0.0222
+train >>> epoch: 103/193, batch: 3/4, mean_loss: 0.0225
+train >>> epoch: 103/193, batch: 4/4, mean_loss: 0.0344
+valid >>> epoch: 103/193, mean_loss: 0.0143
+train >>> epoch: 104/193, batch: 1/4, mean_loss: 0.0189
+train >>> epoch: 104/193, batch: 2/4, mean_loss: 0.0359
+train >>> epoch: 104/193, batch: 3/4, mean_loss: 0.0381
+train >>> epoch: 104/193, batch: 4/4, mean_loss: 0.0344
+valid >>> epoch: 104/193, mean_loss: 0.0173
+train >>> epoch: 105/193, batch: 1/4, mean_loss: 0.0156
+train >>> epoch: 105/193, batch: 2/4, mean_loss: 0.0218
+train >>> epoch: 105/193, batch: 3/4, mean_loss: 0.0280
+train >>> epoch: 105/193, batch: 4/4, mean_loss: 0.0469
+valid >>> epoch: 105/193, mean_loss: 0.0203
+train >>> epoch: 106/193, batch: 1/4, mean_loss: 0.0283
+train >>> epoch: 106/193, batch: 2/4, mean_loss: 0.0420
+train >>> epoch: 106/193, batch: 3/4, mean_loss: 0.0391
+train >>> epoch: 106/193, batch: 4/4, mean_loss: 0.0418
+valid >>> epoch: 106/193, mean_loss: 0.0212
+train >>> epoch: 107/193, batch: 1/4, mean_loss: 0.0318
+train >>> epoch: 107/193, batch: 2/4, mean_loss: 0.0377
+train >>> epoch: 107/193, batch: 3/4, mean_loss: 0.0364
+train >>> epoch: 107/193, batch: 4/4, mean_loss: 0.0388
+valid >>> epoch: 107/193, mean_loss: 0.0153
+train >>> epoch: 108/193, batch: 1/4, mean_loss: 0.0178
+train >>> epoch: 108/193, batch: 2/4, mean_loss: 0.0268
+train >>> epoch: 108/193, batch: 3/4, mean_loss: 0.0286
+train >>> epoch: 108/193, batch: 4/4, mean_loss: 0.0496
+valid >>> epoch: 108/193, mean_loss: 0.0130
+criteria decreased from 0.0141 to 0.0130, saving best model at D:\Data\cs-8395-dl\model\2020-01-11-14-19-16\2020-01-11-14-19-16_resnet18_best.pt
+train >>> epoch: 109/193, batch: 1/4, mean_loss: 0.0213
+train >>> epoch: 109/193, batch: 2/4, mean_loss: 0.0436
+train >>> epoch: 109/193, batch: 3/4, mean_loss: 0.0525
+train >>> epoch: 109/193, batch: 4/4, mean_loss: 0.0552
+valid >>> epoch: 109/193, mean_loss: 0.0199
+train >>> epoch: 110/193, batch: 1/4, mean_loss: 0.0377
+train >>> epoch: 110/193, batch: 2/4, mean_loss: 0.0289
+train >>> epoch: 110/193, batch: 3/4, mean_loss: 0.0390
+train >>> epoch: 110/193, batch: 4/4, mean_loss: 0.0454
+valid >>> epoch: 110/193, mean_loss: 0.0273
+train >>> epoch: 111/193, batch: 1/4, mean_loss: 0.0399
+train >>> epoch: 111/193, batch: 2/4, mean_loss: 0.0395
+train >>> epoch: 111/193, batch: 3/4, mean_loss: 0.0375
+train >>> epoch: 111/193, batch: 4/4, mean_loss: 0.0402
+valid >>> epoch: 111/193, mean_loss: 0.0214
+train >>> epoch: 112/193, batch: 1/4, mean_loss: 0.0264
+train >>> epoch: 112/193, batch: 2/4, mean_loss: 0.0292
+train >>> epoch: 112/193, batch: 3/4, mean_loss: 0.0280
+train >>> epoch: 112/193, batch: 4/4, mean_loss: 0.0324
+valid >>> epoch: 112/193, mean_loss: 0.0232
+train >>> epoch: 113/193, batch: 1/4, mean_loss: 0.0290
+train >>> epoch: 113/193, batch: 2/4, mean_loss: 0.0250
+train >>> epoch: 113/193, batch: 3/4, mean_loss: 0.0280
+train >>> epoch: 113/193, batch: 4/4, mean_loss: 0.0329
+valid >>> epoch: 113/193, mean_loss: 0.0176
+train >>> epoch: 114/193, batch: 1/4, mean_loss: 0.0287
+train >>> epoch: 114/193, batch: 2/4, mean_loss: 0.0258
+train >>> epoch: 114/193, batch: 3/4, mean_loss: 0.0424
+train >>> epoch: 114/193, batch: 4/4, mean_loss: 0.0519
+valid >>> epoch: 114/193, mean_loss: 0.0252
+train >>> epoch: 115/193, batch: 1/4, mean_loss: 0.0285
+train >>> epoch: 115/193, batch: 2/4, mean_loss: 0.0504
+train >>> epoch: 115/193, batch: 3/4, mean_loss: 0.0574
+train >>> epoch: 115/193, batch: 4/4, mean_loss: 0.0497
+valid >>> epoch: 115/193, mean_loss: 0.0128
+criteria decreased from 0.0130 to 0.0128, saving best model at D:\Data\cs-8395-dl\model\2020-01-11-14-19-16\2020-01-11-14-19-16_resnet18_best.pt
+train >>> epoch: 116/193, batch: 1/4, mean_loss: 0.0183
+train >>> epoch: 116/193, batch: 2/4, mean_loss: 0.0209
+train >>> epoch: 116/193, batch: 3/4, mean_loss: 0.0233
+train >>> epoch: 116/193, batch: 4/4, mean_loss: 0.0264
+valid >>> epoch: 116/193, mean_loss: 0.0166
+train >>> epoch: 117/193, batch: 1/4, mean_loss: 0.0260
+train >>> epoch: 117/193, batch: 2/4, mean_loss: 0.0205
+train >>> epoch: 117/193, batch: 3/4, mean_loss: 0.0218
+train >>> epoch: 117/193, batch: 4/4, mean_loss: 0.0293
+valid >>> epoch: 117/193, mean_loss: 0.0163
+train >>> epoch: 118/193, batch: 1/4, mean_loss: 0.0149
+train >>> epoch: 118/193, batch: 2/4, mean_loss: 0.0257
+train >>> epoch: 118/193, batch: 3/4, mean_loss: 0.0238
+train >>> epoch: 118/193, batch: 4/4, mean_loss: 0.0258
+valid >>> epoch: 118/193, mean_loss: 0.0210
+train >>> epoch: 119/193, batch: 1/4, mean_loss: 0.0231
+train >>> epoch: 119/193, batch: 2/4, mean_loss: 0.0195
+train >>> epoch: 119/193, batch: 3/4, mean_loss: 0.0195
+train >>> epoch: 119/193, batch: 4/4, mean_loss: 0.0198
+valid >>> epoch: 119/193, mean_loss: 0.0265
+train >>> epoch: 120/193, batch: 1/4, mean_loss: 0.0303
+train >>> epoch: 120/193, batch: 2/4, mean_loss: 0.0292
+train >>> epoch: 120/193, batch: 3/4, mean_loss: 0.0411
+train >>> epoch: 120/193, batch: 4/4, mean_loss: 0.0401
+valid >>> epoch: 120/193, mean_loss: 0.0243
+train >>> epoch: 121/193, batch: 1/4, mean_loss: 0.0299
+train >>> epoch: 121/193, batch: 2/4, mean_loss: 0.0390
+train >>> epoch: 121/193, batch: 3/4, mean_loss: 0.0409
+train >>> epoch: 121/193, batch: 4/4, mean_loss: 0.0373
+valid >>> epoch: 121/193, mean_loss: 0.0175
+train >>> epoch: 122/193, batch: 1/4, mean_loss: 0.0288
+train >>> epoch: 122/193, batch: 2/4, mean_loss: 0.0273
+train >>> epoch: 122/193, batch: 3/4, mean_loss: 0.0253
+train >>> epoch: 122/193, batch: 4/4, mean_loss: 0.0239
+valid >>> epoch: 122/193, mean_loss: 0.0122
+criteria decreased from 0.0128 to 0.0122, saving best model at D:\Data\cs-8395-dl\model\2020-01-11-14-19-16\2020-01-11-14-19-16_resnet18_best.pt
+train >>> epoch: 123/193, batch: 1/4, mean_loss: 0.0195
+train >>> epoch: 123/193, batch: 2/4, mean_loss: 0.0285
+train >>> epoch: 123/193, batch: 3/4, mean_loss: 0.0391
+train >>> epoch: 123/193, batch: 4/4, mean_loss: 0.0426
+valid >>> epoch: 123/193, mean_loss: 0.0125
+train >>> epoch: 124/193, batch: 1/4, mean_loss: 0.0201
+train >>> epoch: 124/193, batch: 2/4, mean_loss: 0.0260
+train >>> epoch: 124/193, batch: 3/4, mean_loss: 0.0234
+train >>> epoch: 124/193, batch: 4/4, mean_loss: 0.0274
+valid >>> epoch: 124/193, mean_loss: 0.0120
+criteria decreased from 0.0122 to 0.0120, saving best model at D:\Data\cs-8395-dl\model\2020-01-11-14-19-16\2020-01-11-14-19-16_resnet18_best.pt
+train >>> epoch: 125/193, batch: 1/4, mean_loss: 0.0173
+train >>> epoch: 125/193, batch: 2/4, mean_loss: 0.0152
+train >>> epoch: 125/193, batch: 3/4, mean_loss: 0.0170
+train >>> epoch: 125/193, batch: 4/4, mean_loss: 0.0493
+valid >>> epoch: 125/193, mean_loss: 0.0139
+train >>> epoch: 126/193, batch: 1/4, mean_loss: 0.0223
+train >>> epoch: 126/193, batch: 2/4, mean_loss: 0.0290
+train >>> epoch: 126/193, batch: 3/4, mean_loss: 0.0343
+train >>> epoch: 126/193, batch: 4/4, mean_loss: 0.0422
+valid >>> epoch: 126/193, mean_loss: 0.0111
+criteria decreased from 0.0120 to 0.0111, saving best model at D:\Data\cs-8395-dl\model\2020-01-11-14-19-16\2020-01-11-14-19-16_resnet18_best.pt
+train >>> epoch: 127/193, batch: 1/4, mean_loss: 0.0200
+train >>> epoch: 127/193, batch: 2/4, mean_loss: 0.0197
+train >>> epoch: 127/193, batch: 3/4, mean_loss: 0.0217
+train >>> epoch: 127/193, batch: 4/4, mean_loss: 0.0297
+valid >>> epoch: 127/193, mean_loss: 0.0176
+train >>> epoch: 128/193, batch: 1/4, mean_loss: 0.0347
+train >>> epoch: 128/193, batch: 2/4, mean_loss: 0.0268
+train >>> epoch: 128/193, batch: 3/4, mean_loss: 0.0267
+train >>> epoch: 128/193, batch: 4/4, mean_loss: 0.0482
+valid >>> epoch: 128/193, mean_loss: 0.0174
+train >>> epoch: 129/193, batch: 1/4, mean_loss: 0.0159
+train >>> epoch: 129/193, batch: 2/4, mean_loss: 0.0370
+train >>> epoch: 129/193, batch: 3/4, mean_loss: 0.0460
+train >>> epoch: 129/193, batch: 4/4, mean_loss: 0.0610
+valid >>> epoch: 129/193, mean_loss: 0.0174
+train >>> epoch: 130/193, batch: 1/4, mean_loss: 0.0185
+train >>> epoch: 130/193, batch: 2/4, mean_loss: 0.0574
+train >>> epoch: 130/193, batch: 3/4, mean_loss: 0.0498
+train >>> epoch: 130/193, batch: 4/4, mean_loss: 0.0475
+valid >>> epoch: 130/193, mean_loss: 0.0117
+train >>> epoch: 131/193, batch: 1/4, mean_loss: 0.0113
+train >>> epoch: 131/193, batch: 2/4, mean_loss: 0.0207
+train >>> epoch: 131/193, batch: 3/4, mean_loss: 0.0268
+train >>> epoch: 131/193, batch: 4/4, mean_loss: 0.0328
+valid >>> epoch: 131/193, mean_loss: 0.0123
+train >>> epoch: 132/193, batch: 1/4, mean_loss: 0.0194
+train >>> epoch: 132/193, batch: 2/4, mean_loss: 0.0218
+train >>> epoch: 132/193, batch: 3/4, mean_loss: 0.0208
+train >>> epoch: 132/193, batch: 4/4, mean_loss: 0.0335
+valid >>> epoch: 132/193, mean_loss: 0.0205
+train >>> epoch: 133/193, batch: 1/4, mean_loss: 0.0192
+train >>> epoch: 133/193, batch: 2/4, mean_loss: 0.0343
+train >>> epoch: 133/193, batch: 3/4, mean_loss: 0.0319
+train >>> epoch: 133/193, batch: 4/4, mean_loss: 0.0368
+valid >>> epoch: 133/193, mean_loss: 0.0196
+train >>> epoch: 134/193, batch: 1/4, mean_loss: 0.0210
+train >>> epoch: 134/193, batch: 2/4, mean_loss: 0.0346
+train >>> epoch: 134/193, batch: 3/4, mean_loss: 0.0325
+train >>> epoch: 134/193, batch: 4/4, mean_loss: 0.0336
+valid >>> epoch: 134/193, mean_loss: 0.0130
+train >>> epoch: 135/193, batch: 1/4, mean_loss: 0.0225
+train >>> epoch: 135/193, batch: 2/4, mean_loss: 0.0207
+train >>> epoch: 135/193, batch: 3/4, mean_loss: 0.0328
+train >>> epoch: 135/193, batch: 4/4, mean_loss: 0.0448
+valid >>> epoch: 135/193, mean_loss: 0.0117
+train >>> epoch: 136/193, batch: 1/4, mean_loss: 0.0195
+train >>> epoch: 136/193, batch: 2/4, mean_loss: 0.0258
+train >>> epoch: 136/193, batch: 3/4, mean_loss: 0.0411
+train >>> epoch: 136/193, batch: 4/4, mean_loss: 0.0391
+valid >>> epoch: 136/193, mean_loss: 0.0097
+criteria decreased from 0.0111 to 0.0097, saving best model at D:\Data\cs-8395-dl\model\2020-01-11-14-19-16\2020-01-11-14-19-16_resnet18_best.pt
+train >>> epoch: 137/193, batch: 1/4, mean_loss: 0.0163
+train >>> epoch: 137/193, batch: 2/4, mean_loss: 0.0247
+train >>> epoch: 137/193, batch: 3/4, mean_loss: 0.0387
+train >>> epoch: 137/193, batch: 4/4, mean_loss: 0.0379
+valid >>> epoch: 137/193, mean_loss: 0.0086
+criteria decreased from 0.0097 to 0.0086, saving best model at D:\Data\cs-8395-dl\model\2020-01-11-14-19-16\2020-01-11-14-19-16_resnet18_best.pt
+train >>> epoch: 138/193, batch: 1/4, mean_loss: 0.0176
+train >>> epoch: 138/193, batch: 2/4, mean_loss: 0.0198
+train >>> epoch: 138/193, batch: 3/4, mean_loss: 0.0287
+train >>> epoch: 138/193, batch: 4/4, mean_loss: 0.0317
+valid >>> epoch: 138/193, mean_loss: 0.0215
+train >>> epoch: 139/193, batch: 1/4, mean_loss: 0.0169
+train >>> epoch: 139/193, batch: 2/4, mean_loss: 0.0268
+train >>> epoch: 139/193, batch: 3/4, mean_loss: 0.0245
+train >>> epoch: 139/193, batch: 4/4, mean_loss: 0.0401
+valid >>> epoch: 139/193, mean_loss: 0.0244
+train >>> epoch: 140/193, batch: 1/4, mean_loss: 0.0368
+train >>> epoch: 140/193, batch: 2/4, mean_loss: 0.0450
+train >>> epoch: 140/193, batch: 3/4, mean_loss: 0.0555
+train >>> epoch: 140/193, batch: 4/4, mean_loss: 0.0530
+valid >>> epoch: 140/193, mean_loss: 0.0192
+train >>> epoch: 141/193, batch: 1/4, mean_loss: 0.0333
+train >>> epoch: 141/193, batch: 2/4, mean_loss: 0.0442
+train >>> epoch: 141/193, batch: 3/4, mean_loss: 0.0401
+train >>> epoch: 141/193, batch: 4/4, mean_loss: 0.0462
+valid >>> epoch: 141/193, mean_loss: 0.0118
+train >>> epoch: 142/193, batch: 1/4, mean_loss: 0.0138

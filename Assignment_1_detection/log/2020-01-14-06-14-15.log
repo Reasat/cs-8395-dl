@@ -1,0 +1,276 @@
+2020-01-14-06-14-15
+train_hm.py
+--------------------------------------------------------------------------------------------------------------------
+alpha: 0.9
+batchSize: 16
+bottleneckFeatures: 0
+dir_lf: D:\Data\cs-8395-dl
+dir_project: C:\Users\Reasat\Projects\cs-8395-dl\Assignment_1_detection
+encoder: unet-vgg11
+epoch: 100
+folderData: assignment1_data
+gamma: 2
+lr: 0.001
+resume_from: None
+--------------------------------------------------------------------------------------------------------------------
+creating directory to save model at D:\Data\cs-8395-dl\model\2020-01-14-06-14-15
+loading images to RAM
+train samples 105
+loading images to RAM
+validation samples 10
+using pretrained (ImageNet) vgg11 as encoder
+UNet11(
+  (pool): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (encoder): Sequential(
+    (0): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU(inplace)
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): ReLU(inplace)
+    (5): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (6): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (7): ReLU(inplace)
+    (8): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (9): ReLU(inplace)
+    (10): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (11): Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (12): ReLU(inplace)
+    (13): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (14): ReLU(inplace)
+    (15): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (16): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (17): ReLU(inplace)
+    (18): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (19): ReLU(inplace)
+    (20): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (relu): ReLU(inplace)
+  (conv1): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv2): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv3s): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv3): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv4s): Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv4): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv5s): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv5): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (center): DecoderBlock(
+    (block): Sequential(
+      (0): ConvRelu(
+        (conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (activation): ReLU(inplace)
+      )
+      (1): ConvTranspose2d(512, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), output_padding=(1, 1))
+      (2): ReLU(inplace)
+    )
+  )
+  (dec5): DecoderBlock(
+    (block): Sequential(
+      (0): ConvRelu(
+        (conv): Conv2d(768, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (activation): ReLU(inplace)
+      )
+      (1): ConvTranspose2d(512, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), output_padding=(1, 1))
+      (2): ReLU(inplace)
+    )
+  )
+  (dec4): DecoderBlock(
+    (block): Sequential(
+      (0): ConvRelu(
+        (conv): Conv2d(768, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (activation): ReLU(inplace)
+      )
+      (1): ConvTranspose2d(512, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), output_padding=(1, 1))
+      (2): ReLU(inplace)
+    )
+  )
+  (dec3): DecoderBlock(
+    (block): Sequential(
+      (0): ConvRelu(
+        (conv): Conv2d(384, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (activation): ReLU(inplace)
+      )
+      (1): ConvTranspose2d(256, 64, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), output_padding=(1, 1))
+      (2): ReLU(inplace)
+    )
+  )
+  (dec2): DecoderBlock(
+    (block): Sequential(
+      (0): ConvRelu(
+        (conv): Conv2d(192, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (activation): ReLU(inplace)
+      )
+      (1): ConvTranspose2d(128, 32, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), output_padding=(1, 1))
+      (2): ReLU(inplace)
+    )
+  )
+  (dec1): ConvRelu(
+    (conv): Conv2d(96, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (activation): ReLU(inplace)
+  )
+  (final): Conv2d(32, 1, kernel_size=(1, 1), stride=(1, 1))
+)
+train >>> epoch: 1/100, batch: 1/7, mean_loss: 260411.6601
+train >>> epoch: 1/100, batch: 2/7, mean_loss: 233186.2562
+train >>> epoch: 1/100, batch: 3/7, mean_loss: 279938.4090
+train >>> epoch: 1/100, batch: 4/7, mean_loss: 246723.4642
+train >>> epoch: 1/100, batch: 5/7, mean_loss: 227020.2433
+train >>> epoch: 1/100, batch: 6/7, mean_loss: 211859.1650
+train >>> epoch: 1/100, batch: 7/7, mean_loss: 187505.3550
+valid >>> epoch: 1/100, mean_loss: 48263.8965
+criteria decreased from inf to 48263.8965, saving best model at D:\Data\cs-8395-dl\model\2020-01-14-06-14-15\2020-01-14-06-14-15_unet-vgg11_best.pt
+train >>> epoch: 2/100, batch: 1/7, mean_loss: 118194.3367
+train >>> epoch: 2/100, batch: 2/7, mean_loss: 120119.2842
+train >>> epoch: 2/100, batch: 3/7, mean_loss: 117657.6722
+train >>> epoch: 2/100, batch: 4/7, mean_loss: 115663.3845
+train >>> epoch: 2/100, batch: 5/7, mean_loss: 114758.2705
+train >>> epoch: 2/100, batch: 6/7, mean_loss: 113957.8657
+train >>> epoch: 2/100, batch: 7/7, mean_loss: 102954.2468
+valid >>> epoch: 2/100, mean_loss: 46017.4854
+criteria decreased from 48263.8965 to 46017.4854, saving best model at D:\Data\cs-8395-dl\model\2020-01-14-06-14-15\2020-01-14-06-14-15_unet-vgg11_best.pt
+train >>> epoch: 3/100, batch: 1/7, mean_loss: 112853.9318
+train >>> epoch: 3/100, batch: 2/7, mean_loss: 112047.7125
+train >>> epoch: 3/100, batch: 3/7, mean_loss: 111961.2894
+train >>> epoch: 3/100, batch: 4/7, mean_loss: 111113.7427
+train >>> epoch: 3/100, batch: 5/7, mean_loss: 110620.3181
+train >>> epoch: 3/100, batch: 6/7, mean_loss: 110151.1041
+train >>> epoch: 3/100, batch: 7/7, mean_loss: 99309.2805
+valid >>> epoch: 3/100, mean_loss: 43062.8671
+criteria decreased from 46017.4854 to 43062.8671, saving best model at D:\Data\cs-8395-dl\model\2020-01-14-06-14-15\2020-01-14-06-14-15_unet-vgg11_best.pt
+train >>> epoch: 4/100, batch: 1/7, mean_loss: 106717.3778
+train >>> epoch: 4/100, batch: 2/7, mean_loss: 106357.1159
+train >>> epoch: 4/100, batch: 3/7, mean_loss: 106042.5828
+train >>> epoch: 4/100, batch: 4/7, mean_loss: 105952.8375
+train >>> epoch: 4/100, batch: 5/7, mean_loss: 105440.8476
+train >>> epoch: 4/100, batch: 6/7, mean_loss: 105357.3480
+train >>> epoch: 4/100, batch: 7/7, mean_loss: 94897.6211
+valid >>> epoch: 4/100, mean_loss: 40842.6333
+criteria decreased from 43062.8671 to 40842.6333, saving best model at D:\Data\cs-8395-dl\model\2020-01-14-06-14-15\2020-01-14-06-14-15_unet-vgg11_best.pt
+train >>> epoch: 5/100, batch: 1/7, mean_loss: 102757.6097
+train >>> epoch: 5/100, batch: 2/7, mean_loss: 102805.3113
+train >>> epoch: 5/100, batch: 3/7, mean_loss: 102666.9816
+train >>> epoch: 5/100, batch: 4/7, mean_loss: 102700.1058
+train >>> epoch: 5/100, batch: 5/7, mean_loss: 102199.5080
+train >>> epoch: 5/100, batch: 6/7, mean_loss: 102041.7114
+train >>> epoch: 5/100, batch: 7/7, mean_loss: 92034.6755
+valid >>> epoch: 5/100, mean_loss: 38928.2803
+criteria decreased from 40842.6333 to 38928.2803, saving best model at D:\Data\cs-8395-dl\model\2020-01-14-06-14-15\2020-01-14-06-14-15_unet-vgg11_best.pt
+train >>> epoch: 6/100, batch: 1/7, mean_loss: 101357.7651
+train >>> epoch: 6/100, batch: 2/7, mean_loss: 100826.0759
+train >>> epoch: 6/100, batch: 3/7, mean_loss: 100753.7417
+train >>> epoch: 6/100, batch: 4/7, mean_loss: 99868.5661
+train >>> epoch: 6/100, batch: 5/7, mean_loss: 100401.8753
+train >>> epoch: 6/100, batch: 6/7, mean_loss: 100393.4750
+train >>> epoch: 6/100, batch: 7/7, mean_loss: 90423.9228
+valid >>> epoch: 6/100, mean_loss: 37717.8728
+criteria decreased from 38928.2803 to 37717.8728, saving best model at D:\Data\cs-8395-dl\model\2020-01-14-06-14-15\2020-01-14-06-14-15_unet-vgg11_best.pt
+train >>> epoch: 7/100, batch: 1/7, mean_loss: 99551.4829
+train >>> epoch: 7/100, batch: 2/7, mean_loss: 99893.1511
+train >>> epoch: 7/100, batch: 3/7, mean_loss: 99267.1993
+train >>> epoch: 7/100, batch: 4/7, mean_loss: 99655.6647
+train >>> epoch: 7/100, batch: 5/7, mean_loss: 99960.4267
+train >>> epoch: 7/100, batch: 6/7, mean_loss: 100068.0792
+train >>> epoch: 7/100, batch: 7/7, mean_loss: 90277.7379
+valid >>> epoch: 7/100, mean_loss: 38355.3597
+train >>> epoch: 8/100, batch: 1/7, mean_loss: 101191.9366
+train >>> epoch: 8/100, batch: 2/7, mean_loss: 101647.1400
+train >>> epoch: 8/100, batch: 3/7, mean_loss: 101513.4158
+train >>> epoch: 8/100, batch: 4/7, mean_loss: 100998.1013
+train >>> epoch: 8/100, batch: 5/7, mean_loss: 100588.2194
+train >>> epoch: 8/100, batch: 6/7, mean_loss: 100219.1203
+train >>> epoch: 8/100, batch: 7/7, mean_loss: 90690.1894
+valid >>> epoch: 8/100, mean_loss: 37841.4404
+train >>> epoch: 9/100, batch: 1/7, mean_loss: 99438.2357
+train >>> epoch: 9/100, batch: 2/7, mean_loss: 99791.8933
+train >>> epoch: 9/100, batch: 3/7, mean_loss: 99451.6095
+train >>> epoch: 9/100, batch: 4/7, mean_loss: 99238.8811
+train >>> epoch: 9/100, batch: 5/7, mean_loss: 99280.5385
+train >>> epoch: 9/100, batch: 6/7, mean_loss: 98917.4508
+train >>> epoch: 9/100, batch: 7/7, mean_loss: 89003.8943
+valid >>> epoch: 9/100, mean_loss: 36273.9813
+criteria decreased from 37717.8728 to 36273.9813, saving best model at D:\Data\cs-8395-dl\model\2020-01-14-06-14-15\2020-01-14-06-14-15_unet-vgg11_best.pt
+train >>> epoch: 10/100, batch: 1/7, mean_loss: 97831.2542
+train >>> epoch: 10/100, batch: 2/7, mean_loss: 98788.7140
+train >>> epoch: 10/100, batch: 3/7, mean_loss: 97223.0583
+train >>> epoch: 10/100, batch: 4/7, mean_loss: 100970.8253
+train >>> epoch: 10/100, batch: 5/7, mean_loss: 100021.7309
+train >>> epoch: 10/100, batch: 6/7, mean_loss: 100259.5865
+train >>> epoch: 10/100, batch: 7/7, mean_loss: 90429.0096
+valid >>> epoch: 10/100, mean_loss: 38093.3594
+train >>> epoch: 11/100, batch: 1/7, mean_loss: 99060.9040
+train >>> epoch: 11/100, batch: 2/7, mean_loss: 99267.4110
+train >>> epoch: 11/100, batch: 3/7, mean_loss: 99518.9626
+train >>> epoch: 11/100, batch: 4/7, mean_loss: 99901.6785
+train >>> epoch: 11/100, batch: 5/7, mean_loss: 99827.0131
+train >>> epoch: 11/100, batch: 6/7, mean_loss: 99859.6241
+train >>> epoch: 11/100, batch: 7/7, mean_loss: 90122.4903
+valid >>> epoch: 11/100, mean_loss: 37951.7133
+train >>> epoch: 12/100, batch: 1/7, mean_loss: 99360.3255
+train >>> epoch: 12/100, batch: 2/7, mean_loss: 98953.3616
+train >>> epoch: 12/100, batch: 3/7, mean_loss: 99345.3685
+train >>> epoch: 12/100, batch: 4/7, mean_loss: 99779.7892
+train >>> epoch: 12/100, batch: 5/7, mean_loss: 99570.1483
+train >>> epoch: 12/100, batch: 6/7, mean_loss: 99043.8840
+train >>> epoch: 12/100, batch: 7/7, mean_loss: 89140.1440
+valid >>> epoch: 12/100, mean_loss: 37189.5655
+train >>> epoch: 13/100, batch: 1/7, mean_loss: 96657.5468
+train >>> epoch: 13/100, batch: 2/7, mean_loss: 97243.6827
+train >>> epoch: 13/100, batch: 3/7, mean_loss: 97407.1402
+train >>> epoch: 13/100, batch: 4/7, mean_loss: 97181.7220
+train >>> epoch: 13/100, batch: 5/7, mean_loss: 97155.9624
+train >>> epoch: 13/100, batch: 6/7, mean_loss: 96727.0645
+train >>> epoch: 13/100, batch: 7/7, mean_loss: 87334.4208
+valid >>> epoch: 13/100, mean_loss: 36933.1949
+train >>> epoch: 14/100, batch: 1/7, mean_loss: 96503.0437
+train >>> epoch: 14/100, batch: 2/7, mean_loss: 95865.3668
+train >>> epoch: 14/100, batch: 3/7, mean_loss: 96755.1247
+train >>> epoch: 14/100, batch: 4/7, mean_loss: 95919.8163
+train >>> epoch: 14/100, batch: 5/7, mean_loss: 95664.1986
+train >>> epoch: 14/100, batch: 6/7, mean_loss: 95325.3553
+train >>> epoch: 14/100, batch: 7/7, mean_loss: 86100.9548
+valid >>> epoch: 14/100, mean_loss: 36076.9795
+criteria decreased from 36273.9813 to 36076.9795, saving best model at D:\Data\cs-8395-dl\model\2020-01-14-06-14-15\2020-01-14-06-14-15_unet-vgg11_best.pt
+train >>> epoch: 15/100, batch: 1/7, mean_loss: 98277.5915
+train >>> epoch: 15/100, batch: 2/7, mean_loss: 94976.8854
+train >>> epoch: 15/100, batch: 3/7, mean_loss: 94224.4359
+train >>> epoch: 15/100, batch: 4/7, mean_loss: 95868.4749
+train >>> epoch: 15/100, batch: 5/7, mean_loss: 94768.7465
+train >>> epoch: 15/100, batch: 6/7, mean_loss: 94342.0534
+train >>> epoch: 15/100, batch: 7/7, mean_loss: 84909.6817
+valid >>> epoch: 15/100, mean_loss: 35466.0153
+criteria decreased from 36076.9795 to 35466.0153, saving best model at D:\Data\cs-8395-dl\model\2020-01-14-06-14-15\2020-01-14-06-14-15_unet-vgg11_best.pt
+train >>> epoch: 16/100, batch: 1/7, mean_loss: 91771.1218
+train >>> epoch: 16/100, batch: 2/7, mean_loss: 94198.3682
+train >>> epoch: 16/100, batch: 3/7, mean_loss: 93064.7049
+train >>> epoch: 16/100, batch: 4/7, mean_loss: 92459.0000
+train >>> epoch: 16/100, batch: 5/7, mean_loss: 92633.9555
+train >>> epoch: 16/100, batch: 6/7, mean_loss: 93182.6500
+train >>> epoch: 16/100, batch: 7/7, mean_loss: 83964.2662
+valid >>> epoch: 16/100, mean_loss: 35446.5365
+criteria decreased from 35466.0153 to 35446.5365, saving best model at D:\Data\cs-8395-dl\model\2020-01-14-06-14-15\2020-01-14-06-14-15_unet-vgg11_best.pt
+train >>> epoch: 17/100, batch: 1/7, mean_loss: 91201.6109
+train >>> epoch: 17/100, batch: 2/7, mean_loss: 90845.7125
+train >>> epoch: 17/100, batch: 3/7, mean_loss: 91451.9702
+train >>> epoch: 17/100, batch: 4/7, mean_loss: 92009.9916
+train >>> epoch: 17/100, batch: 5/7, mean_loss: 91570.1084
+train >>> epoch: 17/100, batch: 6/7, mean_loss: 92147.4937
+train >>> epoch: 17/100, batch: 7/7, mean_loss: 83270.6444
+valid >>> epoch: 17/100, mean_loss: 35058.2776
+criteria decreased from 35446.5365 to 35058.2776, saving best model at D:\Data\cs-8395-dl\model\2020-01-14-06-14-15\2020-01-14-06-14-15_unet-vgg11_best.pt
+train >>> epoch: 18/100, batch: 1/7, mean_loss: 88741.7523
+train >>> epoch: 18/100, batch: 2/7, mean_loss: 89715.0344
+train >>> epoch: 18/100, batch: 3/7, mean_loss: 91497.3946
+train >>> epoch: 18/100, batch: 4/7, mean_loss: 91895.6417
+train >>> epoch: 18/100, batch: 5/7, mean_loss: 91378.8576
+train >>> epoch: 18/100, batch: 6/7, mean_loss: 92336.9293
+train >>> epoch: 18/100, batch: 7/7, mean_loss: 83136.3250
+valid >>> epoch: 18/100, mean_loss: 34816.5670
+criteria decreased from 35058.2776 to 34816.5670, saving best model at D:\Data\cs-8395-dl\model\2020-01-14-06-14-15\2020-01-14-06-14-15_unet-vgg11_best.pt
+train >>> epoch: 19/100, batch: 1/7, mean_loss: 89779.6615
+train >>> epoch: 19/100, batch: 2/7, mean_loss: 90282.4091
+train >>> epoch: 19/100, batch: 3/7, mean_loss: 92703.8538
+train >>> epoch: 19/100, batch: 4/7, mean_loss: 91878.4646
+train >>> epoch: 19/100, batch: 5/7, mean_loss: 92198.6203
+train >>> epoch: 19/100, batch: 6/7, mean_loss: 91681.3657
+train >>> epoch: 19/100, batch: 7/7, mean_loss: 82842.6519
+valid >>> epoch: 19/100, mean_loss: 34942.4799
+train >>> epoch: 20/100, batch: 1/7, mean_loss: 90103.4447
