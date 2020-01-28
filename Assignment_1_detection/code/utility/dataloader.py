@@ -43,7 +43,7 @@ def reverse_transform(img_t,mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225
     return img_r
 
 class Mobile_Dataset_RAM(Dataset):
-    def __init__(self, dir_data, files, label_dict, transform=None):
+    def __init__(self, dir_data, files, label_dict=None, transform=None):
         self.dir_data = dir_data
         self.transform = transform
         self.files = files
@@ -62,7 +62,7 @@ class Mobile_Dataset_RAM(Dataset):
 
     def __getitem__(self, idx):
         image=self.image_all[idx]
-        if 'test' in self.dir_data:
+        if self.label_dict is None:
             target=[0.5,0.5]
         else:
             target=self.label_dict[self.files[idx]]
@@ -98,13 +98,16 @@ class Mobile_Dataset_HM_RAM(Dataset):
             heat_map = np.zeros([image.shape[0], image.shape[1]])
             heat_map[int(y * image.shape[0]), int(x * image.shape[1])] = 1
             target = gaussian_filter(heat_map, sigma=15)  # w = 2*int(truncate*sigma + 0.5) + 1
-            target = ((target>target.max()/2)).astype(np.uint8)
+            target = target/target.max()
+            # print(target.max())
+            # target = ((target>target.max()/2)).astype(np.uint8)
 
 
         # print(self.files[idx],image.shape)
         transformed=self.transform(image=image,mask=target)
         img = transformed['image']
         mask = transformed['mask']
+        mask = mask/mask.max()
         return img,mask
 
 if __name__=='__main__':

@@ -1,0 +1,156 @@
+2020-01-14-19-04-16
+train_hm.py
+--------------------------------------------------------------------------------------------------------------------
+agg: mean
+alpha: 2.0
+batchSize: 16
+beta: 4
+bottleneckFeatures: 0
+dir_lf: D:\Data\cs-8395-dl
+dir_project: C:\Users\Reasat\Projects\cs-8395-dl\Assignment_1_detection
+encoder: unet-vgg11
+epoch: 200
+folderData: assignment1_data
+lr: 0.001
+resume_from: None
+--------------------------------------------------------------------------------------------------------------------
+creating directory to save model at D:\Data\cs-8395-dl\model\2020-01-14-19-04-16
+loading images to RAM
+train samples 105
+loading images to RAM
+validation samples 10
+using pretrained (ImageNet) vgg11 as encoder
+UNet11(
+  (pool): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (encoder): Sequential(
+    (0): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU(inplace)
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): ReLU(inplace)
+    (5): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (6): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (7): ReLU(inplace)
+    (8): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (9): ReLU(inplace)
+    (10): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (11): Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (12): ReLU(inplace)
+    (13): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (14): ReLU(inplace)
+    (15): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (16): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (17): ReLU(inplace)
+    (18): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (19): ReLU(inplace)
+    (20): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (relu): ReLU(inplace)
+  (conv1): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv2): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv3s): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv3): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv4s): Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv4): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv5s): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv5): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (center): DecoderBlock(
+    (block): Sequential(
+      (0): ConvRelu(
+        (conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (activation): ReLU(inplace)
+      )
+      (1): ConvTranspose2d(512, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), output_padding=(1, 1))
+      (2): ReLU(inplace)
+    )
+  )
+  (dec5): DecoderBlock(
+    (block): Sequential(
+      (0): ConvRelu(
+        (conv): Conv2d(768, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (activation): ReLU(inplace)
+      )
+      (1): ConvTranspose2d(512, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), output_padding=(1, 1))
+      (2): ReLU(inplace)
+    )
+  )
+  (dec4): DecoderBlock(
+    (block): Sequential(
+      (0): ConvRelu(
+        (conv): Conv2d(768, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (activation): ReLU(inplace)
+      )
+      (1): ConvTranspose2d(512, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), output_padding=(1, 1))
+      (2): ReLU(inplace)
+    )
+  )
+  (dec3): DecoderBlock(
+    (block): Sequential(
+      (0): ConvRelu(
+        (conv): Conv2d(384, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (activation): ReLU(inplace)
+      )
+      (1): ConvTranspose2d(256, 64, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), output_padding=(1, 1))
+      (2): ReLU(inplace)
+    )
+  )
+  (dec2): DecoderBlock(
+    (block): Sequential(
+      (0): ConvRelu(
+        (conv): Conv2d(192, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (activation): ReLU(inplace)
+      )
+      (1): ConvTranspose2d(128, 32, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), output_padding=(1, 1))
+      (2): ReLU(inplace)
+    )
+  )
+  (dec1): ConvRelu(
+    (conv): Conv2d(96, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (activation): ReLU(inplace)
+  )
+  (final): Conv2d(32, 1, kernel_size=(1, 1), stride=(1, 1))
+)
+train >>> epoch: 1/200, batch: 1/7, mean_loss: 0.1586
+train >>> epoch: 1/200, batch: 2/7, mean_loss: 0.1301
+train >>> epoch: 1/200, batch: 3/7, mean_loss: 0.0899
+train >>> epoch: 1/200, batch: 4/7, mean_loss: 0.0675
+train >>> epoch: 1/200, batch: 5/7, mean_loss: 0.0542
+train >>> epoch: 1/200, batch: 6/7, mean_loss: 0.0452
+train >>> epoch: 1/200, batch: 7/7, mean_loss: 0.0388
+valid >>> epoch: 1/200, mean_loss: 0.0004
+criteria decreased from inf to 0.0004, saving best model at D:\Data\cs-8395-dl\model\2020-01-14-19-04-16\2020-01-14-19-04-16_unet-vgg11_best.pt
+train >>> epoch: 2/200, batch: 1/7, mean_loss: 0.0005
+train >>> epoch: 2/200, batch: 2/7, mean_loss: 0.0005
+train >>> epoch: 2/200, batch: 3/7, mean_loss: 0.0005
+train >>> epoch: 2/200, batch: 4/7, mean_loss: 0.0005
+train >>> epoch: 2/200, batch: 5/7, mean_loss: 0.0005
+train >>> epoch: 2/200, batch: 6/7, mean_loss: 0.0006
+train >>> epoch: 2/200, batch: 7/7, mean_loss: 0.0005
+valid >>> epoch: 2/200, mean_loss: 0.0004
+train >>> epoch: 3/200, batch: 1/7, mean_loss: 0.0005
+train >>> epoch: 3/200, batch: 2/7, mean_loss: 0.0006
+train >>> epoch: 3/200, batch: 3/7, mean_loss: 0.0006
+train >>> epoch: 3/200, batch: 4/7, mean_loss: 0.0006
+train >>> epoch: 3/200, batch: 5/7, mean_loss: 0.0006
+train >>> epoch: 3/200, batch: 6/7, mean_loss: 0.0005
+train >>> epoch: 3/200, batch: 7/7, mean_loss: 0.0006
+valid >>> epoch: 3/200, mean_loss: 0.0004
+train >>> epoch: 4/200, batch: 1/7, mean_loss: 0.0007
+train >>> epoch: 4/200, batch: 2/7, mean_loss: 0.0006
+train >>> epoch: 4/200, batch: 3/7, mean_loss: 0.0006
+train >>> epoch: 4/200, batch: 4/7, mean_loss: 0.0006
+train >>> epoch: 4/200, batch: 5/7, mean_loss: 0.0006
+train >>> epoch: 4/200, batch: 6/7, mean_loss: 0.0006
+train >>> epoch: 4/200, batch: 7/7, mean_loss: 0.0005
+valid >>> epoch: 4/200, mean_loss: 0.0004
+train >>> epoch: 5/200, batch: 1/7, mean_loss: 0.0005
+train >>> epoch: 5/200, batch: 2/7, mean_loss: 0.0006
+train >>> epoch: 5/200, batch: 3/7, mean_loss: 0.0006
+train >>> epoch: 5/200, batch: 4/7, mean_loss: 0.0006
+train >>> epoch: 5/200, batch: 5/7, mean_loss: 0.0006
+train >>> epoch: 5/200, batch: 6/7, mean_loss: 0.0005
+train >>> epoch: 5/200, batch: 7/7, mean_loss: 0.0005
+valid >>> epoch: 5/200, mean_loss: 0.0004
+train >>> epoch: 6/200, batch: 1/7, mean_loss: 0.0006
+train >>> epoch: 6/200, batch: 2/7, mean_loss: 0.0006
+train >>> epoch: 6/200, batch: 3/7, mean_loss: 0.0006

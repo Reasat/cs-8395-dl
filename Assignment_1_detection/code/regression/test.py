@@ -16,10 +16,8 @@ import torch
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 parser=argparse.ArgumentParser()
-parser.add_argument('--dir_data',required=True)
-parser.add_argument('--partition',required=True)
-parser.add_argument('--filepath_model',required=True)
-parser.add_argument('--batchSize', type=int, required=True)
+parser.add_argument('--filepath',required=True)
+parser.add_argument('--filepath_model',default=r'D:\Data\cs-8395-dl\model\2020-01-27-20-33-41\2020-01-27-20-33-41_resnet12_best.pt')
 args = parser.parse_args()
 dir_img = os.path.join(args.dir_data,args.partition)
 filepaths = glob(os.path.join(dir_img, '*.jpg'))

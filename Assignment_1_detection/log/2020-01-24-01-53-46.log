@@ -1,0 +1,1596 @@
+2020-01-24-01-53-46
+train.py
+--------------------------------------------------------------------------------------------------------------------
+batchSize: 32
+bottleneckFeatures: 1
+dir_lf: D:\Data\cs-8395-dl
+dir_project: C:\Users\Reasat\Projects\cs-8395-dl\Assignment_1_detection
+encoder: resnet18
+epoch: 300
+folderData: assignment1_data
+lr: 0.001
+resume_from: None
+--------------------------------------------------------------------------------------------------------------------
+creating directory to save model at D:\Data\cs-8395-dl\model\2020-01-24-01-53-46
+loading images to RAM
+train samples 105
+loading images to RAM
+validation samples 10
+Sequential(
+  (0): Sequential(
+    (0): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+    (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace)
+    (3): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+    (4): Sequential(
+      (0): BasicBlock(
+        (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+        (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (1): BasicBlock(
+        (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+        (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (5): BasicBlock(
+      (conv1): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(64, 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+  )
+)
+freezing feature extracting layers
+ResNet8_conv_fc(
+  (resnet_partial): Sequential(
+    (0): Sequential(
+      (0): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+      (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace)
+      (3): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+      (4): Sequential(
+        (0): BasicBlock(
+          (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace)
+          (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+        (1): BasicBlock(
+          (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace)
+          (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (5): BasicBlock(
+        (conv1): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+        (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (downsample): Sequential(
+          (0): Conv2d(64, 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+          (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+    )
+  )
+  (conv_last): Conv2d(128, 1, kernel_size=(1, 1), stride=(1, 1))
+  (fc1): Linear(in_features=2542, out_features=2, bias=True)
+)
+train >>> epoch: 1/300, batch: 1/4, mean_loss: 0.6308
+train >>> epoch: 1/300, batch: 2/4, mean_loss: 0.4732
+train >>> epoch: 1/300, batch: 3/4, mean_loss: 0.3960
+train >>> epoch: 1/300, batch: 4/4, mean_loss: 0.3499
+valid >>> epoch: 1/300, mean_loss: 0.1253
+criteria decreased from inf to 0.1253, saving best model at D:\Data\cs-8395-dl\model\2020-01-24-01-53-46\2020-01-24-01-53-46_resnet18_best.pt
+train >>> epoch: 2/300, batch: 1/4, mean_loss: 0.4042
+train >>> epoch: 2/300, batch: 2/4, mean_loss: 0.3401
+train >>> epoch: 2/300, batch: 3/4, mean_loss: 0.3351
+train >>> epoch: 2/300, batch: 4/4, mean_loss: 0.2993
+valid >>> epoch: 2/300, mean_loss: 0.4242
+train >>> epoch: 3/300, batch: 1/4, mean_loss: 0.1365
+train >>> epoch: 3/300, batch: 2/4, mean_loss: 0.1579
+train >>> epoch: 3/300, batch: 3/4, mean_loss: 0.1730
+train >>> epoch: 3/300, batch: 4/4, mean_loss: 0.2052
+valid >>> epoch: 3/300, mean_loss: 0.5142
+train >>> epoch: 4/300, batch: 1/4, mean_loss: 0.2026
+train >>> epoch: 4/300, batch: 2/4, mean_loss: 0.2084
+train >>> epoch: 4/300, batch: 3/4, mean_loss: 0.1882
+train >>> epoch: 4/300, batch: 4/4, mean_loss: 0.1912
+valid >>> epoch: 4/300, mean_loss: 0.3221
+train >>> epoch: 5/300, batch: 1/4, mean_loss: 0.0984
+train >>> epoch: 5/300, batch: 2/4, mean_loss: 0.0917
+train >>> epoch: 5/300, batch: 3/4, mean_loss: 0.0918
+train >>> epoch: 5/300, batch: 4/4, mean_loss: 0.0814
+valid >>> epoch: 5/300, mean_loss: 0.1253
+train >>> epoch: 6/300, batch: 1/4, mean_loss: 0.0798
+train >>> epoch: 6/300, batch: 2/4, mean_loss: 0.0913
+train >>> epoch: 6/300, batch: 3/4, mean_loss: 0.0832
+train >>> epoch: 6/300, batch: 4/4, mean_loss: 0.0929
+valid >>> epoch: 6/300, mean_loss: 0.0939
+criteria decreased from 0.1253 to 0.0939, saving best model at D:\Data\cs-8395-dl\model\2020-01-24-01-53-46\2020-01-24-01-53-46_resnet18_best.pt
+train >>> epoch: 7/300, batch: 1/4, mean_loss: 0.0761
+train >>> epoch: 7/300, batch: 2/4, mean_loss: 0.0632
+train >>> epoch: 7/300, batch: 3/4, mean_loss: 0.0603
+train >>> epoch: 7/300, batch: 4/4, mean_loss: 0.0626
+valid >>> epoch: 7/300, mean_loss: 0.1672
+train >>> epoch: 8/300, batch: 1/4, mean_loss: 0.0828
+train >>> epoch: 8/300, batch: 2/4, mean_loss: 0.0666
+train >>> epoch: 8/300, batch: 3/4, mean_loss: 0.0577
+train >>> epoch: 8/300, batch: 4/4, mean_loss: 0.0517
+valid >>> epoch: 8/300, mean_loss: 0.1623
+train >>> epoch: 9/300, batch: 1/4, mean_loss: 0.0332
+train >>> epoch: 9/300, batch: 2/4, mean_loss: 0.0383
+train >>> epoch: 9/300, batch: 3/4, mean_loss: 0.0406
+train >>> epoch: 9/300, batch: 4/4, mean_loss: 0.0375
+valid >>> epoch: 9/300, mean_loss: 0.1193
+train >>> epoch: 10/300, batch: 1/4, mean_loss: 0.0289
+train >>> epoch: 10/300, batch: 2/4, mean_loss: 0.0306
+train >>> epoch: 10/300, batch: 3/4, mean_loss: 0.0295
+train >>> epoch: 10/300, batch: 4/4, mean_loss: 0.0337
+valid >>> epoch: 10/300, mean_loss: 0.1205
+train >>> epoch: 11/300, batch: 1/4, mean_loss: 0.0274
+train >>> epoch: 11/300, batch: 2/4, mean_loss: 0.0258
+train >>> epoch: 11/300, batch: 3/4, mean_loss: 0.0244
+train >>> epoch: 11/300, batch: 4/4, mean_loss: 0.0239
+valid >>> epoch: 11/300, mean_loss: 0.1588
+train >>> epoch: 12/300, batch: 1/4, mean_loss: 0.0191
+train >>> epoch: 12/300, batch: 2/4, mean_loss: 0.0203
+train >>> epoch: 12/300, batch: 3/4, mean_loss: 0.0198
+train >>> epoch: 12/300, batch: 4/4, mean_loss: 0.0212
+valid >>> epoch: 12/300, mean_loss: 0.1606
+train >>> epoch: 13/300, batch: 1/4, mean_loss: 0.0154
+train >>> epoch: 13/300, batch: 2/4, mean_loss: 0.0172
+train >>> epoch: 13/300, batch: 3/4, mean_loss: 0.0153
+train >>> epoch: 13/300, batch: 4/4, mean_loss: 0.0145
+valid >>> epoch: 13/300, mean_loss: 0.1401
+train >>> epoch: 14/300, batch: 1/4, mean_loss: 0.0162
+train >>> epoch: 14/300, batch: 2/4, mean_loss: 0.0133
+train >>> epoch: 14/300, batch: 3/4, mean_loss: 0.0123
+train >>> epoch: 14/300, batch: 4/4, mean_loss: 0.0106
+valid >>> epoch: 14/300, mean_loss: 0.1432
+train >>> epoch: 15/300, batch: 1/4, mean_loss: 0.0116
+train >>> epoch: 15/300, batch: 2/4, mean_loss: 0.0102
+train >>> epoch: 15/300, batch: 3/4, mean_loss: 0.0094
+train >>> epoch: 15/300, batch: 4/4, mean_loss: 0.0089
+valid >>> epoch: 15/300, mean_loss: 0.1586
+train >>> epoch: 16/300, batch: 1/4, mean_loss: 0.0070
+train >>> epoch: 16/300, batch: 2/4, mean_loss: 0.0065
+train >>> epoch: 16/300, batch: 3/4, mean_loss: 0.0070
+train >>> epoch: 16/300, batch: 4/4, mean_loss: 0.0074
+valid >>> epoch: 16/300, mean_loss: 0.1585
+train >>> epoch: 17/300, batch: 1/4, mean_loss: 0.0047
+train >>> epoch: 17/300, batch: 2/4, mean_loss: 0.0052
+train >>> epoch: 17/300, batch: 3/4, mean_loss: 0.0055
+train >>> epoch: 17/300, batch: 4/4, mean_loss: 0.0064
+valid >>> epoch: 17/300, mean_loss: 0.1496
+train >>> epoch: 18/300, batch: 1/4, mean_loss: 0.0047
+train >>> epoch: 18/300, batch: 2/4, mean_loss: 0.0041
+train >>> epoch: 18/300, batch: 3/4, mean_loss: 0.0039
+train >>> epoch: 18/300, batch: 4/4, mean_loss: 0.0052
+valid >>> epoch: 18/300, mean_loss: 0.1606
+train >>> epoch: 19/300, batch: 1/4, mean_loss: 0.0035
+train >>> epoch: 19/300, batch: 2/4, mean_loss: 0.0037
+train >>> epoch: 19/300, batch: 3/4, mean_loss: 0.0037
+train >>> epoch: 19/300, batch: 4/4, mean_loss: 0.0040
+valid >>> epoch: 19/300, mean_loss: 0.1556
+train >>> epoch: 20/300, batch: 1/4, mean_loss: 0.0042
+train >>> epoch: 20/300, batch: 2/4, mean_loss: 0.0039
+train >>> epoch: 20/300, batch: 3/4, mean_loss: 0.0032
+train >>> epoch: 20/300, batch: 4/4, mean_loss: 0.0033
+valid >>> epoch: 20/300, mean_loss: 0.1556
+train >>> epoch: 21/300, batch: 1/4, mean_loss: 0.0022
+train >>> epoch: 21/300, batch: 2/4, mean_loss: 0.0022
+train >>> epoch: 21/300, batch: 3/4, mean_loss: 0.0020
+train >>> epoch: 21/300, batch: 4/4, mean_loss: 0.0031
+valid >>> epoch: 21/300, mean_loss: 0.1651
+train >>> epoch: 22/300, batch: 1/4, mean_loss: 0.0033
+train >>> epoch: 22/300, batch: 2/4, mean_loss: 0.0025
+train >>> epoch: 22/300, batch: 3/4, mean_loss: 0.0023
+train >>> epoch: 22/300, batch: 4/4, mean_loss: 0.0024
+valid >>> epoch: 22/300, mean_loss: 0.1631
+train >>> epoch: 23/300, batch: 1/4, mean_loss: 0.0012
+train >>> epoch: 23/300, batch: 2/4, mean_loss: 0.0024
+train >>> epoch: 23/300, batch: 3/4, mean_loss: 0.0023
+train >>> epoch: 23/300, batch: 4/4, mean_loss: 0.0023
+valid >>> epoch: 23/300, mean_loss: 0.1543
+train >>> epoch: 24/300, batch: 1/4, mean_loss: 0.0011
+train >>> epoch: 24/300, batch: 2/4, mean_loss: 0.0013
+train >>> epoch: 24/300, batch: 3/4, mean_loss: 0.0015
+train >>> epoch: 24/300, batch: 4/4, mean_loss: 0.0013
+valid >>> epoch: 24/300, mean_loss: 0.1584
+train >>> epoch: 25/300, batch: 1/4, mean_loss: 0.0005
+train >>> epoch: 25/300, batch: 2/4, mean_loss: 0.0014
+train >>> epoch: 25/300, batch: 3/4, mean_loss: 0.0017
+train >>> epoch: 25/300, batch: 4/4, mean_loss: 0.0022
+valid >>> epoch: 25/300, mean_loss: 0.1640
+train >>> epoch: 26/300, batch: 1/4, mean_loss: 0.0012
+train >>> epoch: 26/300, batch: 2/4, mean_loss: 0.0012
+train >>> epoch: 26/300, batch: 3/4, mean_loss: 0.0014
+train >>> epoch: 26/300, batch: 4/4, mean_loss: 0.0014
+valid >>> epoch: 26/300, mean_loss: 0.1549
+train >>> epoch: 27/300, batch: 1/4, mean_loss: 0.0006
+train >>> epoch: 27/300, batch: 2/4, mean_loss: 0.0011
+train >>> epoch: 27/300, batch: 3/4, mean_loss: 0.0011
+train >>> epoch: 27/300, batch: 4/4, mean_loss: 0.0017
+valid >>> epoch: 27/300, mean_loss: 0.1670
+train >>> epoch: 28/300, batch: 1/4, mean_loss: 0.0009
+train >>> epoch: 28/300, batch: 2/4, mean_loss: 0.0008
+train >>> epoch: 28/300, batch: 3/4, mean_loss: 0.0007
+train >>> epoch: 28/300, batch: 4/4, mean_loss: 0.0010
+valid >>> epoch: 28/300, mean_loss: 0.1596
+train >>> epoch: 29/300, batch: 1/4, mean_loss: 0.0010
+train >>> epoch: 29/300, batch: 2/4, mean_loss: 0.0012
+train >>> epoch: 29/300, batch: 3/4, mean_loss: 0.0012
+train >>> epoch: 29/300, batch: 4/4, mean_loss: 0.0013
+valid >>> epoch: 29/300, mean_loss: 0.1570
+train >>> epoch: 30/300, batch: 1/4, mean_loss: 0.0006
+train >>> epoch: 30/300, batch: 2/4, mean_loss: 0.0015
+train >>> epoch: 30/300, batch: 3/4, mean_loss: 0.0012
+train >>> epoch: 30/300, batch: 4/4, mean_loss: 0.0019
+valid >>> epoch: 30/300, mean_loss: 0.1624
+train >>> epoch: 31/300, batch: 1/4, mean_loss: 0.0012
+train >>> epoch: 31/300, batch: 2/4, mean_loss: 0.0009
+train >>> epoch: 31/300, batch: 3/4, mean_loss: 0.0010
+train >>> epoch: 31/300, batch: 4/4, mean_loss: 0.0010
+valid >>> epoch: 31/300, mean_loss: 0.1633
+train >>> epoch: 32/300, batch: 1/4, mean_loss: 0.0005
+train >>> epoch: 32/300, batch: 2/4, mean_loss: 0.0004
+train >>> epoch: 32/300, batch: 3/4, mean_loss: 0.0004
+train >>> epoch: 32/300, batch: 4/4, mean_loss: 0.0006
+valid >>> epoch: 32/300, mean_loss: 0.1636
+train >>> epoch: 33/300, batch: 1/4, mean_loss: 0.0004
+train >>> epoch: 33/300, batch: 2/4, mean_loss: 0.0010
+train >>> epoch: 33/300, batch: 3/4, mean_loss: 0.0014
+train >>> epoch: 33/300, batch: 4/4, mean_loss: 0.0016
+valid >>> epoch: 33/300, mean_loss: 0.1675
+train >>> epoch: 34/300, batch: 1/4, mean_loss: 0.0024
+train >>> epoch: 34/300, batch: 2/4, mean_loss: 0.0021
+train >>> epoch: 34/300, batch: 3/4, mean_loss: 0.0015
+train >>> epoch: 34/300, batch: 4/4, mean_loss: 0.0018
+valid >>> epoch: 34/300, mean_loss: 0.1569
+train >>> epoch: 35/300, batch: 1/4, mean_loss: 0.0011
+train >>> epoch: 35/300, batch: 2/4, mean_loss: 0.0012
+train >>> epoch: 35/300, batch: 3/4, mean_loss: 0.0017
+train >>> epoch: 35/300, batch: 4/4, mean_loss: 0.0023
+valid >>> epoch: 35/300, mean_loss: 0.1709
+train >>> epoch: 36/300, batch: 1/4, mean_loss: 0.0019
+train >>> epoch: 36/300, batch: 2/4, mean_loss: 0.0013
+train >>> epoch: 36/300, batch: 3/4, mean_loss: 0.0014
+train >>> epoch: 36/300, batch: 4/4, mean_loss: 0.0018
+valid >>> epoch: 36/300, mean_loss: 0.1831
+train >>> epoch: 37/300, batch: 1/4, mean_loss: 0.0015
+train >>> epoch: 37/300, batch: 2/4, mean_loss: 0.0013
+train >>> epoch: 37/300, batch: 3/4, mean_loss: 0.0013
+train >>> epoch: 37/300, batch: 4/4, mean_loss: 0.0013
+valid >>> epoch: 37/300, mean_loss: 0.1614
+train >>> epoch: 38/300, batch: 1/4, mean_loss: 0.0007
+train >>> epoch: 38/300, batch: 2/4, mean_loss: 0.0009
+train >>> epoch: 38/300, batch: 3/4, mean_loss: 0.0008
+train >>> epoch: 38/300, batch: 4/4, mean_loss: 0.0016
+valid >>> epoch: 38/300, mean_loss: 0.1675
+train >>> epoch: 39/300, batch: 1/4, mean_loss: 0.0003
+train >>> epoch: 39/300, batch: 2/4, mean_loss: 0.0006
+train >>> epoch: 39/300, batch: 3/4, mean_loss: 0.0007
+train >>> epoch: 39/300, batch: 4/4, mean_loss: 0.0009
+valid >>> epoch: 39/300, mean_loss: 0.1792
+train >>> epoch: 40/300, batch: 1/4, mean_loss: 0.0009
+train >>> epoch: 40/300, batch: 2/4, mean_loss: 0.0013
+train >>> epoch: 40/300, batch: 3/4, mean_loss: 0.0013
+train >>> epoch: 40/300, batch: 4/4, mean_loss: 0.0021
+valid >>> epoch: 40/300, mean_loss: 0.1601
+train >>> epoch: 41/300, batch: 1/4, mean_loss: 0.0009
+train >>> epoch: 41/300, batch: 2/4, mean_loss: 0.0023
+train >>> epoch: 41/300, batch: 3/4, mean_loss: 0.0021
+train >>> epoch: 41/300, batch: 4/4, mean_loss: 0.0022
+valid >>> epoch: 41/300, mean_loss: 0.1588
+train >>> epoch: 42/300, batch: 1/4, mean_loss: 0.0006
+train >>> epoch: 42/300, batch: 2/4, mean_loss: 0.0011
+train >>> epoch: 42/300, batch: 3/4, mean_loss: 0.0013
+train >>> epoch: 42/300, batch: 4/4, mean_loss: 0.0012
+valid >>> epoch: 42/300, mean_loss: 0.1808
+train >>> epoch: 43/300, batch: 1/4, mean_loss: 0.0019
+train >>> epoch: 43/300, batch: 2/4, mean_loss: 0.0013
+train >>> epoch: 43/300, batch: 3/4, mean_loss: 0.0011
+train >>> epoch: 43/300, batch: 4/4, mean_loss: 0.0019
+valid >>> epoch: 43/300, mean_loss: 0.1535
+train >>> epoch: 44/300, batch: 1/4, mean_loss: 0.0011
+train >>> epoch: 44/300, batch: 2/4, mean_loss: 0.0012
+train >>> epoch: 44/300, batch: 3/4, mean_loss: 0.0019
+train >>> epoch: 44/300, batch: 4/4, mean_loss: 0.0030
+valid >>> epoch: 44/300, mean_loss: 0.1647
+train >>> epoch: 45/300, batch: 1/4, mean_loss: 0.0003
+train >>> epoch: 45/300, batch: 2/4, mean_loss: 0.0008
+train >>> epoch: 45/300, batch: 3/4, mean_loss: 0.0011
+train >>> epoch: 45/300, batch: 4/4, mean_loss: 0.0014
+valid >>> epoch: 45/300, mean_loss: 0.1839
+train >>> epoch: 46/300, batch: 1/4, mean_loss: 0.0026
+train >>> epoch: 46/300, batch: 2/4, mean_loss: 0.0017
+train >>> epoch: 46/300, batch: 3/4, mean_loss: 0.0015
+train >>> epoch: 46/300, batch: 4/4, mean_loss: 0.0016
+valid >>> epoch: 46/300, mean_loss: 0.1530
+train >>> epoch: 47/300, batch: 1/4, mean_loss: 0.0015
+train >>> epoch: 47/300, batch: 2/4, mean_loss: 0.0017
+train >>> epoch: 47/300, batch: 3/4, mean_loss: 0.0031
+train >>> epoch: 47/300, batch: 4/4, mean_loss: 0.0035
+valid >>> epoch: 47/300, mean_loss: 0.1778
+train >>> epoch: 48/300, batch: 1/4, mean_loss: 0.0011
+train >>> epoch: 48/300, batch: 2/4, mean_loss: 0.0020
+train >>> epoch: 48/300, batch: 3/4, mean_loss: 0.0024
+train >>> epoch: 48/300, batch: 4/4, mean_loss: 0.0031
+valid >>> epoch: 48/300, mean_loss: 0.1802
+train >>> epoch: 49/300, batch: 1/4, mean_loss: 0.0016
+train >>> epoch: 49/300, batch: 2/4, mean_loss: 0.0013
+train >>> epoch: 49/300, batch: 3/4, mean_loss: 0.0014
+train >>> epoch: 49/300, batch: 4/4, mean_loss: 0.0023
+valid >>> epoch: 49/300, mean_loss: 0.1499
+train >>> epoch: 50/300, batch: 1/4, mean_loss: 0.0047
+train >>> epoch: 50/300, batch: 2/4, mean_loss: 0.0029
+train >>> epoch: 50/300, batch: 3/4, mean_loss: 0.0025
+train >>> epoch: 50/300, batch: 4/4, mean_loss: 0.0041
+valid >>> epoch: 50/300, mean_loss: 0.1800
+train >>> epoch: 51/300, batch: 1/4, mean_loss: 0.0009
+train >>> epoch: 51/300, batch: 2/4, mean_loss: 0.0009
+train >>> epoch: 51/300, batch: 3/4, mean_loss: 0.0009
+train >>> epoch: 51/300, batch: 4/4, mean_loss: 0.0030
+valid >>> epoch: 51/300, mean_loss: 0.1596
+train >>> epoch: 52/300, batch: 1/4, mean_loss: 0.0009
+train >>> epoch: 52/300, batch: 2/4, mean_loss: 0.0008
+train >>> epoch: 52/300, batch: 3/4, mean_loss: 0.0008
+train >>> epoch: 52/300, batch: 4/4, mean_loss: 0.0010
+valid >>> epoch: 52/300, mean_loss: 0.1761
+train >>> epoch: 53/300, batch: 1/4, mean_loss: 0.0016
+train >>> epoch: 53/300, batch: 2/4, mean_loss: 0.0021
+train >>> epoch: 53/300, batch: 3/4, mean_loss: 0.0020
+train >>> epoch: 53/300, batch: 4/4, mean_loss: 0.0017
+valid >>> epoch: 53/300, mean_loss: 0.1601
+train >>> epoch: 54/300, batch: 1/4, mean_loss: 0.0008
+train >>> epoch: 54/300, batch: 2/4, mean_loss: 0.0009
+train >>> epoch: 54/300, batch: 3/4, mean_loss: 0.0009
+train >>> epoch: 54/300, batch: 4/4, mean_loss: 0.0021
+valid >>> epoch: 54/300, mean_loss: 0.1679
+train >>> epoch: 55/300, batch: 1/4, mean_loss: 0.0009
+train >>> epoch: 55/300, batch: 2/4, mean_loss: 0.0010
+train >>> epoch: 55/300, batch: 3/4, mean_loss: 0.0010
+train >>> epoch: 55/300, batch: 4/4, mean_loss: 0.0019
+valid >>> epoch: 55/300, mean_loss: 0.1654
+train >>> epoch: 56/300, batch: 1/4, mean_loss: 0.0019
+train >>> epoch: 56/300, batch: 2/4, mean_loss: 0.0016
+train >>> epoch: 56/300, batch: 3/4, mean_loss: 0.0014
+train >>> epoch: 56/300, batch: 4/4, mean_loss: 0.0018
+valid >>> epoch: 56/300, mean_loss: 0.1593
+train >>> epoch: 57/300, batch: 1/4, mean_loss: 0.0011
+train >>> epoch: 57/300, batch: 2/4, mean_loss: 0.0011
+train >>> epoch: 57/300, batch: 3/4, mean_loss: 0.0014
+train >>> epoch: 57/300, batch: 4/4, mean_loss: 0.0016
+valid >>> epoch: 57/300, mean_loss: 0.1733
+train >>> epoch: 58/300, batch: 1/4, mean_loss: 0.0010
+train >>> epoch: 58/300, batch: 2/4, mean_loss: 0.0013
+train >>> epoch: 58/300, batch: 3/4, mean_loss: 0.0012
+train >>> epoch: 58/300, batch: 4/4, mean_loss: 0.0015
+valid >>> epoch: 58/300, mean_loss: 0.1755
+train >>> epoch: 59/300, batch: 1/4, mean_loss: 0.0012
+train >>> epoch: 59/300, batch: 2/4, mean_loss: 0.0010
+train >>> epoch: 59/300, batch: 3/4, mean_loss: 0.0010
+train >>> epoch: 59/300, batch: 4/4, mean_loss: 0.0024
+valid >>> epoch: 59/300, mean_loss: 0.1683
+train >>> epoch: 60/300, batch: 1/4, mean_loss: 0.0004
+train >>> epoch: 60/300, batch: 2/4, mean_loss: 0.0006
+train >>> epoch: 60/300, batch: 3/4, mean_loss: 0.0006
+train >>> epoch: 60/300, batch: 4/4, mean_loss: 0.0013
+valid >>> epoch: 60/300, mean_loss: 0.1742
+train >>> epoch: 61/300, batch: 1/4, mean_loss: 0.0012
+train >>> epoch: 61/300, batch: 2/4, mean_loss: 0.0009
+train >>> epoch: 61/300, batch: 3/4, mean_loss: 0.0011
+train >>> epoch: 61/300, batch: 4/4, mean_loss: 0.0014
+valid >>> epoch: 61/300, mean_loss: 0.1610
+train >>> epoch: 62/300, batch: 1/4, mean_loss: 0.0007
+train >>> epoch: 62/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 62/300, batch: 3/4, mean_loss: 0.0011
+train >>> epoch: 62/300, batch: 4/4, mean_loss: 0.0015
+valid >>> epoch: 62/300, mean_loss: 0.1629
+train >>> epoch: 63/300, batch: 1/4, mean_loss: 0.0015
+train >>> epoch: 63/300, batch: 2/4, mean_loss: 0.0015
+train >>> epoch: 63/300, batch: 3/4, mean_loss: 0.0017
+train >>> epoch: 63/300, batch: 4/4, mean_loss: 0.0021
+valid >>> epoch: 63/300, mean_loss: 0.1778
+train >>> epoch: 64/300, batch: 1/4, mean_loss: 0.0007
+train >>> epoch: 64/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 64/300, batch: 3/4, mean_loss: 0.0013
+train >>> epoch: 64/300, batch: 4/4, mean_loss: 0.0016
+valid >>> epoch: 64/300, mean_loss: 0.1558
+train >>> epoch: 65/300, batch: 1/4, mean_loss: 0.0009
+train >>> epoch: 65/300, batch: 2/4, mean_loss: 0.0012
+train >>> epoch: 65/300, batch: 3/4, mean_loss: 0.0010
+train >>> epoch: 65/300, batch: 4/4, mean_loss: 0.0011
+valid >>> epoch: 65/300, mean_loss: 0.1841
+train >>> epoch: 66/300, batch: 1/4, mean_loss: 0.0008
+train >>> epoch: 66/300, batch: 2/4, mean_loss: 0.0021
+train >>> epoch: 66/300, batch: 3/4, mean_loss: 0.0018
+train >>> epoch: 66/300, batch: 4/4, mean_loss: 0.0018
+valid >>> epoch: 66/300, mean_loss: 0.1618
+train >>> epoch: 67/300, batch: 1/4, mean_loss: 0.0006
+train >>> epoch: 67/300, batch: 2/4, mean_loss: 0.0015
+train >>> epoch: 67/300, batch: 3/4, mean_loss: 0.0012
+train >>> epoch: 67/300, batch: 4/4, mean_loss: 0.0012
+valid >>> epoch: 67/300, mean_loss: 0.1674
+train >>> epoch: 68/300, batch: 1/4, mean_loss: 0.0005
+train >>> epoch: 68/300, batch: 2/4, mean_loss: 0.0005
+train >>> epoch: 68/300, batch: 3/4, mean_loss: 0.0005
+train >>> epoch: 68/300, batch: 4/4, mean_loss: 0.0025
+valid >>> epoch: 68/300, mean_loss: 0.1740
+train >>> epoch: 69/300, batch: 1/4, mean_loss: 0.0010
+train >>> epoch: 69/300, batch: 2/4, mean_loss: 0.0010
+train >>> epoch: 69/300, batch: 3/4, mean_loss: 0.0011
+train >>> epoch: 69/300, batch: 4/4, mean_loss: 0.0016
+valid >>> epoch: 69/300, mean_loss: 0.1715
+train >>> epoch: 70/300, batch: 1/4, mean_loss: 0.0005
+train >>> epoch: 70/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 70/300, batch: 3/4, mean_loss: 0.0008
+train >>> epoch: 70/300, batch: 4/4, mean_loss: 0.0013
+valid >>> epoch: 70/300, mean_loss: 0.1566
+train >>> epoch: 71/300, batch: 1/4, mean_loss: 0.0007
+train >>> epoch: 71/300, batch: 2/4, mean_loss: 0.0008
+train >>> epoch: 71/300, batch: 3/4, mean_loss: 0.0007
+train >>> epoch: 71/300, batch: 4/4, mean_loss: 0.0009
+valid >>> epoch: 71/300, mean_loss: 0.1790
+train >>> epoch: 72/300, batch: 1/4, mean_loss: 0.0011
+train >>> epoch: 72/300, batch: 2/4, mean_loss: 0.0014
+train >>> epoch: 72/300, batch: 3/4, mean_loss: 0.0012
+train >>> epoch: 72/300, batch: 4/4, mean_loss: 0.0049
+valid >>> epoch: 72/300, mean_loss: 0.1579
+train >>> epoch: 73/300, batch: 1/4, mean_loss: 0.0017
+train >>> epoch: 73/300, batch: 2/4, mean_loss: 0.0022
+train >>> epoch: 73/300, batch: 3/4, mean_loss: 0.0027
+train >>> epoch: 73/300, batch: 4/4, mean_loss: 0.0028
+valid >>> epoch: 73/300, mean_loss: 0.1584
+train >>> epoch: 74/300, batch: 1/4, mean_loss: 0.0009
+train >>> epoch: 74/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 74/300, batch: 3/4, mean_loss: 0.0008
+train >>> epoch: 74/300, batch: 4/4, mean_loss: 0.0015
+valid >>> epoch: 74/300, mean_loss: 0.1891
+train >>> epoch: 75/300, batch: 1/4, mean_loss: 0.0035
+train >>> epoch: 75/300, batch: 2/4, mean_loss: 0.0026
+train >>> epoch: 75/300, batch: 3/4, mean_loss: 0.0021
+train >>> epoch: 75/300, batch: 4/4, mean_loss: 0.0018
+valid >>> epoch: 75/300, mean_loss: 0.1530
+train >>> epoch: 76/300, batch: 1/4, mean_loss: 0.0025
+train >>> epoch: 76/300, batch: 2/4, mean_loss: 0.0021
+train >>> epoch: 76/300, batch: 3/4, mean_loss: 0.0019
+train >>> epoch: 76/300, batch: 4/4, mean_loss: 0.0017
+valid >>> epoch: 76/300, mean_loss: 0.1684
+train >>> epoch: 77/300, batch: 1/4, mean_loss: 0.0008
+train >>> epoch: 77/300, batch: 2/4, mean_loss: 0.0015
+train >>> epoch: 77/300, batch: 3/4, mean_loss: 0.0014
+train >>> epoch: 77/300, batch: 4/4, mean_loss: 0.0019
+valid >>> epoch: 77/300, mean_loss: 0.1744
+train >>> epoch: 78/300, batch: 1/4, mean_loss: 0.0008
+train >>> epoch: 78/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 78/300, batch: 3/4, mean_loss: 0.0008
+train >>> epoch: 78/300, batch: 4/4, mean_loss: 0.0011
+valid >>> epoch: 78/300, mean_loss: 0.1683
+train >>> epoch: 79/300, batch: 1/4, mean_loss: 0.0009
+train >>> epoch: 79/300, batch: 2/4, mean_loss: 0.0009
+train >>> epoch: 79/300, batch: 3/4, mean_loss: 0.0008
+train >>> epoch: 79/300, batch: 4/4, mean_loss: 0.0012
+valid >>> epoch: 79/300, mean_loss: 0.1702
+train >>> epoch: 80/300, batch: 1/4, mean_loss: 0.0005
+train >>> epoch: 80/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 80/300, batch: 3/4, mean_loss: 0.0008
+train >>> epoch: 80/300, batch: 4/4, mean_loss: 0.0013
+valid >>> epoch: 80/300, mean_loss: 0.1803
+train >>> epoch: 81/300, batch: 1/4, mean_loss: 0.0013
+train >>> epoch: 81/300, batch: 2/4, mean_loss: 0.0010
+train >>> epoch: 81/300, batch: 3/4, mean_loss: 0.0009
+train >>> epoch: 81/300, batch: 4/4, mean_loss: 0.0015
+valid >>> epoch: 81/300, mean_loss: 0.1639
+train >>> epoch: 82/300, batch: 1/4, mean_loss: 0.0019
+train >>> epoch: 82/300, batch: 2/4, mean_loss: 0.0014
+train >>> epoch: 82/300, batch: 3/4, mean_loss: 0.0014
+train >>> epoch: 82/300, batch: 4/4, mean_loss: 0.0018
+valid >>> epoch: 82/300, mean_loss: 0.1767
+train >>> epoch: 83/300, batch: 1/4, mean_loss: 0.0004
+train >>> epoch: 83/300, batch: 2/4, mean_loss: 0.0006
+train >>> epoch: 83/300, batch: 3/4, mean_loss: 0.0008
+train >>> epoch: 83/300, batch: 4/4, mean_loss: 0.0011
+valid >>> epoch: 83/300, mean_loss: 0.1646
+train >>> epoch: 84/300, batch: 1/4, mean_loss: 0.0008
+train >>> epoch: 84/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 84/300, batch: 3/4, mean_loss: 0.0010
+train >>> epoch: 84/300, batch: 4/4, mean_loss: 0.0010
+valid >>> epoch: 84/300, mean_loss: 0.1775
+train >>> epoch: 85/300, batch: 1/4, mean_loss: 0.0009
+train >>> epoch: 85/300, batch: 2/4, mean_loss: 0.0014
+train >>> epoch: 85/300, batch: 3/4, mean_loss: 0.0012
+train >>> epoch: 85/300, batch: 4/4, mean_loss: 0.0013
+valid >>> epoch: 85/300, mean_loss: 0.1782
+train >>> epoch: 86/300, batch: 1/4, mean_loss: 0.0009
+train >>> epoch: 86/300, batch: 2/4, mean_loss: 0.0009
+train >>> epoch: 86/300, batch: 3/4, mean_loss: 0.0007
+train >>> epoch: 86/300, batch: 4/4, mean_loss: 0.0010
+valid >>> epoch: 86/300, mean_loss: 0.1665
+train >>> epoch: 87/300, batch: 1/4, mean_loss: 0.0004
+train >>> epoch: 87/300, batch: 2/4, mean_loss: 0.0005
+train >>> epoch: 87/300, batch: 3/4, mean_loss: 0.0005
+train >>> epoch: 87/300, batch: 4/4, mean_loss: 0.0013
+valid >>> epoch: 87/300, mean_loss: 0.1753
+train >>> epoch: 88/300, batch: 1/4, mean_loss: 0.0008
+train >>> epoch: 88/300, batch: 2/4, mean_loss: 0.0006
+train >>> epoch: 88/300, batch: 3/4, mean_loss: 0.0006
+train >>> epoch: 88/300, batch: 4/4, mean_loss: 0.0007
+valid >>> epoch: 88/300, mean_loss: 0.1695
+train >>> epoch: 89/300, batch: 1/4, mean_loss: 0.0006
+train >>> epoch: 89/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 89/300, batch: 3/4, mean_loss: 0.0006
+train >>> epoch: 89/300, batch: 4/4, mean_loss: 0.0008
+valid >>> epoch: 89/300, mean_loss: 0.1725
+train >>> epoch: 90/300, batch: 1/4, mean_loss: 0.0009
+train >>> epoch: 90/300, batch: 2/4, mean_loss: 0.0012
+train >>> epoch: 90/300, batch: 3/4, mean_loss: 0.0010
+train >>> epoch: 90/300, batch: 4/4, mean_loss: 0.0011
+valid >>> epoch: 90/300, mean_loss: 0.1791
+train >>> epoch: 91/300, batch: 1/4, mean_loss: 0.0008
+train >>> epoch: 91/300, batch: 2/4, mean_loss: 0.0008
+train >>> epoch: 91/300, batch: 3/4, mean_loss: 0.0007
+train >>> epoch: 91/300, batch: 4/4, mean_loss: 0.0025
+valid >>> epoch: 91/300, mean_loss: 0.1669
+train >>> epoch: 92/300, batch: 1/4, mean_loss: 0.0007
+train >>> epoch: 92/300, batch: 2/4, mean_loss: 0.0012
+train >>> epoch: 92/300, batch: 3/4, mean_loss: 0.0012
+train >>> epoch: 92/300, batch: 4/4, mean_loss: 0.0021
+valid >>> epoch: 92/300, mean_loss: 0.1674
+train >>> epoch: 93/300, batch: 1/4, mean_loss: 0.0005
+train >>> epoch: 93/300, batch: 2/4, mean_loss: 0.0006
+train >>> epoch: 93/300, batch: 3/4, mean_loss: 0.0012
+train >>> epoch: 93/300, batch: 4/4, mean_loss: 0.0016
+valid >>> epoch: 93/300, mean_loss: 0.1875
+train >>> epoch: 94/300, batch: 1/4, mean_loss: 0.0017
+train >>> epoch: 94/300, batch: 2/4, mean_loss: 0.0012
+train >>> epoch: 94/300, batch: 3/4, mean_loss: 0.0012
+train >>> epoch: 94/300, batch: 4/4, mean_loss: 0.0011
+valid >>> epoch: 94/300, mean_loss: 0.1545
+train >>> epoch: 95/300, batch: 1/4, mean_loss: 0.0008
+train >>> epoch: 95/300, batch: 2/4, mean_loss: 0.0016
+train >>> epoch: 95/300, batch: 3/4, mean_loss: 0.0015
+train >>> epoch: 95/300, batch: 4/4, mean_loss: 0.0014
+valid >>> epoch: 95/300, mean_loss: 0.1805
+train >>> epoch: 96/300, batch: 1/4, mean_loss: 0.0019
+train >>> epoch: 96/300, batch: 2/4, mean_loss: 0.0023
+train >>> epoch: 96/300, batch: 3/4, mean_loss: 0.0020
+train >>> epoch: 96/300, batch: 4/4, mean_loss: 0.0021
+valid >>> epoch: 96/300, mean_loss: 0.1734
+train >>> epoch: 97/300, batch: 1/4, mean_loss: 0.0008
+train >>> epoch: 97/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 97/300, batch: 3/4, mean_loss: 0.0006
+train >>> epoch: 97/300, batch: 4/4, mean_loss: 0.0010
+valid >>> epoch: 97/300, mean_loss: 0.1630
+train >>> epoch: 98/300, batch: 1/4, mean_loss: 0.0008
+train >>> epoch: 98/300, batch: 2/4, mean_loss: 0.0010
+train >>> epoch: 98/300, batch: 3/4, mean_loss: 0.0012
+train >>> epoch: 98/300, batch: 4/4, mean_loss: 0.0016
+valid >>> epoch: 98/300, mean_loss: 0.1758
+train >>> epoch: 99/300, batch: 1/4, mean_loss: 0.0009
+train >>> epoch: 99/300, batch: 2/4, mean_loss: 0.0012
+train >>> epoch: 99/300, batch: 3/4, mean_loss: 0.0013
+train >>> epoch: 99/300, batch: 4/4, mean_loss: 0.0014
+valid >>> epoch: 99/300, mean_loss: 0.1859
+train >>> epoch: 100/300, batch: 1/4, mean_loss: 0.0009
+train >>> epoch: 100/300, batch: 2/4, mean_loss: 0.0016
+train >>> epoch: 100/300, batch: 3/4, mean_loss: 0.0013
+train >>> epoch: 100/300, batch: 4/4, mean_loss: 0.0015
+valid >>> epoch: 100/300, mean_loss: 0.1611
+train >>> epoch: 101/300, batch: 1/4, mean_loss: 0.0012
+train >>> epoch: 101/300, batch: 2/4, mean_loss: 0.0011
+train >>> epoch: 101/300, batch: 3/4, mean_loss: 0.0009
+train >>> epoch: 101/300, batch: 4/4, mean_loss: 0.0009
+valid >>> epoch: 101/300, mean_loss: 0.1736
+train >>> epoch: 102/300, batch: 1/4, mean_loss: 0.0006
+train >>> epoch: 102/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 102/300, batch: 3/4, mean_loss: 0.0006
+train >>> epoch: 102/300, batch: 4/4, mean_loss: 0.0016
+valid >>> epoch: 102/300, mean_loss: 0.1711
+train >>> epoch: 103/300, batch: 1/4, mean_loss: 0.0006
+train >>> epoch: 103/300, batch: 2/4, mean_loss: 0.0008
+train >>> epoch: 103/300, batch: 3/4, mean_loss: 0.0008
+train >>> epoch: 103/300, batch: 4/4, mean_loss: 0.0016
+valid >>> epoch: 103/300, mean_loss: 0.1657
+train >>> epoch: 104/300, batch: 1/4, mean_loss: 0.0007
+train >>> epoch: 104/300, batch: 2/4, mean_loss: 0.0008
+train >>> epoch: 104/300, batch: 3/4, mean_loss: 0.0008
+train >>> epoch: 104/300, batch: 4/4, mean_loss: 0.0012
+valid >>> epoch: 104/300, mean_loss: 0.1832
+train >>> epoch: 105/300, batch: 1/4, mean_loss: 0.0010
+train >>> epoch: 105/300, batch: 2/4, mean_loss: 0.0013
+train >>> epoch: 105/300, batch: 3/4, mean_loss: 0.0010
+train >>> epoch: 105/300, batch: 4/4, mean_loss: 0.0014
+valid >>> epoch: 105/300, mean_loss: 0.1638
+train >>> epoch: 106/300, batch: 1/4, mean_loss: 0.0013
+train >>> epoch: 106/300, batch: 2/4, mean_loss: 0.0012
+train >>> epoch: 106/300, batch: 3/4, mean_loss: 0.0014
+train >>> epoch: 106/300, batch: 4/4, mean_loss: 0.0016
+valid >>> epoch: 106/300, mean_loss: 0.1714
+train >>> epoch: 107/300, batch: 1/4, mean_loss: 0.0008
+train >>> epoch: 107/300, batch: 2/4, mean_loss: 0.0009
+train >>> epoch: 107/300, batch: 3/4, mean_loss: 0.0009
+train >>> epoch: 107/300, batch: 4/4, mean_loss: 0.0010
+valid >>> epoch: 107/300, mean_loss: 0.1645
+train >>> epoch: 108/300, batch: 1/4, mean_loss: 0.0007
+train >>> epoch: 108/300, batch: 2/4, mean_loss: 0.0012
+train >>> epoch: 108/300, batch: 3/4, mean_loss: 0.0011
+train >>> epoch: 108/300, batch: 4/4, mean_loss: 0.0012
+valid >>> epoch: 108/300, mean_loss: 0.1739
+train >>> epoch: 109/300, batch: 1/4, mean_loss: 0.0013
+train >>> epoch: 109/300, batch: 2/4, mean_loss: 0.0012
+train >>> epoch: 109/300, batch: 3/4, mean_loss: 0.0019
+train >>> epoch: 109/300, batch: 4/4, mean_loss: 0.0034
+valid >>> epoch: 109/300, mean_loss: 0.1705
+train >>> epoch: 110/300, batch: 1/4, mean_loss: 0.0009
+train >>> epoch: 110/300, batch: 2/4, mean_loss: 0.0009
+train >>> epoch: 110/300, batch: 3/4, mean_loss: 0.0011
+train >>> epoch: 110/300, batch: 4/4, mean_loss: 0.0014
+valid >>> epoch: 110/300, mean_loss: 0.1591
+train >>> epoch: 111/300, batch: 1/4, mean_loss: 0.0009
+train >>> epoch: 111/300, batch: 2/4, mean_loss: 0.0010
+train >>> epoch: 111/300, batch: 3/4, mean_loss: 0.0010
+train >>> epoch: 111/300, batch: 4/4, mean_loss: 0.0010
+valid >>> epoch: 111/300, mean_loss: 0.1875
+train >>> epoch: 112/300, batch: 1/4, mean_loss: 0.0015
+train >>> epoch: 112/300, batch: 2/4, mean_loss: 0.0013
+train >>> epoch: 112/300, batch: 3/4, mean_loss: 0.0013
+train >>> epoch: 112/300, batch: 4/4, mean_loss: 0.0019
+valid >>> epoch: 112/300, mean_loss: 0.1730
+train >>> epoch: 113/300, batch: 1/4, mean_loss: 0.0011
+train >>> epoch: 113/300, batch: 2/4, mean_loss: 0.0009
+train >>> epoch: 113/300, batch: 3/4, mean_loss: 0.0020
+train >>> epoch: 113/300, batch: 4/4, mean_loss: 0.0029
+valid >>> epoch: 113/300, mean_loss: 0.1665
+train >>> epoch: 114/300, batch: 1/4, mean_loss: 0.0007
+train >>> epoch: 114/300, batch: 2/4, mean_loss: 0.0009
+train >>> epoch: 114/300, batch: 3/4, mean_loss: 0.0009
+train >>> epoch: 114/300, batch: 4/4, mean_loss: 0.0011
+valid >>> epoch: 114/300, mean_loss: 0.1900
+train >>> epoch: 115/300, batch: 1/4, mean_loss: 0.0025
+train >>> epoch: 115/300, batch: 2/4, mean_loss: 0.0021
+train >>> epoch: 115/300, batch: 3/4, mean_loss: 0.0016
+train >>> epoch: 115/300, batch: 4/4, mean_loss: 0.0017
+valid >>> epoch: 115/300, mean_loss: 0.1648
+train >>> epoch: 116/300, batch: 1/4, mean_loss: 0.0011
+train >>> epoch: 116/300, batch: 2/4, mean_loss: 0.0014
+train >>> epoch: 116/300, batch: 3/4, mean_loss: 0.0015
+train >>> epoch: 116/300, batch: 4/4, mean_loss: 0.0014
+valid >>> epoch: 116/300, mean_loss: 0.1653
+train >>> epoch: 117/300, batch: 1/4, mean_loss: 0.0009
+train >>> epoch: 117/300, batch: 2/4, mean_loss: 0.0009
+train >>> epoch: 117/300, batch: 3/4, mean_loss: 0.0009
+train >>> epoch: 117/300, batch: 4/4, mean_loss: 0.0010
+valid >>> epoch: 117/300, mean_loss: 0.1818
+train >>> epoch: 118/300, batch: 1/4, mean_loss: 0.0015
+train >>> epoch: 118/300, batch: 2/4, mean_loss: 0.0011
+train >>> epoch: 118/300, batch: 3/4, mean_loss: 0.0011
+train >>> epoch: 118/300, batch: 4/4, mean_loss: 0.0017
+valid >>> epoch: 118/300, mean_loss: 0.1661
+train >>> epoch: 119/300, batch: 1/4, mean_loss: 0.0014
+train >>> epoch: 119/300, batch: 2/4, mean_loss: 0.0011
+train >>> epoch: 119/300, batch: 3/4, mean_loss: 0.0010
+train >>> epoch: 119/300, batch: 4/4, mean_loss: 0.0012
+valid >>> epoch: 119/300, mean_loss: 0.1636
+train >>> epoch: 120/300, batch: 1/4, mean_loss: 0.0013
+train >>> epoch: 120/300, batch: 2/4, mean_loss: 0.0009
+train >>> epoch: 120/300, batch: 3/4, mean_loss: 0.0008
+train >>> epoch: 120/300, batch: 4/4, mean_loss: 0.0008
+valid >>> epoch: 120/300, mean_loss: 0.1793
+train >>> epoch: 121/300, batch: 1/4, mean_loss: 0.0007
+train >>> epoch: 121/300, batch: 2/4, mean_loss: 0.0009
+train >>> epoch: 121/300, batch: 3/4, mean_loss: 0.0008
+train >>> epoch: 121/300, batch: 4/4, mean_loss: 0.0007
+valid >>> epoch: 121/300, mean_loss: 0.1775
+train >>> epoch: 122/300, batch: 1/4, mean_loss: 0.0008
+train >>> epoch: 122/300, batch: 2/4, mean_loss: 0.0006
+train >>> epoch: 122/300, batch: 3/4, mean_loss: 0.0007
+train >>> epoch: 122/300, batch: 4/4, mean_loss: 0.0010
+valid >>> epoch: 122/300, mean_loss: 0.1735
+train >>> epoch: 123/300, batch: 1/4, mean_loss: 0.0005
+train >>> epoch: 123/300, batch: 2/4, mean_loss: 0.0009
+train >>> epoch: 123/300, batch: 3/4, mean_loss: 0.0007
+train >>> epoch: 123/300, batch: 4/4, mean_loss: 0.0008
+valid >>> epoch: 123/300, mean_loss: 0.1756
+train >>> epoch: 124/300, batch: 1/4, mean_loss: 0.0008
+train >>> epoch: 124/300, batch: 2/4, mean_loss: 0.0006
+train >>> epoch: 124/300, batch: 3/4, mean_loss: 0.0008
+train >>> epoch: 124/300, batch: 4/4, mean_loss: 0.0009
+valid >>> epoch: 124/300, mean_loss: 0.1724
+train >>> epoch: 125/300, batch: 1/4, mean_loss: 0.0007
+train >>> epoch: 125/300, batch: 2/4, mean_loss: 0.0006
+train >>> epoch: 125/300, batch: 3/4, mean_loss: 0.0007
+train >>> epoch: 125/300, batch: 4/4, mean_loss: 0.0009
+valid >>> epoch: 125/300, mean_loss: 0.1775
+train >>> epoch: 126/300, batch: 1/4, mean_loss: 0.0006
+train >>> epoch: 126/300, batch: 2/4, mean_loss: 0.0014
+train >>> epoch: 126/300, batch: 3/4, mean_loss: 0.0013
+train >>> epoch: 126/300, batch: 4/4, mean_loss: 0.0018
+valid >>> epoch: 126/300, mean_loss: 0.1842
+train >>> epoch: 127/300, batch: 1/4, mean_loss: 0.0012
+train >>> epoch: 127/300, batch: 2/4, mean_loss: 0.0010
+train >>> epoch: 127/300, batch: 3/4, mean_loss: 0.0009
+train >>> epoch: 127/300, batch: 4/4, mean_loss: 0.0015
+valid >>> epoch: 127/300, mean_loss: 0.1764
+train >>> epoch: 128/300, batch: 1/4, mean_loss: 0.0009
+train >>> epoch: 128/300, batch: 2/4, mean_loss: 0.0008
+train >>> epoch: 128/300, batch: 3/4, mean_loss: 0.0009
+train >>> epoch: 128/300, batch: 4/4, mean_loss: 0.0010
+valid >>> epoch: 128/300, mean_loss: 0.1738
+train >>> epoch: 129/300, batch: 1/4, mean_loss: 0.0007
+train >>> epoch: 129/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 129/300, batch: 3/4, mean_loss: 0.0009
+train >>> epoch: 129/300, batch: 4/4, mean_loss: 0.0013
+valid >>> epoch: 129/300, mean_loss: 0.1682
+train >>> epoch: 130/300, batch: 1/4, mean_loss: 0.0008
+train >>> epoch: 130/300, batch: 2/4, mean_loss: 0.0008
+train >>> epoch: 130/300, batch: 3/4, mean_loss: 0.0009
+train >>> epoch: 130/300, batch: 4/4, mean_loss: 0.0013
+valid >>> epoch: 130/300, mean_loss: 0.1706
+train >>> epoch: 131/300, batch: 1/4, mean_loss: 0.0012
+train >>> epoch: 131/300, batch: 2/4, mean_loss: 0.0015
+train >>> epoch: 131/300, batch: 3/4, mean_loss: 0.0014
+train >>> epoch: 131/300, batch: 4/4, mean_loss: 0.0014
+valid >>> epoch: 131/300, mean_loss: 0.1827
+train >>> epoch: 132/300, batch: 1/4, mean_loss: 0.0007
+train >>> epoch: 132/300, batch: 2/4, mean_loss: 0.0021
+train >>> epoch: 132/300, batch: 3/4, mean_loss: 0.0016
+train >>> epoch: 132/300, batch: 4/4, mean_loss: 0.0020
+valid >>> epoch: 132/300, mean_loss: 0.1711
+train >>> epoch: 133/300, batch: 1/4, mean_loss: 0.0007
+train >>> epoch: 133/300, batch: 2/4, mean_loss: 0.0009
+train >>> epoch: 133/300, batch: 3/4, mean_loss: 0.0009
+train >>> epoch: 133/300, batch: 4/4, mean_loss: 0.0009
+valid >>> epoch: 133/300, mean_loss: 0.1757
+train >>> epoch: 134/300, batch: 1/4, mean_loss: 0.0007
+train >>> epoch: 134/300, batch: 2/4, mean_loss: 0.0009
+train >>> epoch: 134/300, batch: 3/4, mean_loss: 0.0009
+train >>> epoch: 134/300, batch: 4/4, mean_loss: 0.0013
+valid >>> epoch: 134/300, mean_loss: 0.1734
+train >>> epoch: 135/300, batch: 1/4, mean_loss: 0.0010
+train >>> epoch: 135/300, batch: 2/4, mean_loss: 0.0009
+train >>> epoch: 135/300, batch: 3/4, mean_loss: 0.0010
+train >>> epoch: 135/300, batch: 4/4, mean_loss: 0.0015
+valid >>> epoch: 135/300, mean_loss: 0.1689
+train >>> epoch: 136/300, batch: 1/4, mean_loss: 0.0004
+train >>> epoch: 136/300, batch: 2/4, mean_loss: 0.0006
+train >>> epoch: 136/300, batch: 3/4, mean_loss: 0.0006
+train >>> epoch: 136/300, batch: 4/4, mean_loss: 0.0009
+valid >>> epoch: 136/300, mean_loss: 0.1798
+train >>> epoch: 137/300, batch: 1/4, mean_loss: 0.0010
+train >>> epoch: 137/300, batch: 2/4, mean_loss: 0.0008
+train >>> epoch: 137/300, batch: 3/4, mean_loss: 0.0008
+train >>> epoch: 137/300, batch: 4/4, mean_loss: 0.0014
+valid >>> epoch: 137/300, mean_loss: 0.1722
+train >>> epoch: 138/300, batch: 1/4, mean_loss: 0.0010
+train >>> epoch: 138/300, batch: 2/4, mean_loss: 0.0009
+train >>> epoch: 138/300, batch: 3/4, mean_loss: 0.0009
+train >>> epoch: 138/300, batch: 4/4, mean_loss: 0.0013
+valid >>> epoch: 138/300, mean_loss: 0.1735
+train >>> epoch: 139/300, batch: 1/4, mean_loss: 0.0007
+train >>> epoch: 139/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 139/300, batch: 3/4, mean_loss: 0.0007
+train >>> epoch: 139/300, batch: 4/4, mean_loss: 0.0007
+valid >>> epoch: 139/300, mean_loss: 0.1781
+train >>> epoch: 140/300, batch: 1/4, mean_loss: 0.0006
+train >>> epoch: 140/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 140/300, batch: 3/4, mean_loss: 0.0006
+train >>> epoch: 140/300, batch: 4/4, mean_loss: 0.0011
+valid >>> epoch: 140/300, mean_loss: 0.1735
+train >>> epoch: 141/300, batch: 1/4, mean_loss: 0.0006
+train >>> epoch: 141/300, batch: 2/4, mean_loss: 0.0006
+train >>> epoch: 141/300, batch: 3/4, mean_loss: 0.0007
+train >>> epoch: 141/300, batch: 4/4, mean_loss: 0.0007
+valid >>> epoch: 141/300, mean_loss: 0.1717
+train >>> epoch: 142/300, batch: 1/4, mean_loss: 0.0009
+train >>> epoch: 142/300, batch: 2/4, mean_loss: 0.0008
+train >>> epoch: 142/300, batch: 3/4, mean_loss: 0.0008
+train >>> epoch: 142/300, batch: 4/4, mean_loss: 0.0010
+valid >>> epoch: 142/300, mean_loss: 0.1725
+train >>> epoch: 143/300, batch: 1/4, mean_loss: 0.0003
+train >>> epoch: 143/300, batch: 2/4, mean_loss: 0.0004
+train >>> epoch: 143/300, batch: 3/4, mean_loss: 0.0006
+train >>> epoch: 143/300, batch: 4/4, mean_loss: 0.0009
+valid >>> epoch: 143/300, mean_loss: 0.1715
+train >>> epoch: 144/300, batch: 1/4, mean_loss: 0.0008
+train >>> epoch: 144/300, batch: 2/4, mean_loss: 0.0006
+train >>> epoch: 144/300, batch: 3/4, mean_loss: 0.0007
+train >>> epoch: 144/300, batch: 4/4, mean_loss: 0.0011
+valid >>> epoch: 144/300, mean_loss: 0.1794
+train >>> epoch: 145/300, batch: 1/4, mean_loss: 0.0006
+train >>> epoch: 145/300, batch: 2/4, mean_loss: 0.0005
+train >>> epoch: 145/300, batch: 3/4, mean_loss: 0.0007
+train >>> epoch: 145/300, batch: 4/4, mean_loss: 0.0007
+valid >>> epoch: 145/300, mean_loss: 0.1667
+train >>> epoch: 146/300, batch: 1/4, mean_loss: 0.0005
+train >>> epoch: 146/300, batch: 2/4, mean_loss: 0.0012
+train >>> epoch: 146/300, batch: 3/4, mean_loss: 0.0010
+train >>> epoch: 146/300, batch: 4/4, mean_loss: 0.0011
+valid >>> epoch: 146/300, mean_loss: 0.1752
+train >>> epoch: 147/300, batch: 1/4, mean_loss: 0.0004
+train >>> epoch: 147/300, batch: 2/4, mean_loss: 0.0006
+train >>> epoch: 147/300, batch: 3/4, mean_loss: 0.0007
+train >>> epoch: 147/300, batch: 4/4, mean_loss: 0.0009
+valid >>> epoch: 147/300, mean_loss: 0.1746
+train >>> epoch: 148/300, batch: 1/4, mean_loss: 0.0004
+train >>> epoch: 148/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 148/300, batch: 3/4, mean_loss: 0.0006
+train >>> epoch: 148/300, batch: 4/4, mean_loss: 0.0008
+valid >>> epoch: 148/300, mean_loss: 0.1810
+train >>> epoch: 149/300, batch: 1/4, mean_loss: 0.0015
+train >>> epoch: 149/300, batch: 2/4, mean_loss: 0.0013
+train >>> epoch: 149/300, batch: 3/4, mean_loss: 0.0011
+train >>> epoch: 149/300, batch: 4/4, mean_loss: 0.0014
+valid >>> epoch: 149/300, mean_loss: 0.1822
+train >>> epoch: 150/300, batch: 1/4, mean_loss: 0.0006
+train >>> epoch: 150/300, batch: 2/4, mean_loss: 0.0006
+train >>> epoch: 150/300, batch: 3/4, mean_loss: 0.0007
+train >>> epoch: 150/300, batch: 4/4, mean_loss: 0.0009
+valid >>> epoch: 150/300, mean_loss: 0.1804
+train >>> epoch: 151/300, batch: 1/4, mean_loss: 0.0011
+train >>> epoch: 151/300, batch: 2/4, mean_loss: 0.0011
+train >>> epoch: 151/300, batch: 3/4, mean_loss: 0.0009
+train >>> epoch: 151/300, batch: 4/4, mean_loss: 0.0013
+valid >>> epoch: 151/300, mean_loss: 0.1736
+train >>> epoch: 152/300, batch: 1/4, mean_loss: 0.0006
+train >>> epoch: 152/300, batch: 2/4, mean_loss: 0.0006
+train >>> epoch: 152/300, batch: 3/4, mean_loss: 0.0006
+train >>> epoch: 152/300, batch: 4/4, mean_loss: 0.0012
+valid >>> epoch: 152/300, mean_loss: 0.1865
+train >>> epoch: 153/300, batch: 1/4, mean_loss: 0.0014
+train >>> epoch: 153/300, batch: 2/4, mean_loss: 0.0012
+train >>> epoch: 153/300, batch: 3/4, mean_loss: 0.0012
+train >>> epoch: 153/300, batch: 4/4, mean_loss: 0.0017
+valid >>> epoch: 153/300, mean_loss: 0.1768
+train >>> epoch: 154/300, batch: 1/4, mean_loss: 0.0005
+train >>> epoch: 154/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 154/300, batch: 3/4, mean_loss: 0.0009
+train >>> epoch: 154/300, batch: 4/4, mean_loss: 0.0013
+valid >>> epoch: 154/300, mean_loss: 0.1699
+train >>> epoch: 155/300, batch: 1/4, mean_loss: 0.0011
+train >>> epoch: 155/300, batch: 2/4, mean_loss: 0.0009
+train >>> epoch: 155/300, batch: 3/4, mean_loss: 0.0010
+train >>> epoch: 155/300, batch: 4/4, mean_loss: 0.0011
+valid >>> epoch: 155/300, mean_loss: 0.1831
+train >>> epoch: 156/300, batch: 1/4, mean_loss: 0.0015
+train >>> epoch: 156/300, batch: 2/4, mean_loss: 0.0011
+train >>> epoch: 156/300, batch: 3/4, mean_loss: 0.0010
+train >>> epoch: 156/300, batch: 4/4, mean_loss: 0.0013
+valid >>> epoch: 156/300, mean_loss: 0.1717
+train >>> epoch: 157/300, batch: 1/4, mean_loss: 0.0008
+train >>> epoch: 157/300, batch: 2/4, mean_loss: 0.0012
+train >>> epoch: 157/300, batch: 3/4, mean_loss: 0.0012
+train >>> epoch: 157/300, batch: 4/4, mean_loss: 0.0016
+valid >>> epoch: 157/300, mean_loss: 0.1700
+train >>> epoch: 158/300, batch: 1/4, mean_loss: 0.0007
+train >>> epoch: 158/300, batch: 2/4, mean_loss: 0.0006
+train >>> epoch: 158/300, batch: 3/4, mean_loss: 0.0007
+train >>> epoch: 158/300, batch: 4/4, mean_loss: 0.0008
+valid >>> epoch: 158/300, mean_loss: 0.1890
+train >>> epoch: 159/300, batch: 1/4, mean_loss: 0.0011
+train >>> epoch: 159/300, batch: 2/4, mean_loss: 0.0010
+train >>> epoch: 159/300, batch: 3/4, mean_loss: 0.0012
+train >>> epoch: 159/300, batch: 4/4, mean_loss: 0.0016
+valid >>> epoch: 159/300, mean_loss: 0.1719
+train >>> epoch: 160/300, batch: 1/4, mean_loss: 0.0010
+train >>> epoch: 160/300, batch: 2/4, mean_loss: 0.0010
+train >>> epoch: 160/300, batch: 3/4, mean_loss: 0.0012
+train >>> epoch: 160/300, batch: 4/4, mean_loss: 0.0013
+valid >>> epoch: 160/300, mean_loss: 0.1669
+train >>> epoch: 161/300, batch: 1/4, mean_loss: 0.0014
+train >>> epoch: 161/300, batch: 2/4, mean_loss: 0.0013
+train >>> epoch: 161/300, batch: 3/4, mean_loss: 0.0011
+train >>> epoch: 161/300, batch: 4/4, mean_loss: 0.0012
+valid >>> epoch: 161/300, mean_loss: 0.1872
+train >>> epoch: 162/300, batch: 1/4, mean_loss: 0.0010
+train >>> epoch: 162/300, batch: 2/4, mean_loss: 0.0009
+train >>> epoch: 162/300, batch: 3/4, mean_loss: 0.0008
+train >>> epoch: 162/300, batch: 4/4, mean_loss: 0.0017
+valid >>> epoch: 162/300, mean_loss: 0.1816
+train >>> epoch: 163/300, batch: 1/4, mean_loss: 0.0007
+train >>> epoch: 163/300, batch: 2/4, mean_loss: 0.0011
+train >>> epoch: 163/300, batch: 3/4, mean_loss: 0.0014
+train >>> epoch: 163/300, batch: 4/4, mean_loss: 0.0014
+valid >>> epoch: 163/300, mean_loss: 0.1825
+train >>> epoch: 164/300, batch: 1/4, mean_loss: 0.0007
+train >>> epoch: 164/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 164/300, batch: 3/4, mean_loss: 0.0007
+train >>> epoch: 164/300, batch: 4/4, mean_loss: 0.0011
+valid >>> epoch: 164/300, mean_loss: 0.1782
+train >>> epoch: 165/300, batch: 1/4, mean_loss: 0.0009
+train >>> epoch: 165/300, batch: 2/4, mean_loss: 0.0009
+train >>> epoch: 165/300, batch: 3/4, mean_loss: 0.0011
+train >>> epoch: 165/300, batch: 4/4, mean_loss: 0.0014
+valid >>> epoch: 165/300, mean_loss: 0.1727
+train >>> epoch: 166/300, batch: 1/4, mean_loss: 0.0012
+train >>> epoch: 166/300, batch: 2/4, mean_loss: 0.0010
+train >>> epoch: 166/300, batch: 3/4, mean_loss: 0.0009
+train >>> epoch: 166/300, batch: 4/4, mean_loss: 0.0017
+valid >>> epoch: 166/300, mean_loss: 0.1907
+train >>> epoch: 167/300, batch: 1/4, mean_loss: 0.0009
+train >>> epoch: 167/300, batch: 2/4, mean_loss: 0.0020
+train >>> epoch: 167/300, batch: 3/4, mean_loss: 0.0019
+train >>> epoch: 167/300, batch: 4/4, mean_loss: 0.0022
+valid >>> epoch: 167/300, mean_loss: 0.1870
+train >>> epoch: 168/300, batch: 1/4, mean_loss: 0.0012
+train >>> epoch: 168/300, batch: 2/4, mean_loss: 0.0009
+train >>> epoch: 168/300, batch: 3/4, mean_loss: 0.0008
+train >>> epoch: 168/300, batch: 4/4, mean_loss: 0.0020
+valid >>> epoch: 168/300, mean_loss: 0.1742
+train >>> epoch: 169/300, batch: 1/4, mean_loss: 0.0008
+train >>> epoch: 169/300, batch: 2/4, mean_loss: 0.0006
+train >>> epoch: 169/300, batch: 3/4, mean_loss: 0.0006
+train >>> epoch: 169/300, batch: 4/4, mean_loss: 0.0009
+valid >>> epoch: 169/300, mean_loss: 0.1829
+train >>> epoch: 170/300, batch: 1/4, mean_loss: 0.0013
+train >>> epoch: 170/300, batch: 2/4, mean_loss: 0.0010
+train >>> epoch: 170/300, batch: 3/4, mean_loss: 0.0011
+train >>> epoch: 170/300, batch: 4/4, mean_loss: 0.0015
+valid >>> epoch: 170/300, mean_loss: 0.1824
+train >>> epoch: 171/300, batch: 1/4, mean_loss: 0.0008
+train >>> epoch: 171/300, batch: 2/4, mean_loss: 0.0006
+train >>> epoch: 171/300, batch: 3/4, mean_loss: 0.0010
+train >>> epoch: 171/300, batch: 4/4, mean_loss: 0.0009
+valid >>> epoch: 171/300, mean_loss: 0.1880
+train >>> epoch: 172/300, batch: 1/4, mean_loss: 0.0012
+train >>> epoch: 172/300, batch: 2/4, mean_loss: 0.0010
+train >>> epoch: 172/300, batch: 3/4, mean_loss: 0.0009
+train >>> epoch: 172/300, batch: 4/4, mean_loss: 0.0012
+valid >>> epoch: 172/300, mean_loss: 0.1722
+train >>> epoch: 173/300, batch: 1/4, mean_loss: 0.0012
+train >>> epoch: 173/300, batch: 2/4, mean_loss: 0.0012
+train >>> epoch: 173/300, batch: 3/4, mean_loss: 0.0011
+train >>> epoch: 173/300, batch: 4/4, mean_loss: 0.0011
+valid >>> epoch: 173/300, mean_loss: 0.1764
+train >>> epoch: 174/300, batch: 1/4, mean_loss: 0.0006
+train >>> epoch: 174/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 174/300, batch: 3/4, mean_loss: 0.0007
+train >>> epoch: 174/300, batch: 4/4, mean_loss: 0.0007
+valid >>> epoch: 174/300, mean_loss: 0.1803
+train >>> epoch: 175/300, batch: 1/4, mean_loss: 0.0007
+train >>> epoch: 175/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 175/300, batch: 3/4, mean_loss: 0.0008
+train >>> epoch: 175/300, batch: 4/4, mean_loss: 0.0010
+valid >>> epoch: 175/300, mean_loss: 0.1775
+train >>> epoch: 176/300, batch: 1/4, mean_loss: 0.0006
+train >>> epoch: 176/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 176/300, batch: 3/4, mean_loss: 0.0007
+train >>> epoch: 176/300, batch: 4/4, mean_loss: 0.0007
+valid >>> epoch: 176/300, mean_loss: 0.1817
+train >>> epoch: 177/300, batch: 1/4, mean_loss: 0.0004
+train >>> epoch: 177/300, batch: 2/4, mean_loss: 0.0005
+train >>> epoch: 177/300, batch: 3/4, mean_loss: 0.0006
+train >>> epoch: 177/300, batch: 4/4, mean_loss: 0.0008
+valid >>> epoch: 177/300, mean_loss: 0.1752
+train >>> epoch: 178/300, batch: 1/4, mean_loss: 0.0010
+train >>> epoch: 178/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 178/300, batch: 3/4, mean_loss: 0.0007
+train >>> epoch: 178/300, batch: 4/4, mean_loss: 0.0007
+valid >>> epoch: 178/300, mean_loss: 0.1796
+train >>> epoch: 179/300, batch: 1/4, mean_loss: 0.0006
+train >>> epoch: 179/300, batch: 2/4, mean_loss: 0.0005
+train >>> epoch: 179/300, batch: 3/4, mean_loss: 0.0004
+train >>> epoch: 179/300, batch: 4/4, mean_loss: 0.0006
+valid >>> epoch: 179/300, mean_loss: 0.1773
+train >>> epoch: 180/300, batch: 1/4, mean_loss: 0.0005
+train >>> epoch: 180/300, batch: 2/4, mean_loss: 0.0004
+train >>> epoch: 180/300, batch: 3/4, mean_loss: 0.0004
+train >>> epoch: 180/300, batch: 4/4, mean_loss: 0.0006
+valid >>> epoch: 180/300, mean_loss: 0.1793
+train >>> epoch: 181/300, batch: 1/4, mean_loss: 0.0006
+train >>> epoch: 181/300, batch: 2/4, mean_loss: 0.0006
+train >>> epoch: 181/300, batch: 3/4, mean_loss: 0.0007
+train >>> epoch: 181/300, batch: 4/4, mean_loss: 0.0009
+valid >>> epoch: 181/300, mean_loss: 0.1754
+train >>> epoch: 182/300, batch: 1/4, mean_loss: 0.0004
+train >>> epoch: 182/300, batch: 2/4, mean_loss: 0.0005
+train >>> epoch: 182/300, batch: 3/4, mean_loss: 0.0005
+train >>> epoch: 182/300, batch: 4/4, mean_loss: 0.0006
+valid >>> epoch: 182/300, mean_loss: 0.1804
+train >>> epoch: 183/300, batch: 1/4, mean_loss: 0.0007
+train >>> epoch: 183/300, batch: 2/4, mean_loss: 0.0008
+train >>> epoch: 183/300, batch: 3/4, mean_loss: 0.0006
+train >>> epoch: 183/300, batch: 4/4, mean_loss: 0.0020
+valid >>> epoch: 183/300, mean_loss: 0.1893
+train >>> epoch: 184/300, batch: 1/4, mean_loss: 0.0007
+train >>> epoch: 184/300, batch: 2/4, mean_loss: 0.0013
+train >>> epoch: 184/300, batch: 3/4, mean_loss: 0.0019
+train >>> epoch: 184/300, batch: 4/4, mean_loss: 0.0016
+valid >>> epoch: 184/300, mean_loss: 0.1929
+train >>> epoch: 185/300, batch: 1/4, mean_loss: 0.0012
+train >>> epoch: 185/300, batch: 2/4, mean_loss: 0.0012
+train >>> epoch: 185/300, batch: 3/4, mean_loss: 0.0011
+train >>> epoch: 185/300, batch: 4/4, mean_loss: 0.0015
+valid >>> epoch: 185/300, mean_loss: 0.1722
+train >>> epoch: 186/300, batch: 1/4, mean_loss: 0.0008
+train >>> epoch: 186/300, batch: 2/4, mean_loss: 0.0010
+train >>> epoch: 186/300, batch: 3/4, mean_loss: 0.0012
+train >>> epoch: 186/300, batch: 4/4, mean_loss: 0.0012
+valid >>> epoch: 186/300, mean_loss: 0.1758
+train >>> epoch: 187/300, batch: 1/4, mean_loss: 0.0006
+train >>> epoch: 187/300, batch: 2/4, mean_loss: 0.0008
+train >>> epoch: 187/300, batch: 3/4, mean_loss: 0.0009
+train >>> epoch: 187/300, batch: 4/4, mean_loss: 0.0011
+valid >>> epoch: 187/300, mean_loss: 0.1801
+train >>> epoch: 188/300, batch: 1/4, mean_loss: 0.0015
+train >>> epoch: 188/300, batch: 2/4, mean_loss: 0.0011
+train >>> epoch: 188/300, batch: 3/4, mean_loss: 0.0012
+train >>> epoch: 188/300, batch: 4/4, mean_loss: 0.0013
+valid >>> epoch: 188/300, mean_loss: 0.1774
+train >>> epoch: 189/300, batch: 1/4, mean_loss: 0.0009
+train >>> epoch: 189/300, batch: 2/4, mean_loss: 0.0008
+train >>> epoch: 189/300, batch: 3/4, mean_loss: 0.0008
+train >>> epoch: 189/300, batch: 4/4, mean_loss: 0.0012
+valid >>> epoch: 189/300, mean_loss: 0.1806
+train >>> epoch: 190/300, batch: 1/4, mean_loss: 0.0010
+train >>> epoch: 190/300, batch: 2/4, mean_loss: 0.0010
+train >>> epoch: 190/300, batch: 3/4, mean_loss: 0.0008
+train >>> epoch: 190/300, batch: 4/4, mean_loss: 0.0011
+valid >>> epoch: 190/300, mean_loss: 0.1802
+train >>> epoch: 191/300, batch: 1/4, mean_loss: 0.0009
+train >>> epoch: 191/300, batch: 2/4, mean_loss: 0.0012
+train >>> epoch: 191/300, batch: 3/4, mean_loss: 0.0010
+train >>> epoch: 191/300, batch: 4/4, mean_loss: 0.0011
+valid >>> epoch: 191/300, mean_loss: 0.1826
+train >>> epoch: 192/300, batch: 1/4, mean_loss: 0.0010
+train >>> epoch: 192/300, batch: 2/4, mean_loss: 0.0008
+train >>> epoch: 192/300, batch: 3/4, mean_loss: 0.0008
+train >>> epoch: 192/300, batch: 4/4, mean_loss: 0.0019
+valid >>> epoch: 192/300, mean_loss: 0.1874
+train >>> epoch: 193/300, batch: 1/4, mean_loss: 0.0005
+train >>> epoch: 193/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 193/300, batch: 3/4, mean_loss: 0.0011
+train >>> epoch: 193/300, batch: 4/4, mean_loss: 0.0021
+valid >>> epoch: 193/300, mean_loss: 0.1845
+train >>> epoch: 194/300, batch: 1/4, mean_loss: 0.0006
+train >>> epoch: 194/300, batch: 2/4, mean_loss: 0.0011
+train >>> epoch: 194/300, batch: 3/4, mean_loss: 0.0011
+train >>> epoch: 194/300, batch: 4/4, mean_loss: 0.0012
+valid >>> epoch: 194/300, mean_loss: 0.1678
+train >>> epoch: 195/300, batch: 1/4, mean_loss: 0.0017
+train >>> epoch: 195/300, batch: 2/4, mean_loss: 0.0013
+train >>> epoch: 195/300, batch: 3/4, mean_loss: 0.0013
+train >>> epoch: 195/300, batch: 4/4, mean_loss: 0.0012
+valid >>> epoch: 195/300, mean_loss: 0.1911
+train >>> epoch: 196/300, batch: 1/4, mean_loss: 0.0009
+train >>> epoch: 196/300, batch: 2/4, mean_loss: 0.0015
+train >>> epoch: 196/300, batch: 3/4, mean_loss: 0.0013
+train >>> epoch: 196/300, batch: 4/4, mean_loss: 0.0014
+valid >>> epoch: 196/300, mean_loss: 0.1878
+train >>> epoch: 197/300, batch: 1/4, mean_loss: 0.0009
+train >>> epoch: 197/300, batch: 2/4, mean_loss: 0.0008
+train >>> epoch: 197/300, batch: 3/4, mean_loss: 0.0008
+train >>> epoch: 197/300, batch: 4/4, mean_loss: 0.0014
+valid >>> epoch: 197/300, mean_loss: 0.1764
+train >>> epoch: 198/300, batch: 1/4, mean_loss: 0.0008
+train >>> epoch: 198/300, batch: 2/4, mean_loss: 0.0008
+train >>> epoch: 198/300, batch: 3/4, mean_loss: 0.0010
+train >>> epoch: 198/300, batch: 4/4, mean_loss: 0.0009
+valid >>> epoch: 198/300, mean_loss: 0.1925
+train >>> epoch: 199/300, batch: 1/4, mean_loss: 0.0007
+train >>> epoch: 199/300, batch: 2/4, mean_loss: 0.0008
+train >>> epoch: 199/300, batch: 3/4, mean_loss: 0.0011
+train >>> epoch: 199/300, batch: 4/4, mean_loss: 0.0015
+valid >>> epoch: 199/300, mean_loss: 0.1832
+train >>> epoch: 200/300, batch: 1/4, mean_loss: 0.0008
+train >>> epoch: 200/300, batch: 2/4, mean_loss: 0.0008
+train >>> epoch: 200/300, batch: 3/4, mean_loss: 0.0010
+train >>> epoch: 200/300, batch: 4/4, mean_loss: 0.0010
+valid >>> epoch: 200/300, mean_loss: 0.1718
+train >>> epoch: 201/300, batch: 1/4, mean_loss: 0.0007
+train >>> epoch: 201/300, batch: 2/4, mean_loss: 0.0008
+train >>> epoch: 201/300, batch: 3/4, mean_loss: 0.0008
+train >>> epoch: 201/300, batch: 4/4, mean_loss: 0.0010
+valid >>> epoch: 201/300, mean_loss: 0.1964
+train >>> epoch: 202/300, batch: 1/4, mean_loss: 0.0007
+train >>> epoch: 202/300, batch: 2/4, mean_loss: 0.0019
+train >>> epoch: 202/300, batch: 3/4, mean_loss: 0.0018
+train >>> epoch: 202/300, batch: 4/4, mean_loss: 0.0017
+valid >>> epoch: 202/300, mean_loss: 0.1902
+train >>> epoch: 203/300, batch: 1/4, mean_loss: 0.0009
+train >>> epoch: 203/300, batch: 2/4, mean_loss: 0.0009
+train >>> epoch: 203/300, batch: 3/4, mean_loss: 0.0012
+train >>> epoch: 203/300, batch: 4/4, mean_loss: 0.0011
+valid >>> epoch: 203/300, mean_loss: 0.1744
+train >>> epoch: 204/300, batch: 1/4, mean_loss: 0.0007
+train >>> epoch: 204/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 204/300, batch: 3/4, mean_loss: 0.0007
+train >>> epoch: 204/300, batch: 4/4, mean_loss: 0.0010
+valid >>> epoch: 204/300, mean_loss: 0.1868
+train >>> epoch: 205/300, batch: 1/4, mean_loss: 0.0004
+train >>> epoch: 205/300, batch: 2/4, mean_loss: 0.0009
+train >>> epoch: 205/300, batch: 3/4, mean_loss: 0.0013
+train >>> epoch: 205/300, batch: 4/4, mean_loss: 0.0014
+valid >>> epoch: 205/300, mean_loss: 0.1936
+train >>> epoch: 206/300, batch: 1/4, mean_loss: 0.0005
+train >>> epoch: 206/300, batch: 2/4, mean_loss: 0.0006
+train >>> epoch: 206/300, batch: 3/4, mean_loss: 0.0007
+train >>> epoch: 206/300, batch: 4/4, mean_loss: 0.0007
+valid >>> epoch: 206/300, mean_loss: 0.1774
+train >>> epoch: 207/300, batch: 1/4, mean_loss: 0.0007
+train >>> epoch: 207/300, batch: 2/4, mean_loss: 0.0008
+train >>> epoch: 207/300, batch: 3/4, mean_loss: 0.0009
+train >>> epoch: 207/300, batch: 4/4, mean_loss: 0.0015
+valid >>> epoch: 207/300, mean_loss: 0.1814
+train >>> epoch: 208/300, batch: 1/4, mean_loss: 0.0006
+train >>> epoch: 208/300, batch: 2/4, mean_loss: 0.0006
+train >>> epoch: 208/300, batch: 3/4, mean_loss: 0.0012
+train >>> epoch: 208/300, batch: 4/4, mean_loss: 0.0019
+valid >>> epoch: 208/300, mean_loss: 0.1940
+train >>> epoch: 209/300, batch: 1/4, mean_loss: 0.0016
+train >>> epoch: 209/300, batch: 2/4, mean_loss: 0.0011
+train >>> epoch: 209/300, batch: 3/4, mean_loss: 0.0011
+train >>> epoch: 209/300, batch: 4/4, mean_loss: 0.0021
+valid >>> epoch: 209/300, mean_loss: 0.1771
+train >>> epoch: 210/300, batch: 1/4, mean_loss: 0.0007
+train >>> epoch: 210/300, batch: 2/4, mean_loss: 0.0011
+train >>> epoch: 210/300, batch: 3/4, mean_loss: 0.0009
+train >>> epoch: 210/300, batch: 4/4, mean_loss: 0.0009
+valid >>> epoch: 210/300, mean_loss: 0.1954
+train >>> epoch: 211/300, batch: 1/4, mean_loss: 0.0007
+train >>> epoch: 211/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 211/300, batch: 3/4, mean_loss: 0.0009
+train >>> epoch: 211/300, batch: 4/4, mean_loss: 0.0021
+valid >>> epoch: 211/300, mean_loss: 0.1837
+train >>> epoch: 212/300, batch: 1/4, mean_loss: 0.0005
+train >>> epoch: 212/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 212/300, batch: 3/4, mean_loss: 0.0011
+train >>> epoch: 212/300, batch: 4/4, mean_loss: 0.0027
+valid >>> epoch: 212/300, mean_loss: 0.1726
+train >>> epoch: 213/300, batch: 1/4, mean_loss: 0.0013
+train >>> epoch: 213/300, batch: 2/4, mean_loss: 0.0012
+train >>> epoch: 213/300, batch: 3/4, mean_loss: 0.0012
+train >>> epoch: 213/300, batch: 4/4, mean_loss: 0.0015
+valid >>> epoch: 213/300, mean_loss: 0.2004
+train >>> epoch: 214/300, batch: 1/4, mean_loss: 0.0016
+train >>> epoch: 214/300, batch: 2/4, mean_loss: 0.0020
+train >>> epoch: 214/300, batch: 3/4, mean_loss: 0.0021
+train >>> epoch: 214/300, batch: 4/4, mean_loss: 0.0019
+valid >>> epoch: 214/300, mean_loss: 0.1860
+train >>> epoch: 215/300, batch: 1/4, mean_loss: 0.0005
+train >>> epoch: 215/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 215/300, batch: 3/4, mean_loss: 0.0010
+train >>> epoch: 215/300, batch: 4/4, mean_loss: 0.0017
+valid >>> epoch: 215/300, mean_loss: 0.1774
+train >>> epoch: 216/300, batch: 1/4, mean_loss: 0.0015
+train >>> epoch: 216/300, batch: 2/4, mean_loss: 0.0014
+train >>> epoch: 216/300, batch: 3/4, mean_loss: 0.0015
+train >>> epoch: 216/300, batch: 4/4, mean_loss: 0.0015
+valid >>> epoch: 216/300, mean_loss: 0.1828
+train >>> epoch: 217/300, batch: 1/4, mean_loss: 0.0006
+train >>> epoch: 217/300, batch: 2/4, mean_loss: 0.0008
+train >>> epoch: 217/300, batch: 3/4, mean_loss: 0.0009
+train >>> epoch: 217/300, batch: 4/4, mean_loss: 0.0011
+valid >>> epoch: 217/300, mean_loss: 0.1936
+train >>> epoch: 218/300, batch: 1/4, mean_loss: 0.0007
+train >>> epoch: 218/300, batch: 2/4, mean_loss: 0.0009
+train >>> epoch: 218/300, batch: 3/4, mean_loss: 0.0009
+train >>> epoch: 218/300, batch: 4/4, mean_loss: 0.0019
+valid >>> epoch: 218/300, mean_loss: 0.1790
+train >>> epoch: 219/300, batch: 1/4, mean_loss: 0.0009
+train >>> epoch: 219/300, batch: 2/4, mean_loss: 0.0016
+train >>> epoch: 219/300, batch: 3/4, mean_loss: 0.0016
+train >>> epoch: 219/300, batch: 4/4, mean_loss: 0.0020
+valid >>> epoch: 219/300, mean_loss: 0.1759
+train >>> epoch: 220/300, batch: 1/4, mean_loss: 0.0016
+train >>> epoch: 220/300, batch: 2/4, mean_loss: 0.0015
+train >>> epoch: 220/300, batch: 3/4, mean_loss: 0.0014
+train >>> epoch: 220/300, batch: 4/4, mean_loss: 0.0013
+valid >>> epoch: 220/300, mean_loss: 0.2042
+train >>> epoch: 221/300, batch: 1/4, mean_loss: 0.0020
+train >>> epoch: 221/300, batch: 2/4, mean_loss: 0.0022
+train >>> epoch: 221/300, batch: 3/4, mean_loss: 0.0020
+train >>> epoch: 221/300, batch: 4/4, mean_loss: 0.0021
+valid >>> epoch: 221/300, mean_loss: 0.1879
+train >>> epoch: 222/300, batch: 1/4, mean_loss: 0.0010
+train >>> epoch: 222/300, batch: 2/4, mean_loss: 0.0008
+train >>> epoch: 222/300, batch: 3/4, mean_loss: 0.0008
+train >>> epoch: 222/300, batch: 4/4, mean_loss: 0.0010
+valid >>> epoch: 222/300, mean_loss: 0.1735
+train >>> epoch: 223/300, batch: 1/4, mean_loss: 0.0018
+train >>> epoch: 223/300, batch: 2/4, mean_loss: 0.0015
+train >>> epoch: 223/300, batch: 3/4, mean_loss: 0.0015
+train >>> epoch: 223/300, batch: 4/4, mean_loss: 0.0017
+valid >>> epoch: 223/300, mean_loss: 0.1902
+train >>> epoch: 224/300, batch: 1/4, mean_loss: 0.0023
+train >>> epoch: 224/300, batch: 2/4, mean_loss: 0.0014
+train >>> epoch: 224/300, batch: 3/4, mean_loss: 0.0014
+train >>> epoch: 224/300, batch: 4/4, mean_loss: 0.0013
+valid >>> epoch: 224/300, mean_loss: 0.1934
+train >>> epoch: 225/300, batch: 1/4, mean_loss: 0.0013
+train >>> epoch: 225/300, batch: 2/4, mean_loss: 0.0010
+train >>> epoch: 225/300, batch: 3/4, mean_loss: 0.0009
+train >>> epoch: 225/300, batch: 4/4, mean_loss: 0.0013
+valid >>> epoch: 225/300, mean_loss: 0.1848
+train >>> epoch: 226/300, batch: 1/4, mean_loss: 0.0009
+train >>> epoch: 226/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 226/300, batch: 3/4, mean_loss: 0.0011
+train >>> epoch: 226/300, batch: 4/4, mean_loss: 0.0015
+valid >>> epoch: 226/300, mean_loss: 0.1802
+train >>> epoch: 227/300, batch: 1/4, mean_loss: 0.0011
+train >>> epoch: 227/300, batch: 2/4, mean_loss: 0.0012
+train >>> epoch: 227/300, batch: 3/4, mean_loss: 0.0010
+train >>> epoch: 227/300, batch: 4/4, mean_loss: 0.0013
+valid >>> epoch: 227/300, mean_loss: 0.1958
+train >>> epoch: 228/300, batch: 1/4, mean_loss: 0.0014
+train >>> epoch: 228/300, batch: 2/4, mean_loss: 0.0011
+train >>> epoch: 228/300, batch: 3/4, mean_loss: 0.0013
+train >>> epoch: 228/300, batch: 4/4, mean_loss: 0.0013
+valid >>> epoch: 228/300, mean_loss: 0.1876
+train >>> epoch: 229/300, batch: 1/4, mean_loss: 0.0011
+train >>> epoch: 229/300, batch: 2/4, mean_loss: 0.0008
+train >>> epoch: 229/300, batch: 3/4, mean_loss: 0.0008
+train >>> epoch: 229/300, batch: 4/4, mean_loss: 0.0009
+valid >>> epoch: 229/300, mean_loss: 0.1769
+train >>> epoch: 230/300, batch: 1/4, mean_loss: 0.0010
+train >>> epoch: 230/300, batch: 2/4, mean_loss: 0.0009
+train >>> epoch: 230/300, batch: 3/4, mean_loss: 0.0008
+train >>> epoch: 230/300, batch: 4/4, mean_loss: 0.0011
+valid >>> epoch: 230/300, mean_loss: 0.1866
+train >>> epoch: 231/300, batch: 1/4, mean_loss: 0.0007
+train >>> epoch: 231/300, batch: 2/4, mean_loss: 0.0008
+train >>> epoch: 231/300, batch: 3/4, mean_loss: 0.0007
+train >>> epoch: 231/300, batch: 4/4, mean_loss: 0.0011
+valid >>> epoch: 231/300, mean_loss: 0.1871
+train >>> epoch: 232/300, batch: 1/4, mean_loss: 0.0006
+train >>> epoch: 232/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 232/300, batch: 3/4, mean_loss: 0.0006
+train >>> epoch: 232/300, batch: 4/4, mean_loss: 0.0008
+valid >>> epoch: 232/300, mean_loss: 0.1799
+train >>> epoch: 233/300, batch: 1/4, mean_loss: 0.0010
+train >>> epoch: 233/300, batch: 2/4, mean_loss: 0.0009
+train >>> epoch: 233/300, batch: 3/4, mean_loss: 0.0009
+train >>> epoch: 233/300, batch: 4/4, mean_loss: 0.0010
+valid >>> epoch: 233/300, mean_loss: 0.1871
+train >>> epoch: 234/300, batch: 1/4, mean_loss: 0.0008
+train >>> epoch: 234/300, batch: 2/4, mean_loss: 0.0011
+train >>> epoch: 234/300, batch: 3/4, mean_loss: 0.0009
+train >>> epoch: 234/300, batch: 4/4, mean_loss: 0.0011
+valid >>> epoch: 234/300, mean_loss: 0.1952
+train >>> epoch: 235/300, batch: 1/4, mean_loss: 0.0008
+train >>> epoch: 235/300, batch: 2/4, mean_loss: 0.0009
+train >>> epoch: 235/300, batch: 3/4, mean_loss: 0.0008
+train >>> epoch: 235/300, batch: 4/4, mean_loss: 0.0013
+valid >>> epoch: 235/300, mean_loss: 0.1922
+train >>> epoch: 236/300, batch: 1/4, mean_loss: 0.0012
+train >>> epoch: 236/300, batch: 2/4, mean_loss: 0.0010
+train >>> epoch: 236/300, batch: 3/4, mean_loss: 0.0008
+train >>> epoch: 236/300, batch: 4/4, mean_loss: 0.0012
+valid >>> epoch: 236/300, mean_loss: 0.1812
+train >>> epoch: 237/300, batch: 1/4, mean_loss: 0.0008
+train >>> epoch: 237/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 237/300, batch: 3/4, mean_loss: 0.0007
+train >>> epoch: 237/300, batch: 4/4, mean_loss: 0.0015
+valid >>> epoch: 237/300, mean_loss: 0.1819
+train >>> epoch: 238/300, batch: 1/4, mean_loss: 0.0004
+train >>> epoch: 238/300, batch: 2/4, mean_loss: 0.0005
+train >>> epoch: 238/300, batch: 3/4, mean_loss: 0.0006
+train >>> epoch: 238/300, batch: 4/4, mean_loss: 0.0006
+valid >>> epoch: 238/300, mean_loss: 0.1904
+train >>> epoch: 239/300, batch: 1/4, mean_loss: 0.0010
+train >>> epoch: 239/300, batch: 2/4, mean_loss: 0.0010
+train >>> epoch: 239/300, batch: 3/4, mean_loss: 0.0010
+train >>> epoch: 239/300, batch: 4/4, mean_loss: 0.0017
+valid >>> epoch: 239/300, mean_loss: 0.1873
+train >>> epoch: 240/300, batch: 1/4, mean_loss: 0.0009
+train >>> epoch: 240/300, batch: 2/4, mean_loss: 0.0008
+train >>> epoch: 240/300, batch: 3/4, mean_loss: 0.0008
+train >>> epoch: 240/300, batch: 4/4, mean_loss: 0.0011
+valid >>> epoch: 240/300, mean_loss: 0.1754
+train >>> epoch: 241/300, batch: 1/4, mean_loss: 0.0008
+train >>> epoch: 241/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 241/300, batch: 3/4, mean_loss: 0.0008
+train >>> epoch: 241/300, batch: 4/4, mean_loss: 0.0010
+valid >>> epoch: 241/300, mean_loss: 0.1866
+train >>> epoch: 242/300, batch: 1/4, mean_loss: 0.0007
+train >>> epoch: 242/300, batch: 2/4, mean_loss: 0.0006
+train >>> epoch: 242/300, batch: 3/4, mean_loss: 0.0008
+train >>> epoch: 242/300, batch: 4/4, mean_loss: 0.0010
+valid >>> epoch: 242/300, mean_loss: 0.1958
+train >>> epoch: 243/300, batch: 1/4, mean_loss: 0.0007
+train >>> epoch: 243/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 243/300, batch: 3/4, mean_loss: 0.0008
+train >>> epoch: 243/300, batch: 4/4, mean_loss: 0.0011
+valid >>> epoch: 243/300, mean_loss: 0.1828
+train >>> epoch: 244/300, batch: 1/4, mean_loss: 0.0006
+train >>> epoch: 244/300, batch: 2/4, mean_loss: 0.0010
+train >>> epoch: 244/300, batch: 3/4, mean_loss: 0.0010
+train >>> epoch: 244/300, batch: 4/4, mean_loss: 0.0013
+valid >>> epoch: 244/300, mean_loss: 0.1855
+train >>> epoch: 245/300, batch: 1/4, mean_loss: 0.0006
+train >>> epoch: 245/300, batch: 2/4, mean_loss: 0.0006
+train >>> epoch: 245/300, batch: 3/4, mean_loss: 0.0006
+train >>> epoch: 245/300, batch: 4/4, mean_loss: 0.0007
+valid >>> epoch: 245/300, mean_loss: 0.1964
+train >>> epoch: 246/300, batch: 1/4, mean_loss: 0.0008
+train >>> epoch: 246/300, batch: 2/4, mean_loss: 0.0008
+train >>> epoch: 246/300, batch: 3/4, mean_loss: 0.0007
+train >>> epoch: 246/300, batch: 4/4, mean_loss: 0.0010
+valid >>> epoch: 246/300, mean_loss: 0.1842
+train >>> epoch: 247/300, batch: 1/4, mean_loss: 0.0006
+train >>> epoch: 247/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 247/300, batch: 3/4, mean_loss: 0.0007
+train >>> epoch: 247/300, batch: 4/4, mean_loss: 0.0010
+valid >>> epoch: 247/300, mean_loss: 0.1827
+train >>> epoch: 248/300, batch: 1/4, mean_loss: 0.0007
+train >>> epoch: 248/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 248/300, batch: 3/4, mean_loss: 0.0007
+train >>> epoch: 248/300, batch: 4/4, mean_loss: 0.0009
+valid >>> epoch: 248/300, mean_loss: 0.1831
+train >>> epoch: 249/300, batch: 1/4, mean_loss: 0.0006
+train >>> epoch: 249/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 249/300, batch: 3/4, mean_loss: 0.0006
+train >>> epoch: 249/300, batch: 4/4, mean_loss: 0.0008
+valid >>> epoch: 249/300, mean_loss: 0.1857
+train >>> epoch: 250/300, batch: 1/4, mean_loss: 0.0007
+train >>> epoch: 250/300, batch: 2/4, mean_loss: 0.0008
+train >>> epoch: 250/300, batch: 3/4, mean_loss: 0.0008
+train >>> epoch: 250/300, batch: 4/4, mean_loss: 0.0007
+valid >>> epoch: 250/300, mean_loss: 0.1880
+train >>> epoch: 251/300, batch: 1/4, mean_loss: 0.0006
+train >>> epoch: 251/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 251/300, batch: 3/4, mean_loss: 0.0006
+train >>> epoch: 251/300, batch: 4/4, mean_loss: 0.0008
+valid >>> epoch: 251/300, mean_loss: 0.1835
+train >>> epoch: 252/300, batch: 1/4, mean_loss: 0.0006
+train >>> epoch: 252/300, batch: 2/4, mean_loss: 0.0005
+train >>> epoch: 252/300, batch: 3/4, mean_loss: 0.0005
+train >>> epoch: 252/300, batch: 4/4, mean_loss: 0.0006
+valid >>> epoch: 252/300, mean_loss: 0.1855
+train >>> epoch: 253/300, batch: 1/4, mean_loss: 0.0004
+train >>> epoch: 253/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 253/300, batch: 3/4, mean_loss: 0.0006
+train >>> epoch: 253/300, batch: 4/4, mean_loss: 0.0006
+valid >>> epoch: 253/300, mean_loss: 0.1865
+train >>> epoch: 254/300, batch: 1/4, mean_loss: 0.0009
+train >>> epoch: 254/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 254/300, batch: 3/4, mean_loss: 0.0006
+train >>> epoch: 254/300, batch: 4/4, mean_loss: 0.0008
+valid >>> epoch: 254/300, mean_loss: 0.1845
+train >>> epoch: 255/300, batch: 1/4, mean_loss: 0.0005
+train >>> epoch: 255/300, batch: 2/4, mean_loss: 0.0004
+train >>> epoch: 255/300, batch: 3/4, mean_loss: 0.0006
+train >>> epoch: 255/300, batch: 4/4, mean_loss: 0.0014
+valid >>> epoch: 255/300, mean_loss: 0.1880
+train >>> epoch: 256/300, batch: 1/4, mean_loss: 0.0005
+train >>> epoch: 256/300, batch: 2/4, mean_loss: 0.0005
+train >>> epoch: 256/300, batch: 3/4, mean_loss: 0.0006
+train >>> epoch: 256/300, batch: 4/4, mean_loss: 0.0010
+valid >>> epoch: 256/300, mean_loss: 0.1811
+train >>> epoch: 257/300, batch: 1/4, mean_loss: 0.0010
+train >>> epoch: 257/300, batch: 2/4, mean_loss: 0.0009
+train >>> epoch: 257/300, batch: 3/4, mean_loss: 0.0008
+train >>> epoch: 257/300, batch: 4/4, mean_loss: 0.0009
+valid >>> epoch: 257/300, mean_loss: 0.1966
+train >>> epoch: 258/300, batch: 1/4, mean_loss: 0.0009
+train >>> epoch: 258/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 258/300, batch: 3/4, mean_loss: 0.0010
+train >>> epoch: 258/300, batch: 4/4, mean_loss: 0.0012
+valid >>> epoch: 258/300, mean_loss: 0.1941
+train >>> epoch: 259/300, batch: 1/4, mean_loss: 0.0008
+train >>> epoch: 259/300, batch: 2/4, mean_loss: 0.0008
+train >>> epoch: 259/300, batch: 3/4, mean_loss: 0.0009
+train >>> epoch: 259/300, batch: 4/4, mean_loss: 0.0010
+valid >>> epoch: 259/300, mean_loss: 0.1784
+train >>> epoch: 260/300, batch: 1/4, mean_loss: 0.0006
+train >>> epoch: 260/300, batch: 2/4, mean_loss: 0.0008
+train >>> epoch: 260/300, batch: 3/4, mean_loss: 0.0009
+train >>> epoch: 260/300, batch: 4/4, mean_loss: 0.0009
+valid >>> epoch: 260/300, mean_loss: 0.1911
+train >>> epoch: 261/300, batch: 1/4, mean_loss: 0.0006
+train >>> epoch: 261/300, batch: 2/4, mean_loss: 0.0008
+train >>> epoch: 261/300, batch: 3/4, mean_loss: 0.0011
+train >>> epoch: 261/300, batch: 4/4, mean_loss: 0.0016
+valid >>> epoch: 261/300, mean_loss: 0.1945
+train >>> epoch: 262/300, batch: 1/4, mean_loss: 0.0014
+train >>> epoch: 262/300, batch: 2/4, mean_loss: 0.0009
+train >>> epoch: 262/300, batch: 3/4, mean_loss: 0.0010
+train >>> epoch: 262/300, batch: 4/4, mean_loss: 0.0015
+valid >>> epoch: 262/300, mean_loss: 0.1757
+train >>> epoch: 263/300, batch: 1/4, mean_loss: 0.0007
+train >>> epoch: 263/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 263/300, batch: 3/4, mean_loss: 0.0008
+train >>> epoch: 263/300, batch: 4/4, mean_loss: 0.0011
+valid >>> epoch: 263/300, mean_loss: 0.1899
+train >>> epoch: 264/300, batch: 1/4, mean_loss: 0.0008
+train >>> epoch: 264/300, batch: 2/4, mean_loss: 0.0010
+train >>> epoch: 264/300, batch: 3/4, mean_loss: 0.0011
+train >>> epoch: 264/300, batch: 4/4, mean_loss: 0.0011
+valid >>> epoch: 264/300, mean_loss: 0.1998
+train >>> epoch: 265/300, batch: 1/4, mean_loss: 0.0019
+train >>> epoch: 265/300, batch: 2/4, mean_loss: 0.0013
+train >>> epoch: 265/300, batch: 3/4, mean_loss: 0.0013
+train >>> epoch: 265/300, batch: 4/4, mean_loss: 0.0011
+valid >>> epoch: 265/300, mean_loss: 0.1830
+train >>> epoch: 266/300, batch: 1/4, mean_loss: 0.0012
+train >>> epoch: 266/300, batch: 2/4, mean_loss: 0.0010
+train >>> epoch: 266/300, batch: 3/4, mean_loss: 0.0010
+train >>> epoch: 266/300, batch: 4/4, mean_loss: 0.0011
+valid >>> epoch: 266/300, mean_loss: 0.1862
+train >>> epoch: 267/300, batch: 1/4, mean_loss: 0.0005
+train >>> epoch: 267/300, batch: 2/4, mean_loss: 0.0005
+train >>> epoch: 267/300, batch: 3/4, mean_loss: 0.0005
+train >>> epoch: 267/300, batch: 4/4, mean_loss: 0.0006
+valid >>> epoch: 267/300, mean_loss: 0.1903
+train >>> epoch: 268/300, batch: 1/4, mean_loss: 0.0004
+train >>> epoch: 268/300, batch: 2/4, mean_loss: 0.0006
+train >>> epoch: 268/300, batch: 3/4, mean_loss: 0.0006
+train >>> epoch: 268/300, batch: 4/4, mean_loss: 0.0008
+valid >>> epoch: 268/300, mean_loss: 0.1850
+train >>> epoch: 269/300, batch: 1/4, mean_loss: 0.0005
+train >>> epoch: 269/300, batch: 2/4, mean_loss: 0.0004
+train >>> epoch: 269/300, batch: 3/4, mean_loss: 0.0005
+train >>> epoch: 269/300, batch: 4/4, mean_loss: 0.0006
+valid >>> epoch: 269/300, mean_loss: 0.1838
+train >>> epoch: 270/300, batch: 1/4, mean_loss: 0.0005
+train >>> epoch: 270/300, batch: 2/4, mean_loss: 0.0004
+train >>> epoch: 270/300, batch: 3/4, mean_loss: 0.0005
+train >>> epoch: 270/300, batch: 4/4, mean_loss: 0.0006
+valid >>> epoch: 270/300, mean_loss: 0.1922
+train >>> epoch: 271/300, batch: 1/4, mean_loss: 0.0008
+train >>> epoch: 271/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 271/300, batch: 3/4, mean_loss: 0.0008
+train >>> epoch: 271/300, batch: 4/4, mean_loss: 0.0009
+valid >>> epoch: 271/300, mean_loss: 0.1887
+train >>> epoch: 272/300, batch: 1/4, mean_loss: 0.0003
+train >>> epoch: 272/300, batch: 2/4, mean_loss: 0.0004
+train >>> epoch: 272/300, batch: 3/4, mean_loss: 0.0004
+train >>> epoch: 272/300, batch: 4/4, mean_loss: 0.0007
+valid >>> epoch: 272/300, mean_loss: 0.1875
+train >>> epoch: 273/300, batch: 1/4, mean_loss: 0.0002
+train >>> epoch: 273/300, batch: 2/4, mean_loss: 0.0005
+train >>> epoch: 273/300, batch: 3/4, mean_loss: 0.0005
+train >>> epoch: 273/300, batch: 4/4, mean_loss: 0.0008
+valid >>> epoch: 273/300, mean_loss: 0.1932
+train >>> epoch: 274/300, batch: 1/4, mean_loss: 0.0006
+train >>> epoch: 274/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 274/300, batch: 3/4, mean_loss: 0.0008
+train >>> epoch: 274/300, batch: 4/4, mean_loss: 0.0010
+valid >>> epoch: 274/300, mean_loss: 0.1916
+train >>> epoch: 275/300, batch: 1/4, mean_loss: 0.0004
+train >>> epoch: 275/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 275/300, batch: 3/4, mean_loss: 0.0007
+train >>> epoch: 275/300, batch: 4/4, mean_loss: 0.0006
+valid >>> epoch: 275/300, mean_loss: 0.1947
+train >>> epoch: 276/300, batch: 1/4, mean_loss: 0.0003
+train >>> epoch: 276/300, batch: 2/4, mean_loss: 0.0004
+train >>> epoch: 276/300, batch: 3/4, mean_loss: 0.0004
+train >>> epoch: 276/300, batch: 4/4, mean_loss: 0.0006
+valid >>> epoch: 276/300, mean_loss: 0.1877
+train >>> epoch: 277/300, batch: 1/4, mean_loss: 0.0006
+train >>> epoch: 277/300, batch: 2/4, mean_loss: 0.0006
+train >>> epoch: 277/300, batch: 3/4, mean_loss: 0.0006
+train >>> epoch: 277/300, batch: 4/4, mean_loss: 0.0007
+valid >>> epoch: 277/300, mean_loss: 0.1833
+train >>> epoch: 278/300, batch: 1/4, mean_loss: 0.0004
+train >>> epoch: 278/300, batch: 2/4, mean_loss: 0.0005
+train >>> epoch: 278/300, batch: 3/4, mean_loss: 0.0007
+train >>> epoch: 278/300, batch: 4/4, mean_loss: 0.0010
+valid >>> epoch: 278/300, mean_loss: 0.1939
+train >>> epoch: 279/300, batch: 1/4, mean_loss: 0.0009
+train >>> epoch: 279/300, batch: 2/4, mean_loss: 0.0006
+train >>> epoch: 279/300, batch: 3/4, mean_loss: 0.0006
+train >>> epoch: 279/300, batch: 4/4, mean_loss: 0.0008
+valid >>> epoch: 279/300, mean_loss: 0.2025
+train >>> epoch: 280/300, batch: 1/4, mean_loss: 0.0007
+train >>> epoch: 280/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 280/300, batch: 3/4, mean_loss: 0.0007
+train >>> epoch: 280/300, batch: 4/4, mean_loss: 0.0007
+valid >>> epoch: 280/300, mean_loss: 0.1871
+train >>> epoch: 281/300, batch: 1/4, mean_loss: 0.0005
+train >>> epoch: 281/300, batch: 2/4, mean_loss: 0.0006
+train >>> epoch: 281/300, batch: 3/4, mean_loss: 0.0006
+train >>> epoch: 281/300, batch: 4/4, mean_loss: 0.0011
+valid >>> epoch: 281/300, mean_loss: 0.1923
+train >>> epoch: 282/300, batch: 1/4, mean_loss: 0.0005
+train >>> epoch: 282/300, batch: 2/4, mean_loss: 0.0005
+train >>> epoch: 282/300, batch: 3/4, mean_loss: 0.0008
+train >>> epoch: 282/300, batch: 4/4, mean_loss: 0.0008
+valid >>> epoch: 282/300, mean_loss: 0.2034
+train >>> epoch: 283/300, batch: 1/4, mean_loss: 0.0010
+train >>> epoch: 283/300, batch: 2/4, mean_loss: 0.0007
+train >>> epoch: 283/300, batch: 3/4, mean_loss: 0.0009
+train >>> epoch: 283/300, batch: 4/4, mean_loss: 0.0009
+valid >>> epoch: 283/300, mean_loss: 0.1885
+train >>> epoch: 284/300, batch: 1/4, mean_loss: 0.0006
+train >>> epoch: 284/300, batch: 2/4, mean_loss: 0.0006
+train >>> epoch: 284/300, batch: 3/4, mean_loss: 0.0007
+train >>> epoch: 284/300, batch: 4/4, mean_loss: 0.0009
+valid >>> epoch: 284/300, mean_loss: 0.1807
+train >>> epoch: 285/300, batch: 1/4, mean_loss: 0.0007
+train >>> epoch: 285/300, batch: 2/4, mean_loss: 0.0006
+train >>> epoch: 285/300, batch: 3/4, mean_loss: 0.0006
+train >>> epoch: 285/300, batch: 4/4, mean_loss: 0.0008
+valid >>> epoch: 285/300, mean_loss: 0.1930
+train >>> epoch: 286/300, batch: 1/4, mean_loss: 0.0010
+train >>> epoch: 286/300, batch: 2/4, mean_loss: 0.0010
+train >>> epoch: 286/300, batch: 3/4, mean_loss: 0.0009
+train >>> epoch: 286/300, batch: 4/4, mean_loss: 0.0009
+valid >>> epoch: 286/300, mean_loss: 0.1938
+train >>> epoch: 287/300, batch: 1/4, mean_loss: 0.0004
+train >>> epoch: 287/300, batch: 2/4, mean_loss: 0.0004
+train >>> epoch: 287/300, batch: 3/4, mean_loss: 0.0005
+train >>> epoch: 287/300, batch: 4/4, mean_loss: 0.0005
+valid >>> epoch: 287/300, mean_loss: 0.1862
+train >>> epoch: 288/300, batch: 1/4, mean_loss: 0.0004
+train >>> epoch: 288/300, batch: 2/4, mean_loss: 0.0005
+train >>> epoch: 288/300, batch: 3/4, mean_loss: 0.0005
+train >>> epoch: 288/300, batch: 4/4, mean_loss: 0.0006
+valid >>> epoch: 288/300, mean_loss: 0.1893
+train >>> epoch: 289/300, batch: 1/4, mean_loss: 0.0006
+train >>> epoch: 289/300, batch: 2/4, mean_loss: 0.0006
+train >>> epoch: 289/300, batch: 3/4, mean_loss: 0.0006
+train >>> epoch: 289/300, batch: 4/4, mean_loss: 0.0008
+valid >>> epoch: 289/300, mean_loss: 0.1953
+train >>> epoch: 290/300, batch: 1/4, mean_loss: 0.0005
+train >>> epoch: 290/300, batch: 2/4, mean_loss: 0.0005
+train >>> epoch: 290/300, batch: 3/4, mean_loss: 0.0004
+train >>> epoch: 290/300, batch: 4/4, mean_loss: 0.0005
+valid >>> epoch: 290/300, mean_loss: 0.1939
+train >>> epoch: 291/300, batch: 1/4, mean_loss: 0.0005
+train >>> epoch: 291/300, batch: 2/4, mean_loss: 0.0006
+train >>> epoch: 291/300, batch: 3/4, mean_loss: 0.0007
+train >>> epoch: 291/300, batch: 4/4, mean_loss: 0.0011
+valid >>> epoch: 291/300, mean_loss: 0.1917
+train >>> epoch: 292/300, batch: 1/4, mean_loss: 0.0005
+train >>> epoch: 292/300, batch: 2/4, mean_loss: 0.0006
+train >>> epoch: 292/300, batch: 3/4, mean_loss: 0.0007
+train >>> epoch: 292/300, batch: 4/4, mean_loss: 0.0007
+valid >>> epoch: 292/300, mean_loss: 0.1892
+train >>> epoch: 293/300, batch: 1/4, mean_loss: 0.0006
+train >>> epoch: 293/300, batch: 2/4, mean_loss: 0.0004
+train >>> epoch: 293/300, batch: 3/4, mean_loss: 0.0005
+train >>> epoch: 293/300, batch: 4/4, mean_loss: 0.0007
+valid >>> epoch: 293/300, mean_loss: 0.1837
+train >>> epoch: 294/300, batch: 1/4, mean_loss: 0.0005
+train >>> epoch: 294/300, batch: 2/4, mean_loss: 0.0004
+train >>> epoch: 294/300, batch: 3/4, mean_loss: 0.0006
+train >>> epoch: 294/300, batch: 4/4, mean_loss: 0.0009
+valid >>> epoch: 294/300, mean_loss: 0.1868
+train >>> epoch: 295/300, batch: 1/4, mean_loss: 0.0010
+train >>> epoch: 295/300, batch: 2/4, mean_loss: 0.0008
+train >>> epoch: 295/300, batch: 3/4, mean_loss: 0.0007
+train >>> epoch: 295/300, batch: 4/4, mean_loss: 0.0008
+valid >>> epoch: 295/300, mean_loss: 0.1927
+train >>> epoch: 296/300, batch: 1/4, mean_loss: 0.0005
+train >>> epoch: 296/300, batch: 2/4, mean_loss: 0.0005
+train >>> epoch: 296/300, batch: 3/4, mean_loss: 0.0006
+train >>> epoch: 296/300, batch: 4/4, mean_loss: 0.0011
+valid >>> epoch: 296/300, mean_loss: 0.1907
+train >>> epoch: 297/300, batch: 1/4, mean_loss: 0.0005
+train >>> epoch: 297/300, batch: 2/4, mean_loss: 0.0006
+train >>> epoch: 297/300, batch: 3/4, mean_loss: 0.0007
+train >>> epoch: 297/300, batch: 4/4, mean_loss: 0.0008
+valid >>> epoch: 297/300, mean_loss: 0.1847
+train >>> epoch: 298/300, batch: 1/4, mean_loss: 0.0005
+train >>> epoch: 298/300, batch: 2/4, mean_loss: 0.0008
+train >>> epoch: 298/300, batch: 3/4, mean_loss: 0.0008
+train >>> epoch: 298/300, batch: 4/4, mean_loss: 0.0009
+valid >>> epoch: 298/300, mean_loss: 0.1932
+train >>> epoch: 299/300, batch: 1/4, mean_loss: 0.0004
+train >>> epoch: 299/300, batch: 2/4, mean_loss: 0.0005
+train >>> epoch: 299/300, batch: 3/4, mean_loss: 0.0006
+train >>> epoch: 299/300, batch: 4/4, mean_loss: 0.0012
+valid >>> epoch: 299/300, mean_loss: 0.2015
+train >>> epoch: 300/300, batch: 1/4, mean_loss: 0.0005
+train >>> epoch: 300/300, batch: 2/4, mean_loss: 0.0006
+train >>> epoch: 300/300, batch: 3/4, mean_loss: 0.0007
+train >>> epoch: 300/300, batch: 4/4, mean_loss: 0.0011
+valid >>> epoch: 300/300, mean_loss: 0.1913
+2020-01-24-01-53-46
