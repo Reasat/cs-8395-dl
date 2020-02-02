@@ -5,4 +5,4 @@ Instructor: Prof. Yunkai Huo
 
 Course Website: https://my.vanderbilt.edu/cs8395/
 
-For an overview of the solutions of each of the projects, please refer to the `Assignment_xx --> report --> Reasat_reasatt.pptx` presentation file.
+For an overview of the solutions of each of the projects, please refer to the `Assignment_x_x --> report --> Reasat_reasatt.pptx` presentation file.
