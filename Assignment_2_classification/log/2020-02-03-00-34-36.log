@@ -1,0 +1,1441 @@
+2020-02-03-00-34-36
+train.py
+--------------------------------------------------------------------------------------------------------------------
+batchSize: 32
+bottleneckFeatures: 1
+dir_lf: D:\Data\cs-8395-dl
+dir_project: ..
+encoder: resnet18
+epoch: 200
+folderData: assignment2_data
+lr: 0.001
+resume_from: None
+--------------------------------------------------------------------------------------------------------------------
+creating directory to save model at D:\Data\cs-8395-dl\model\2020-02-03-00-34-36
+loading images to RAM
+train samples 100
+loading images to RAM
+validation samples 100
+freezing feature extracting layers
+train >>> epoch: 1/200, batch: 1/4, mean_loss: 2.0519, mean_acc: 0.0625
+train >>> epoch: 1/200, batch: 2/4, mean_loss: 1.8389, mean_acc: 0.2656
+train >>> epoch: 1/200, batch: 3/4, mean_loss: 1.7660, mean_acc: 0.3854
+train >>> epoch: 1/200, batch: 4/4, mean_loss: 1.5959, mean_acc: 0.4766
+sklearn acc 0.64
+valid >>> epoch: 1/200, mean_loss: 1.0630, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.166667
+criteria decreased from inf to 1.0630, saving best model at D:\Data\cs-8395-dl\model\2020-02-03-00-34-36\2020-02-03-00-34-36_resnet18_best.pt
+train >>> epoch: 2/200, batch: 1/4, mean_loss: 1.0286, mean_acc: 0.7500
+train >>> epoch: 2/200, batch: 2/4, mean_loss: 1.1435, mean_acc: 0.7344
+train >>> epoch: 2/200, batch: 3/4, mean_loss: 1.2998, mean_acc: 0.6875
+train >>> epoch: 2/200, batch: 4/4, mean_loss: 1.4961, mean_acc: 0.6406
+sklearn acc 0.64
+valid >>> epoch: 2/200, mean_loss: 1.0931, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.166667
+train >>> epoch: 3/200, batch: 1/4, mean_loss: 1.2074, mean_acc: 0.7188
+train >>> epoch: 3/200, batch: 2/4, mean_loss: 1.2116, mean_acc: 0.7188
+train >>> epoch: 3/200, batch: 3/4, mean_loss: 1.2769, mean_acc: 0.6875
+train >>> epoch: 3/200, batch: 4/4, mean_loss: 1.5809, mean_acc: 0.6406
+sklearn acc 0.64
+valid >>> epoch: 3/200, mean_loss: 1.0292, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.166667
+criteria decreased from 1.0630 to 1.0292, saving best model at D:\Data\cs-8395-dl\model\2020-02-03-00-34-36\2020-02-03-00-34-36_resnet18_best.pt
+train >>> epoch: 4/200, batch: 1/4, mean_loss: 0.7567, mean_acc: 0.8125
+train >>> epoch: 4/200, batch: 2/4, mean_loss: 0.9130, mean_acc: 0.7656
+train >>> epoch: 4/200, batch: 3/4, mean_loss: 1.1386, mean_acc: 0.6875
+train >>> epoch: 4/200, batch: 4/4, mean_loss: 1.1997, mean_acc: 0.6406
+sklearn acc 0.64
+valid >>> epoch: 4/200, mean_loss: 0.9878, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.166667
+criteria decreased from 1.0292 to 0.9878, saving best model at D:\Data\cs-8395-dl\model\2020-02-03-00-34-36\2020-02-03-00-34-36_resnet18_best.pt
+train >>> epoch: 5/200, batch: 1/4, mean_loss: 1.0421, mean_acc: 0.7188
+train >>> epoch: 5/200, batch: 2/4, mean_loss: 1.0782, mean_acc: 0.7344
+train >>> epoch: 5/200, batch: 3/4, mean_loss: 1.1065, mean_acc: 0.6771
+train >>> epoch: 5/200, batch: 4/4, mean_loss: 1.1879, mean_acc: 0.6953
+sklearn acc 0.64
+valid >>> epoch: 5/200, mean_loss: 1.0179, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.166667
+train >>> epoch: 6/200, batch: 1/4, mean_loss: 0.8841, mean_acc: 0.8125
+train >>> epoch: 6/200, batch: 2/4, mean_loss: 1.1090, mean_acc: 0.7031
+train >>> epoch: 6/200, batch: 3/4, mean_loss: 1.0949, mean_acc: 0.6875
+train >>> epoch: 6/200, batch: 4/4, mean_loss: 0.9562, mean_acc: 0.7656
+sklearn acc 0.64
+valid >>> epoch: 6/200, mean_loss: 1.0054, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.166667
+train >>> epoch: 7/200, batch: 1/4, mean_loss: 0.9667, mean_acc: 0.6875
+train >>> epoch: 7/200, batch: 2/4, mean_loss: 0.9365, mean_acc: 0.6875
+train >>> epoch: 7/200, batch: 3/4, mean_loss: 0.9674, mean_acc: 0.6875
+train >>> epoch: 7/200, batch: 4/4, mean_loss: 1.1210, mean_acc: 0.6406
+sklearn acc 0.64
+valid >>> epoch: 7/200, mean_loss: 1.0139, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.166667
+train >>> epoch: 8/200, batch: 1/4, mean_loss: 1.1713, mean_acc: 0.6562
+train >>> epoch: 8/200, batch: 2/4, mean_loss: 1.0724, mean_acc: 0.6562
+train >>> epoch: 8/200, batch: 3/4, mean_loss: 0.9963, mean_acc: 0.6667
+train >>> epoch: 8/200, batch: 4/4, mean_loss: 0.8230, mean_acc: 0.7500
+sklearn acc 0.64
+valid >>> epoch: 8/200, mean_loss: 0.9907, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.166667
+train >>> epoch: 9/200, batch: 1/4, mean_loss: 0.9122, mean_acc: 0.6562
+train >>> epoch: 9/200, batch: 2/4, mean_loss: 0.9421, mean_acc: 0.6562
+train >>> epoch: 9/200, batch: 3/4, mean_loss: 0.9294, mean_acc: 0.6771
+train >>> epoch: 9/200, batch: 4/4, mean_loss: 0.8784, mean_acc: 0.6953
+sklearn acc 0.64
+valid >>> epoch: 9/200, mean_loss: 0.9641, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.166667
+criteria decreased from 0.9878 to 0.9641, saving best model at D:\Data\cs-8395-dl\model\2020-02-03-00-34-36\2020-02-03-00-34-36_resnet18_best.pt
+train >>> epoch: 10/200, batch: 1/4, mean_loss: 0.8986, mean_acc: 0.6875
+train >>> epoch: 10/200, batch: 2/4, mean_loss: 0.7822, mean_acc: 0.7188
+train >>> epoch: 10/200, batch: 3/4, mean_loss: 0.8966, mean_acc: 0.6771
+train >>> epoch: 10/200, batch: 4/4, mean_loss: 0.7592, mean_acc: 0.7578
+sklearn acc 0.64
+valid >>> epoch: 10/200, mean_loss: 0.9454, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.166667
+criteria decreased from 0.9641 to 0.9454, saving best model at D:\Data\cs-8395-dl\model\2020-02-03-00-34-36\2020-02-03-00-34-36_resnet18_best.pt
+train >>> epoch: 11/200, batch: 1/4, mean_loss: 0.6856, mean_acc: 0.7812
+train >>> epoch: 11/200, batch: 2/4, mean_loss: 0.6271, mean_acc: 0.8125
+train >>> epoch: 11/200, batch: 3/4, mean_loss: 0.8227, mean_acc: 0.7083
+train >>> epoch: 11/200, batch: 4/4, mean_loss: 0.8427, mean_acc: 0.7188
+sklearn acc 0.63
+valid >>> epoch: 11/200, mean_loss: 0.9358, mean_acc: 0.7109
+recall_micro_valid: 0.6300, recall_macro_valid: 0.164062
+criteria decreased from 0.9454 to 0.9358, saving best model at D:\Data\cs-8395-dl\model\2020-02-03-00-34-36\2020-02-03-00-34-36_resnet18_best.pt
+train >>> epoch: 12/200, batch: 1/4, mean_loss: 0.7833, mean_acc: 0.7188
+train >>> epoch: 12/200, batch: 2/4, mean_loss: 0.7302, mean_acc: 0.7188
+train >>> epoch: 12/200, batch: 3/4, mean_loss: 0.7740, mean_acc: 0.7188
+train >>> epoch: 12/200, batch: 4/4, mean_loss: 0.8112, mean_acc: 0.6641
+sklearn acc 0.63
+valid >>> epoch: 12/200, mean_loss: 0.9209, mean_acc: 0.7109
+recall_micro_valid: 0.6300, recall_macro_valid: 0.164062
+criteria decreased from 0.9358 to 0.9209, saving best model at D:\Data\cs-8395-dl\model\2020-02-03-00-34-36\2020-02-03-00-34-36_resnet18_best.pt
+train >>> epoch: 13/200, batch: 1/4, mean_loss: 0.8221, mean_acc: 0.6562
+train >>> epoch: 13/200, batch: 2/4, mean_loss: 0.6818, mean_acc: 0.7812
+train >>> epoch: 13/200, batch: 3/4, mean_loss: 0.7551, mean_acc: 0.7500
+train >>> epoch: 13/200, batch: 4/4, mean_loss: 0.6709, mean_acc: 0.8125
+sklearn acc 0.65
+valid >>> epoch: 13/200, mean_loss: 0.9453, mean_acc: 0.7266
+recall_micro_valid: 0.6500, recall_macro_valid: 0.194366
+train >>> epoch: 14/200, batch: 1/4, mean_loss: 0.8069, mean_acc: 0.7500
+train >>> epoch: 14/200, batch: 2/4, mean_loss: 0.7376, mean_acc: 0.7656
+train >>> epoch: 14/200, batch: 3/4, mean_loss: 0.7310, mean_acc: 0.7604
+train >>> epoch: 14/200, batch: 4/4, mean_loss: 0.6601, mean_acc: 0.8203
+sklearn acc 0.66
+valid >>> epoch: 14/200, mean_loss: 0.9483, mean_acc: 0.7344
+recall_micro_valid: 0.6600, recall_macro_valid: 0.222064
+train >>> epoch: 15/200, batch: 1/4, mean_loss: 0.8782, mean_acc: 0.6250
+train >>> epoch: 15/200, batch: 2/4, mean_loss: 0.7335, mean_acc: 0.7344
+train >>> epoch: 15/200, batch: 3/4, mean_loss: 0.6699, mean_acc: 0.7812
+train >>> epoch: 15/200, batch: 4/4, mean_loss: 0.9556, mean_acc: 0.6484
+sklearn acc 0.65
+valid >>> epoch: 15/200, mean_loss: 0.9061, mean_acc: 0.7266
+recall_micro_valid: 0.6500, recall_macro_valid: 0.194366
+criteria decreased from 0.9209 to 0.9061, saving best model at D:\Data\cs-8395-dl\model\2020-02-03-00-34-36\2020-02-03-00-34-36_resnet18_best.pt
+train >>> epoch: 16/200, batch: 1/4, mean_loss: 0.6044, mean_acc: 0.8125
+train >>> epoch: 16/200, batch: 2/4, mean_loss: 0.6170, mean_acc: 0.7969
+train >>> epoch: 16/200, batch: 3/4, mean_loss: 0.6417, mean_acc: 0.7812
+train >>> epoch: 16/200, batch: 4/4, mean_loss: 0.6590, mean_acc: 0.7734
+sklearn acc 0.66
+valid >>> epoch: 16/200, mean_loss: 0.8926, mean_acc: 0.7344
+recall_micro_valid: 0.6600, recall_macro_valid: 0.203137
+criteria decreased from 0.9061 to 0.8926, saving best model at D:\Data\cs-8395-dl\model\2020-02-03-00-34-36\2020-02-03-00-34-36_resnet18_best.pt
+train >>> epoch: 17/200, batch: 1/4, mean_loss: 0.5776, mean_acc: 0.8750
+train >>> epoch: 17/200, batch: 2/4, mean_loss: 0.6814, mean_acc: 0.7656
+train >>> epoch: 17/200, batch: 3/4, mean_loss: 0.6202, mean_acc: 0.7917
+train >>> epoch: 17/200, batch: 4/4, mean_loss: 0.8307, mean_acc: 0.7188
+sklearn acc 0.66
+valid >>> epoch: 17/200, mean_loss: 0.8955, mean_acc: 0.7344
+recall_micro_valid: 0.6600, recall_macro_valid: 0.203137
+train >>> epoch: 18/200, batch: 1/4, mean_loss: 0.6000, mean_acc: 0.8750
+train >>> epoch: 18/200, batch: 2/4, mean_loss: 0.6309, mean_acc: 0.8281
+train >>> epoch: 18/200, batch: 3/4, mean_loss: 0.6030, mean_acc: 0.8333
+train >>> epoch: 18/200, batch: 4/4, mean_loss: 0.6444, mean_acc: 0.7500
+sklearn acc 0.67
+valid >>> epoch: 18/200, mean_loss: 0.9347, mean_acc: 0.7422
+recall_micro_valid: 0.6700, recall_macro_valid: 0.211909
+train >>> epoch: 19/200, batch: 1/4, mean_loss: 0.6602, mean_acc: 0.7500
+train >>> epoch: 19/200, batch: 2/4, mean_loss: 0.5787, mean_acc: 0.8281
+train >>> epoch: 19/200, batch: 3/4, mean_loss: 0.6011, mean_acc: 0.8333
+train >>> epoch: 19/200, batch: 4/4, mean_loss: 0.6019, mean_acc: 0.8125
+sklearn acc 0.67
+valid >>> epoch: 19/200, mean_loss: 0.9164, mean_acc: 0.7422
+recall_micro_valid: 0.6700, recall_macro_valid: 0.211909
+train >>> epoch: 20/200, batch: 1/4, mean_loss: 0.5225, mean_acc: 0.8750
+train >>> epoch: 20/200, batch: 2/4, mean_loss: 0.5461, mean_acc: 0.8438
+train >>> epoch: 20/200, batch: 3/4, mean_loss: 0.5595, mean_acc: 0.8333
+train >>> epoch: 20/200, batch: 4/4, mean_loss: 0.5217, mean_acc: 0.8750
+sklearn acc 0.66
+valid >>> epoch: 20/200, mean_loss: 0.8465, mean_acc: 0.7344
+recall_micro_valid: 0.6600, recall_macro_valid: 0.203137
+criteria decreased from 0.8926 to 0.8465, saving best model at D:\Data\cs-8395-dl\model\2020-02-03-00-34-36\2020-02-03-00-34-36_resnet18_best.pt
+train >>> epoch: 21/200, batch: 1/4, mean_loss: 0.6275, mean_acc: 0.7812
+train >>> epoch: 21/200, batch: 2/4, mean_loss: 0.6122, mean_acc: 0.7656
+train >>> epoch: 21/200, batch: 3/4, mean_loss: 0.5307, mean_acc: 0.8229
+train >>> epoch: 21/200, batch: 4/4, mean_loss: 0.6691, mean_acc: 0.7422
+sklearn acc 0.65
+valid >>> epoch: 21/200, mean_loss: 0.8225, mean_acc: 0.7266
+recall_micro_valid: 0.6500, recall_macro_valid: 0.187986
+criteria decreased from 0.8465 to 0.8225, saving best model at D:\Data\cs-8395-dl\model\2020-02-03-00-34-36\2020-02-03-00-34-36_resnet18_best.pt
+train >>> epoch: 22/200, batch: 1/4, mean_loss: 0.4912, mean_acc: 0.8438
+train >>> epoch: 22/200, batch: 2/4, mean_loss: 0.4934, mean_acc: 0.8281
+train >>> epoch: 22/200, batch: 3/4, mean_loss: 0.5026, mean_acc: 0.8333
+train >>> epoch: 22/200, batch: 4/4, mean_loss: 0.4942, mean_acc: 0.8125
+sklearn acc 0.66
+valid >>> epoch: 22/200, mean_loss: 0.8310, mean_acc: 0.7344
+recall_micro_valid: 0.6600, recall_macro_valid: 0.203137
+train >>> epoch: 23/200, batch: 1/4, mean_loss: 0.4683, mean_acc: 0.9062
+train >>> epoch: 23/200, batch: 2/4, mean_loss: 0.4668, mean_acc: 0.9219
+train >>> epoch: 23/200, batch: 3/4, mean_loss: 0.4822, mean_acc: 0.8854
+train >>> epoch: 23/200, batch: 4/4, mean_loss: 0.5571, mean_acc: 0.8516
+sklearn acc 0.65
+valid >>> epoch: 23/200, mean_loss: 0.8207, mean_acc: 0.7266
+recall_micro_valid: 0.6500, recall_macro_valid: 0.194366
+criteria decreased from 0.8225 to 0.8207, saving best model at D:\Data\cs-8395-dl\model\2020-02-03-00-34-36\2020-02-03-00-34-36_resnet18_best.pt
+train >>> epoch: 24/200, batch: 1/4, mean_loss: 0.4740, mean_acc: 0.8750
+train >>> epoch: 24/200, batch: 2/4, mean_loss: 0.4980, mean_acc: 0.8594
+train >>> epoch: 24/200, batch: 3/4, mean_loss: 0.4565, mean_acc: 0.8854
+train >>> epoch: 24/200, batch: 4/4, mean_loss: 0.6059, mean_acc: 0.7891
+sklearn acc 0.65
+valid >>> epoch: 24/200, mean_loss: 0.8329, mean_acc: 0.7266
+recall_micro_valid: 0.6500, recall_macro_valid: 0.194366
+train >>> epoch: 25/200, batch: 1/4, mean_loss: 0.6054, mean_acc: 0.8125
+train >>> epoch: 25/200, batch: 2/4, mean_loss: 0.5615, mean_acc: 0.8281
+train >>> epoch: 25/200, batch: 3/4, mean_loss: 0.4816, mean_acc: 0.8854
+train >>> epoch: 25/200, batch: 4/4, mean_loss: 0.4624, mean_acc: 0.9141
+sklearn acc 0.67
+valid >>> epoch: 25/200, mean_loss: 0.8625, mean_acc: 0.7422
+recall_micro_valid: 0.6700, recall_macro_valid: 0.227205
+train >>> epoch: 26/200, batch: 1/4, mean_loss: 0.4991, mean_acc: 0.9062
+train >>> epoch: 26/200, batch: 2/4, mean_loss: 0.5113, mean_acc: 0.8750
+train >>> epoch: 26/200, batch: 3/4, mean_loss: 0.4663, mean_acc: 0.8958
+train >>> epoch: 26/200, batch: 4/4, mean_loss: 0.4616, mean_acc: 0.9219
+sklearn acc 0.64
+valid >>> epoch: 26/200, mean_loss: 0.8538, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.179214
+train >>> epoch: 27/200, batch: 1/4, mean_loss: 0.3532, mean_acc: 0.9688
+train >>> epoch: 27/200, batch: 2/4, mean_loss: 0.4460, mean_acc: 0.8906
+train >>> epoch: 27/200, batch: 3/4, mean_loss: 0.4562, mean_acc: 0.8750
+train >>> epoch: 27/200, batch: 4/4, mean_loss: 0.4835, mean_acc: 0.8438
+sklearn acc 0.64
+valid >>> epoch: 27/200, mean_loss: 0.8595, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.179214
+train >>> epoch: 28/200, batch: 1/4, mean_loss: 0.4287, mean_acc: 0.8125
+train >>> epoch: 28/200, batch: 2/4, mean_loss: 0.4686, mean_acc: 0.7812
+train >>> epoch: 28/200, batch: 3/4, mean_loss: 0.4344, mean_acc: 0.8125
+train >>> epoch: 28/200, batch: 4/4, mean_loss: 0.5900, mean_acc: 0.7344
+sklearn acc 0.64
+valid >>> epoch: 28/200, mean_loss: 0.8095, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.179214
+criteria decreased from 0.8207 to 0.8095, saving best model at D:\Data\cs-8395-dl\model\2020-02-03-00-34-36\2020-02-03-00-34-36_resnet18_best.pt
+train >>> epoch: 29/200, batch: 1/4, mean_loss: 0.2606, mean_acc: 0.9375
+train >>> epoch: 29/200, batch: 2/4, mean_loss: 0.3640, mean_acc: 0.8594
+train >>> epoch: 29/200, batch: 3/4, mean_loss: 0.3737, mean_acc: 0.8542
+train >>> epoch: 29/200, batch: 4/4, mean_loss: 0.5942, mean_acc: 0.7656
+sklearn acc 0.7
+valid >>> epoch: 29/200, mean_loss: 0.8094, mean_acc: 0.7656
+recall_micro_valid: 0.7000, recall_macro_valid: 0.250984
+criteria decreased from 0.8095 to 0.8094, saving best model at D:\Data\cs-8395-dl\model\2020-02-03-00-34-36\2020-02-03-00-34-36_resnet18_best.pt
+train >>> epoch: 30/200, batch: 1/4, mean_loss: 0.5914, mean_acc: 0.8125
+train >>> epoch: 30/200, batch: 2/4, mean_loss: 0.4644, mean_acc: 0.8906
+train >>> epoch: 30/200, batch: 3/4, mean_loss: 0.4402, mean_acc: 0.9062
+train >>> epoch: 30/200, batch: 4/4, mean_loss: 0.5409, mean_acc: 0.8672
+sklearn acc 0.63
+valid >>> epoch: 30/200, mean_loss: 0.9349, mean_acc: 0.7109
+recall_micro_valid: 0.6300, recall_macro_valid: 0.301660
+train >>> epoch: 31/200, batch: 1/4, mean_loss: 0.4411, mean_acc: 0.9375
+train >>> epoch: 31/200, batch: 2/4, mean_loss: 0.4233, mean_acc: 0.9375
+train >>> epoch: 31/200, batch: 3/4, mean_loss: 0.4107, mean_acc: 0.9271
+train >>> epoch: 31/200, batch: 4/4, mean_loss: 0.5830, mean_acc: 0.8828
+sklearn acc 0.64
+valid >>> epoch: 31/200, mean_loss: 0.8661, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.266834
+train >>> epoch: 32/200, batch: 1/4, mean_loss: 0.3642, mean_acc: 0.9375
+train >>> epoch: 32/200, batch: 2/4, mean_loss: 0.3599, mean_acc: 0.9531
+train >>> epoch: 32/200, batch: 3/4, mean_loss: 0.3656, mean_acc: 0.9583
+train >>> epoch: 32/200, batch: 4/4, mean_loss: 0.4748, mean_acc: 0.8438
+sklearn acc 0.66
+valid >>> epoch: 32/200, mean_loss: 0.8210, mean_acc: 0.7344
+recall_micro_valid: 0.6600, recall_macro_valid: 0.234612
+train >>> epoch: 33/200, batch: 1/4, mean_loss: 0.2990, mean_acc: 1.0000
+train >>> epoch: 33/200, batch: 2/4, mean_loss: 0.3364, mean_acc: 0.9844
+train >>> epoch: 33/200, batch: 3/4, mean_loss: 0.3282, mean_acc: 0.9688
+train >>> epoch: 33/200, batch: 4/4, mean_loss: 0.4649, mean_acc: 0.9141
+sklearn acc 0.68
+valid >>> epoch: 33/200, mean_loss: 0.8229, mean_acc: 0.7500
+recall_micro_valid: 0.6800, recall_macro_valid: 0.292771
+train >>> epoch: 34/200, batch: 1/4, mean_loss: 0.3315, mean_acc: 0.9688
+train >>> epoch: 34/200, batch: 2/4, mean_loss: 0.3702, mean_acc: 0.9375
+train >>> epoch: 34/200, batch: 3/4, mean_loss: 0.3417, mean_acc: 0.9479
+train >>> epoch: 34/200, batch: 4/4, mean_loss: 0.3998, mean_acc: 0.8359
+sklearn acc 0.68
+valid >>> epoch: 34/200, mean_loss: 0.8354, mean_acc: 0.7500
+recall_micro_valid: 0.6800, recall_macro_valid: 0.292771
+train >>> epoch: 35/200, batch: 1/4, mean_loss: 0.3549, mean_acc: 0.9375
+train >>> epoch: 35/200, batch: 2/4, mean_loss: 0.3486, mean_acc: 0.9375
+train >>> epoch: 35/200, batch: 3/4, mean_loss: 0.3381, mean_acc: 0.9375
+train >>> epoch: 35/200, batch: 4/4, mean_loss: 0.6464, mean_acc: 0.7656
+sklearn acc 0.66
+valid >>> epoch: 35/200, mean_loss: 0.8538, mean_acc: 0.7344
+recall_micro_valid: 0.6600, recall_macro_valid: 0.287563
+train >>> epoch: 36/200, batch: 1/4, mean_loss: 0.3675, mean_acc: 0.9062
+train >>> epoch: 36/200, batch: 2/4, mean_loss: 0.3579, mean_acc: 0.9219
+train >>> epoch: 36/200, batch: 3/4, mean_loss: 0.3616, mean_acc: 0.9271
+train >>> epoch: 36/200, batch: 4/4, mean_loss: 0.3783, mean_acc: 0.9453
+sklearn acc 0.65
+valid >>> epoch: 36/200, mean_loss: 0.8904, mean_acc: 0.7266
+recall_micro_valid: 0.6500, recall_macro_valid: 0.244251
+train >>> epoch: 37/200, batch: 1/4, mean_loss: 0.3012, mean_acc: 0.9688
+train >>> epoch: 37/200, batch: 2/4, mean_loss: 0.3535, mean_acc: 0.9375
+train >>> epoch: 37/200, batch: 3/4, mean_loss: 0.3430, mean_acc: 0.9479
+train >>> epoch: 37/200, batch: 4/4, mean_loss: 0.3680, mean_acc: 0.9609
+sklearn acc 0.66
+valid >>> epoch: 37/200, mean_loss: 0.8736, mean_acc: 0.7344
+recall_micro_valid: 0.6600, recall_macro_valid: 0.246483
+train >>> epoch: 38/200, batch: 1/4, mean_loss: 0.3617, mean_acc: 0.9062
+train >>> epoch: 38/200, batch: 2/4, mean_loss: 0.3850, mean_acc: 0.8906
+train >>> epoch: 38/200, batch: 3/4, mean_loss: 0.3411, mean_acc: 0.9271
+train >>> epoch: 38/200, batch: 4/4, mean_loss: 0.3313, mean_acc: 0.9453
+sklearn acc 0.65
+valid >>> epoch: 38/200, mean_loss: 0.8231, mean_acc: 0.7266
+recall_micro_valid: 0.6500, recall_macro_valid: 0.166599
+train >>> epoch: 39/200, batch: 1/4, mean_loss: 0.2223, mean_acc: 1.0000
+train >>> epoch: 39/200, batch: 2/4, mean_loss: 0.2921, mean_acc: 0.9531
+train >>> epoch: 39/200, batch: 3/4, mean_loss: 0.3017, mean_acc: 0.9479
+train >>> epoch: 39/200, batch: 4/4, mean_loss: 0.3086, mean_acc: 0.9609
+sklearn acc 0.65
+valid >>> epoch: 39/200, mean_loss: 0.8303, mean_acc: 0.7266
+recall_micro_valid: 0.6500, recall_macro_valid: 0.166599
+train >>> epoch: 40/200, batch: 1/4, mean_loss: 0.2934, mean_acc: 0.9688
+train >>> epoch: 40/200, batch: 2/4, mean_loss: 0.2686, mean_acc: 0.9688
+train >>> epoch: 40/200, batch: 3/4, mean_loss: 0.2824, mean_acc: 0.9479
+train >>> epoch: 40/200, batch: 4/4, mean_loss: 0.2630, mean_acc: 0.9609
+sklearn acc 0.64
+valid >>> epoch: 40/200, mean_loss: 0.8048, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.169654
+criteria decreased from 0.8094 to 0.8048, saving best model at D:\Data\cs-8395-dl\model\2020-02-03-00-34-36\2020-02-03-00-34-36_resnet18_best.pt
+train >>> epoch: 41/200, batch: 1/4, mean_loss: 0.3272, mean_acc: 0.9062
+train >>> epoch: 41/200, batch: 2/4, mean_loss: 0.2938, mean_acc: 0.9375
+train >>> epoch: 41/200, batch: 3/4, mean_loss: 0.2674, mean_acc: 0.9479
+train >>> epoch: 41/200, batch: 4/4, mean_loss: 0.3597, mean_acc: 0.8359
+sklearn acc 0.64
+valid >>> epoch: 41/200, mean_loss: 0.7836, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.197929
+criteria decreased from 0.8048 to 0.7836, saving best model at D:\Data\cs-8395-dl\model\2020-02-03-00-34-36\2020-02-03-00-34-36_resnet18_best.pt
+train >>> epoch: 42/200, batch: 1/4, mean_loss: 0.3471, mean_acc: 0.8750
+train >>> epoch: 42/200, batch: 2/4, mean_loss: 0.2844, mean_acc: 0.9219
+train >>> epoch: 42/200, batch: 3/4, mean_loss: 0.2766, mean_acc: 0.9271
+train >>> epoch: 42/200, batch: 4/4, mean_loss: 0.7071, mean_acc: 0.7578
+sklearn acc 0.65
+valid >>> epoch: 42/200, mean_loss: 0.7596, mean_acc: 0.7266
+recall_micro_valid: 0.6500, recall_macro_valid: 0.213081
+criteria decreased from 0.7836 to 0.7596, saving best model at D:\Data\cs-8395-dl\model\2020-02-03-00-34-36\2020-02-03-00-34-36_resnet18_best.pt
+train >>> epoch: 43/200, batch: 1/4, mean_loss: 0.2237, mean_acc: 1.0000
+train >>> epoch: 43/200, batch: 2/4, mean_loss: 0.2487, mean_acc: 0.9844
+train >>> epoch: 43/200, batch: 3/4, mean_loss: 0.2630, mean_acc: 0.9688
+train >>> epoch: 43/200, batch: 4/4, mean_loss: 0.2840, mean_acc: 0.9766
+sklearn acc 0.66
+valid >>> epoch: 43/200, mean_loss: 0.7800, mean_acc: 0.7344
+recall_micro_valid: 0.6600, recall_macro_valid: 0.318614
+train >>> epoch: 44/200, batch: 1/4, mean_loss: 0.2785, mean_acc: 0.9688
+train >>> epoch: 44/200, batch: 2/4, mean_loss: 0.2533, mean_acc: 0.9844
+train >>> epoch: 44/200, batch: 3/4, mean_loss: 0.2605, mean_acc: 0.9792
+train >>> epoch: 44/200, batch: 4/4, mean_loss: 0.2585, mean_acc: 0.9844
+sklearn acc 0.66
+valid >>> epoch: 44/200, mean_loss: 0.7705, mean_acc: 0.7344
+recall_micro_valid: 0.6600, recall_macro_valid: 0.299899
+train >>> epoch: 45/200, batch: 1/4, mean_loss: 0.3163, mean_acc: 0.9375
+train >>> epoch: 45/200, batch: 2/4, mean_loss: 0.2757, mean_acc: 0.9688
+train >>> epoch: 45/200, batch: 3/4, mean_loss: 0.2394, mean_acc: 0.9792
+train >>> epoch: 45/200, batch: 4/4, mean_loss: 0.4960, mean_acc: 0.8594
+sklearn acc 0.64
+valid >>> epoch: 45/200, mean_loss: 0.7675, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.229403
+train >>> epoch: 46/200, batch: 1/4, mean_loss: 0.1731, mean_acc: 1.0000
+train >>> epoch: 46/200, batch: 2/4, mean_loss: 0.2529, mean_acc: 0.9688
+train >>> epoch: 46/200, batch: 3/4, mean_loss: 0.2470, mean_acc: 0.9792
+train >>> epoch: 46/200, batch: 4/4, mean_loss: 0.2597, mean_acc: 0.9844
+sklearn acc 0.65
+valid >>> epoch: 46/200, mean_loss: 0.7756, mean_acc: 0.7266
+recall_micro_valid: 0.6500, recall_macro_valid: 0.310054
+train >>> epoch: 47/200, batch: 1/4, mean_loss: 0.3285, mean_acc: 0.9062
+train >>> epoch: 47/200, batch: 2/4, mean_loss: 0.2719, mean_acc: 0.9531
+train >>> epoch: 47/200, batch: 3/4, mean_loss: 0.2547, mean_acc: 0.9688
+train >>> epoch: 47/200, batch: 4/4, mean_loss: 0.2890, mean_acc: 0.9766
+sklearn acc 0.66
+valid >>> epoch: 47/200, mean_loss: 0.7720, mean_acc: 0.7344
+recall_micro_valid: 0.6600, recall_macro_valid: 0.300110
+train >>> epoch: 48/200, batch: 1/4, mean_loss: 0.2769, mean_acc: 0.9375
+train >>> epoch: 48/200, batch: 2/4, mean_loss: 0.2510, mean_acc: 0.9375
+train >>> epoch: 48/200, batch: 3/4, mean_loss: 0.2227, mean_acc: 0.9583
+train >>> epoch: 48/200, batch: 4/4, mean_loss: 0.2833, mean_acc: 0.9062
+sklearn acc 0.66
+valid >>> epoch: 48/200, mean_loss: 0.7914, mean_acc: 0.7344
+recall_micro_valid: 0.6600, recall_macro_valid: 0.287563
+train >>> epoch: 49/200, batch: 1/4, mean_loss: 0.2716, mean_acc: 0.9375
+train >>> epoch: 49/200, batch: 2/4, mean_loss: 0.2346, mean_acc: 0.9531
+train >>> epoch: 49/200, batch: 3/4, mean_loss: 0.2256, mean_acc: 0.9583
+train >>> epoch: 49/200, batch: 4/4, mean_loss: 0.2966, mean_acc: 0.9062
+sklearn acc 0.68
+valid >>> epoch: 49/200, mean_loss: 0.8009, mean_acc: 0.7500
+recall_micro_valid: 0.6800, recall_macro_valid: 0.292771
+train >>> epoch: 50/200, batch: 1/4, mean_loss: 0.1753, mean_acc: 1.0000
+train >>> epoch: 50/200, batch: 2/4, mean_loss: 0.1727, mean_acc: 1.0000
+train >>> epoch: 50/200, batch: 3/4, mean_loss: 0.2492, mean_acc: 0.9375
+train >>> epoch: 50/200, batch: 4/4, mean_loss: 0.2252, mean_acc: 0.9531
+sklearn acc 0.66
+valid >>> epoch: 50/200, mean_loss: 0.8198, mean_acc: 0.7344
+recall_micro_valid: 0.6600, recall_macro_valid: 0.287563
+train >>> epoch: 51/200, batch: 1/4, mean_loss: 0.2199, mean_acc: 0.9688
+train >>> epoch: 51/200, batch: 2/4, mean_loss: 0.2293, mean_acc: 0.9688
+train >>> epoch: 51/200, batch: 3/4, mean_loss: 0.2174, mean_acc: 0.9688
+train >>> epoch: 51/200, batch: 4/4, mean_loss: 0.3418, mean_acc: 0.9141
+sklearn acc 0.67
+valid >>> epoch: 51/200, mean_loss: 0.8210, mean_acc: 0.7422
+recall_micro_valid: 0.6700, recall_macro_valid: 0.302715
+train >>> epoch: 52/200, batch: 1/4, mean_loss: 0.3112, mean_acc: 0.8750
+train >>> epoch: 52/200, batch: 2/4, mean_loss: 0.2495, mean_acc: 0.9375
+train >>> epoch: 52/200, batch: 3/4, mean_loss: 0.2584, mean_acc: 0.9583
+train >>> epoch: 52/200, batch: 4/4, mean_loss: 0.2465, mean_acc: 0.9688
+sklearn acc 0.66
+valid >>> epoch: 52/200, mean_loss: 0.8703, mean_acc: 0.7344
+recall_micro_valid: 0.6600, recall_macro_valid: 0.337753
+train >>> epoch: 53/200, batch: 1/4, mean_loss: 0.2412, mean_acc: 1.0000
+train >>> epoch: 53/200, batch: 2/4, mean_loss: 0.2250, mean_acc: 1.0000
+train >>> epoch: 53/200, batch: 3/4, mean_loss: 0.2321, mean_acc: 0.9896
+train >>> epoch: 53/200, batch: 4/4, mean_loss: 0.2563, mean_acc: 0.9922
+sklearn acc 0.66
+valid >>> epoch: 53/200, mean_loss: 0.8248, mean_acc: 0.7344
+recall_micro_valid: 0.6600, recall_macro_valid: 0.325205
+train >>> epoch: 54/200, batch: 1/4, mean_loss: 0.1908, mean_acc: 0.9688
+train >>> epoch: 54/200, batch: 2/4, mean_loss: 0.2115, mean_acc: 0.9844
+train >>> epoch: 54/200, batch: 3/4, mean_loss: 0.2157, mean_acc: 0.9792
+train >>> epoch: 54/200, batch: 4/4, mean_loss: 0.2953, mean_acc: 0.9844
+sklearn acc 0.67
+valid >>> epoch: 54/200, mean_loss: 0.7778, mean_acc: 0.7422
+recall_micro_valid: 0.6700, recall_macro_valid: 0.237216
+train >>> epoch: 55/200, batch: 1/4, mean_loss: 0.1627, mean_acc: 1.0000
+train >>> epoch: 55/200, batch: 2/4, mean_loss: 0.1997, mean_acc: 0.9844
+train >>> epoch: 55/200, batch: 3/4, mean_loss: 0.2593, mean_acc: 0.9375
+train >>> epoch: 55/200, batch: 4/4, mean_loss: 0.2326, mean_acc: 0.9531
+sklearn acc 0.66
+valid >>> epoch: 55/200, mean_loss: 0.7500, mean_acc: 0.7344
+recall_micro_valid: 0.6600, recall_macro_valid: 0.209517
+criteria decreased from 0.7596 to 0.7500, saving best model at D:\Data\cs-8395-dl\model\2020-02-03-00-34-36\2020-02-03-00-34-36_resnet18_best.pt
+train >>> epoch: 56/200, batch: 1/4, mean_loss: 0.2303, mean_acc: 0.9375
+train >>> epoch: 56/200, batch: 2/4, mean_loss: 0.1858, mean_acc: 0.9531
+train >>> epoch: 56/200, batch: 3/4, mean_loss: 0.1910, mean_acc: 0.9583
+train >>> epoch: 56/200, batch: 4/4, mean_loss: 0.5636, mean_acc: 0.7812
+sklearn acc 0.65
+valid >>> epoch: 56/200, mean_loss: 0.7355, mean_acc: 0.7266
+recall_micro_valid: 0.6500, recall_macro_valid: 0.187986
+criteria decreased from 0.7500 to 0.7355, saving best model at D:\Data\cs-8395-dl\model\2020-02-03-00-34-36\2020-02-03-00-34-36_resnet18_best.pt
+train >>> epoch: 57/200, batch: 1/4, mean_loss: 0.1910, mean_acc: 0.9688
+train >>> epoch: 57/200, batch: 2/4, mean_loss: 0.2179, mean_acc: 0.9531
+train >>> epoch: 57/200, batch: 3/4, mean_loss: 0.1933, mean_acc: 0.9688
+train >>> epoch: 57/200, batch: 4/4, mean_loss: 0.2324, mean_acc: 0.9141
+sklearn acc 0.68
+valid >>> epoch: 57/200, mean_loss: 0.7148, mean_acc: 0.7500
+recall_micro_valid: 0.6800, recall_macro_valid: 0.320337
+criteria decreased from 0.7355 to 0.7148, saving best model at D:\Data\cs-8395-dl\model\2020-02-03-00-34-36\2020-02-03-00-34-36_resnet18_best.pt
+train >>> epoch: 58/200, batch: 1/4, mean_loss: 0.2440, mean_acc: 0.9688
+train >>> epoch: 58/200, batch: 2/4, mean_loss: 0.2441, mean_acc: 0.9688
+train >>> epoch: 58/200, batch: 3/4, mean_loss: 0.2354, mean_acc: 0.9688
+train >>> epoch: 58/200, batch: 4/4, mean_loss: 0.3900, mean_acc: 0.8516
+sklearn acc 0.66
+valid >>> epoch: 58/200, mean_loss: 0.7333, mean_acc: 0.7344
+recall_micro_valid: 0.6600, recall_macro_valid: 0.346603
+train >>> epoch: 59/200, batch: 1/4, mean_loss: 0.2074, mean_acc: 0.9688
+train >>> epoch: 59/200, batch: 2/4, mean_loss: 0.2466, mean_acc: 0.9688
+train >>> epoch: 59/200, batch: 3/4, mean_loss: 0.2395, mean_acc: 0.9688
+train >>> epoch: 59/200, batch: 4/4, mean_loss: 0.3236, mean_acc: 0.9141
+sklearn acc 0.67
+valid >>> epoch: 59/200, mean_loss: 0.7766, mean_acc: 0.7422
+recall_micro_valid: 0.6700, recall_macro_valid: 0.445969
+train >>> epoch: 60/200, batch: 1/4, mean_loss: 0.2596, mean_acc: 0.9688
+train >>> epoch: 60/200, batch: 2/4, mean_loss: 0.2351, mean_acc: 0.9688
+train >>> epoch: 60/200, batch: 3/4, mean_loss: 0.2099, mean_acc: 0.9792
+train >>> epoch: 60/200, batch: 4/4, mean_loss: 0.3120, mean_acc: 0.9219
+sklearn acc 0.66
+valid >>> epoch: 60/200, mean_loss: 0.7347, mean_acc: 0.7344
+recall_micro_valid: 0.6600, recall_macro_valid: 0.247159
+train >>> epoch: 61/200, batch: 1/4, mean_loss: 0.1633, mean_acc: 1.0000
+train >>> epoch: 61/200, batch: 2/4, mean_loss: 0.1708, mean_acc: 1.0000
+train >>> epoch: 61/200, batch: 3/4, mean_loss: 0.1893, mean_acc: 0.9792
+train >>> epoch: 61/200, batch: 4/4, mean_loss: 0.3892, mean_acc: 0.8594
+sklearn acc 0.68
+valid >>> epoch: 61/200, mean_loss: 0.7298, mean_acc: 0.7500
+recall_micro_valid: 0.6800, recall_macro_valid: 0.305319
+train >>> epoch: 62/200, batch: 1/4, mean_loss: 0.1821, mean_acc: 0.9688
+train >>> epoch: 62/200, batch: 2/4, mean_loss: 0.1753, mean_acc: 0.9844
+train >>> epoch: 62/200, batch: 3/4, mean_loss: 0.1764, mean_acc: 0.9896
+train >>> epoch: 62/200, batch: 4/4, mean_loss: 0.2060, mean_acc: 0.9922
+sklearn acc 0.7
+valid >>> epoch: 62/200, mean_loss: 0.6947, mean_acc: 0.7656
+recall_micro_valid: 0.7000, recall_macro_valid: 0.322863
+criteria decreased from 0.7148 to 0.6947, saving best model at D:\Data\cs-8395-dl\model\2020-02-03-00-34-36\2020-02-03-00-34-36_resnet18_best.pt
+train >>> epoch: 63/200, batch: 1/4, mean_loss: 0.1486, mean_acc: 1.0000
+train >>> epoch: 63/200, batch: 2/4, mean_loss: 0.1867, mean_acc: 0.9844
+train >>> epoch: 63/200, batch: 3/4, mean_loss: 0.1969, mean_acc: 0.9688
+train >>> epoch: 63/200, batch: 4/4, mean_loss: 0.1998, mean_acc: 0.9766
+sklearn acc 0.66
+valid >>> epoch: 63/200, mean_loss: 0.7116, mean_acc: 0.7344
+recall_micro_valid: 0.6600, recall_macro_valid: 0.234400
+train >>> epoch: 64/200, batch: 1/4, mean_loss: 0.1206, mean_acc: 1.0000
+train >>> epoch: 64/200, batch: 2/4, mean_loss: 0.1650, mean_acc: 0.9688
+train >>> epoch: 64/200, batch: 3/4, mean_loss: 0.1695, mean_acc: 0.9583
+train >>> epoch: 64/200, batch: 4/4, mean_loss: 0.2660, mean_acc: 0.9062
+sklearn acc 0.64
+valid >>> epoch: 64/200, mean_loss: 0.7364, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.216856
+train >>> epoch: 65/200, batch: 1/4, mean_loss: 0.1767, mean_acc: 1.0000
+train >>> epoch: 65/200, batch: 2/4, mean_loss: 0.1391, mean_acc: 1.0000
+train >>> epoch: 65/200, batch: 3/4, mean_loss: 0.1442, mean_acc: 1.0000
+train >>> epoch: 65/200, batch: 4/4, mean_loss: 0.3435, mean_acc: 0.8750
+sklearn acc 0.65
+valid >>> epoch: 65/200, mean_loss: 0.7750, mean_acc: 0.7266
+recall_micro_valid: 0.6500, recall_macro_valid: 0.259864
+train >>> epoch: 66/200, batch: 1/4, mean_loss: 0.1350, mean_acc: 0.9688
+train >>> epoch: 66/200, batch: 2/4, mean_loss: 0.1409, mean_acc: 0.9688
+train >>> epoch: 66/200, batch: 3/4, mean_loss: 0.1567, mean_acc: 0.9688
+train >>> epoch: 66/200, batch: 4/4, mean_loss: 0.1887, mean_acc: 0.9766
+sklearn acc 0.64
+valid >>> epoch: 66/200, mean_loss: 0.7890, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.257260
+train >>> epoch: 67/200, batch: 1/4, mean_loss: 0.1869, mean_acc: 0.9375
+train >>> epoch: 67/200, batch: 2/4, mean_loss: 0.1790, mean_acc: 0.9688
+train >>> epoch: 67/200, batch: 3/4, mean_loss: 0.1769, mean_acc: 0.9792
+train >>> epoch: 67/200, batch: 4/4, mean_loss: 0.1571, mean_acc: 0.9844
+sklearn acc 0.64
+valid >>> epoch: 67/200, mean_loss: 0.8416, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.458965
+train >>> epoch: 68/200, batch: 1/4, mean_loss: 0.1840, mean_acc: 1.0000
+train >>> epoch: 68/200, batch: 2/4, mean_loss: 0.1600, mean_acc: 1.0000
+train >>> epoch: 68/200, batch: 3/4, mean_loss: 0.1718, mean_acc: 0.9896
+train >>> epoch: 68/200, batch: 4/4, mean_loss: 0.2730, mean_acc: 0.9297
+sklearn acc 0.65
+valid >>> epoch: 68/200, mean_loss: 0.8599, mean_acc: 0.7266
+recall_micro_valid: 0.6500, recall_macro_valid: 0.486664
+train >>> epoch: 69/200, batch: 1/4, mean_loss: 0.1691, mean_acc: 1.0000
+train >>> epoch: 69/200, batch: 2/4, mean_loss: 0.1946, mean_acc: 0.9688
+train >>> epoch: 69/200, batch: 3/4, mean_loss: 0.1901, mean_acc: 0.9792
+train >>> epoch: 69/200, batch: 4/4, mean_loss: 0.3997, mean_acc: 0.8594
+sklearn acc 0.65
+valid >>> epoch: 69/200, mean_loss: 0.8416, mean_acc: 0.7266
+recall_micro_valid: 0.6500, recall_macro_valid: 0.421165
+train >>> epoch: 70/200, batch: 1/4, mean_loss: 0.1941, mean_acc: 0.9688
+train >>> epoch: 70/200, batch: 2/4, mean_loss: 0.1744, mean_acc: 0.9844
+train >>> epoch: 70/200, batch: 3/4, mean_loss: 0.1652, mean_acc: 0.9792
+train >>> epoch: 70/200, batch: 4/4, mean_loss: 0.2022, mean_acc: 0.9844
+sklearn acc 0.68
+valid >>> epoch: 70/200, mean_loss: 0.7401, mean_acc: 0.7500
+recall_micro_valid: 0.6800, recall_macro_valid: 0.258323
+train >>> epoch: 71/200, batch: 1/4, mean_loss: 0.1295, mean_acc: 1.0000
+train >>> epoch: 71/200, batch: 2/4, mean_loss: 0.1471, mean_acc: 1.0000
+train >>> epoch: 71/200, batch: 3/4, mean_loss: 0.1492, mean_acc: 1.0000
+train >>> epoch: 71/200, batch: 4/4, mean_loss: 0.3635, mean_acc: 0.8125
+sklearn acc 0.67
+valid >>> epoch: 71/200, mean_loss: 0.7232, mean_acc: 0.7422
+recall_micro_valid: 0.6700, recall_macro_valid: 0.255719
+train >>> epoch: 72/200, batch: 1/4, mean_loss: 0.2899, mean_acc: 0.9375
+train >>> epoch: 72/200, batch: 2/4, mean_loss: 0.2504, mean_acc: 0.9375
+train >>> epoch: 72/200, batch: 3/4, mean_loss: 0.2057, mean_acc: 0.9583
+train >>> epoch: 72/200, batch: 4/4, mean_loss: 0.2026, mean_acc: 0.9688
+sklearn acc 0.66
+valid >>> epoch: 72/200, mean_loss: 0.7571, mean_acc: 0.7344
+recall_micro_valid: 0.6600, recall_macro_valid: 0.238465
+train >>> epoch: 73/200, batch: 1/4, mean_loss: 0.1494, mean_acc: 1.0000
+train >>> epoch: 73/200, batch: 2/4, mean_loss: 0.1669, mean_acc: 1.0000
+train >>> epoch: 73/200, batch: 3/4, mean_loss: 0.1631, mean_acc: 0.9896
+train >>> epoch: 73/200, batch: 4/4, mean_loss: 0.2613, mean_acc: 0.9297
+sklearn acc 0.65
+valid >>> epoch: 73/200, mean_loss: 0.7854, mean_acc: 0.7266
+recall_micro_valid: 0.6500, recall_macro_valid: 0.230947
+train >>> epoch: 74/200, batch: 1/4, mean_loss: 0.1936, mean_acc: 1.0000
+train >>> epoch: 74/200, batch: 2/4, mean_loss: 0.1897, mean_acc: 0.9844
+train >>> epoch: 74/200, batch: 3/4, mean_loss: 0.1640, mean_acc: 0.9896
+train >>> epoch: 74/200, batch: 4/4, mean_loss: 0.2358, mean_acc: 0.9922
+sklearn acc 0.64
+valid >>> epoch: 74/200, mean_loss: 0.8170, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.196631
+train >>> epoch: 75/200, batch: 1/4, mean_loss: 0.1692, mean_acc: 1.0000
+train >>> epoch: 75/200, batch: 2/4, mean_loss: 0.1616, mean_acc: 1.0000
+train >>> epoch: 75/200, batch: 3/4, mean_loss: 0.1525, mean_acc: 0.9896
+train >>> epoch: 75/200, batch: 4/4, mean_loss: 0.2460, mean_acc: 0.9297
+sklearn acc 0.63
+valid >>> epoch: 75/200, mean_loss: 0.8291, mean_acc: 0.7109
+recall_micro_valid: 0.6300, recall_macro_valid: 0.172890
+train >>> epoch: 76/200, batch: 1/4, mean_loss: 0.1726, mean_acc: 0.9688
+train >>> epoch: 76/200, batch: 2/4, mean_loss: 0.1484, mean_acc: 0.9844
+train >>> epoch: 76/200, batch: 3/4, mean_loss: 0.1338, mean_acc: 0.9896
+train >>> epoch: 76/200, batch: 4/4, mean_loss: 0.1344, mean_acc: 0.9922
+sklearn acc 0.64
+valid >>> epoch: 76/200, mean_loss: 0.8361, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.185877
+train >>> epoch: 77/200, batch: 1/4, mean_loss: 0.1981, mean_acc: 0.9375
+train >>> epoch: 77/200, batch: 2/4, mean_loss: 0.1854, mean_acc: 0.9375
+train >>> epoch: 77/200, batch: 3/4, mean_loss: 0.1664, mean_acc: 0.9583
+train >>> epoch: 77/200, batch: 4/4, mean_loss: 0.3380, mean_acc: 0.9062
+sklearn acc 0.64
+valid >>> epoch: 77/200, mean_loss: 0.8277, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.185877
+train >>> epoch: 78/200, batch: 1/4, mean_loss: 0.1164, mean_acc: 1.0000
+train >>> epoch: 78/200, batch: 2/4, mean_loss: 0.1166, mean_acc: 1.0000
+train >>> epoch: 78/200, batch: 3/4, mean_loss: 0.1248, mean_acc: 0.9896
+train >>> epoch: 78/200, batch: 4/4, mean_loss: 0.3071, mean_acc: 0.8672
+sklearn acc 0.67
+valid >>> epoch: 78/200, mean_loss: 0.7663, mean_acc: 0.7422
+recall_micro_valid: 0.6700, recall_macro_valid: 0.370896
+train >>> epoch: 79/200, batch: 1/4, mean_loss: 0.1410, mean_acc: 1.0000
+train >>> epoch: 79/200, batch: 2/4, mean_loss: 0.1321, mean_acc: 1.0000
+train >>> epoch: 79/200, batch: 3/4, mean_loss: 0.1328, mean_acc: 1.0000
+train >>> epoch: 79/200, batch: 4/4, mean_loss: 0.1586, mean_acc: 1.0000
+sklearn acc 0.68
+valid >>> epoch: 79/200, mean_loss: 0.7340, mean_acc: 0.7500
+recall_micro_valid: 0.6800, recall_macro_valid: 0.410931
+train >>> epoch: 80/200, batch: 1/4, mean_loss: 0.1133, mean_acc: 1.0000
+train >>> epoch: 80/200, batch: 2/4, mean_loss: 0.1511, mean_acc: 1.0000
+train >>> epoch: 80/200, batch: 3/4, mean_loss: 0.1551, mean_acc: 1.0000
+train >>> epoch: 80/200, batch: 4/4, mean_loss: 0.2212, mean_acc: 0.9375
+sklearn acc 0.64
+valid >>> epoch: 80/200, mean_loss: 0.7260, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.307238
+train >>> epoch: 81/200, batch: 1/4, mean_loss: 0.1143, mean_acc: 1.0000
+train >>> epoch: 81/200, batch: 2/4, mean_loss: 0.1388, mean_acc: 1.0000
+train >>> epoch: 81/200, batch: 3/4, mean_loss: 0.1502, mean_acc: 1.0000
+train >>> epoch: 81/200, batch: 4/4, mean_loss: 0.1708, mean_acc: 1.0000
+sklearn acc 0.67
+valid >>> epoch: 81/200, mean_loss: 0.7263, mean_acc: 0.7422
+recall_micro_valid: 0.6700, recall_macro_valid: 0.364517
+train >>> epoch: 82/200, batch: 1/4, mean_loss: 0.1183, mean_acc: 1.0000
+train >>> epoch: 82/200, batch: 2/4, mean_loss: 0.1285, mean_acc: 1.0000
+train >>> epoch: 82/200, batch: 3/4, mean_loss: 0.1443, mean_acc: 0.9896
+train >>> epoch: 82/200, batch: 4/4, mean_loss: 0.1403, mean_acc: 0.9922
+sklearn acc 0.62
+valid >>> epoch: 82/200, mean_loss: 0.7971, mean_acc: 0.7031
+recall_micro_valid: 0.6200, recall_macro_valid: 0.186553
+train >>> epoch: 83/200, batch: 1/4, mean_loss: 0.1308, mean_acc: 0.9688
+train >>> epoch: 83/200, batch: 2/4, mean_loss: 0.1517, mean_acc: 0.9688
+train >>> epoch: 83/200, batch: 3/4, mean_loss: 0.1326, mean_acc: 0.9792
+train >>> epoch: 83/200, batch: 4/4, mean_loss: 0.1228, mean_acc: 0.9844
+sklearn acc 0.63
+valid >>> epoch: 83/200, mean_loss: 0.8518, mean_acc: 0.7109
+recall_micro_valid: 0.6300, recall_macro_valid: 0.201705
+train >>> epoch: 84/200, batch: 1/4, mean_loss: 0.1158, mean_acc: 0.9688
+train >>> epoch: 84/200, batch: 2/4, mean_loss: 0.1445, mean_acc: 0.9688
+train >>> epoch: 84/200, batch: 3/4, mean_loss: 0.1259, mean_acc: 0.9792
+train >>> epoch: 84/200, batch: 4/4, mean_loss: 0.2688, mean_acc: 0.9219
+sklearn acc 0.63
+valid >>> epoch: 84/200, mean_loss: 0.8627, mean_acc: 0.7109
+recall_micro_valid: 0.6300, recall_macro_valid: 0.201705
+train >>> epoch: 85/200, batch: 1/4, mean_loss: 0.1915, mean_acc: 0.9375
+train >>> epoch: 85/200, batch: 2/4, mean_loss: 0.1431, mean_acc: 0.9688
+train >>> epoch: 85/200, batch: 3/4, mean_loss: 0.1223, mean_acc: 0.9792
+train >>> epoch: 85/200, batch: 4/4, mean_loss: 0.1773, mean_acc: 0.9219
+sklearn acc 0.63
+valid >>> epoch: 85/200, mean_loss: 0.7754, mean_acc: 0.7109
+recall_micro_valid: 0.6300, recall_macro_valid: 0.201705
+train >>> epoch: 86/200, batch: 1/4, mean_loss: 0.1025, mean_acc: 1.0000
+train >>> epoch: 86/200, batch: 2/4, mean_loss: 0.1305, mean_acc: 0.9844
+train >>> epoch: 86/200, batch: 3/4, mean_loss: 0.1203, mean_acc: 0.9896
+train >>> epoch: 86/200, batch: 4/4, mean_loss: 0.2998, mean_acc: 0.8672
+sklearn acc 0.67
+valid >>> epoch: 86/200, mean_loss: 0.7172, mean_acc: 0.7422
+recall_micro_valid: 0.6700, recall_macro_valid: 0.254001
+train >>> epoch: 87/200, batch: 1/4, mean_loss: 0.1325, mean_acc: 1.0000
+train >>> epoch: 87/200, batch: 2/4, mean_loss: 0.1170, mean_acc: 1.0000
+train >>> epoch: 87/200, batch: 3/4, mean_loss: 0.1209, mean_acc: 1.0000
+train >>> epoch: 87/200, batch: 4/4, mean_loss: 0.1728, mean_acc: 1.0000
+sklearn acc 0.66
+valid >>> epoch: 87/200, mean_loss: 0.7444, mean_acc: 0.7344
+recall_micro_valid: 0.6600, recall_macro_valid: 0.267811
+train >>> epoch: 88/200, batch: 1/4, mean_loss: 0.1761, mean_acc: 1.0000
+train >>> epoch: 88/200, batch: 2/4, mean_loss: 0.1496, mean_acc: 1.0000
+train >>> epoch: 88/200, batch: 3/4, mean_loss: 0.1593, mean_acc: 0.9896
+train >>> epoch: 88/200, batch: 4/4, mean_loss: 0.1969, mean_acc: 0.9297
+sklearn acc 0.64
+valid >>> epoch: 88/200, mean_loss: 0.7684, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.252592
+train >>> epoch: 89/200, batch: 1/4, mean_loss: 0.1652, mean_acc: 1.0000
+train >>> epoch: 89/200, batch: 2/4, mean_loss: 0.1534, mean_acc: 1.0000
+train >>> epoch: 89/200, batch: 3/4, mean_loss: 0.1360, mean_acc: 1.0000
+train >>> epoch: 89/200, batch: 4/4, mean_loss: 0.2117, mean_acc: 0.9375
+sklearn acc 0.64
+valid >>> epoch: 89/200, mean_loss: 0.7873, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.252773
+train >>> epoch: 90/200, batch: 1/4, mean_loss: 0.1166, mean_acc: 1.0000
+train >>> epoch: 90/200, batch: 2/4, mean_loss: 0.1078, mean_acc: 1.0000
+train >>> epoch: 90/200, batch: 3/4, mean_loss: 0.1189, mean_acc: 0.9896
+train >>> epoch: 90/200, batch: 4/4, mean_loss: 0.1732, mean_acc: 0.9922
+sklearn acc 0.64
+valid >>> epoch: 90/200, mean_loss: 0.7815, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.231264
+train >>> epoch: 91/200, batch: 1/4, mean_loss: 0.0875, mean_acc: 1.0000
+train >>> epoch: 91/200, batch: 2/4, mean_loss: 0.0987, mean_acc: 1.0000
+train >>> epoch: 91/200, batch: 3/4, mean_loss: 0.1051, mean_acc: 1.0000
+train >>> epoch: 91/200, batch: 4/4, mean_loss: 0.1485, mean_acc: 0.9375
+sklearn acc 0.63
+valid >>> epoch: 91/200, mean_loss: 0.8159, mean_acc: 0.7109
+recall_micro_valid: 0.6300, recall_macro_valid: 0.194399
+train >>> epoch: 92/200, batch: 1/4, mean_loss: 0.0980, mean_acc: 1.0000
+train >>> epoch: 92/200, batch: 2/4, mean_loss: 0.1034, mean_acc: 1.0000
+train >>> epoch: 92/200, batch: 3/4, mean_loss: 0.1075, mean_acc: 1.0000
+train >>> epoch: 92/200, batch: 4/4, mean_loss: 0.1543, mean_acc: 1.0000
+sklearn acc 0.64
+valid >>> epoch: 92/200, mean_loss: 0.8216, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.207386
+train >>> epoch: 93/200, batch: 1/4, mean_loss: 0.1101, mean_acc: 1.0000
+train >>> epoch: 93/200, batch: 2/4, mean_loss: 0.1030, mean_acc: 1.0000
+train >>> epoch: 93/200, batch: 3/4, mean_loss: 0.1248, mean_acc: 1.0000
+train >>> epoch: 93/200, batch: 4/4, mean_loss: 0.2290, mean_acc: 0.9375
+sklearn acc 0.64
+valid >>> epoch: 93/200, mean_loss: 0.8063, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.185877
+train >>> epoch: 94/200, batch: 1/4, mean_loss: 0.0952, mean_acc: 1.0000
+train >>> epoch: 94/200, batch: 2/4, mean_loss: 0.0881, mean_acc: 1.0000
+train >>> epoch: 94/200, batch: 3/4, mean_loss: 0.0925, mean_acc: 1.0000
+train >>> epoch: 94/200, batch: 4/4, mean_loss: 0.1127, mean_acc: 1.0000
+sklearn acc 0.65
+valid >>> epoch: 94/200, mean_loss: 0.7966, mean_acc: 0.7266
+recall_micro_valid: 0.6500, recall_macro_valid: 0.233496
+train >>> epoch: 95/200, batch: 1/4, mean_loss: 0.1023, mean_acc: 1.0000
+train >>> epoch: 95/200, batch: 2/4, mean_loss: 0.0978, mean_acc: 1.0000
+train >>> epoch: 95/200, batch: 3/4, mean_loss: 0.0995, mean_acc: 1.0000
+train >>> epoch: 95/200, batch: 4/4, mean_loss: 0.0973, mean_acc: 1.0000
+sklearn acc 0.64
+valid >>> epoch: 95/200, mean_loss: 0.8182, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.220509
+train >>> epoch: 96/200, batch: 1/4, mean_loss: 0.1385, mean_acc: 1.0000
+train >>> epoch: 96/200, batch: 2/4, mean_loss: 0.1194, mean_acc: 1.0000
+train >>> epoch: 96/200, batch: 3/4, mean_loss: 0.1067, mean_acc: 1.0000
+train >>> epoch: 96/200, batch: 4/4, mean_loss: 0.1269, mean_acc: 1.0000
+sklearn acc 0.64
+valid >>> epoch: 96/200, mean_loss: 0.8132, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.220509
+train >>> epoch: 97/200, batch: 1/4, mean_loss: 0.0888, mean_acc: 1.0000
+train >>> epoch: 97/200, batch: 2/4, mean_loss: 0.0948, mean_acc: 1.0000
+train >>> epoch: 97/200, batch: 3/4, mean_loss: 0.0977, mean_acc: 1.0000
+train >>> epoch: 97/200, batch: 4/4, mean_loss: 0.3475, mean_acc: 0.8750
+sklearn acc 0.64
+valid >>> epoch: 97/200, mean_loss: 0.7969, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.257260
+train >>> epoch: 98/200, batch: 1/4, mean_loss: 0.1020, mean_acc: 1.0000
+train >>> epoch: 98/200, batch: 2/4, mean_loss: 0.1079, mean_acc: 1.0000
+train >>> epoch: 98/200, batch: 3/4, mean_loss: 0.1055, mean_acc: 1.0000
+train >>> epoch: 98/200, batch: 4/4, mean_loss: 0.0911, mean_acc: 1.0000
+sklearn acc 0.65
+valid >>> epoch: 98/200, mean_loss: 0.7635, mean_acc: 0.7266
+recall_micro_valid: 0.6500, recall_macro_valid: 0.284959
+train >>> epoch: 99/200, batch: 1/4, mean_loss: 0.1302, mean_acc: 1.0000
+train >>> epoch: 99/200, batch: 2/4, mean_loss: 0.1300, mean_acc: 1.0000
+train >>> epoch: 99/200, batch: 3/4, mean_loss: 0.1224, mean_acc: 1.0000
+train >>> epoch: 99/200, batch: 4/4, mean_loss: 0.1953, mean_acc: 0.9375
+sklearn acc 0.65
+valid >>> epoch: 99/200, mean_loss: 0.7637, mean_acc: 0.7266
+recall_micro_valid: 0.6500, recall_macro_valid: 0.291127
+train >>> epoch: 100/200, batch: 1/4, mean_loss: 0.1503, mean_acc: 1.0000
+train >>> epoch: 100/200, batch: 2/4, mean_loss: 0.1310, mean_acc: 1.0000
+train >>> epoch: 100/200, batch: 3/4, mean_loss: 0.1198, mean_acc: 1.0000
+train >>> epoch: 100/200, batch: 4/4, mean_loss: 0.1665, mean_acc: 0.9375
+sklearn acc 0.64
+valid >>> epoch: 100/200, mean_loss: 0.7563, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.257260
+train >>> epoch: 101/200, batch: 1/4, mean_loss: 0.1006, mean_acc: 1.0000
+train >>> epoch: 101/200, batch: 2/4, mean_loss: 0.0932, mean_acc: 1.0000
+train >>> epoch: 101/200, batch: 3/4, mean_loss: 0.1053, mean_acc: 1.0000
+train >>> epoch: 101/200, batch: 4/4, mean_loss: 0.1116, mean_acc: 1.0000
+sklearn acc 0.63
+valid >>> epoch: 101/200, mean_loss: 0.7681, mean_acc: 0.7109
+recall_micro_valid: 0.6300, recall_macro_valid: 0.242109
+train >>> epoch: 102/200, batch: 1/4, mean_loss: 0.0732, mean_acc: 1.0000
+train >>> epoch: 102/200, batch: 2/4, mean_loss: 0.0713, mean_acc: 1.0000
+train >>> epoch: 102/200, batch: 3/4, mean_loss: 0.1143, mean_acc: 0.9688
+train >>> epoch: 102/200, batch: 4/4, mean_loss: 0.1017, mean_acc: 0.9766
+sklearn acc 0.61
+valid >>> epoch: 102/200, mean_loss: 0.8100, mean_acc: 0.6953
+recall_micro_valid: 0.6100, recall_macro_valid: 0.171402
+train >>> epoch: 103/200, batch: 1/4, mean_loss: 0.0887, mean_acc: 1.0000
+train >>> epoch: 103/200, batch: 2/4, mean_loss: 0.0888, mean_acc: 1.0000
+train >>> epoch: 103/200, batch: 3/4, mean_loss: 0.0855, mean_acc: 1.0000
+train >>> epoch: 103/200, batch: 4/4, mean_loss: 0.2607, mean_acc: 0.9375
+sklearn acc 0.62
+valid >>> epoch: 103/200, mean_loss: 0.8406, mean_acc: 0.7031
+recall_micro_valid: 0.6200, recall_macro_valid: 0.149148
+train >>> epoch: 104/200, batch: 1/4, mean_loss: 0.1847, mean_acc: 0.9375
+train >>> epoch: 104/200, batch: 2/4, mean_loss: 0.1268, mean_acc: 0.9688
+train >>> epoch: 104/200, batch: 3/4, mean_loss: 0.1100, mean_acc: 0.9792
+train >>> epoch: 104/200, batch: 4/4, mean_loss: 0.1210, mean_acc: 0.9844
+sklearn acc 0.63
+valid >>> epoch: 104/200, mean_loss: 0.7636, mean_acc: 0.7109
+recall_micro_valid: 0.6300, recall_macro_valid: 0.263507
+train >>> epoch: 105/200, batch: 1/4, mean_loss: 0.0971, mean_acc: 1.0000
+train >>> epoch: 105/200, batch: 2/4, mean_loss: 0.0758, mean_acc: 1.0000
+train >>> epoch: 105/200, batch: 3/4, mean_loss: 0.0812, mean_acc: 1.0000
+train >>> epoch: 105/200, batch: 4/4, mean_loss: 0.1426, mean_acc: 0.9375
+sklearn acc 0.66
+valid >>> epoch: 105/200, mean_loss: 0.7330, mean_acc: 0.7344
+recall_micro_valid: 0.6600, recall_macro_valid: 0.308961
+train >>> epoch: 106/200, batch: 1/4, mean_loss: 0.0603, mean_acc: 1.0000
+train >>> epoch: 106/200, batch: 2/4, mean_loss: 0.0829, mean_acc: 1.0000
+train >>> epoch: 106/200, batch: 3/4, mean_loss: 0.0879, mean_acc: 1.0000
+train >>> epoch: 106/200, batch: 4/4, mean_loss: 0.1333, mean_acc: 1.0000
+sklearn acc 0.66
+valid >>> epoch: 106/200, mean_loss: 0.7383, mean_acc: 0.7344
+recall_micro_valid: 0.6600, recall_macro_valid: 0.217137
+train >>> epoch: 107/200, batch: 1/4, mean_loss: 0.0782, mean_acc: 1.0000
+train >>> epoch: 107/200, batch: 2/4, mean_loss: 0.0896, mean_acc: 1.0000
+train >>> epoch: 107/200, batch: 3/4, mean_loss: 0.0884, mean_acc: 1.0000
+train >>> epoch: 107/200, batch: 4/4, mean_loss: 0.1799, mean_acc: 0.9375
+sklearn acc 0.62
+valid >>> epoch: 107/200, mean_loss: 0.7802, mean_acc: 0.7031
+recall_micro_valid: 0.6200, recall_macro_valid: 0.202922
+train >>> epoch: 108/200, batch: 1/4, mean_loss: 0.1139, mean_acc: 1.0000
+train >>> epoch: 108/200, batch: 2/4, mean_loss: 0.1070, mean_acc: 1.0000
+train >>> epoch: 108/200, batch: 3/4, mean_loss: 0.1041, mean_acc: 1.0000
+train >>> epoch: 108/200, batch: 4/4, mean_loss: 0.1632, mean_acc: 1.0000
+sklearn acc 0.64
+valid >>> epoch: 108/200, mean_loss: 0.7647, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.207386
+train >>> epoch: 109/200, batch: 1/4, mean_loss: 0.0794, mean_acc: 1.0000
+train >>> epoch: 109/200, batch: 2/4, mean_loss: 0.0893, mean_acc: 1.0000
+train >>> epoch: 109/200, batch: 3/4, mean_loss: 0.0873, mean_acc: 1.0000
+train >>> epoch: 109/200, batch: 4/4, mean_loss: 0.1038, mean_acc: 1.0000
+sklearn acc 0.64
+valid >>> epoch: 109/200, mean_loss: 0.8007, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.196631
+train >>> epoch: 110/200, batch: 1/4, mean_loss: 0.0760, mean_acc: 1.0000
+train >>> epoch: 110/200, batch: 2/4, mean_loss: 0.0839, mean_acc: 1.0000
+train >>> epoch: 110/200, batch: 3/4, mean_loss: 0.0899, mean_acc: 1.0000
+train >>> epoch: 110/200, batch: 4/4, mean_loss: 0.3956, mean_acc: 0.8750
+sklearn acc 0.62
+valid >>> epoch: 110/200, mean_loss: 0.8138, mean_acc: 0.7031
+recall_micro_valid: 0.6200, recall_macro_valid: 0.159903
+train >>> epoch: 111/200, batch: 1/4, mean_loss: 0.0695, mean_acc: 1.0000
+train >>> epoch: 111/200, batch: 2/4, mean_loss: 0.0696, mean_acc: 1.0000
+train >>> epoch: 111/200, batch: 3/4, mean_loss: 0.0732, mean_acc: 1.0000
+train >>> epoch: 111/200, batch: 4/4, mean_loss: 0.1411, mean_acc: 0.9375
+sklearn acc 0.62
+valid >>> epoch: 111/200, mean_loss: 0.7675, mean_acc: 0.7031
+recall_micro_valid: 0.6200, recall_macro_valid: 0.159903
+train >>> epoch: 112/200, batch: 1/4, mean_loss: 0.0609, mean_acc: 1.0000
+train >>> epoch: 112/200, batch: 2/4, mean_loss: 0.0835, mean_acc: 1.0000
+train >>> epoch: 112/200, batch: 3/4, mean_loss: 0.0916, mean_acc: 1.0000
+train >>> epoch: 112/200, batch: 4/4, mean_loss: 0.1258, mean_acc: 1.0000
+sklearn acc 0.62
+valid >>> epoch: 112/200, mean_loss: 0.7612, mean_acc: 0.7031
+recall_micro_valid: 0.6200, recall_macro_valid: 0.237373
+train >>> epoch: 113/200, batch: 1/4, mean_loss: 0.1245, mean_acc: 1.0000
+train >>> epoch: 113/200, batch: 2/4, mean_loss: 0.1387, mean_acc: 1.0000
+train >>> epoch: 113/200, batch: 3/4, mean_loss: 0.1231, mean_acc: 1.0000
+train >>> epoch: 113/200, batch: 4/4, mean_loss: 0.2524, mean_acc: 0.9375
+sklearn acc 0.66
+valid >>> epoch: 113/200, mean_loss: 0.7682, mean_acc: 0.7344
+recall_micro_valid: 0.6600, recall_macro_valid: 0.262524
+train >>> epoch: 114/200, batch: 1/4, mean_loss: 0.1052, mean_acc: 1.0000
+train >>> epoch: 114/200, batch: 2/4, mean_loss: 0.0931, mean_acc: 1.0000
+train >>> epoch: 114/200, batch: 3/4, mean_loss: 0.0863, mean_acc: 1.0000
+train >>> epoch: 114/200, batch: 4/4, mean_loss: 0.1000, mean_acc: 1.0000
+sklearn acc 0.63
+valid >>> epoch: 114/200, mean_loss: 0.8031, mean_acc: 0.7109
+recall_micro_valid: 0.6300, recall_macro_valid: 0.207522
+train >>> epoch: 115/200, batch: 1/4, mean_loss: 0.0651, mean_acc: 1.0000
+train >>> epoch: 115/200, batch: 2/4, mean_loss: 0.0999, mean_acc: 0.9688
+train >>> epoch: 115/200, batch: 3/4, mean_loss: 0.0997, mean_acc: 0.9792
+train >>> epoch: 115/200, batch: 4/4, mean_loss: 0.1688, mean_acc: 0.9219
+sklearn acc 0.62
+valid >>> epoch: 115/200, mean_loss: 0.8606, mean_acc: 0.7031
+recall_micro_valid: 0.6200, recall_macro_valid: 0.159903
+train >>> epoch: 116/200, batch: 1/4, mean_loss: 0.0642, mean_acc: 1.0000
+train >>> epoch: 116/200, batch: 2/4, mean_loss: 0.0847, mean_acc: 1.0000
+train >>> epoch: 116/200, batch: 3/4, mean_loss: 0.0874, mean_acc: 1.0000
+train >>> epoch: 116/200, batch: 4/4, mean_loss: 0.2224, mean_acc: 0.9375
+sklearn acc 0.63
+valid >>> epoch: 116/200, mean_loss: 0.8865, mean_acc: 0.7109
+recall_micro_valid: 0.6300, recall_macro_valid: 0.207522
+train >>> epoch: 117/200, batch: 1/4, mean_loss: 0.0884, mean_acc: 1.0000
+train >>> epoch: 117/200, batch: 2/4, mean_loss: 0.0790, mean_acc: 1.0000
+train >>> epoch: 117/200, batch: 3/4, mean_loss: 0.0779, mean_acc: 1.0000
+train >>> epoch: 117/200, batch: 4/4, mean_loss: 0.1241, mean_acc: 1.0000
+sklearn acc 0.65
+valid >>> epoch: 117/200, mean_loss: 0.8352, mean_acc: 0.7266
+recall_micro_valid: 0.6500, recall_macro_valid: 0.363366
+train >>> epoch: 118/200, batch: 1/4, mean_loss: 0.0782, mean_acc: 1.0000
+train >>> epoch: 118/200, batch: 2/4, mean_loss: 0.0851, mean_acc: 1.0000
+train >>> epoch: 118/200, batch: 3/4, mean_loss: 0.0778, mean_acc: 1.0000
+train >>> epoch: 118/200, batch: 4/4, mean_loss: 0.1116, mean_acc: 1.0000
+sklearn acc 0.63
+valid >>> epoch: 118/200, mean_loss: 0.8589, mean_acc: 0.7109
+recall_micro_valid: 0.6300, recall_macro_valid: 0.358902
+train >>> epoch: 119/200, batch: 1/4, mean_loss: 0.0792, mean_acc: 1.0000
+train >>> epoch: 119/200, batch: 2/4, mean_loss: 0.1017, mean_acc: 1.0000
+train >>> epoch: 119/200, batch: 3/4, mean_loss: 0.0951, mean_acc: 1.0000
+train >>> epoch: 119/200, batch: 4/4, mean_loss: 0.1553, mean_acc: 0.9375
+sklearn acc 0.66
+valid >>> epoch: 119/200, mean_loss: 0.8668, mean_acc: 0.7344
+recall_micro_valid: 0.6600, recall_macro_valid: 0.397863
+train >>> epoch: 120/200, batch: 1/4, mean_loss: 0.0825, mean_acc: 1.0000
+train >>> epoch: 120/200, batch: 2/4, mean_loss: 0.0877, mean_acc: 1.0000
+train >>> epoch: 120/200, batch: 3/4, mean_loss: 0.0897, mean_acc: 1.0000
+train >>> epoch: 120/200, batch: 4/4, mean_loss: 0.2351, mean_acc: 0.8750
+sklearn acc 0.65
+valid >>> epoch: 120/200, mean_loss: 0.8733, mean_acc: 0.7266
+recall_micro_valid: 0.6500, recall_macro_valid: 0.406385
+train >>> epoch: 121/200, batch: 1/4, mean_loss: 0.0674, mean_acc: 1.0000
+train >>> epoch: 121/200, batch: 2/4, mean_loss: 0.0809, mean_acc: 1.0000
+train >>> epoch: 121/200, batch: 3/4, mean_loss: 0.0887, mean_acc: 1.0000
+train >>> epoch: 121/200, batch: 4/4, mean_loss: 0.1372, mean_acc: 1.0000
+sklearn acc 0.64
+valid >>> epoch: 121/200, mean_loss: 0.8139, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.393217
+train >>> epoch: 122/200, batch: 1/4, mean_loss: 0.0794, mean_acc: 1.0000
+train >>> epoch: 122/200, batch: 2/4, mean_loss: 0.0853, mean_acc: 1.0000
+train >>> epoch: 122/200, batch: 3/4, mean_loss: 0.0829, mean_acc: 1.0000
+train >>> epoch: 122/200, batch: 4/4, mean_loss: 0.0853, mean_acc: 1.0000
+sklearn acc 0.64
+valid >>> epoch: 122/200, mean_loss: 0.7834, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.326502
+train >>> epoch: 123/200, batch: 1/4, mean_loss: 0.1207, mean_acc: 1.0000
+train >>> epoch: 123/200, batch: 2/4, mean_loss: 0.0892, mean_acc: 1.0000
+train >>> epoch: 123/200, batch: 3/4, mean_loss: 0.0958, mean_acc: 1.0000
+train >>> epoch: 123/200, batch: 4/4, mean_loss: 0.0825, mean_acc: 1.0000
+sklearn acc 0.62
+valid >>> epoch: 123/200, mean_loss: 0.8007, mean_acc: 0.7031
+recall_micro_valid: 0.6200, recall_macro_valid: 0.149148
+train >>> epoch: 124/200, batch: 1/4, mean_loss: 0.0710, mean_acc: 1.0000
+train >>> epoch: 124/200, batch: 2/4, mean_loss: 0.0914, mean_acc: 1.0000
+train >>> epoch: 124/200, batch: 3/4, mean_loss: 0.0851, mean_acc: 1.0000
+train >>> epoch: 124/200, batch: 4/4, mean_loss: 0.1642, mean_acc: 0.9375
+sklearn acc 0.63
+valid >>> epoch: 124/200, mean_loss: 0.8266, mean_acc: 0.7109
+recall_micro_valid: 0.6300, recall_macro_valid: 0.151380
+train >>> epoch: 125/200, batch: 1/4, mean_loss: 0.0583, mean_acc: 1.0000
+train >>> epoch: 125/200, batch: 2/4, mean_loss: 0.0637, mean_acc: 1.0000
+train >>> epoch: 125/200, batch: 3/4, mean_loss: 0.0747, mean_acc: 1.0000
+train >>> epoch: 125/200, batch: 4/4, mean_loss: 0.3012, mean_acc: 0.8750
+sklearn acc 0.64
+valid >>> epoch: 125/200, mean_loss: 0.8702, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.153612
+train >>> epoch: 126/200, batch: 1/4, mean_loss: 0.0779, mean_acc: 1.0000
+train >>> epoch: 126/200, batch: 2/4, mean_loss: 0.0756, mean_acc: 1.0000
+train >>> epoch: 126/200, batch: 3/4, mean_loss: 0.0804, mean_acc: 1.0000
+train >>> epoch: 126/200, batch: 4/4, mean_loss: 0.0781, mean_acc: 1.0000
+sklearn acc 0.63
+valid >>> epoch: 126/200, mean_loss: 0.8528, mean_acc: 0.7109
+recall_micro_valid: 0.6300, recall_macro_valid: 0.207522
+train >>> epoch: 127/200, batch: 1/4, mean_loss: 0.0870, mean_acc: 1.0000
+train >>> epoch: 127/200, batch: 2/4, mean_loss: 0.1120, mean_acc: 0.9844
+train >>> epoch: 127/200, batch: 3/4, mean_loss: 0.1099, mean_acc: 0.9896
+train >>> epoch: 127/200, batch: 4/4, mean_loss: 0.3369, mean_acc: 0.8672
+sklearn acc 0.63
+valid >>> epoch: 127/200, mean_loss: 0.8592, mean_acc: 0.7109
+recall_micro_valid: 0.6300, recall_macro_valid: 0.218277
+train >>> epoch: 128/200, batch: 1/4, mean_loss: 0.0774, mean_acc: 1.0000
+train >>> epoch: 128/200, batch: 2/4, mean_loss: 0.0763, mean_acc: 1.0000
+train >>> epoch: 128/200, batch: 3/4, mean_loss: 0.0786, mean_acc: 1.0000
+train >>> epoch: 128/200, batch: 4/4, mean_loss: 0.0988, mean_acc: 1.0000
+sklearn acc 0.65
+valid >>> epoch: 128/200, mean_loss: 0.7854, mean_acc: 0.7266
+recall_micro_valid: 0.6500, recall_macro_valid: 0.249537
+train >>> epoch: 129/200, batch: 1/4, mean_loss: 0.1087, mean_acc: 0.9688
+train >>> epoch: 129/200, batch: 2/4, mean_loss: 0.1056, mean_acc: 0.9844
+train >>> epoch: 129/200, batch: 3/4, mean_loss: 0.1052, mean_acc: 0.9896
+train >>> epoch: 129/200, batch: 4/4, mean_loss: 0.1549, mean_acc: 0.9922
+sklearn acc 0.65
+valid >>> epoch: 129/200, mean_loss: 0.7690, mean_acc: 0.7266
+recall_micro_valid: 0.6500, recall_macro_valid: 0.254824
+train >>> epoch: 130/200, batch: 1/4, mean_loss: 0.1133, mean_acc: 1.0000
+train >>> epoch: 130/200, batch: 2/4, mean_loss: 0.0942, mean_acc: 1.0000
+train >>> epoch: 130/200, batch: 3/4, mean_loss: 0.0914, mean_acc: 1.0000
+train >>> epoch: 130/200, batch: 4/4, mean_loss: 0.1246, mean_acc: 1.0000
+sklearn acc 0.66
+valid >>> epoch: 130/200, mean_loss: 0.7414, mean_acc: 0.7344
+recall_micro_valid: 0.6600, recall_macro_valid: 0.257056
+train >>> epoch: 131/200, batch: 1/4, mean_loss: 0.0697, mean_acc: 1.0000
+train >>> epoch: 131/200, batch: 2/4, mean_loss: 0.0682, mean_acc: 1.0000
+train >>> epoch: 131/200, batch: 3/4, mean_loss: 0.0676, mean_acc: 1.0000
+train >>> epoch: 131/200, batch: 4/4, mean_loss: 0.1027, mean_acc: 1.0000
+sklearn acc 0.62
+valid >>> epoch: 131/200, mean_loss: 0.7915, mean_acc: 0.7031
+recall_micro_valid: 0.6200, recall_macro_valid: 0.159903
+train >>> epoch: 132/200, batch: 1/4, mean_loss: 0.0702, mean_acc: 1.0000
+train >>> epoch: 132/200, batch: 2/4, mean_loss: 0.0638, mean_acc: 1.0000
+train >>> epoch: 132/200, batch: 3/4, mean_loss: 0.0622, mean_acc: 1.0000
+train >>> epoch: 132/200, batch: 4/4, mean_loss: 0.0793, mean_acc: 1.0000
+sklearn acc 0.63
+valid >>> epoch: 132/200, mean_loss: 0.8563, mean_acc: 0.7109
+recall_micro_valid: 0.6300, recall_macro_valid: 0.172890
+train >>> epoch: 133/200, batch: 1/4, mean_loss: 0.0510, mean_acc: 1.0000
+train >>> epoch: 133/200, batch: 2/4, mean_loss: 0.0540, mean_acc: 1.0000
+train >>> epoch: 133/200, batch: 3/4, mean_loss: 0.0685, mean_acc: 1.0000
+train >>> epoch: 133/200, batch: 4/4, mean_loss: 0.1991, mean_acc: 0.8750
+sklearn acc 0.64
+valid >>> epoch: 133/200, mean_loss: 0.9589, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.191761
+train >>> epoch: 134/200, batch: 1/4, mean_loss: 0.0613, mean_acc: 1.0000
+train >>> epoch: 134/200, batch: 2/4, mean_loss: 0.0739, mean_acc: 1.0000
+train >>> epoch: 134/200, batch: 3/4, mean_loss: 0.0901, mean_acc: 1.0000
+train >>> epoch: 134/200, batch: 4/4, mean_loss: 0.0778, mean_acc: 1.0000
+sklearn acc 0.62
+valid >>> epoch: 134/200, mean_loss: 0.9548, mean_acc: 0.7031
+recall_micro_valid: 0.6200, recall_macro_valid: 0.159903
+train >>> epoch: 135/200, batch: 1/4, mean_loss: 0.0644, mean_acc: 1.0000
+train >>> epoch: 135/200, batch: 2/4, mean_loss: 0.0594, mean_acc: 1.0000
+train >>> epoch: 135/200, batch: 3/4, mean_loss: 0.0578, mean_acc: 1.0000
+train >>> epoch: 135/200, batch: 4/4, mean_loss: 0.2065, mean_acc: 0.9375
+sklearn acc 0.62
+valid >>> epoch: 135/200, mean_loss: 0.9298, mean_acc: 0.7031
+recall_micro_valid: 0.6200, recall_macro_valid: 0.159903
+train >>> epoch: 136/200, batch: 1/4, mean_loss: 0.0624, mean_acc: 1.0000
+train >>> epoch: 136/200, batch: 2/4, mean_loss: 0.0546, mean_acc: 1.0000
+train >>> epoch: 136/200, batch: 3/4, mean_loss: 0.0513, mean_acc: 1.0000
+train >>> epoch: 136/200, batch: 4/4, mean_loss: 0.1764, mean_acc: 0.9375
+sklearn acc 0.65
+valid >>> epoch: 136/200, mean_loss: 0.8346, mean_acc: 0.7266
+recall_micro_valid: 0.6500, recall_macro_valid: 0.244251
+train >>> epoch: 137/200, batch: 1/4, mean_loss: 0.0787, mean_acc: 1.0000
+train >>> epoch: 137/200, batch: 2/4, mean_loss: 0.0797, mean_acc: 1.0000
+train >>> epoch: 137/200, batch: 3/4, mean_loss: 0.0688, mean_acc: 1.0000
+train >>> epoch: 137/200, batch: 4/4, mean_loss: 0.1139, mean_acc: 1.0000
+sklearn acc 0.6
+valid >>> epoch: 137/200, mean_loss: 0.7970, mean_acc: 0.6875
+recall_micro_valid: 0.6000, recall_macro_valid: 0.296821
+train >>> epoch: 138/200, batch: 1/4, mean_loss: 0.0968, mean_acc: 1.0000
+train >>> epoch: 138/200, batch: 2/4, mean_loss: 0.0829, mean_acc: 1.0000
+train >>> epoch: 138/200, batch: 3/4, mean_loss: 0.0927, mean_acc: 1.0000
+train >>> epoch: 138/200, batch: 4/4, mean_loss: 0.1405, mean_acc: 1.0000
+sklearn acc 0.62
+valid >>> epoch: 138/200, mean_loss: 0.7823, mean_acc: 0.7031
+recall_micro_valid: 0.6200, recall_macro_valid: 0.258882
+train >>> epoch: 139/200, batch: 1/4, mean_loss: 0.0715, mean_acc: 1.0000
+train >>> epoch: 139/200, batch: 2/4, mean_loss: 0.0881, mean_acc: 1.0000
+train >>> epoch: 139/200, batch: 3/4, mean_loss: 0.0926, mean_acc: 1.0000
+train >>> epoch: 139/200, batch: 4/4, mean_loss: 0.2101, mean_acc: 0.9375
+sklearn acc 0.65
+valid >>> epoch: 139/200, mean_loss: 0.7534, mean_acc: 0.7266
+recall_micro_valid: 0.6500, recall_macro_valid: 0.254824
+train >>> epoch: 140/200, batch: 1/4, mean_loss: 0.0702, mean_acc: 1.0000
+train >>> epoch: 140/200, batch: 2/4, mean_loss: 0.0680, mean_acc: 1.0000
+train >>> epoch: 140/200, batch: 3/4, mean_loss: 0.0678, mean_acc: 1.0000
+train >>> epoch: 140/200, batch: 4/4, mean_loss: 0.1955, mean_acc: 0.9375
+sklearn acc 0.63
+valid >>> epoch: 140/200, mean_loss: 0.7875, mean_acc: 0.7109
+recall_micro_valid: 0.6300, recall_macro_valid: 0.207522
+train >>> epoch: 141/200, batch: 1/4, mean_loss: 0.0619, mean_acc: 1.0000
+train >>> epoch: 141/200, batch: 2/4, mean_loss: 0.0561, mean_acc: 1.0000
+train >>> epoch: 141/200, batch: 3/4, mean_loss: 0.0592, mean_acc: 1.0000
+train >>> epoch: 141/200, batch: 4/4, mean_loss: 0.0969, mean_acc: 1.0000
+sklearn acc 0.62
+valid >>> epoch: 141/200, mean_loss: 0.8427, mean_acc: 0.7031
+recall_micro_valid: 0.6200, recall_macro_valid: 0.194535
+train >>> epoch: 142/200, batch: 1/4, mean_loss: 0.0620, mean_acc: 1.0000
+train >>> epoch: 142/200, batch: 2/4, mean_loss: 0.0579, mean_acc: 1.0000
+train >>> epoch: 142/200, batch: 3/4, mean_loss: 0.0622, mean_acc: 1.0000
+train >>> epoch: 142/200, batch: 4/4, mean_loss: 0.0710, mean_acc: 1.0000
+sklearn acc 0.62
+valid >>> epoch: 142/200, mean_loss: 0.9037, mean_acc: 0.7031
+recall_micro_valid: 0.6200, recall_macro_valid: 0.289773
+train >>> epoch: 143/200, batch: 1/4, mean_loss: 0.0774, mean_acc: 1.0000
+train >>> epoch: 143/200, batch: 2/4, mean_loss: 0.0689, mean_acc: 1.0000
+train >>> epoch: 143/200, batch: 3/4, mean_loss: 0.0736, mean_acc: 0.9896
+train >>> epoch: 143/200, batch: 4/4, mean_loss: 0.2191, mean_acc: 0.8672
+sklearn acc 0.62
+valid >>> epoch: 143/200, mean_loss: 0.9340, mean_acc: 0.7031
+recall_micro_valid: 0.6200, recall_macro_valid: 0.289773
+train >>> epoch: 144/200, batch: 1/4, mean_loss: 0.0695, mean_acc: 1.0000
+train >>> epoch: 144/200, batch: 2/4, mean_loss: 0.0690, mean_acc: 1.0000
+train >>> epoch: 144/200, batch: 3/4, mean_loss: 0.0696, mean_acc: 1.0000
+train >>> epoch: 144/200, batch: 4/4, mean_loss: 0.0932, mean_acc: 1.0000
+sklearn acc 0.6
+valid >>> epoch: 144/200, mean_loss: 0.9243, mean_acc: 0.6875
+recall_micro_valid: 0.6000, recall_macro_valid: 0.285308
+train >>> epoch: 145/200, batch: 1/4, mean_loss: 0.0928, mean_acc: 1.0000
+train >>> epoch: 145/200, batch: 2/4, mean_loss: 0.0751, mean_acc: 1.0000
+train >>> epoch: 145/200, batch: 3/4, mean_loss: 0.0933, mean_acc: 1.0000
+train >>> epoch: 145/200, batch: 4/4, mean_loss: 0.2146, mean_acc: 0.8750
+sklearn acc 0.59
+valid >>> epoch: 145/200, mean_loss: 0.8897, mean_acc: 0.6797
+recall_micro_valid: 0.5900, recall_macro_valid: 0.293831
+train >>> epoch: 146/200, batch: 1/4, mean_loss: 0.0918, mean_acc: 1.0000
+train >>> epoch: 146/200, batch: 2/4, mean_loss: 0.0901, mean_acc: 1.0000
+train >>> epoch: 146/200, batch: 3/4, mean_loss: 0.0842, mean_acc: 1.0000
+train >>> epoch: 146/200, batch: 4/4, mean_loss: 0.3612, mean_acc: 0.8125
+sklearn acc 0.62
+valid >>> epoch: 146/200, mean_loss: 0.8289, mean_acc: 0.7031
+recall_micro_valid: 0.6200, recall_macro_valid: 0.300528
+train >>> epoch: 147/200, batch: 1/4, mean_loss: 0.0577, mean_acc: 1.0000
+train >>> epoch: 147/200, batch: 2/4, mean_loss: 0.0692, mean_acc: 1.0000
+train >>> epoch: 147/200, batch: 3/4, mean_loss: 0.0733, mean_acc: 1.0000
+train >>> epoch: 147/200, batch: 4/4, mean_loss: 0.0936, mean_acc: 1.0000
+sklearn acc 0.65
+valid >>> epoch: 147/200, mean_loss: 0.7743, mean_acc: 0.7266
+recall_micro_valid: 0.6500, recall_macro_valid: 0.363366
+train >>> epoch: 148/200, batch: 1/4, mean_loss: 0.0711, mean_acc: 1.0000
+train >>> epoch: 148/200, batch: 2/4, mean_loss: 0.0630, mean_acc: 1.0000
+train >>> epoch: 148/200, batch: 3/4, mean_loss: 0.0628, mean_acc: 1.0000
+train >>> epoch: 148/200, batch: 4/4, mean_loss: 0.0906, mean_acc: 1.0000
+sklearn acc 0.66
+valid >>> epoch: 148/200, mean_loss: 0.7630, mean_acc: 0.7344
+recall_micro_valid: 0.6600, recall_macro_valid: 0.370885
+train >>> epoch: 149/200, batch: 1/4, mean_loss: 0.0684, mean_acc: 1.0000
+train >>> epoch: 149/200, batch: 2/4, mean_loss: 0.0647, mean_acc: 1.0000
+train >>> epoch: 149/200, batch: 3/4, mean_loss: 0.0667, mean_acc: 1.0000
+train >>> epoch: 149/200, batch: 4/4, mean_loss: 0.1077, mean_acc: 1.0000
+sklearn acc 0.65
+valid >>> epoch: 149/200, mean_loss: 0.7656, mean_acc: 0.7266
+recall_micro_valid: 0.6500, recall_macro_valid: 0.374121
+train >>> epoch: 150/200, batch: 1/4, mean_loss: 0.0734, mean_acc: 1.0000
+train >>> epoch: 150/200, batch: 2/4, mean_loss: 0.0650, mean_acc: 1.0000
+train >>> epoch: 150/200, batch: 3/4, mean_loss: 0.0578, mean_acc: 1.0000
+train >>> epoch: 150/200, batch: 4/4, mean_loss: 0.0710, mean_acc: 1.0000
+sklearn acc 0.63
+valid >>> epoch: 150/200, mean_loss: 0.8072, mean_acc: 0.7109
+recall_micro_valid: 0.6300, recall_macro_valid: 0.207522
+train >>> epoch: 151/200, batch: 1/4, mean_loss: 0.1059, mean_acc: 0.9688
+train >>> epoch: 151/200, batch: 2/4, mean_loss: 0.0785, mean_acc: 0.9844
+train >>> epoch: 151/200, batch: 3/4, mean_loss: 0.0677, mean_acc: 0.9896
+train >>> epoch: 151/200, batch: 4/4, mean_loss: 0.1178, mean_acc: 0.9922
+sklearn acc 0.63
+valid >>> epoch: 151/200, mean_loss: 0.8591, mean_acc: 0.7109
+recall_micro_valid: 0.6300, recall_macro_valid: 0.207522
+train >>> epoch: 152/200, batch: 1/4, mean_loss: 0.0504, mean_acc: 1.0000
+train >>> epoch: 152/200, batch: 2/4, mean_loss: 0.0494, mean_acc: 1.0000
+train >>> epoch: 152/200, batch: 3/4, mean_loss: 0.0509, mean_acc: 1.0000
+train >>> epoch: 152/200, batch: 4/4, mean_loss: 0.0524, mean_acc: 1.0000
+sklearn acc 0.62
+valid >>> epoch: 152/200, mean_loss: 0.8619, mean_acc: 0.7031
+recall_micro_valid: 0.6200, recall_macro_valid: 0.194535
+train >>> epoch: 153/200, batch: 1/4, mean_loss: 0.0697, mean_acc: 1.0000
+train >>> epoch: 153/200, batch: 2/4, mean_loss: 0.0571, mean_acc: 1.0000
+train >>> epoch: 153/200, batch: 3/4, mean_loss: 0.0546, mean_acc: 1.0000
+train >>> epoch: 153/200, batch: 4/4, mean_loss: 0.1292, mean_acc: 0.9375
+sklearn acc 0.63
+valid >>> epoch: 153/200, mean_loss: 0.8445, mean_acc: 0.7109
+recall_micro_valid: 0.6300, recall_macro_valid: 0.207522
+train >>> epoch: 154/200, batch: 1/4, mean_loss: 0.0436, mean_acc: 1.0000
+train >>> epoch: 154/200, batch: 2/4, mean_loss: 0.0454, mean_acc: 1.0000
+train >>> epoch: 154/200, batch: 3/4, mean_loss: 0.0649, mean_acc: 0.9896
+train >>> epoch: 154/200, batch: 4/4, mean_loss: 0.0697, mean_acc: 0.9922
+sklearn acc 0.62
+valid >>> epoch: 154/200, mean_loss: 0.8141, mean_acc: 0.7031
+recall_micro_valid: 0.6200, recall_macro_valid: 0.159903
+train >>> epoch: 155/200, batch: 1/4, mean_loss: 0.0432, mean_acc: 1.0000
+train >>> epoch: 155/200, batch: 2/4, mean_loss: 0.0411, mean_acc: 1.0000
+train >>> epoch: 155/200, batch: 3/4, mean_loss: 0.0449, mean_acc: 1.0000
+train >>> epoch: 155/200, batch: 4/4, mean_loss: 0.5621, mean_acc: 0.7500
+sklearn acc 0.65
+valid >>> epoch: 155/200, mean_loss: 0.7630, mean_acc: 0.7266
+recall_micro_valid: 0.6500, recall_macro_valid: 0.228027
+train >>> epoch: 156/200, batch: 1/4, mean_loss: 0.0677, mean_acc: 1.0000
+train >>> epoch: 156/200, batch: 2/4, mean_loss: 0.0686, mean_acc: 1.0000
+train >>> epoch: 156/200, batch: 3/4, mean_loss: 0.0873, mean_acc: 1.0000
+train >>> epoch: 156/200, batch: 4/4, mean_loss: 0.0941, mean_acc: 1.0000
+sklearn acc 0.62
+valid >>> epoch: 156/200, mean_loss: 0.8048, mean_acc: 0.7031
+recall_micro_valid: 0.6200, recall_macro_valid: 0.250865
+train >>> epoch: 157/200, batch: 1/4, mean_loss: 0.1728, mean_acc: 1.0000
+train >>> epoch: 157/200, batch: 2/4, mean_loss: 0.1706, mean_acc: 1.0000
+train >>> epoch: 157/200, batch: 3/4, mean_loss: 0.1622, mean_acc: 0.9896
+train >>> epoch: 157/200, batch: 4/4, mean_loss: 0.2165, mean_acc: 0.9922
+sklearn acc 0.61
+valid >>> epoch: 157/200, mean_loss: 0.8657, mean_acc: 0.6953
+recall_micro_valid: 0.6100, recall_macro_valid: 0.264493
+train >>> epoch: 158/200, batch: 1/4, mean_loss: 0.2228, mean_acc: 0.9375
+train >>> epoch: 158/200, batch: 2/4, mean_loss: 0.1579, mean_acc: 0.9688
+train >>> epoch: 158/200, batch: 3/4, mean_loss: 0.1451, mean_acc: 0.9792
+train >>> epoch: 158/200, batch: 4/4, mean_loss: 0.1887, mean_acc: 0.9844
+sklearn acc 0.62
+valid >>> epoch: 158/200, mean_loss: 0.7880, mean_acc: 0.7031
+recall_micro_valid: 0.6200, recall_macro_valid: 0.229537
+train >>> epoch: 159/200, batch: 1/4, mean_loss: 0.1001, mean_acc: 1.0000
+train >>> epoch: 159/200, batch: 2/4, mean_loss: 0.0987, mean_acc: 1.0000
+train >>> epoch: 159/200, batch: 3/4, mean_loss: 0.0835, mean_acc: 1.0000
+train >>> epoch: 159/200, batch: 4/4, mean_loss: 0.1025, mean_acc: 1.0000
+sklearn acc 0.62
+valid >>> epoch: 159/200, mean_loss: 0.8348, mean_acc: 0.7031
+recall_micro_valid: 0.6200, recall_macro_valid: 0.159903
+train >>> epoch: 160/200, batch: 1/4, mean_loss: 0.0532, mean_acc: 1.0000
+train >>> epoch: 160/200, batch: 2/4, mean_loss: 0.0554, mean_acc: 1.0000
+train >>> epoch: 160/200, batch: 3/4, mean_loss: 0.0582, mean_acc: 1.0000
+train >>> epoch: 160/200, batch: 4/4, mean_loss: 0.1315, mean_acc: 0.9375
+sklearn acc 0.62
+valid >>> epoch: 160/200, mean_loss: 0.9192, mean_acc: 0.7031
+recall_micro_valid: 0.6200, recall_macro_valid: 0.159903
+train >>> epoch: 161/200, batch: 1/4, mean_loss: 0.0430, mean_acc: 1.0000
+train >>> epoch: 161/200, batch: 2/4, mean_loss: 0.0467, mean_acc: 1.0000
+train >>> epoch: 161/200, batch: 3/4, mean_loss: 0.0608, mean_acc: 1.0000
+train >>> epoch: 161/200, batch: 4/4, mean_loss: 0.0631, mean_acc: 1.0000
+sklearn acc 0.62
+valid >>> epoch: 161/200, mean_loss: 0.9937, mean_acc: 0.7031
+recall_micro_valid: 0.6200, recall_macro_valid: 0.149148
+train >>> epoch: 162/200, batch: 1/4, mean_loss: 0.0650, mean_acc: 1.0000
+train >>> epoch: 162/200, batch: 2/4, mean_loss: 0.0634, mean_acc: 1.0000
+train >>> epoch: 162/200, batch: 3/4, mean_loss: 0.0778, mean_acc: 0.9896
+train >>> epoch: 162/200, batch: 4/4, mean_loss: 0.0630, mean_acc: 0.9922
+sklearn acc 0.62
+valid >>> epoch: 162/200, mean_loss: 1.0206, mean_acc: 0.7031
+recall_micro_valid: 0.6200, recall_macro_valid: 0.149148
+train >>> epoch: 163/200, batch: 1/4, mean_loss: 0.0596, mean_acc: 1.0000
+train >>> epoch: 163/200, batch: 2/4, mean_loss: 0.0908, mean_acc: 0.9688
+train >>> epoch: 163/200, batch: 3/4, mean_loss: 0.0750, mean_acc: 0.9792
+train >>> epoch: 163/200, batch: 4/4, mean_loss: 0.0850, mean_acc: 0.9844
+sklearn acc 0.62
+valid >>> epoch: 163/200, mean_loss: 1.0173, mean_acc: 0.7031
+recall_micro_valid: 0.6200, recall_macro_valid: 0.149148
+train >>> epoch: 164/200, batch: 1/4, mean_loss: 0.0546, mean_acc: 1.0000
+train >>> epoch: 164/200, batch: 2/4, mean_loss: 0.1238, mean_acc: 0.9688
+train >>> epoch: 164/200, batch: 3/4, mean_loss: 0.0955, mean_acc: 0.9792
+train >>> epoch: 164/200, batch: 4/4, mean_loss: 0.0984, mean_acc: 0.9844
+sklearn acc 0.63
+valid >>> epoch: 164/200, mean_loss: 0.9493, mean_acc: 0.7109
+recall_micro_valid: 0.6300, recall_macro_valid: 0.172890
+train >>> epoch: 165/200, batch: 1/4, mean_loss: 0.0483, mean_acc: 1.0000
+train >>> epoch: 165/200, batch: 2/4, mean_loss: 0.0484, mean_acc: 1.0000
+train >>> epoch: 165/200, batch: 3/4, mean_loss: 0.0508, mean_acc: 1.0000
+train >>> epoch: 165/200, batch: 4/4, mean_loss: 0.0565, mean_acc: 1.0000
+sklearn acc 0.65
+valid >>> epoch: 165/200, mean_loss: 0.8840, mean_acc: 0.7266
+recall_micro_valid: 0.6500, recall_macro_valid: 0.233496
+train >>> epoch: 166/200, batch: 1/4, mean_loss: 0.0565, mean_acc: 1.0000
+train >>> epoch: 166/200, batch: 2/4, mean_loss: 0.0688, mean_acc: 1.0000
+train >>> epoch: 166/200, batch: 3/4, mean_loss: 0.0660, mean_acc: 1.0000
+train >>> epoch: 166/200, batch: 4/4, mean_loss: 0.1098, mean_acc: 1.0000
+sklearn acc 0.63
+valid >>> epoch: 166/200, mean_loss: 0.8377, mean_acc: 0.7109
+recall_micro_valid: 0.6300, recall_macro_valid: 0.239786
+train >>> epoch: 167/200, batch: 1/4, mean_loss: 0.0378, mean_acc: 1.0000
+train >>> epoch: 167/200, batch: 2/4, mean_loss: 0.0520, mean_acc: 1.0000
+train >>> epoch: 167/200, batch: 3/4, mean_loss: 0.0492, mean_acc: 1.0000
+train >>> epoch: 167/200, batch: 4/4, mean_loss: 0.0605, mean_acc: 1.0000
+sklearn acc 0.62
+valid >>> epoch: 167/200, mean_loss: 0.8421, mean_acc: 0.7031
+recall_micro_valid: 0.6200, recall_macro_valid: 0.308409
+train >>> epoch: 168/200, batch: 1/4, mean_loss: 0.0437, mean_acc: 1.0000
+train >>> epoch: 168/200, batch: 2/4, mean_loss: 0.0865, mean_acc: 1.0000
+train >>> epoch: 168/200, batch: 3/4, mean_loss: 0.0707, mean_acc: 1.0000
+train >>> epoch: 168/200, batch: 4/4, mean_loss: 0.0963, mean_acc: 1.0000
+sklearn acc 0.62
+valid >>> epoch: 168/200, mean_loss: 0.8316, mean_acc: 0.7031
+recall_micro_valid: 0.6200, recall_macro_valid: 0.308409
+train >>> epoch: 169/200, batch: 1/4, mean_loss: 0.0565, mean_acc: 1.0000
+train >>> epoch: 169/200, batch: 2/4, mean_loss: 0.0509, mean_acc: 1.0000
+train >>> epoch: 169/200, batch: 3/4, mean_loss: 0.0530, mean_acc: 1.0000
+train >>> epoch: 169/200, batch: 4/4, mean_loss: 0.1042, mean_acc: 0.9375
+sklearn acc 0.61
+valid >>> epoch: 169/200, mean_loss: 0.8186, mean_acc: 0.6953
+recall_micro_valid: 0.6100, recall_macro_valid: 0.246077
+train >>> epoch: 170/200, batch: 1/4, mean_loss: 0.0383, mean_acc: 1.0000
+train >>> epoch: 170/200, batch: 2/4, mean_loss: 0.0372, mean_acc: 1.0000
+train >>> epoch: 170/200, batch: 3/4, mean_loss: 0.0394, mean_acc: 1.0000
+train >>> epoch: 170/200, batch: 4/4, mean_loss: 0.0560, mean_acc: 1.0000
+sklearn acc 0.65
+valid >>> epoch: 170/200, mean_loss: 0.7888, mean_acc: 0.7266
+recall_micro_valid: 0.6500, recall_macro_valid: 0.255005
+train >>> epoch: 171/200, batch: 1/4, mean_loss: 0.0420, mean_acc: 1.0000
+train >>> epoch: 171/200, batch: 2/4, mean_loss: 0.0442, mean_acc: 1.0000
+train >>> epoch: 171/200, batch: 3/4, mean_loss: 0.0432, mean_acc: 1.0000
+train >>> epoch: 171/200, batch: 4/4, mean_loss: 0.1895, mean_acc: 0.8750
+sklearn acc 0.64
+valid >>> epoch: 171/200, mean_loss: 0.7758, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.220509
+train >>> epoch: 172/200, batch: 1/4, mean_loss: 0.0316, mean_acc: 1.0000
+train >>> epoch: 172/200, batch: 2/4, mean_loss: 0.0444, mean_acc: 1.0000
+train >>> epoch: 172/200, batch: 3/4, mean_loss: 0.0437, mean_acc: 1.0000
+train >>> epoch: 172/200, batch: 4/4, mean_loss: 0.0528, mean_acc: 1.0000
+sklearn acc 0.67
+valid >>> epoch: 172/200, mean_loss: 0.7782, mean_acc: 0.7422
+recall_micro_valid: 0.6700, recall_macro_valid: 0.389340
+train >>> epoch: 173/200, batch: 1/4, mean_loss: 0.0457, mean_acc: 1.0000
+train >>> epoch: 173/200, batch: 2/4, mean_loss: 0.0378, mean_acc: 1.0000
+train >>> epoch: 173/200, batch: 3/4, mean_loss: 0.0417, mean_acc: 1.0000
+train >>> epoch: 173/200, batch: 4/4, mean_loss: 0.0691, mean_acc: 1.0000
+sklearn acc 0.66
+valid >>> epoch: 173/200, mean_loss: 0.8135, mean_acc: 0.7344
+recall_micro_valid: 0.6600, recall_macro_valid: 0.376353
+train >>> epoch: 174/200, batch: 1/4, mean_loss: 0.0386, mean_acc: 1.0000
+train >>> epoch: 174/200, batch: 2/4, mean_loss: 0.0453, mean_acc: 1.0000
+train >>> epoch: 174/200, batch: 3/4, mean_loss: 0.0449, mean_acc: 1.0000
+train >>> epoch: 174/200, batch: 4/4, mean_loss: 0.0626, mean_acc: 1.0000
+sklearn acc 0.67
+valid >>> epoch: 174/200, mean_loss: 0.8339, mean_acc: 0.7422
+recall_micro_valid: 0.6700, recall_macro_valid: 0.389340
+train >>> epoch: 175/200, batch: 1/4, mean_loss: 0.0323, mean_acc: 1.0000
+train >>> epoch: 175/200, batch: 2/4, mean_loss: 0.0630, mean_acc: 1.0000
+train >>> epoch: 175/200, batch: 3/4, mean_loss: 0.0510, mean_acc: 1.0000
+train >>> epoch: 175/200, batch: 4/4, mean_loss: 0.0865, mean_acc: 1.0000
+sklearn acc 0.64
+valid >>> epoch: 175/200, mean_loss: 0.8380, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.315747
+train >>> epoch: 176/200, batch: 1/4, mean_loss: 0.0400, mean_acc: 1.0000
+train >>> epoch: 176/200, batch: 2/4, mean_loss: 0.0392, mean_acc: 1.0000
+train >>> epoch: 176/200, batch: 3/4, mean_loss: 0.0401, mean_acc: 1.0000
+train >>> epoch: 176/200, batch: 4/4, mean_loss: 0.0827, mean_acc: 0.9375
+sklearn acc 0.65
+valid >>> epoch: 176/200, mean_loss: 0.7951, mean_acc: 0.7266
+recall_micro_valid: 0.6500, recall_macro_valid: 0.328734
+train >>> epoch: 177/200, batch: 1/4, mean_loss: 0.0601, mean_acc: 1.0000
+train >>> epoch: 177/200, batch: 2/4, mean_loss: 0.0501, mean_acc: 1.0000
+train >>> epoch: 177/200, batch: 3/4, mean_loss: 0.0477, mean_acc: 1.0000
+train >>> epoch: 177/200, batch: 4/4, mean_loss: 0.0610, mean_acc: 1.0000
+sklearn acc 0.63
+valid >>> epoch: 177/200, mean_loss: 0.7751, mean_acc: 0.7109
+recall_micro_valid: 0.6300, recall_macro_valid: 0.313333
+train >>> epoch: 178/200, batch: 1/4, mean_loss: 0.0605, mean_acc: 1.0000
+train >>> epoch: 178/200, batch: 2/4, mean_loss: 0.0468, mean_acc: 1.0000
+train >>> epoch: 178/200, batch: 3/4, mean_loss: 0.0486, mean_acc: 1.0000
+train >>> epoch: 178/200, batch: 4/4, mean_loss: 0.0708, mean_acc: 1.0000
+sklearn acc 0.63
+valid >>> epoch: 178/200, mean_loss: 0.7755, mean_acc: 0.7109
+recall_micro_valid: 0.6300, recall_macro_valid: 0.313333
+train >>> epoch: 179/200, batch: 1/4, mean_loss: 0.0422, mean_acc: 1.0000
+train >>> epoch: 179/200, batch: 2/4, mean_loss: 0.0391, mean_acc: 1.0000
+train >>> epoch: 179/200, batch: 3/4, mean_loss: 0.0392, mean_acc: 1.0000
+train >>> epoch: 179/200, batch: 4/4, mean_loss: 0.0771, mean_acc: 1.0000
+sklearn acc 0.63
+valid >>> epoch: 179/200, mean_loss: 0.7956, mean_acc: 0.7109
+recall_micro_valid: 0.6300, recall_macro_valid: 0.307865
+train >>> epoch: 180/200, batch: 1/4, mean_loss: 0.0408, mean_acc: 1.0000
+train >>> epoch: 180/200, batch: 2/4, mean_loss: 0.0482, mean_acc: 1.0000
+train >>> epoch: 180/200, batch: 3/4, mean_loss: 0.0479, mean_acc: 1.0000
+train >>> epoch: 180/200, batch: 4/4, mean_loss: 0.3499, mean_acc: 0.8125
+sklearn acc 0.63
+valid >>> epoch: 180/200, mean_loss: 0.7818, mean_acc: 0.7109
+recall_micro_valid: 0.6300, recall_macro_valid: 0.297292
+train >>> epoch: 181/200, batch: 1/4, mean_loss: 0.0317, mean_acc: 1.0000
+train >>> epoch: 181/200, batch: 2/4, mean_loss: 0.0402, mean_acc: 1.0000
+train >>> epoch: 181/200, batch: 3/4, mean_loss: 0.0453, mean_acc: 1.0000
+train >>> epoch: 181/200, batch: 4/4, mean_loss: 0.1627, mean_acc: 0.9375
+sklearn acc 0.65
+valid >>> epoch: 181/200, mean_loss: 0.8018, mean_acc: 0.7266
+recall_micro_valid: 0.6500, recall_macro_valid: 0.344594
+train >>> epoch: 182/200, batch: 1/4, mean_loss: 0.0601, mean_acc: 1.0000
+train >>> epoch: 182/200, batch: 2/4, mean_loss: 0.0641, mean_acc: 1.0000
+train >>> epoch: 182/200, batch: 3/4, mean_loss: 0.0600, mean_acc: 1.0000
+train >>> epoch: 182/200, batch: 4/4, mean_loss: 0.0728, mean_acc: 1.0000
+sklearn acc 0.6
+valid >>> epoch: 182/200, mean_loss: 0.8917, mean_acc: 0.6875
+recall_micro_valid: 0.6000, recall_macro_valid: 0.360411
+train >>> epoch: 183/200, batch: 1/4, mean_loss: 0.0864, mean_acc: 1.0000
+train >>> epoch: 183/200, batch: 2/4, mean_loss: 0.0662, mean_acc: 1.0000
+train >>> epoch: 183/200, batch: 3/4, mean_loss: 0.0689, mean_acc: 1.0000
+train >>> epoch: 183/200, batch: 4/4, mean_loss: 0.0790, mean_acc: 1.0000
+sklearn acc 0.58
+valid >>> epoch: 183/200, mean_loss: 0.9116, mean_acc: 0.6719
+recall_micro_valid: 0.5800, recall_macro_valid: 0.350660
+train >>> epoch: 184/200, batch: 1/4, mean_loss: 0.0920, mean_acc: 1.0000
+train >>> epoch: 184/200, batch: 2/4, mean_loss: 0.0724, mean_acc: 1.0000
+train >>> epoch: 184/200, batch: 3/4, mean_loss: 0.0705, mean_acc: 1.0000
+train >>> epoch: 184/200, batch: 4/4, mean_loss: 0.1332, mean_acc: 1.0000
+sklearn acc 0.64
+valid >>> epoch: 184/200, mean_loss: 0.8771, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.369340
+train >>> epoch: 185/200, batch: 1/4, mean_loss: 0.0727, mean_acc: 1.0000
+train >>> epoch: 185/200, batch: 2/4, mean_loss: 0.0597, mean_acc: 1.0000
+train >>> epoch: 185/200, batch: 3/4, mean_loss: 0.0555, mean_acc: 1.0000
+train >>> epoch: 185/200, batch: 4/4, mean_loss: 0.2114, mean_acc: 0.8750
+sklearn acc 0.65
+valid >>> epoch: 185/200, mean_loss: 0.8662, mean_acc: 0.7266
+recall_micro_valid: 0.6500, recall_macro_valid: 0.233496
+train >>> epoch: 186/200, batch: 1/4, mean_loss: 0.0384, mean_acc: 1.0000
+train >>> epoch: 186/200, batch: 2/4, mean_loss: 0.0413, mean_acc: 1.0000
+train >>> epoch: 186/200, batch: 3/4, mean_loss: 0.0421, mean_acc: 1.0000
+train >>> epoch: 186/200, batch: 4/4, mean_loss: 0.0410, mean_acc: 1.0000
+sklearn acc 0.63
+valid >>> epoch: 186/200, mean_loss: 0.8630, mean_acc: 0.7109
+recall_micro_valid: 0.6300, recall_macro_valid: 0.358902
+train >>> epoch: 187/200, batch: 1/4, mean_loss: 0.0351, mean_acc: 1.0000
+train >>> epoch: 187/200, batch: 2/4, mean_loss: 0.0384, mean_acc: 1.0000
+train >>> epoch: 187/200, batch: 3/4, mean_loss: 0.0374, mean_acc: 1.0000
+train >>> epoch: 187/200, batch: 4/4, mean_loss: 0.2270, mean_acc: 0.8750
+sklearn acc 0.66
+valid >>> epoch: 187/200, mean_loss: 0.8710, mean_acc: 0.7344
+recall_micro_valid: 0.6600, recall_macro_valid: 0.387108
+train >>> epoch: 188/200, batch: 1/4, mean_loss: 0.0316, mean_acc: 1.0000
+train >>> epoch: 188/200, batch: 2/4, mean_loss: 0.0380, mean_acc: 1.0000
+train >>> epoch: 188/200, batch: 3/4, mean_loss: 0.0428, mean_acc: 1.0000
+train >>> epoch: 188/200, batch: 4/4, mean_loss: 0.2930, mean_acc: 0.9375
+sklearn acc 0.66
+valid >>> epoch: 188/200, mean_loss: 0.7955, mean_acc: 0.7344
+recall_micro_valid: 0.6600, recall_macro_valid: 0.341721
+train >>> epoch: 189/200, batch: 1/4, mean_loss: 0.0403, mean_acc: 1.0000
+train >>> epoch: 189/200, batch: 2/4, mean_loss: 0.0433, mean_acc: 1.0000
+train >>> epoch: 189/200, batch: 3/4, mean_loss: 0.0425, mean_acc: 1.0000
+train >>> epoch: 189/200, batch: 4/4, mean_loss: 0.0645, mean_acc: 1.0000
+sklearn acc 0.66
+valid >>> epoch: 189/200, mean_loss: 0.7677, mean_acc: 0.7344
+recall_micro_valid: 0.6600, recall_macro_valid: 0.397681
+train >>> epoch: 190/200, batch: 1/4, mean_loss: 0.0488, mean_acc: 1.0000
+train >>> epoch: 190/200, batch: 2/4, mean_loss: 0.0647, mean_acc: 1.0000
+train >>> epoch: 190/200, batch: 3/4, mean_loss: 0.0575, mean_acc: 1.0000
+train >>> epoch: 190/200, batch: 4/4, mean_loss: 0.1389, mean_acc: 0.9375
+sklearn acc 0.64
+valid >>> epoch: 190/200, mean_loss: 0.7600, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.347830
+train >>> epoch: 191/200, batch: 1/4, mean_loss: 0.0394, mean_acc: 1.0000
+train >>> epoch: 191/200, batch: 2/4, mean_loss: 0.0818, mean_acc: 1.0000
+train >>> epoch: 191/200, batch: 3/4, mean_loss: 0.0774, mean_acc: 1.0000
+train >>> epoch: 191/200, batch: 4/4, mean_loss: 0.2763, mean_acc: 0.8750
+sklearn acc 0.64
+valid >>> epoch: 191/200, mean_loss: 0.7722, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.403972
+train >>> epoch: 192/200, batch: 1/4, mean_loss: 0.0661, mean_acc: 1.0000
+train >>> epoch: 192/200, batch: 2/4, mean_loss: 0.0532, mean_acc: 1.0000
+train >>> epoch: 192/200, batch: 3/4, mean_loss: 0.0625, mean_acc: 1.0000
+train >>> epoch: 192/200, batch: 4/4, mean_loss: 0.1192, mean_acc: 0.9375
+sklearn acc 0.64
+valid >>> epoch: 192/200, mean_loss: 0.8011, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.404153
+train >>> epoch: 193/200, batch: 1/4, mean_loss: 0.0550, mean_acc: 1.0000
+train >>> epoch: 193/200, batch: 2/4, mean_loss: 0.0526, mean_acc: 1.0000
+train >>> epoch: 193/200, batch: 3/4, mean_loss: 0.0570, mean_acc: 1.0000
+train >>> epoch: 193/200, batch: 4/4, mean_loss: 0.0966, mean_acc: 1.0000
+sklearn acc 0.66
+valid >>> epoch: 193/200, mean_loss: 0.8503, mean_acc: 0.7344
+recall_micro_valid: 0.6600, recall_macro_valid: 0.443249
+train >>> epoch: 194/200, batch: 1/4, mean_loss: 0.0619, mean_acc: 1.0000
+train >>> epoch: 194/200, batch: 2/4, mean_loss: 0.0634, mean_acc: 1.0000
+train >>> epoch: 194/200, batch: 3/4, mean_loss: 0.0617, mean_acc: 1.0000
+train >>> epoch: 194/200, batch: 4/4, mean_loss: 0.0688, mean_acc: 1.0000
+sklearn acc 0.66
+valid >>> epoch: 194/200, mean_loss: 0.9078, mean_acc: 0.7344
+recall_micro_valid: 0.6600, recall_macro_valid: 0.387108
+train >>> epoch: 195/200, batch: 1/4, mean_loss: 0.0506, mean_acc: 1.0000
+train >>> epoch: 195/200, batch: 2/4, mean_loss: 0.0535, mean_acc: 1.0000
+train >>> epoch: 195/200, batch: 3/4, mean_loss: 0.0500, mean_acc: 1.0000
+train >>> epoch: 195/200, batch: 4/4, mean_loss: 0.1467, mean_acc: 0.9375
+sklearn acc 0.62
+valid >>> epoch: 195/200, mean_loss: 0.9357, mean_acc: 0.7031
+recall_micro_valid: 0.6200, recall_macro_valid: 0.205290
+train >>> epoch: 196/200, batch: 1/4, mean_loss: 0.0423, mean_acc: 1.0000
+train >>> epoch: 196/200, batch: 2/4, mean_loss: 0.0682, mean_acc: 1.0000
+train >>> epoch: 196/200, batch: 3/4, mean_loss: 0.0608, mean_acc: 1.0000
+train >>> epoch: 196/200, batch: 4/4, mean_loss: 0.1119, mean_acc: 0.9375
+sklearn acc 0.64
+valid >>> epoch: 196/200, mean_loss: 0.8679, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.198999
+train >>> epoch: 197/200, batch: 1/4, mean_loss: 0.0514, mean_acc: 1.0000
+train >>> epoch: 197/200, batch: 2/4, mean_loss: 0.0471, mean_acc: 1.0000
+train >>> epoch: 197/200, batch: 3/4, mean_loss: 0.0420, mean_acc: 1.0000
+train >>> epoch: 197/200, batch: 4/4, mean_loss: 0.0426, mean_acc: 1.0000
+sklearn acc 0.63
+valid >>> epoch: 197/200, mean_loss: 0.7796, mean_acc: 0.7109
+recall_micro_valid: 0.6300, recall_macro_valid: 0.202053
+train >>> epoch: 198/200, batch: 1/4, mean_loss: 0.0390, mean_acc: 1.0000
+train >>> epoch: 198/200, batch: 2/4, mean_loss: 0.0443, mean_acc: 1.0000
+train >>> epoch: 198/200, batch: 3/4, mean_loss: 0.0398, mean_acc: 1.0000
+train >>> epoch: 198/200, batch: 4/4, mean_loss: 0.0566, mean_acc: 1.0000
+sklearn acc 0.64
+valid >>> epoch: 198/200, mean_loss: 0.7608, mean_acc: 0.7188
+recall_micro_valid: 0.6400, recall_macro_valid: 0.215040
+train >>> epoch: 199/200, batch: 1/4, mean_loss: 0.0546, mean_acc: 1.0000
+train >>> epoch: 199/200, batch: 2/4, mean_loss: 0.0483, mean_acc: 1.0000
+train >>> epoch: 199/200, batch: 3/4, mean_loss: 0.0436, mean_acc: 1.0000
+train >>> epoch: 199/200, batch: 4/4, mean_loss: 0.1023, mean_acc: 0.9375
+sklearn acc 0.63
+valid >>> epoch: 199/200, mean_loss: 0.7420, mean_acc: 0.7109
+recall_micro_valid: 0.6300, recall_macro_valid: 0.172708
+train >>> epoch: 200/200, batch: 1/4, mean_loss: 0.0454, mean_acc: 1.0000
+train >>> epoch: 200/200, batch: 2/4, mean_loss: 0.0360, mean_acc: 1.0000
+train >>> epoch: 200/200, batch: 3/4, mean_loss: 0.0377, mean_acc: 1.0000
+train >>> epoch: 200/200, batch: 4/4, mean_loss: 0.0627, mean_acc: 1.0000
+sklearn acc 0.63
+valid >>> epoch: 200/200, mean_loss: 0.7441, mean_acc: 0.7109
+recall_micro_valid: 0.6300, recall_macro_valid: 0.356353
+2020-02-03-00-34-36

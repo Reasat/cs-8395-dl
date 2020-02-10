@@ -1,0 +1,21 @@
+2020-02-10-00-20-24
+train.py
+--------------------------------------------------------------------------------------------------------------------
+batchSize: 28
+bottleneckFeatures: 0
+brightness: [-0.2, 0.2]
+contrast: [-0.2, 0.2]
+dir_lf: D:\Data\cs-8395-dl
+dir_project: ..
+encoder: dpn92
+epoch: 10
+folderData: assignment2_data
+lr: 0.001
+overrideLR: 1
+resize: 256
+resume_from: None
+to_ram: 0
+--------------------------------------------------------------------------------------------------------------------
+creating directory to save model at D:\Data\cs-8395-dl\model\2020-02-10-00-20-24
+train samples 9015
+validation samples 1000

@@ -1,0 +1,26 @@
+2020-02-02-23-28-50
+train.py
+--------------------------------------------------------------------------------------------------------------------
+batchSize: 32
+bottleneckFeatures: 1
+dir_lf: D:\Data\cs-8395-dl
+dir_project: ..
+encoder: resnet18
+epoch: 400
+folderData: assignment2_data
+lr: 0.001
+resume_from: None
+--------------------------------------------------------------------------------------------------------------------
+creating directory to save model at D:\Data\cs-8395-dl\model\2020-02-02-23-28-50
+loading images to RAM
+train samples 3
+loading images to RAM
+validation samples 3
+freezing feature extracting layers
+[0 1 0 0 0 0 0]
+[0 1 0 0 0 0 0]
+[0 1 0 0 0 0 0]
+tensor([1, 1, 1], device='cuda:0') tensor([[-1.1200,  0.6121,  0.3997,  0.2188, -0.3835, -0.9673,  0.0924],
+        [-1.3191,  0.3795,  0.8157,  0.1885, -0.8408, -0.7414, -0.1083],
+        [-1.2294, -0.5102,  0.6298,  0.4968, -0.6742, -0.4562,  0.0200]],
+       device='cuda:0', grad_fn=<AddmmBackward>)

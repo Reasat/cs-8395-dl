@@ -1,0 +1,78 @@
+2020-02-09-22-10-48
+train_bs.py
+--------------------------------------------------------------------------------------------------------------------
+batchSize: 28
+bottleneckFeatures: 0
+brightness: [-0.2, 0.2]
+contrast: [-0.2, 0.2]
+dir_lf: D:\Data\cs-8395-dl
+dir_project: ..
+encoder: resnet18
+epoch: 3
+folderData: assignment2_data
+lr: 0.001
+overrideLR: 1
+resize: 256
+resume_from: None
+to_ram: 0
+--------------------------------------------------------------------------------------------------------------------
+creating directory to save model at D:\Data\cs-8395-dl\model\2020-02-09-22-10-48
+balanced_max:  6130
+number of samples in balanced dataset 42910
+train samples 9015
+validation samples 1000
+train >>> epoch: 1/3, batch: 1/1533, mean_loss: 1.9500, mean_acc: 0.1429
+train >>> epoch: 1/3, batch: 2/1533, mean_loss: 1.9432, mean_acc: 0.1607
+train >>> epoch: 1/3, batch: 3/1533, mean_loss: 1.8797, mean_acc: 0.2262
+train >>> epoch: 1/3, batch: 4/1533, mean_loss: 1.7984, mean_acc: 0.2768
+train >>> epoch: 1/3, batch: 5/1533, mean_loss: 1.7625, mean_acc: 0.3286
+train >>> epoch: 1/3, batch: 6/1533, mean_loss: 1.6944, mean_acc: 0.3810
+train >>> epoch: 1/3, batch: 7/1533, mean_loss: 1.5888, mean_acc: 0.4388
+train >>> epoch: 1/3, batch: 8/1533, mean_loss: 1.5876, mean_acc: 0.4330
+train >>> epoch: 1/3, batch: 9/1533, mean_loss: 1.5556, mean_acc: 0.4524
+train >>> epoch: 1/3, batch: 10/1533, mean_loss: 1.5266, mean_acc: 0.4714
+train >>> epoch: 1/3, batch: 11/1533, mean_loss: 1.5487, mean_acc: 0.4773
+train >>> epoch: 1/3, batch: 12/1533, mean_loss: 1.5298, mean_acc: 0.4762
+train >>> epoch: 1/3, batch: 13/1533, mean_loss: 1.5323, mean_acc: 0.4808
+train >>> epoch: 1/3, batch: 14/1533, mean_loss: 1.5133, mean_acc: 0.4847
+train >>> epoch: 1/3, batch: 15/1533, mean_loss: 1.4975, mean_acc: 0.4857
+train >>> epoch: 1/3, batch: 16/1533, mean_loss: 1.4981, mean_acc: 0.4933
+train >>> epoch: 1/3, batch: 17/1533, mean_loss: 1.4862, mean_acc: 0.4916
+train >>> epoch: 1/3, batch: 18/1533, mean_loss: 1.4761, mean_acc: 0.4921
+train >>> epoch: 1/3, batch: 19/1533, mean_loss: 1.4787, mean_acc: 0.4906
+train >>> epoch: 1/3, batch: 20/1533, mean_loss: 1.4763, mean_acc: 0.4946
+train >>> epoch: 1/3, batch: 21/1533, mean_loss: 1.4703, mean_acc: 0.4932
+train >>> epoch: 1/3, batch: 22/1533, mean_loss: 1.4689, mean_acc: 0.4903
+train >>> epoch: 1/3, batch: 23/1533, mean_loss: 1.4594, mean_acc: 0.4891
+train >>> epoch: 1/3, batch: 24/1533, mean_loss: 1.4537, mean_acc: 0.4881
+train >>> epoch: 1/3, batch: 25/1533, mean_loss: 1.4350, mean_acc: 0.4957
+train >>> epoch: 1/3, batch: 26/1533, mean_loss: 1.4312, mean_acc: 0.4973
+train >>> epoch: 1/3, batch: 27/1533, mean_loss: 1.4482, mean_acc: 0.4907
+train >>> epoch: 1/3, batch: 28/1533, mean_loss: 1.4533, mean_acc: 0.4847
+train >>> epoch: 1/3, batch: 29/1533, mean_loss: 1.4421, mean_acc: 0.4889
+train >>> epoch: 1/3, batch: 30/1533, mean_loss: 1.4369, mean_acc: 0.4881
+train >>> epoch: 1/3, batch: 31/1533, mean_loss: 1.4361, mean_acc: 0.4873
+train >>> epoch: 1/3, batch: 32/1533, mean_loss: 1.4251, mean_acc: 0.4900
+train >>> epoch: 1/3, batch: 33/1533, mean_loss: 1.4285, mean_acc: 0.4881
+train >>> epoch: 1/3, batch: 34/1533, mean_loss: 1.4194, mean_acc: 0.4884
+train >>> epoch: 1/3, batch: 35/1533, mean_loss: 1.4119, mean_acc: 0.4888
+train >>> epoch: 1/3, batch: 36/1533, mean_loss: 1.4092, mean_acc: 0.4871
+train >>> epoch: 1/3, batch: 37/1533, mean_loss: 1.3984, mean_acc: 0.4903
+train >>> epoch: 1/3, batch: 38/1533, mean_loss: 1.3834, mean_acc: 0.4962
+train >>> epoch: 1/3, batch: 39/1533, mean_loss: 1.3773, mean_acc: 0.4973
+train >>> epoch: 1/3, batch: 40/1533, mean_loss: 1.3740, mean_acc: 0.4982
+train >>> epoch: 1/3, batch: 41/1533, mean_loss: 1.3691, mean_acc: 0.5017
+train >>> epoch: 1/3, batch: 42/1533, mean_loss: 1.3628, mean_acc: 0.5034
+train >>> epoch: 1/3, batch: 43/1533, mean_loss: 1.3598, mean_acc: 0.5025
+train >>> epoch: 1/3, batch: 44/1533, mean_loss: 1.3677, mean_acc: 0.5008
+train >>> epoch: 1/3, batch: 45/1533, mean_loss: 1.3668, mean_acc: 0.5016
+train >>> epoch: 1/3, batch: 46/1533, mean_loss: 1.3644, mean_acc: 0.5016
+train >>> epoch: 1/3, batch: 47/1533, mean_loss: 1.3605, mean_acc: 0.5023
+train >>> epoch: 1/3, batch: 48/1533, mean_loss: 1.3578, mean_acc: 0.5045
+train >>> epoch: 1/3, batch: 49/1533, mean_loss: 1.3516, mean_acc: 0.5044
+train >>> epoch: 1/3, batch: 50/1533, mean_loss: 1.3432, mean_acc: 0.5086
+train >>> epoch: 1/3, batch: 51/1533, mean_loss: 1.3389, mean_acc: 0.5112
+train >>> epoch: 1/3, batch: 52/1533, mean_loss: 1.3371, mean_acc: 0.5130
+train >>> epoch: 1/3, batch: 53/1533, mean_loss: 1.3410, mean_acc: 0.5121
+train >>> epoch: 1/3, batch: 54/1533, mean_loss: 1.3337, mean_acc: 0.5146
+train >>> epoch: 1/3, batch: 55/1533, mean_loss: 1.3324, mean_acc: 0.5136

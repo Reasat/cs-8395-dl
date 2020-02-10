@@ -1,0 +1,31 @@
+2020-02-09-22-53-03
+train.py
+--------------------------------------------------------------------------------------------------------------------
+batchSize: 28
+bottleneckFeatures: 0
+brightness: [-0.2, 0.2]
+contrast: [-0.2, 0.2]
+dir_lf: D:\Data\cs-8395-dl
+dir_project: ..
+encoder: resnet18
+epoch: 3
+folderData: assignment2_data
+lr: 0.001
+overrideLR: 1
+resize: 256
+resume_from: None
+to_ram: 0
+--------------------------------------------------------------------------------------------------------------------
+creating directory to save model at D:\Data\cs-8395-dl\model\2020-02-09-22-53-03
+train samples 9015
+validation samples 1000
+train >>> epoch: 1/3, batch: 1/322, mean_loss: 2.1980, mean_acc: 0.1071
+train >>> epoch: 1/3, batch: 2/322, mean_loss: 1.8860, mean_acc: 0.2857
+train >>> epoch: 1/3, batch: 3/322, mean_loss: 1.6475, mean_acc: 0.4167
+train >>> epoch: 1/3, batch: 4/322, mean_loss: 1.7051, mean_acc: 0.4286
+train >>> epoch: 1/3, batch: 5/322, mean_loss: 1.5935, mean_acc: 0.4714
+train >>> epoch: 1/3, batch: 6/322, mean_loss: 1.5377, mean_acc: 0.5119
+train >>> epoch: 1/3, batch: 7/322, mean_loss: 1.4489, mean_acc: 0.5357
+train >>> epoch: 1/3, batch: 8/322, mean_loss: 1.4695, mean_acc: 0.5491
+train >>> epoch: 1/3, batch: 9/322, mean_loss: 1.4449, mean_acc: 0.5595
+train >>> epoch: 1/3, batch: 10/322, mean_loss: 1.5039, mean_acc: 0.5643

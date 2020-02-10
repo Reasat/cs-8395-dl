@@ -1,0 +1,46 @@
+2020-02-10-10-46-38
+train_bs.py
+--------------------------------------------------------------------------------------------------------------------
+batchSize: 16
+bottleneckFeatures: 0
+brightness: [-0.2, 0.2]
+contrast: [-0.2, 0.2]
+dir_lf: D:\Data\cs-8395-dl
+dir_project: ..
+encoder: dpn92
+epoch: 5
+folderData: assignment2_data
+lr: 1e-05
+overrideLR: 1
+resize: 256
+resume_from: None
+to_ram: 0
+--------------------------------------------------------------------------------------------------------------------
+creating directory to save model at D:\Data\cs-8395-dl\model\2020-02-10-10-46-38
+balanced_max:  6130
+number of samples in balanced dataset 42910
+train samples 9015
+validation samples 1000
+shuffling dataset
+train >>> epoch: 1/5, batch: 1/2682, mean_loss: 2.0140, mean_acc: 0.1875
+train >>> epoch: 1/5, batch: 2/2682, mean_loss: 2.0713, mean_acc: 0.1562
+train >>> epoch: 1/5, batch: 3/2682, mean_loss: 2.1052, mean_acc: 0.1458
+train >>> epoch: 1/5, batch: 4/2682, mean_loss: 2.0849, mean_acc: 0.1094
+train >>> epoch: 1/5, batch: 5/2682, mean_loss: 2.0690, mean_acc: 0.1250
+train >>> epoch: 1/5, batch: 6/2682, mean_loss: 2.0513, mean_acc: 0.1250
+train >>> epoch: 1/5, batch: 7/2682, mean_loss: 2.0272, mean_acc: 0.1339
+train >>> epoch: 1/5, batch: 8/2682, mean_loss: 2.0042, mean_acc: 0.1562
+train >>> epoch: 1/5, batch: 9/2682, mean_loss: 1.9854, mean_acc: 0.1597
+train >>> epoch: 1/5, batch: 10/2682, mean_loss: 1.9795, mean_acc: 0.1562
+train >>> epoch: 1/5, batch: 11/2682, mean_loss: 1.9776, mean_acc: 0.1477
+train >>> epoch: 1/5, batch: 12/2682, mean_loss: 1.9658, mean_acc: 0.1615
+train >>> epoch: 1/5, batch: 13/2682, mean_loss: 1.9568, mean_acc: 0.1635
+train >>> epoch: 1/5, batch: 14/2682, mean_loss: 1.9519, mean_acc: 0.1741
+train >>> epoch: 1/5, batch: 15/2682, mean_loss: 1.9466, mean_acc: 0.1875
+train >>> epoch: 1/5, batch: 16/2682, mean_loss: 1.9411, mean_acc: 0.1992
+train >>> epoch: 1/5, batch: 17/2682, mean_loss: 1.9251, mean_acc: 0.2132
+train >>> epoch: 1/5, batch: 18/2682, mean_loss: 1.9108, mean_acc: 0.2222
+train >>> epoch: 1/5, batch: 19/2682, mean_loss: 1.9065, mean_acc: 0.2270
+train >>> epoch: 1/5, batch: 20/2682, mean_loss: 1.8946, mean_acc: 0.2375
+train >>> epoch: 1/5, batch: 21/2682, mean_loss: 1.8849, mean_acc: 0.2470
+train >>> epoch: 1/5, batch: 22/2682, mean_loss: 1.8690, mean_acc: 0.2699

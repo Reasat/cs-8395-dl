@@ -1,0 +1,10 @@
+https://towardsdatascience.com/deep-learning-for-diagnosis-of-skin-images-with-fastai-792160ab5495
+
+https://www.kaggle.com/vbookshelf/skin-lesion-analyzer-tensorflow-js-web-app
+
+Ensembling Convolutional Neural Networks for Skin Cancer Classification
+Aleksey Nozdryn-Plotnicki, Jordan Yap, and William Yolland
+https://s3.amazonaws.com/covalic-prod-assetstore/4a/42/4a42fb85713540fc868b90b442c2a697?response-content-disposition=inline%3B%20filename%3D%22ISBI_2018.pdf%22&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Expires=3600&X-Amz-Credential=AKIAITHBL3CJMECU3C4A%2F20200210%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-SignedHeaders=host&X-Amz-Date=20200210T030343Z&X-Amz-Signature=96f5bee6b868c530ca7162843ecbd7b6c6cf8a9d09bb737d1a7a76564eeda112
+
+Ensemble methods
+https://challenge2018.isic-archive.com/leaderboards/

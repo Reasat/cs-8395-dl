@@ -1,0 +1,222 @@
+2020-02-03-00-37-18
+train.py
+--------------------------------------------------------------------------------------------------------------------
+batchSize: 32
+bottleneckFeatures: 1
+dir_lf: D:\Data\cs-8395-dl
+dir_project: ..
+encoder: resnet18
+epoch: 200
+folderData: assignment2_data
+lr: 0.001
+resume_from: None
+--------------------------------------------------------------------------------------------------------------------
+creating directory to save model at D:\Data\cs-8395-dl\model\2020-02-03-00-37-18
+loading images to RAM
+train samples 96
+loading images to RAM
+validation samples 96
+freezing feature extracting layers
+train >>> epoch: 1/200, batch: 1/3, mean_loss: 2.2038, mean_acc: 0.1250
+train >>> epoch: 1/200, batch: 2/3, mean_loss: 2.0177, mean_acc: 0.1875
+train >>> epoch: 1/200, batch: 3/3, mean_loss: 1.8276, mean_acc: 0.3438
+sklearn acc 0.6145833333333334
+valid >>> epoch: 1/200, mean_loss: 1.5585, mean_acc: 0.6146
+recall_micro_valid: 0.6146, recall_macro_valid: 0.163889
+criteria decreased from inf to 1.5585, saving best model at D:\Data\cs-8395-dl\model\2020-02-03-00-37-18\2020-02-03-00-37-18_resnet18_best.pt
+train >>> epoch: 2/200, batch: 1/3, mean_loss: 1.2325, mean_acc: 0.6562
+train >>> epoch: 2/200, batch: 2/3, mean_loss: 1.1540, mean_acc: 0.6875
+train >>> epoch: 2/200, batch: 3/3, mean_loss: 1.1755, mean_acc: 0.6875
+sklearn acc 0.625
+valid >>> epoch: 2/200, mean_loss: 1.3324, mean_acc: 0.6250
+recall_micro_valid: 0.6250, recall_macro_valid: 0.166667
+criteria decreased from 1.5585 to 1.3324, saving best model at D:\Data\cs-8395-dl\model\2020-02-03-00-37-18\2020-02-03-00-37-18_resnet18_best.pt
+train >>> epoch: 3/200, batch: 1/3, mean_loss: 1.1158, mean_acc: 0.6875
+train >>> epoch: 3/200, batch: 2/3, mean_loss: 1.1684, mean_acc: 0.7031
+train >>> epoch: 3/200, batch: 3/3, mean_loss: 1.1833, mean_acc: 0.6875
+sklearn acc 0.625
+valid >>> epoch: 3/200, mean_loss: 1.3335, mean_acc: 0.6250
+recall_micro_valid: 0.6250, recall_macro_valid: 0.166667
+train >>> epoch: 4/200, batch: 1/3, mean_loss: 1.1445, mean_acc: 0.6562
+train >>> epoch: 4/200, batch: 2/3, mean_loss: 1.0637, mean_acc: 0.7031
+train >>> epoch: 4/200, batch: 3/3, mean_loss: 1.1596, mean_acc: 0.6875
+sklearn acc 0.625
+valid >>> epoch: 4/200, mean_loss: 1.2437, mean_acc: 0.6250
+recall_micro_valid: 0.6250, recall_macro_valid: 0.166667
+criteria decreased from 1.3324 to 1.2437, saving best model at D:\Data\cs-8395-dl\model\2020-02-03-00-37-18\2020-02-03-00-37-18_resnet18_best.pt
+train >>> epoch: 5/200, batch: 1/3, mean_loss: 0.8921, mean_acc: 0.7812
+train >>> epoch: 5/200, batch: 2/3, mean_loss: 1.0555, mean_acc: 0.7188
+train >>> epoch: 5/200, batch: 3/3, mean_loss: 1.0687, mean_acc: 0.6875
+sklearn acc 0.625
+valid >>> epoch: 5/200, mean_loss: 1.1549, mean_acc: 0.6250
+recall_micro_valid: 0.6250, recall_macro_valid: 0.166667
+criteria decreased from 1.2437 to 1.1549, saving best model at D:\Data\cs-8395-dl\model\2020-02-03-00-37-18\2020-02-03-00-37-18_resnet18_best.pt
+train >>> epoch: 6/200, batch: 1/3, mean_loss: 1.0727, mean_acc: 0.6562
+train >>> epoch: 6/200, batch: 2/3, mean_loss: 1.1902, mean_acc: 0.6406
+train >>> epoch: 6/200, batch: 3/3, mean_loss: 0.9994, mean_acc: 0.7083
+sklearn acc 0.625
+valid >>> epoch: 6/200, mean_loss: 1.1226, mean_acc: 0.6250
+recall_micro_valid: 0.6250, recall_macro_valid: 0.166667
+criteria decreased from 1.1549 to 1.1226, saving best model at D:\Data\cs-8395-dl\model\2020-02-03-00-37-18\2020-02-03-00-37-18_resnet18_best.pt
+train >>> epoch: 7/200, batch: 1/3, mean_loss: 1.0920, mean_acc: 0.6875
+train >>> epoch: 7/200, batch: 2/3, mean_loss: 1.0003, mean_acc: 0.6875
+train >>> epoch: 7/200, batch: 3/3, mean_loss: 0.9278, mean_acc: 0.7083
+sklearn acc 0.625
+valid >>> epoch: 7/200, mean_loss: 1.1216, mean_acc: 0.6250
+recall_micro_valid: 0.6250, recall_macro_valid: 0.166667
+criteria decreased from 1.1226 to 1.1216, saving best model at D:\Data\cs-8395-dl\model\2020-02-03-00-37-18\2020-02-03-00-37-18_resnet18_best.pt
+train >>> epoch: 8/200, batch: 1/3, mean_loss: 0.9549, mean_acc: 0.7500
+train >>> epoch: 8/200, batch: 2/3, mean_loss: 0.9351, mean_acc: 0.7344
+train >>> epoch: 8/200, batch: 3/3, mean_loss: 0.8792, mean_acc: 0.7396
+sklearn acc 0.625
+valid >>> epoch: 8/200, mean_loss: 1.1524, mean_acc: 0.6250
+recall_micro_valid: 0.6250, recall_macro_valid: 0.166667
+train >>> epoch: 9/200, batch: 1/3, mean_loss: 0.7687, mean_acc: 0.7188
+train >>> epoch: 9/200, batch: 2/3, mean_loss: 0.7993, mean_acc: 0.7188
+train >>> epoch: 9/200, batch: 3/3, mean_loss: 0.8162, mean_acc: 0.7292
+sklearn acc 0.625
+valid >>> epoch: 9/200, mean_loss: 1.1793, mean_acc: 0.6250
+recall_micro_valid: 0.6250, recall_macro_valid: 0.166667
+train >>> epoch: 10/200, batch: 1/3, mean_loss: 0.6942, mean_acc: 0.7500
+train >>> epoch: 10/200, batch: 2/3, mean_loss: 0.7705, mean_acc: 0.7188
+train >>> epoch: 10/200, batch: 3/3, mean_loss: 0.7564, mean_acc: 0.7188
+sklearn acc 0.625
+valid >>> epoch: 10/200, mean_loss: 1.1596, mean_acc: 0.6250
+recall_micro_valid: 0.6250, recall_macro_valid: 0.179040
+train >>> epoch: 11/200, batch: 1/3, mean_loss: 0.7373, mean_acc: 0.7188
+train >>> epoch: 11/200, batch: 2/3, mean_loss: 0.7430, mean_acc: 0.7031
+train >>> epoch: 11/200, batch: 3/3, mean_loss: 0.7147, mean_acc: 0.7396
+sklearn acc 0.625
+valid >>> epoch: 11/200, mean_loss: 1.1232, mean_acc: 0.6250
+recall_micro_valid: 0.6250, recall_macro_valid: 0.179040
+train >>> epoch: 12/200, batch: 1/3, mean_loss: 0.8531, mean_acc: 0.6250
+train >>> epoch: 12/200, batch: 2/3, mean_loss: 0.6314, mean_acc: 0.7656
+train >>> epoch: 12/200, batch: 3/3, mean_loss: 0.6808, mean_acc: 0.7500
+sklearn acc 0.6458333333333334
+valid >>> epoch: 12/200, mean_loss: 1.0926, mean_acc: 0.6458
+recall_micro_valid: 0.6458, recall_macro_valid: 0.209343
+criteria decreased from 1.1216 to 1.0926, saving best model at D:\Data\cs-8395-dl\model\2020-02-03-00-37-18\2020-02-03-00-37-18_resnet18_best.pt
+train >>> epoch: 13/200, batch: 1/3, mean_loss: 0.7054, mean_acc: 0.7812
+train >>> epoch: 13/200, batch: 2/3, mean_loss: 0.6818, mean_acc: 0.7656
+train >>> epoch: 13/200, batch: 3/3, mean_loss: 0.6368, mean_acc: 0.7708
+sklearn acc 0.6354166666666666
+valid >>> epoch: 13/200, mean_loss: 1.0668, mean_acc: 0.6354
+recall_micro_valid: 0.6354, recall_macro_valid: 0.206566
+criteria decreased from 1.0926 to 1.0668, saving best model at D:\Data\cs-8395-dl\model\2020-02-03-00-37-18\2020-02-03-00-37-18_resnet18_best.pt
+train >>> epoch: 14/200, batch: 1/3, mean_loss: 0.5167, mean_acc: 0.8125
+train >>> epoch: 14/200, batch: 2/3, mean_loss: 0.5590, mean_acc: 0.7969
+train >>> epoch: 14/200, batch: 3/3, mean_loss: 0.5960, mean_acc: 0.8021
+sklearn acc 0.6354166666666666
+valid >>> epoch: 14/200, mean_loss: 1.0525, mean_acc: 0.6354
+recall_micro_valid: 0.6354, recall_macro_valid: 0.206566
+criteria decreased from 1.0668 to 1.0525, saving best model at D:\Data\cs-8395-dl\model\2020-02-03-00-37-18\2020-02-03-00-37-18_resnet18_best.pt
+train >>> epoch: 15/200, batch: 1/3, mean_loss: 0.4168, mean_acc: 0.9062
+train >>> epoch: 15/200, batch: 2/3, mean_loss: 0.6057, mean_acc: 0.7969
+train >>> epoch: 15/200, batch: 3/3, mean_loss: 0.5842, mean_acc: 0.8021
+sklearn acc 0.6354166666666666
+valid >>> epoch: 15/200, mean_loss: 1.0402, mean_acc: 0.6354
+recall_micro_valid: 0.6354, recall_macro_valid: 0.206566
+criteria decreased from 1.0525 to 1.0402, saving best model at D:\Data\cs-8395-dl\model\2020-02-03-00-37-18\2020-02-03-00-37-18_resnet18_best.pt
+train >>> epoch: 16/200, batch: 1/3, mean_loss: 0.4649, mean_acc: 0.9062
+train >>> epoch: 16/200, batch: 2/3, mean_loss: 0.5214, mean_acc: 0.8281
+train >>> epoch: 16/200, batch: 3/3, mean_loss: 0.5444, mean_acc: 0.8438
+sklearn acc 0.6354166666666666
+valid >>> epoch: 16/200, mean_loss: 1.0415, mean_acc: 0.6354
+recall_micro_valid: 0.6354, recall_macro_valid: 0.206566
+train >>> epoch: 17/200, batch: 1/3, mean_loss: 0.5001, mean_acc: 0.8438
+train >>> epoch: 17/200, batch: 2/3, mean_loss: 0.5143, mean_acc: 0.8438
+train >>> epoch: 17/200, batch: 3/3, mean_loss: 0.5032, mean_acc: 0.8542
+sklearn acc 0.6354166666666666
+valid >>> epoch: 17/200, mean_loss: 1.0457, mean_acc: 0.6354
+recall_micro_valid: 0.6354, recall_macro_valid: 0.206566
+train >>> epoch: 18/200, batch: 1/3, mean_loss: 0.6329, mean_acc: 0.7500
+train >>> epoch: 18/200, batch: 2/3, mean_loss: 0.5927, mean_acc: 0.7812
+train >>> epoch: 18/200, batch: 3/3, mean_loss: 0.5112, mean_acc: 0.8542
+sklearn acc 0.625
+valid >>> epoch: 18/200, mean_loss: 1.0411, mean_acc: 0.6250
+recall_micro_valid: 0.6250, recall_macro_valid: 0.203788
+train >>> epoch: 19/200, batch: 1/3, mean_loss: 0.6032, mean_acc: 0.8125
+train >>> epoch: 19/200, batch: 2/3, mean_loss: 0.4700, mean_acc: 0.8750
+train >>> epoch: 19/200, batch: 3/3, mean_loss: 0.4767, mean_acc: 0.8646
+sklearn acc 0.6145833333333334
+valid >>> epoch: 19/200, mean_loss: 1.0374, mean_acc: 0.6146
+recall_micro_valid: 0.6146, recall_macro_valid: 0.201010
+criteria decreased from 1.0402 to 1.0374, saving best model at D:\Data\cs-8395-dl\model\2020-02-03-00-37-18\2020-02-03-00-37-18_resnet18_best.pt
+train >>> epoch: 20/200, batch: 1/3, mean_loss: 0.4245, mean_acc: 0.8750
+train >>> epoch: 20/200, batch: 2/3, mean_loss: 0.4691, mean_acc: 0.8594
+train >>> epoch: 20/200, batch: 3/3, mean_loss: 0.4400, mean_acc: 0.8854
+sklearn acc 0.6145833333333334
+valid >>> epoch: 20/200, mean_loss: 1.0395, mean_acc: 0.6146
+recall_micro_valid: 0.6146, recall_macro_valid: 0.201010
+train >>> epoch: 21/200, batch: 1/3, mean_loss: 0.5660, mean_acc: 0.7500
+train >>> epoch: 21/200, batch: 2/3, mean_loss: 0.4981, mean_acc: 0.8281
+train >>> epoch: 21/200, batch: 3/3, mean_loss: 0.4764, mean_acc: 0.8438
+sklearn acc 0.6145833333333334
+valid >>> epoch: 21/200, mean_loss: 1.0308, mean_acc: 0.6146
+recall_micro_valid: 0.6146, recall_macro_valid: 0.213384
+criteria decreased from 1.0374 to 1.0308, saving best model at D:\Data\cs-8395-dl\model\2020-02-03-00-37-18\2020-02-03-00-37-18_resnet18_best.pt
+train >>> epoch: 22/200, batch: 1/3, mean_loss: 0.5116, mean_acc: 0.8438
+train >>> epoch: 22/200, batch: 2/3, mean_loss: 0.4400, mean_acc: 0.9062
+train >>> epoch: 22/200, batch: 3/3, mean_loss: 0.4370, mean_acc: 0.8958
+sklearn acc 0.6145833333333334
+valid >>> epoch: 22/200, mean_loss: 1.0255, mean_acc: 0.6146
+recall_micro_valid: 0.6146, recall_macro_valid: 0.201010
+criteria decreased from 1.0308 to 1.0255, saving best model at D:\Data\cs-8395-dl\model\2020-02-03-00-37-18\2020-02-03-00-37-18_resnet18_best.pt
+train >>> epoch: 23/200, batch: 1/3, mean_loss: 0.5022, mean_acc: 0.8438
+train >>> epoch: 23/200, batch: 2/3, mean_loss: 0.5239, mean_acc: 0.8281
+train >>> epoch: 23/200, batch: 3/3, mean_loss: 0.4457, mean_acc: 0.8854
+sklearn acc 0.625
+valid >>> epoch: 23/200, mean_loss: 1.0135, mean_acc: 0.6250
+recall_micro_valid: 0.6250, recall_macro_valid: 0.216162
+criteria decreased from 1.0255 to 1.0135, saving best model at D:\Data\cs-8395-dl\model\2020-02-03-00-37-18\2020-02-03-00-37-18_resnet18_best.pt
+train >>> epoch: 24/200, batch: 1/3, mean_loss: 0.4024, mean_acc: 0.9375
+train >>> epoch: 24/200, batch: 2/3, mean_loss: 0.3688, mean_acc: 0.9219
+train >>> epoch: 24/200, batch: 3/3, mean_loss: 0.4187, mean_acc: 0.9062
+sklearn acc 0.625
+valid >>> epoch: 24/200, mean_loss: 1.0064, mean_acc: 0.6250
+recall_micro_valid: 0.6250, recall_macro_valid: 0.203788
+criteria decreased from 1.0135 to 1.0064, saving best model at D:\Data\cs-8395-dl\model\2020-02-03-00-37-18\2020-02-03-00-37-18_resnet18_best.pt
+train >>> epoch: 25/200, batch: 1/3, mean_loss: 0.2804, mean_acc: 0.9375
+train >>> epoch: 25/200, batch: 2/3, mean_loss: 0.3783, mean_acc: 0.8906
+train >>> epoch: 25/200, batch: 3/3, mean_loss: 0.3726, mean_acc: 0.8958
+sklearn acc 0.6145833333333334
+valid >>> epoch: 25/200, mean_loss: 1.0057, mean_acc: 0.6146
+recall_micro_valid: 0.6146, recall_macro_valid: 0.201010
+criteria decreased from 1.0064 to 1.0057, saving best model at D:\Data\cs-8395-dl\model\2020-02-03-00-37-18\2020-02-03-00-37-18_resnet18_best.pt
+train >>> epoch: 26/200, batch: 1/3, mean_loss: 0.4915, mean_acc: 0.8125
+train >>> epoch: 26/200, batch: 2/3, mean_loss: 0.4425, mean_acc: 0.8750
+train >>> epoch: 26/200, batch: 3/3, mean_loss: 0.3697, mean_acc: 0.9167
+sklearn acc 0.6041666666666666
+valid >>> epoch: 26/200, mean_loss: 0.9989, mean_acc: 0.6042
+recall_micro_valid: 0.6042, recall_macro_valid: 0.210606
+criteria decreased from 1.0057 to 0.9989, saving best model at D:\Data\cs-8395-dl\model\2020-02-03-00-37-18\2020-02-03-00-37-18_resnet18_best.pt
+train >>> epoch: 27/200, batch: 1/3, mean_loss: 0.4569, mean_acc: 0.8438
+train >>> epoch: 27/200, batch: 2/3, mean_loss: 0.3525, mean_acc: 0.9219
+train >>> epoch: 27/200, batch: 3/3, mean_loss: 0.3522, mean_acc: 0.9271
+sklearn acc 0.6145833333333334
+valid >>> epoch: 27/200, mean_loss: 0.9937, mean_acc: 0.6146
+recall_micro_valid: 0.6146, recall_macro_valid: 0.219378
+criteria decreased from 0.9989 to 0.9937, saving best model at D:\Data\cs-8395-dl\model\2020-02-03-00-37-18\2020-02-03-00-37-18_resnet18_best.pt
+train >>> epoch: 28/200, batch: 1/3, mean_loss: 0.3833, mean_acc: 0.9062
+train >>> epoch: 28/200, batch: 2/3, mean_loss: 0.3991, mean_acc: 0.9062
+train >>> epoch: 28/200, batch: 3/3, mean_loss: 0.3423, mean_acc: 0.9375
+sklearn acc 0.6041666666666666
+valid >>> epoch: 28/200, mean_loss: 0.9914, mean_acc: 0.6042
+recall_micro_valid: 0.6042, recall_macro_valid: 0.210606
+criteria decreased from 0.9937 to 0.9914, saving best model at D:\Data\cs-8395-dl\model\2020-02-03-00-37-18\2020-02-03-00-37-18_resnet18_best.pt
+train >>> epoch: 29/200, batch: 1/3, mean_loss: 0.4242, mean_acc: 0.8750
+train >>> epoch: 29/200, batch: 2/3, mean_loss: 0.3301, mean_acc: 0.9375
+train >>> epoch: 29/200, batch: 3/3, mean_loss: 0.3146, mean_acc: 0.9375
+sklearn acc 0.6041666666666666
+valid >>> epoch: 29/200, mean_loss: 0.9898, mean_acc: 0.6042
+recall_micro_valid: 0.6042, recall_macro_valid: 0.210606
+criteria decreased from 0.9914 to 0.9898, saving best model at D:\Data\cs-8395-dl\model\2020-02-03-00-37-18\2020-02-03-00-37-18_resnet18_best.pt
+train >>> epoch: 30/200, batch: 1/3, mean_loss: 0.2625, mean_acc: 0.9688
+train >>> epoch: 30/200, batch: 2/3, mean_loss: 0.2499, mean_acc: 0.9531
+train >>> epoch: 30/200, batch: 3/3, mean_loss: 0.3227, mean_acc: 0.9167
+sklearn acc 0.6145833333333334
+valid >>> epoch: 30/200, mean_loss: 1.0035, mean_acc: 0.6146
+recall_micro_valid: 0.6146, recall_macro_valid: 0.201010
+train >>> epoch: 31/200, batch: 1/3, mean_loss: 0.2553, mean_acc: 0.9375
+train >>> epoch: 31/200, batch: 2/3, mean_loss: 0.3176, mean_acc: 0.9219
+train >>> epoch: 31/200, batch: 3/3, mean_loss: 0.2826, mean_acc: 0.9375
