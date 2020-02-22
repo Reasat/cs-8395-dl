@@ -1,0 +1,37 @@
+2020-02-11-01-03-50
+train_bs.py
+--------------------------------------------------------------------------------------------------------------------
+batchSize: 21
+bottleneckFeatures: 0
+brightness: [-0.2, 0.2]
+contrast: [-0.2, 0.2]
+cropSize: 400
+dir_lf: D:\Data\cs-8395-dl
+dir_project: ..
+encoder: dpn92
+epoch: 10
+folderData: assignment2_data_cc-gw
+loss_weights: [0.8, 0.2, 1.0, 1.0, 0.8, 1.0, 1.0]
+lr: 1e-05
+overrideLR: 1
+resize: 256
+resume_from: None
+to_ram: 0
+--------------------------------------------------------------------------------------------------------------------
+creating directory to save model at D:\Data\cs-8395-dl\model\2020-02-11-01-03-50
+balanced_max:  6130
+number of samples in balanced dataset 42910
+train samples 9015
+validation samples 1000
+shuffling dataset
+1
+0
+4
+5
+3
+2
+6
+train >>> epoch: 1/10, batch: 1/429, mean_loss: 2.0883, mean_acc: 0.0952
+train >>> epoch: 1/10, batch: 2/429, mean_loss: 2.0116, mean_acc: 0.1190
+train >>> epoch: 1/10, batch: 3/429, mean_loss: 1.9937, mean_acc: 0.1270
+train >>> epoch: 1/10, batch: 4/429, mean_loss: 1.9867, mean_acc: 0.1310

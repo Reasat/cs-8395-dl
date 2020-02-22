@@ -1,6 +1,9 @@
 from glob import glob
 import os
-from albumentations import Compose, Resize, Normalize, RandomBrightnessContrast, HorizontalFlip, CenterCrop
+from albumentations import (Compose, Resize,
+                            Normalize, RandomBrightnessContrast,
+                            HorizontalFlip,RandomRotate90,
+                            RandomCrop,CenterCrop)
 import albumentations.pytorch as albu_torch
 import sys
 sys.path.insert(1,r'..\utility')
@@ -30,14 +33,17 @@ parser.add_argument('--folderData', help='data directory', default='assignment2_
 parser.add_argument('--encoder',help='encoder',default='resnet18')
 parser.add_argument('--lr', help='learning rate', type=float, default=0.001)
 parser.add_argument('--batchSize', help='batch size', type=int, default=32)
+# parser.add_argument('--batch_per_epoch', type=int)
 parser.add_argument('--epoch', help='epoch', type=int, default=400)
 parser.add_argument('--resume_from', help='filepath to resume training')
 parser.add_argument('--bottleneckFeatures', help='bottleneck the encoder Features', type=int, default=1)
 parser.add_argument('--overrideLR', help='override LR from resumed network', type=int, default=1)
 parser.add_argument('--brightness',nargs='+', type=float)
 parser.add_argument('--contrast',nargs='+', type=float)
+parser.add_argument('--cropSize', type=int)
 parser.add_argument('--resize', type=int)
 parser.add_argument('--to_ram',type=int, default=0)
+parser.add_argument('--loss_weights', type=float,nargs='+')
 args=parser.parse_args()
 
 # setting up directories
@@ -103,11 +109,12 @@ labels_test_cat = [np.argmax(label) for label in labels_test_one_hot]
 aug ={
     'train': Compose([
     HorizontalFlip(),
+    RandomRotate90(),
     RandomBrightnessContrast(
         brightness_limit=args.brightness,
         contrast_limit=args.contrast,
     ),
-    CenterCrop(args.resize, args.resize, p=0.5),
+    RandomCrop(args.cropSize, args.cropSize, p=0.5),
     Resize(args.resize,args.resize),
     Normalize(),
     albu_torch.ToTensorV2()
@@ -162,10 +169,10 @@ loss_valid=[]
 acc_train = []
 acc_valid=[]
 recall_macro_valid = []
-compute_loss = bceWithSoftmax()
+compute_loss = bceWithSoftmax(weights=args.loss_weights)
 
-# batch_per_epoch = len(Dataset_train)//args.batchSize
-batch_per_epoch = len(loader_train)
+batch_per_epoch = len(Dataset_train)//args.batchSize
+# batch_per_epoch = args.batch_per_epoch
 for epoch in epoch_range:
     running_loss = 0
     running_acc = 0
@@ -193,7 +200,7 @@ for epoch in epoch_range:
             mean_acc
 
         ))
-        if i>batch_per_epoch:
+        if i+1>batch_per_epoch:
             break
     loss_train.append(mean_loss)
     acc_train.append(mean_acc)

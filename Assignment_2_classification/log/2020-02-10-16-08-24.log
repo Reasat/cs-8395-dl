@@ -1,0 +1,20 @@
+2020-02-10-16-08-24
+train.py
+--------------------------------------------------------------------------------------------------------------------
+batchSize: 24
+bottleneckFeatures: 0
+brightness: [-0.2, 0.2]
+contrast: [-0.2, 0.2]
+dir_lf: D:\Data\cs-8395-dl
+dir_project: ..
+encoder: dpn92
+epoch: 10
+folderData: assignment2_data_cc-gw
+loss_weights: None
+lr: 1e-05
+overrideLR: 1
+resize: 256
+resume_from: None
+to_ram: 0
+--------------------------------------------------------------------------------------------------------------------
+creating directory to save model at D:\Data\cs-8395-dl\model\2020-02-10-16-08-24

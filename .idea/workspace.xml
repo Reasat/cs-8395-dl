@@ -3,14 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f1fef909-c648-4911-89a8-bfefdf4204d4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment_1_detection/Assignment1.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment_1_detection/code/models/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment_1_detection/code/models/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment_1_detection/code/preprocessing/create_heat_map.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment_1_detection/code/preprocessing/create_heat_map.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment_1_detection/code/regression/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment_1_detection/code/regression/test_all.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment_1_detection/code/regression/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment_1_detection/code/regression/train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment_1_detection/code/regression/train_hm.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment_1_detection/code/regression/train_hm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment_1_detection/code/utility/dataloader.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment_1_detection/code/utility/dataloader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment_1_detection/code/utility/loss.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment_1_detection/code/utility/loss.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +12,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assignment_1_detection/code/regression/train.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2886">
+              <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assignment_1_detection/submission/regression/test.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -35,7 +39,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assignment_1_detection/submission/regression/train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
+            <state relative-caret-position="3451">
               <caret line="203" column="9" selection-start-line="203" selection-start-column="9" selection-end-line="203" selection-end-column="9" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
@@ -47,7 +51,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assignment_1_detection/submission/models/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="573">
+            <state relative-caret-position="1445">
               <caret line="85" selection-end-line="102" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
@@ -59,7 +63,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assignment_1_detection/submission/utility/dataloader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-325">
+            <state relative-caret-position="935">
               <caret line="55" column="39" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
@@ -77,7 +81,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assignment_1_detection/submission/utility/loss.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="199">
@@ -133,7 +137,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="28" />
     <option name="width" value="1084" />
     <option name="height" value="1047" />
@@ -170,97 +174,7 @@
               <item name="cs-8395-dl" type="462c0819:PsiDirectoryNode" />
               <item name="Assignment_1_detection" type="462c0819:PsiDirectoryNode" />
               <item name="code" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cs-8395-dl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cs-8395-dl" type="462c0819:PsiDirectoryNode" />
-              <item name="Assignment_1_detection" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
-              <item name="preprocessing" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cs-8395-dl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cs-8395-dl" type="462c0819:PsiDirectoryNode" />
-              <item name="Assignment_1_detection" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
               <item name="regression" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cs-8395-dl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cs-8395-dl" type="462c0819:PsiDirectoryNode" />
-              <item name="Assignment_1_detection" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
-              <item name="utility" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cs-8395-dl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cs-8395-dl" type="462c0819:PsiDirectoryNode" />
-              <item name="Assignment_1_detection" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
-              <item name="visualization" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cs-8395-dl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cs-8395-dl" type="462c0819:PsiDirectoryNode" />
-              <item name="Assignment_1_detection" type="462c0819:PsiDirectoryNode" />
-              <item name="submission" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cs-8395-dl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cs-8395-dl" type="462c0819:PsiDirectoryNode" />
-              <item name="Assignment_1_detection" type="462c0819:PsiDirectoryNode" />
-              <item name="submission" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cs-8395-dl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cs-8395-dl" type="462c0819:PsiDirectoryNode" />
-              <item name="Assignment_1_detection" type="462c0819:PsiDirectoryNode" />
-              <item name="submission" type="462c0819:PsiDirectoryNode" />
-              <item name="history" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cs-8395-dl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cs-8395-dl" type="462c0819:PsiDirectoryNode" />
-              <item name="Assignment_1_detection" type="462c0819:PsiDirectoryNode" />
-              <item name="submission" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cs-8395-dl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cs-8395-dl" type="462c0819:PsiDirectoryNode" />
-              <item name="Assignment_1_detection" type="462c0819:PsiDirectoryNode" />
-              <item name="submission" type="462c0819:PsiDirectoryNode" />
-              <item name="model_weight" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cs-8395-dl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cs-8395-dl" type="462c0819:PsiDirectoryNode" />
-              <item name="Assignment_1_detection" type="462c0819:PsiDirectoryNode" />
-              <item name="submission" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cs-8395-dl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cs-8395-dl" type="462c0819:PsiDirectoryNode" />
-              <item name="Assignment_1_detection" type="462c0819:PsiDirectoryNode" />
-              <item name="submission" type="462c0819:PsiDirectoryNode" />
-              <item name="regression" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cs-8395-dl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cs-8395-dl" type="462c0819:PsiDirectoryNode" />
-              <item name="Assignment_1_detection" type="462c0819:PsiDirectoryNode" />
-              <item name="submission" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cs-8395-dl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cs-8395-dl" type="462c0819:PsiDirectoryNode" />
-              <item name="Assignment_1_detection" type="462c0819:PsiDirectoryNode" />
-              <item name="submission" type="462c0819:PsiDirectoryNode" />
-              <item name="utility" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -424,13 +338,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="28" y="0" width="1084" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.23422562" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.12908325" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.3916849" />
+      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.38786566" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="2" weight="0.32932165" />
       <window_info anchor="bottom" id="Message" order="3" />
@@ -532,30 +446,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment_1_detection/code/regression/train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="32" selection-end-line="211" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assignment_1_detection/code/utility/loss.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment_1_detection/submission/regression/train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="203" column="9" selection-start-line="203" selection-start-column="9" selection-end-line="203" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -569,9 +463,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment_1_detection/submission/regression/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3451">
+          <caret line="203" column="9" selection-start-line="203" selection-start-column="9" selection-end-line="203" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assignment_1_detection/submission/models/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
+        <state relative-caret-position="1445">
           <caret line="85" selection-end-line="102" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
@@ -581,7 +485,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignment_1_detection/submission/utility/dataloader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-325">
+        <state relative-caret-position="935">
           <caret line="55" column="39" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
@@ -600,6 +504,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
           <caret line="22" column="61" selection-start-line="22" selection-start-column="61" selection-end-line="22" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment_1_detection/code/regression/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2886">
+          <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
