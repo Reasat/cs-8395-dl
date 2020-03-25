@@ -1,0 +1,102 @@
+2020-03-20-04-49-47
+train.py
+--------------------------------------------------------------------------------------------------------------------
+batchSize: 4
+bottleneckFeatures: 1
+brightness: None
+contrast: None
+cropSize: None
+dir_lf: D:\Data\cs-8395-dl
+dir_project: ..
+encoder: resnet34
+epoch: 400
+folderData: assignment3\Training
+folderPartition: train_test_org
+lossWeight: [1.0, 0.0]
+loss_weights: None
+lr: 0.001
+overrideLR: 1
+path_kfold: D:\Projects\cs-8395-dl\Assignment_3_segmentation\partition\kfold_5.bin
+resize: None
+resume_from: None
+to_ram: 0
+--------------------------------------------------------------------------------------------------------------------
+creating directory to save model at D:\Data\cs-8395-dl\model\2020-03-20-04-49-47
+accumulating gradients
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(1., device='cuda:0') tensor(0., device='cuda:0')
+tensor(1., device='cuda:0') tensor(0., device='cuda:0')
+tensor(1., device='cuda:0') tensor(0., device='cuda:0')
+tensor(1., device='cuda:0') tensor(0., device='cuda:0')
+tensor(1., device='cuda:0') tensor(0., device='cuda:0')
+tensor(1., device='cuda:0') tensor(0., device='cuda:0')
+tensor(1., device='cuda:0') tensor(0., device='cuda:0')
+tensor(1., device='cuda:0') tensor(0., device='cuda:0')
+tensor(1., device='cuda:0') tensor(0., device='cuda:0')
+tensor(1., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+train >>> epoch: 0/400, mean_loss -0.0028, mean_dice: 0.0028, mean_ce: 0.1810
+updating weights
+accumulating gradients
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(1., device='cuda:0') tensor(0., device='cuda:0')
+tensor(1., device='cuda:0') tensor(0., device='cuda:0')
+tensor(1., device='cuda:0') tensor(0., device='cuda:0')
+tensor(1., device='cuda:0') tensor(0., device='cuda:0')
+tensor(1., device='cuda:0') tensor(0., device='cuda:0')
+tensor(1., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+train >>> epoch: 0/400, mean_loss -0.0010, mean_dice: 0.0010, mean_ce: 0.1825
+updating weights

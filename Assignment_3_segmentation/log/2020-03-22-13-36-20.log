@@ -1,0 +1,46 @@
+2020-03-22-13-36-20
+train.py
+--------------------------------------------------------------------------------------------------------------------
+batchSize: 12
+bottleneckFeatures: 1
+brightness: None
+contrast: None
+cropSize: None
+dir_lf: D:\Data\cs-8395-dl
+dir_project: ..
+encoder: resnet34
+epoch: 24
+extract_spleen: False
+folderData: assignment3\Training
+folderPartition: train_test_org
+lossWeight: [0.7, 0.3]
+loss_weights: None
+lr: 0.001
+msg: None
+overrideLR: 1
+path_kfold: D:\Projects\cs-8395-dl\Assignment_3_segmentation\partition\kfold_5.bin
+resize: None
+resume_from: None
+resume_training: None
+to_ram: 0
+--------------------------------------------------------------------------------------------------------------------
+creating directory to save model at D:\Data\cs-8395-dl\model\2020-03-22-13-36-20
+executing fold 1/5
+training patients  ['0001' '0002' '0003' '0004' '0005' '0006' '0007' '0008' '0021' '0022'
+ '0023' '0024' '0025' '0027' '0029' '0030' '0031' '0032' '0033' '0035'
+ '0036' '0037' '0039' '0040']
+validation patients  ['0009' '0010' '0026' '0028' '0034' '0038']
+freezing feature extracting layers
+tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], device='cuda:0')
+tensor([[-0.4076,  0.4527],
+        [-0.3939,  0.3212],
+        [-0.3338,  0.2373],
+        [-0.2720,  0.3693],
+        [-0.3766,  0.4017],
+        [-0.1365,  0.3683],
+        [-0.0598,  0.2672],
+        [-0.2056,  0.3732],
+        [-0.1174,  0.3788],
+        [-0.1625,  0.3899],
+        [-0.1413,  0.2686],
+        [-0.1853,  0.3500]], device='cuda:0', grad_fn=<AddmmBackward>)

@@ -1,0 +1,65 @@
+2020-03-22-02-00-51
+train.py
+--------------------------------------------------------------------------------------------------------------------
+batchSize: 12
+bottleneckFeatures: 1
+brightness: None
+contrast: None
+cropSize: None
+dir_lf: D:\Data\cs-8395-dl
+dir_project: ..
+encoder: resnet34
+epoch: 24
+extract_spleen: 1
+folderData: assignment3\Training
+folderPartition: train_test_org
+lossWeight: [1.0, 1.0]
+loss_weights: None
+lr: 0.0001
+msg: None
+overrideLR: 1
+path_kfold: D:\Projects\cs-8395-dl\Assignment_3_segmentation\partition\kfold_5.bin
+resize: None
+resume_from: None
+resume_training: None
+to_ram: 0
+--------------------------------------------------------------------------------------------------------------------
+creating directory to save model at D:\Data\cs-8395-dl\model\2020-03-22-02-00-51
+executing fold 1/5
+training patients  ['0001']
+validation patients  ['0009']
+train >>> epoch: 1/24, patient 1/1, mean_loss 1.5844, mean_dice_loss: 0.9535, mean_ce: 0.6309
+valid >>> epoch: 1/24, mean_loss: 1.5472, mean_dice: 0.0000
+criteria decreased from inf to 1.5472, saving best model at D:\Data\cs-8395-dl\model\2020-03-22-02-00-51\2020-03-22-02-00-51_1_fold-resnet34_best.pt
+train >>> epoch: 2/24, patient 1/1, mean_loss 1.5819, mean_dice_loss: 0.9535, mean_ce: 0.6284
+valid >>> epoch: 2/24, mean_loss: 1.5457, mean_dice: 0.0000
+criteria decreased from 1.5472 to 1.5457, saving best model at D:\Data\cs-8395-dl\model\2020-03-22-02-00-51\2020-03-22-02-00-51_1_fold-resnet34_best.pt
+train >>> epoch: 3/24, patient 1/1, mean_loss 1.5789, mean_dice_loss: 0.9536, mean_ce: 0.6253
+valid >>> epoch: 3/24, mean_loss: 1.5410, mean_dice: 0.0000
+criteria decreased from 1.5457 to 1.5410, saving best model at D:\Data\cs-8395-dl\model\2020-03-22-02-00-51\2020-03-22-02-00-51_1_fold-resnet34_best.pt
+train >>> epoch: 4/24, patient 1/1, mean_loss 1.5731, mean_dice_loss: 0.9535, mean_ce: 0.6196
+valid >>> epoch: 4/24, mean_loss: 1.5309, mean_dice: 0.0000
+criteria decreased from 1.5410 to 1.5309, saving best model at D:\Data\cs-8395-dl\model\2020-03-22-02-00-51\2020-03-22-02-00-51_1_fold-resnet34_best.pt
+train >>> epoch: 5/24, patient 1/1, mean_loss 1.5483, mean_dice_loss: 0.9530, mean_ce: 0.5952
+valid >>> epoch: 5/24, mean_loss: 1.4413, mean_dice: 0.0000
+criteria decreased from 1.5309 to 1.4413, saving best model at D:\Data\cs-8395-dl\model\2020-03-22-02-00-51\2020-03-22-02-00-51_1_fold-resnet34_best.pt
+train >>> epoch: 6/24, patient 1/1, mean_loss 1.3494, mean_dice_loss: 0.9421, mean_ce: 0.4073
+valid >>> epoch: 6/24, mean_loss: 1.2331, mean_dice: 0.0000
+criteria decreased from 1.4413 to 1.2331, saving best model at D:\Data\cs-8395-dl\model\2020-03-22-02-00-51\2020-03-22-02-00-51_1_fold-resnet34_best.pt
+train >>> epoch: 7/24, patient 1/1, mean_loss 1.0619, mean_dice_loss: 0.9419, mean_ce: 0.1200
+valid >>> epoch: 7/24, mean_loss: 1.6134, mean_dice: 0.0000
+train >>> epoch: 8/24, patient 1/1, mean_loss 0.9117, mean_dice_loss: 0.8412, mean_ce: 0.0705
+valid >>> epoch: 8/24, mean_loss: 1.4309, mean_dice: 0.0000
+train >>> epoch: 9/24, patient 1/1, mean_loss 0.8580, mean_dice_loss: 0.7931, mean_ce: 0.0649
+valid >>> epoch: 9/24, mean_loss: 1.5291, mean_dice: 0.0000
+train >>> epoch: 10/24, patient 1/1, mean_loss 0.7880, mean_dice_loss: 0.7356, mean_ce: 0.0524
+valid >>> epoch: 10/24, mean_loss: 1.7709, mean_dice: 0.0000
+train >>> epoch: 11/24, patient 1/1, mean_loss 0.7242, mean_dice_loss: 0.6811, mean_ce: 0.0432
+valid >>> epoch: 11/24, mean_loss: 1.7524, mean_dice: 0.0000
+train >>> epoch: 12/24, patient 1/1, mean_loss 0.6724, mean_dice_loss: 0.6334, mean_ce: 0.0390
+valid >>> epoch: 12/24, mean_loss: 1.8929, mean_dice: 0.0000
+tensor(-0.3455, device='cuda:0', grad_fn=<MaxBackward1>)
+0.4144742
+train >>> epoch: 13/24, patient 1/1, mean_loss 0.6242, mean_dice_loss: 0.5897, mean_ce: 0.0345
+valid >>> epoch: 13/24, mean_loss: 2.4511, mean_dice: 0.0000
+train >>> epoch: 14/24, patient 1/1, mean_loss 0.5870, mean_dice_loss: 0.5551, mean_ce: 0.0319

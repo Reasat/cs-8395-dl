@@ -1,0 +1,64 @@
+2020-03-22-05-28-33
+train.py
+--------------------------------------------------------------------------------------------------------------------
+batchSize: 12
+bottleneckFeatures: 1
+brightness: None
+contrast: None
+cropSize: None
+dir_lf: D:\Data\cs-8395-dl
+dir_project: ..
+encoder: resnet34
+epoch: 1
+extract_spleen: 1
+folderData: assignment3\Training
+folderPartition: train_test_org
+lossWeight: [1.0, 1.0]
+loss_weights: None
+lr: 0.0001
+msg: None
+overrideLR: 1
+path_kfold: D:\Projects\cs-8395-dl\Assignment_3_segmentation\partition\kfold_5.bin
+resize: None
+resume_from: None
+resume_training: None
+to_ram: 0
+--------------------------------------------------------------------------------------------------------------------
+creating directory to save model at D:\Data\cs-8395-dl\model\2020-03-22-05-28-33
+executing fold 1/5
+training patients  ['0001' '0002' '0003' '0004' '0005' '0006' '0007' '0008' '0021' '0022'
+ '0023' '0024' '0025' '0027' '0029' '0030' '0031' '0032' '0033' '0035'
+ '0036' '0037' '0039' '0040']
+validation patients  ['0009' '0010' '0026' '0028' '0034' '0038']
+train >>> fold 1/5, epoch: 1/1, patient 1/24, mean_loss 1.5786, mean_dice_loss: 0.9683, mean_ce: 0.6103
+train >>> fold 1/5, epoch: 1/1, patient 2/24, mean_loss 1.5821, mean_dice_loss: 0.9728, mean_ce: 0.6094
+train >>> fold 1/5, epoch: 1/1, patient 3/24, mean_loss 1.5799, mean_dice_loss: 0.9710, mean_ce: 0.6089
+train >>> fold 1/5, epoch: 1/1, patient 4/24, mean_loss 1.5742, mean_dice_loss: 0.9662, mean_ce: 0.6080
+train >>> fold 1/5, epoch: 1/1, patient 5/24, mean_loss 1.5721, mean_dice_loss: 0.9663, mean_ce: 0.6057
+train >>> fold 1/5, epoch: 1/1, patient 6/24, mean_loss 1.5651, mean_dice_loss: 0.9663, mean_ce: 0.5988
+train >>> fold 1/5, epoch: 1/1, patient 7/24, mean_loss 1.5178, mean_dice_loss: 0.9666, mean_ce: 0.5511
+train >>> fold 1/5, epoch: 1/1, patient 8/24, mean_loss 1.4724, mean_dice_loss: 0.9679, mean_ce: 0.5044
+train >>> fold 1/5, epoch: 1/1, patient 9/24, mean_loss 1.4152, mean_dice_loss: 0.9699, mean_ce: 0.4452
+train >>> fold 1/5, epoch: 1/1, patient 10/24, mean_loss 1.3814, mean_dice_loss: 0.9676, mean_ce: 0.4138
+train >>> fold 1/5, epoch: 1/1, patient 11/24, mean_loss 1.3448, mean_dice_loss: 0.9585, mean_ce: 0.3862
+train >>> fold 1/5, epoch: 1/1, patient 12/24, mean_loss 1.3135, mean_dice_loss: 0.9508, mean_ce: 0.3627
+train >>> fold 1/5, epoch: 1/1, patient 13/24, mean_loss 1.2734, mean_dice_loss: 0.9414, mean_ce: 0.3319
+train >>> fold 1/5, epoch: 1/1, patient 14/24, mean_loss 1.2279, mean_dice_loss: 0.9272, mean_ce: 0.3007
+train >>> fold 1/5, epoch: 1/1, patient 15/24, mean_loss 1.2008, mean_dice_loss: 0.9208, mean_ce: 0.2800
+train >>> fold 1/5, epoch: 1/1, patient 16/24, mean_loss 1.1705, mean_dice_loss: 0.9080, mean_ce: 0.2626
+train >>> fold 1/5, epoch: 1/1, patient 17/24, mean_loss 1.1338, mean_dice_loss: 0.8904, mean_ce: 0.2434
+train >>> fold 1/5, epoch: 1/1, patient 18/24, mean_loss 1.1117, mean_dice_loss: 0.8804, mean_ce: 0.2312
+train >>> fold 1/5, epoch: 1/1, patient 19/24, mean_loss 1.0835, mean_dice_loss: 0.8675, mean_ce: 0.2160
+train >>> fold 1/5, epoch: 1/1, patient 20/24, mean_loss 1.0591, mean_dice_loss: 0.8536, mean_ce: 0.2055
+train >>> fold 1/5, epoch: 1/1, patient 21/24, mean_loss 1.0441, mean_dice_loss: 0.8464, mean_ce: 0.1977
+train >>> fold 1/5, epoch: 1/1, patient 22/24, mean_loss 1.0358, mean_dice_loss: 0.8437, mean_ce: 0.1921
+train >>> fold 1/5, epoch: 1/1, patient 23/24, mean_loss 1.0221, mean_dice_loss: 0.8350, mean_ce: 0.1872
+train >>> fold 1/5, epoch: 1/1, patient 24/24, mean_loss 1.0096, mean_dice_loss: 0.8276, mean_ce: 0.1820
+valid >>> epoch: 1/1, mean_loss: 0.6930, mean_dice: 0.5775
+criteria decreased from inf to 0.6930, saving best model at D:\Data\cs-8395-dl\model\2020-03-22-05-28-33\2020-03-22-05-28-33_1_fold-resnet34_best.pt
+executing fold 2/5
+training patients  ['0002' '0003' '0004' '0006' '0007' '0008' '0009' '0010' '0021' '0022'
+ '0024' '0025' '0026' '0028' '0029' '0030' '0031' '0032' '0033' '0034'
+ '0036' '0037' '0038' '0040']
+validation patients  ['0001' '0005' '0023' '0027' '0035' '0039']
+train >>> fold 2/5, epoch: 1/1, patient 1/24, mean_loss 1.6491, mean_dice_loss: 0.9833, mean_ce: 0.6658

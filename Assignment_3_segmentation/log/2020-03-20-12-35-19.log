@@ -1,0 +1,76 @@
+2020-03-20-12-35-19
+train.py
+--------------------------------------------------------------------------------------------------------------------
+batchSize: 8
+bottleneckFeatures: 1
+brightness: None
+contrast: None
+cropSize: None
+dir_lf: D:\Data\cs-8395-dl
+dir_project: ..
+encoder: resnet34
+epoch: 1
+folderData: assignment3\Training
+folderPartition: train_test_org
+lossWeight: [1.0, 1.0]
+loss_weights: None
+lr: 0.1
+msg: None
+overrideLR: 1
+path_kfold: D:\Projects\cs-8395-dl\Assignment_3_segmentation\partition\kfold_5.bin
+resize: None
+resume_from: None
+resume_training: None
+to_ram: 0
+--------------------------------------------------------------------------------------------------------------------
+creating directory to save model at D:\Data\cs-8395-dl\model\2020-03-20-12-35-19
+executing fold 1/5
+training patients  ['0001' '0002' '0003' '0004' '0005' '0006' '0007' '0008' '0021' '0022'
+ '0023' '0024' '0025' '0027' '0029' '0030' '0031' '0032' '0033' '0035'
+ '0036' '0037' '0039' '0040']
+validation patients  ['0009' '0010' '0026' '0028' '0034' '0038']
+accumulating gradients, acc_step = 12
+updating weights
+train >>> epoch: 1/1, mean_loss 1.7555, mean_dice_loss: 0.9941, mean_ce: 0.7613
+accumulating gradients, acc_step = 11
+updating weights
+train >>> epoch: 1/1, mean_loss 61587051648.0000, mean_dice_loss: 0.2726, mean_ce: 61587051648.0000
+accumulating gradients, acc_step = 11
+updating weights
+train >>> epoch: 1/1, mean_loss 389659.6602, mean_dice_loss: 0.9933, mean_ce: 389658.6758
+accumulating gradients, acc_step = 12
+updating weights
+train >>> epoch: 1/1, mean_loss 550625361920.0000, mean_dice_loss: 0.9937, mean_ce: 550625361920.0000
+accumulating gradients, acc_step = 13
+updating weights
+train >>> epoch: 1/1, mean_loss 1.6007, mean_dice_loss: 0.9928, mean_ce: 0.6079
+accumulating gradients, acc_step = 18
+updating weights
+train >>> epoch: 1/1, mean_loss 2.1130, mean_dice_loss: 0.9945, mean_ce: 1.1185
+accumulating gradients, acc_step = 16
+updating weights
+train >>> epoch: 1/1, mean_loss 1.5960, mean_dice_loss: 0.9918, mean_ce: 0.6043
+accumulating gradients, acc_step = 18
+updating weights
+train >>> epoch: 1/1, mean_loss 1.5630, mean_dice_loss: 0.9961, mean_ce: 0.5668
+accumulating gradients, acc_step = 15
+updating weights
+train >>> epoch: 1/1, mean_loss 1.4725, mean_dice_loss: 0.9905, mean_ce: 0.4820
+accumulating gradients, acc_step = 19
+updating weights
+train >>> epoch: 1/1, mean_loss 1.3156, mean_dice_loss: 0.9895, mean_ce: 0.3261
+accumulating gradients, acc_step = 18
+updating weights
+train >>> epoch: 1/1, mean_loss 1.1650, mean_dice_loss: 0.9974, mean_ce: 0.1677
+accumulating gradients, acc_step = 21
+updating weights
+train >>> epoch: 1/1, mean_loss 1.0562, mean_dice_loss: 0.9933, mean_ce: 0.0630
+accumulating gradients, acc_step = 23
+updating weights
+train >>> epoch: 1/1, mean_loss 1.0319, mean_dice_loss: 0.9986, mean_ce: 0.0332
+accumulating gradients, acc_step = 13
+updating weights
+train >>> epoch: 1/1, mean_loss 1.0337, mean_dice_loss: 0.9979, mean_ce: 0.0358
+accumulating gradients, acc_step = 13
+updating weights
+train >>> epoch: 1/1, mean_loss 1.0048, mean_dice_loss: 0.9600, mean_ce: 0.0448

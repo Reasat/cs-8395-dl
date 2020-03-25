@@ -1,0 +1,55 @@
+2020-03-21-16-04-21
+train.py
+--------------------------------------------------------------------------------------------------------------------
+batchSize: 12
+bottleneckFeatures: 1
+brightness: None
+contrast: None
+cropSize: None
+dir_lf: D:\Data\cs-8395-dl
+dir_project: ..
+encoder: resnet34
+epoch: 48
+folderData: assignment3\Training
+folderPartition: train_test_org
+lossWeight: [1.0, 1.0]
+loss_weights: None
+lr: 0.001
+msg: None
+overrideLR: 1
+path_kfold: D:\Projects\cs-8395-dl\Assignment_3_segmentation\partition\kfold_5.bin
+resize: None
+resume_from: None
+resume_training: None
+to_ram: 0
+--------------------------------------------------------------------------------------------------------------------
+creating directory to save model at D:\Data\cs-8395-dl\model\2020-03-21-16-04-21
+executing fold 1/5
+training patients  ['0001' '0002' '0003' '0004' '0005' '0006' '0007' '0008' '0021' '0022'
+ '0023' '0024' '0025' '0027' '0029' '0030' '0031' '0032' '0033' '0035'
+ '0036' '0037' '0039' '0040']
+validation patients  ['0009' '0010' '0026' '0028' '0034' '0038']
+train >>> epoch: 1/48, patient 1/24, mean_loss 1.6134, mean_dice_loss: 0.9941, mean_ce: 0.6194
+train >>> epoch: 1/48, patient 2/24, mean_loss 1.5999, mean_dice_loss: 0.9898, mean_ce: 0.6101
+train >>> epoch: 1/48, patient 3/24, mean_loss 1.4526, mean_dice_loss: 0.9906, mean_ce: 0.4619
+train >>> epoch: 1/48, patient 4/24, mean_loss 1.4606, mean_dice_loss: 0.9994, mean_ce: 0.4611
+train >>> epoch: 1/48, patient 5/24, mean_loss 1.0603, mean_dice_loss: 0.9830, mean_ce: 0.0773
+train >>> epoch: 1/48, patient 6/24, mean_loss 1.1335, mean_dice_loss: 0.9926, mean_ce: 0.1409
+train >>> epoch: 1/48, patient 7/24, mean_loss 1.0531, mean_dice_loss: 0.9927, mean_ce: 0.0604
+train >>> epoch: 1/48, patient 8/24, mean_loss 1.0254, mean_dice_loss: 0.9994, mean_ce: 0.0260
+train >>> epoch: 1/48, patient 9/24, mean_loss 1.0442, mean_dice_loss: 0.9996, mean_ce: 0.0446
+train >>> epoch: 1/48, patient 10/24, mean_loss 1.0136, mean_dice_loss: 0.9994, mean_ce: 0.0141
+train >>> epoch: 1/48, patient 11/24, mean_loss 1.0840, mean_dice_loss: 0.9994, mean_ce: 0.0847
+train >>> epoch: 1/48, patient 12/24, mean_loss 1.0092, mean_dice_loss: 0.9990, mean_ce: 0.0102
+train >>> epoch: 1/48, patient 13/24, mean_loss 1.0086, mean_dice_loss: 0.9958, mean_ce: 0.0129
+train >>> epoch: 1/48, patient 14/24, mean_loss 1.0111, mean_dice_loss: 0.9846, mean_ce: 0.0266
+train >>> epoch: 1/48, patient 15/24, mean_loss 1.0147, mean_dice_loss: 0.9850, mean_ce: 0.0298
+train >>> epoch: 1/48, patient 16/24, mean_loss 1.0073, mean_dice_loss: 0.9810, mean_ce: 0.0263
+train >>> epoch: 1/48, patient 17/24, mean_loss 0.9973, mean_dice_loss: 0.9703, mean_ce: 0.0270
+train >>> epoch: 1/48, patient 18/24, mean_loss 0.9985, mean_dice_loss: 0.9856, mean_ce: 0.0129
+train >>> epoch: 1/48, patient 19/24, mean_loss 0.9842, mean_dice_loss: 0.9742, mean_ce: 0.0101
+train >>> epoch: 1/48, patient 20/24, mean_loss 1.0016, mean_dice_loss: 0.9767, mean_ce: 0.0248
+train >>> epoch: 1/48, patient 21/24, mean_loss 0.9812, mean_dice_loss: 0.9697, mean_ce: 0.0115
+train >>> epoch: 1/48, patient 22/24, mean_loss 0.9489, mean_dice_loss: 0.9357, mean_ce: 0.0132
+train >>> epoch: 1/48, patient 23/24, mean_loss 0.9341, mean_dice_loss: 0.9177, mean_ce: 0.0164
+train >>> epoch: 1/48, patient 24/24, mean_loss 0.9428, mean_dice_loss: 0.9284, mean_ce: 0.0144

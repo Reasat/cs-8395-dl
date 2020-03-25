@@ -1,0 +1,70 @@
+2020-03-20-01-26-21
+train.py
+--------------------------------------------------------------------------------------------------------------------
+batchSize: 32
+bottleneckFeatures: 1
+brightness: None
+contrast: None
+cropSize: None
+dir_lf: D:\Data\cs-8395-dl
+dir_project: ..
+encoder: resnet34
+epoch: 400
+folderData: assignment3\Training
+folderPartition: train_test_org
+lossWeight: [0.2, 0.8]
+loss_weights: None
+lr: 0.001
+overrideLR: 1
+path_kfold: D:\Projects\cs-8395-dl\Assignment_3_segmentation\partition\kfold_5.bin
+resize: None
+resume_from: None
+to_ram: 0
+--------------------------------------------------------------------------------------------------------------------
+creating directory to save model at D:\Data\cs-8395-dl\model\2020-03-20-01-26-21
+train >>> epoch: 0/400, mean_loss 78.3326, mean_dice: 1.6676, mean_ce: 98.3327
+updating weights
+train >>> epoch: 0/400, mean_loss 66.3257, mean_dice: 0.5466, mean_ce: 83.0437
+updating weights
+train >>> epoch: 0/400, mean_loss 35.3853, mean_dice: 0.4785, mean_ce: 44.3513
+updating weights
+train >>> epoch: 0/400, mean_loss 22.3834, mean_dice: 1.5113, mean_ce: 28.3570
+updating weights
+train >>> epoch: 0/400, mean_loss 9.6862, mean_dice: 1.9393, mean_ce: 12.5926
+updating weights
+train >>> epoch: 0/400, mean_loss 2.3037, mean_dice: 0.1018, mean_ce: 2.9050
+updating weights
+train >>> epoch: 0/400, mean_loss 26.1198, mean_dice: 1.0423, mean_ce: 32.9103
+updating weights
+train >>> epoch: 0/400, mean_loss 4.7959, mean_dice: 0.2282, mean_ce: 6.0520
+updating weights
+train >>> epoch: 0/400, mean_loss 2.6910, mean_dice: 1.1364, mean_ce: 3.6478
+updating weights
+train >>> epoch: 0/400, mean_loss 3.5804, mean_dice: 2.6886, mean_ce: 5.1476
+updating weights
+train >>> epoch: 0/400, mean_loss 2.7301, mean_dice: 1.9793, mean_ce: 3.9074
+updating weights
+train >>> epoch: 0/400, mean_loss 2.3807, mean_dice: 1.2831, mean_ce: 3.2967
+updating weights
+train >>> epoch: 0/400, mean_loss 0.9213, mean_dice: 0.6790, mean_ce: 1.3213
+updating weights
+train >>> epoch: 0/400, mean_loss 1.5355, mean_dice: 0.2881, mean_ce: 1.9914
+updating weights
+train >>> epoch: 0/400, mean_loss 2.5732, mean_dice: 0.3376, mean_ce: 3.3009
+updating weights
+train >>> epoch: 0/400, mean_loss 3.7240, mean_dice: 1.5979, mean_ce: 5.0545
+updating weights
+train >>> epoch: 0/400, mean_loss 1.1832, mean_dice: 2.4668, mean_ce: 2.0957
+updating weights
+train >>> epoch: 0/400, mean_loss 0.9101, mean_dice: 3.4030, mean_ce: 1.9884
+updating weights
+train >>> epoch: 0/400, mean_loss 1.5731, mean_dice: 3.1418, mean_ce: 2.7519
+updating weights
+train >>> epoch: 0/400, mean_loss 0.7867, mean_dice: 3.1048, mean_ce: 1.7595
+updating weights
+train >>> epoch: 0/400, mean_loss 1.3263, mean_dice: 5.5872, mean_ce: 3.0546
+updating weights
+train >>> epoch: 0/400, mean_loss 3.4950, mean_dice: 0.2114, mean_ce: 4.4216
+updating weights
+train >>> epoch: 0/400, mean_loss 0.4569, mean_dice: 2.5195, mean_ce: 1.2010
+updating weights

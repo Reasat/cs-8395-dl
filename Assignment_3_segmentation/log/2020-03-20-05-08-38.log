@@ -1,0 +1,64 @@
+2020-03-20-05-08-38
+train.py
+--------------------------------------------------------------------------------------------------------------------
+batchSize: 4
+bottleneckFeatures: 1
+brightness: None
+contrast: None
+cropSize: None
+dir_lf: D:\Data\cs-8395-dl
+dir_project: ..
+encoder: resnet34
+epoch: 40
+folderData: assignment3\Training
+folderPartition: train_test_org
+lossWeight: [0.0, 1.0]
+loss_weights: None
+lr: 0.001
+overrideLR: 1
+path_kfold: D:\Projects\cs-8395-dl\Assignment_3_segmentation\partition\kfold_5.bin
+resize: None
+resume_from: None
+to_ram: 0
+--------------------------------------------------------------------------------------------------------------------
+creating directory to save model at D:\Data\cs-8395-dl\model\2020-03-20-05-08-38
+epoch: 1/40, training patient 0001
+accumulating gradients
+tensor(0.9717, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(0.9632, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(0.9387, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(0.9251, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(0.9239, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(0.9312, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(0.9563, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(0.9962, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+train >>> epoch: 1/40, batch: 37/37, mean_loss 0.0378, mean_dice_loss: 0.0585, mean_ce: 0.0378
+updating weights
+epoch: 2/40, training patient 0001
+accumulating gradients
+tensor(0.9717, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(0.9632, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(0.9388, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(0.9253, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(0.9240, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(0.9313, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(0.9563, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(0.9962, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+train >>> epoch: 2/40, batch: 37/37, mean_loss 0.0369, mean_dice_loss: 0.0585, mean_ce: 0.0369
+updating weights
+epoch: 3/40, training patient 0001
+accumulating gradients
+tensor(0.9717, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(0.9632, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(0.9387, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(0.9252, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(0.9240, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(0.9313, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(0.9563, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(0.9962, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+train >>> epoch: 3/40, batch: 37/37, mean_loss 0.0357, mean_dice_loss: 0.0585, mean_ce: 0.0357
+updating weights
+epoch: 4/40, training patient 0001

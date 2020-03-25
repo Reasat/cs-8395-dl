@@ -1,0 +1,131 @@
+2020-03-20-05-57-25
+train.py
+--------------------------------------------------------------------------------------------------------------------
+batchSize: 8
+bottleneckFeatures: 1
+brightness: None
+contrast: None
+cropSize: None
+dir_lf: D:\Data\cs-8395-dl
+dir_project: ..
+encoder: resnet34
+epoch: 40
+folderData: assignment3\Training
+folderPartition: train_test_org
+lossWeight: [1.0, 1.0]
+loss_weights: None
+lr: 0.01
+overrideLR: 1
+path_kfold: D:\Projects\cs-8395-dl\Assignment_3_segmentation\partition\kfold_5.bin
+resize: None
+resume_from: None
+to_ram: 0
+--------------------------------------------------------------------------------------------------------------------
+creating directory to save model at D:\Data\cs-8395-dl\model\2020-03-20-05-57-25
+epoch: 1/40, training patient 0001
+accumulating gradients, acc_step = 3
+tensor(0.5077, device='cuda:0', grad_fn=<MinBackward1>) tensor(0.5121, device='cuda:0', grad_fn=<MaxBackward1>)
+tensor(0., device='cuda:0') tensor(1., device='cuda:0')
+tensor(0.5077, device='cuda:0', grad_fn=<MinBackward1>) tensor(0.5119, device='cuda:0', grad_fn=<MaxBackward1>)
+tensor(0., device='cuda:0') tensor(1., device='cuda:0')
+tensor(0.5078, device='cuda:0', grad_fn=<MinBackward1>) tensor(0.5118, device='cuda:0', grad_fn=<MaxBackward1>)
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+train >>> epoch: 1/40, batch: 3/3, mean_loss 1.6797, mean_dice_loss: 0.9676, mean_ce: 0.7121
+updating weights
+epoch: 2/40, training patient 0001
+accumulating gradients, acc_step = 3
+tensor(0., device='cuda:0', grad_fn=<MinBackward1>) tensor(1.1425e-27, device='cuda:0', grad_fn=<MaxBackward1>)
+tensor(0., device='cuda:0') tensor(1., device='cuda:0')
+tensor(0., device='cuda:0', grad_fn=<MinBackward1>) tensor(1.0115e-27, device='cuda:0', grad_fn=<MaxBackward1>)
+tensor(0., device='cuda:0') tensor(1., device='cuda:0')
+tensor(0., device='cuda:0', grad_fn=<MinBackward1>) tensor(1.1194e-27, device='cuda:0', grad_fn=<MaxBackward1>)
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+train >>> epoch: 2/40, batch: 3/3, mean_loss 270.9085, mean_dice_loss: 0.6666, mean_ce: 270.2418
+updating weights
+epoch: 3/40, training patient 0001
+accumulating gradients, acc_step = 3
+tensor(0.4651, device='cuda:0', grad_fn=<MinBackward1>) tensor(0.4947, device='cuda:0', grad_fn=<MaxBackward1>)
+tensor(0., device='cuda:0') tensor(1., device='cuda:0')
+tensor(0.4681, device='cuda:0', grad_fn=<MinBackward1>) tensor(0.4946, device='cuda:0', grad_fn=<MaxBackward1>)
+tensor(0., device='cuda:0') tensor(1., device='cuda:0')
+tensor(0.4679, device='cuda:0', grad_fn=<MinBackward1>) tensor(0.4946, device='cuda:0', grad_fn=<MaxBackward1>)
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+train >>> epoch: 3/40, batch: 3/3, mean_loss 1.6241, mean_dice_loss: 0.9675, mean_ce: 0.6566
+updating weights
+epoch: 4/40, training patient 0001
+accumulating gradients, acc_step = 3
+tensor(0.4895, device='cuda:0', grad_fn=<MinBackward1>) tensor(0.4920, device='cuda:0', grad_fn=<MaxBackward1>)
+tensor(0., device='cuda:0') tensor(1., device='cuda:0')
+tensor(0.4895, device='cuda:0', grad_fn=<MinBackward1>) tensor(0.4920, device='cuda:0', grad_fn=<MaxBackward1>)
+tensor(0., device='cuda:0') tensor(1., device='cuda:0')
+tensor(0.4895, device='cuda:0', grad_fn=<MinBackward1>) tensor(0.4920, device='cuda:0', grad_fn=<MaxBackward1>)
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+train >>> epoch: 4/40, batch: 3/3, mean_loss 1.6408, mean_dice_loss: 0.9676, mean_ce: 0.6732
+updating weights
+epoch: 5/40, training patient 0001
+accumulating gradients, acc_step = 3
+tensor(0.4858, device='cuda:0', grad_fn=<MinBackward1>) tensor(0.4878, device='cuda:0', grad_fn=<MaxBackward1>)
+tensor(0., device='cuda:0') tensor(1., device='cuda:0')
+tensor(0.4858, device='cuda:0', grad_fn=<MinBackward1>) tensor(0.4878, device='cuda:0', grad_fn=<MaxBackward1>)
+tensor(0., device='cuda:0') tensor(1., device='cuda:0')
+tensor(0.4858, device='cuda:0', grad_fn=<MinBackward1>) tensor(0.4878, device='cuda:0', grad_fn=<MaxBackward1>)
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+train >>> epoch: 5/40, batch: 3/3, mean_loss 1.6339, mean_dice_loss: 0.9677, mean_ce: 0.6663
+updating weights
+epoch: 6/40, training patient 0001
+accumulating gradients, acc_step = 3
+tensor(0.4807, device='cuda:0', grad_fn=<MinBackward1>) tensor(0.4837, device='cuda:0', grad_fn=<MaxBackward1>)
+tensor(0., device='cuda:0') tensor(1., device='cuda:0')
+tensor(0.4807, device='cuda:0', grad_fn=<MinBackward1>) tensor(0.4837, device='cuda:0', grad_fn=<MaxBackward1>)
+tensor(0., device='cuda:0') tensor(1., device='cuda:0')
+tensor(0.4807, device='cuda:0', grad_fn=<MinBackward1>) tensor(0.4837, device='cuda:0', grad_fn=<MaxBackward1>)
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+train >>> epoch: 6/40, batch: 3/3, mean_loss 1.6243, mean_dice_loss: 0.9677, mean_ce: 0.6566
+updating weights
+epoch: 7/40, training patient 0001
+accumulating gradients, acc_step = 3
+tensor(0.4744, device='cuda:0', grad_fn=<MinBackward1>) tensor(0.4790, device='cuda:0', grad_fn=<MaxBackward1>)
+tensor(0., device='cuda:0') tensor(1., device='cuda:0')
+tensor(0.4744, device='cuda:0', grad_fn=<MinBackward1>) tensor(0.4790, device='cuda:0', grad_fn=<MaxBackward1>)
+tensor(0., device='cuda:0') tensor(1., device='cuda:0')
+tensor(0.4744, device='cuda:0', grad_fn=<MinBackward1>) tensor(0.4790, device='cuda:0', grad_fn=<MaxBackward1>)
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+train >>> epoch: 7/40, batch: 3/3, mean_loss 1.6127, mean_dice_loss: 0.9677, mean_ce: 0.6450
+updating weights
+epoch: 8/40, training patient 0001
+accumulating gradients, acc_step = 3
+tensor(0.4668, device='cuda:0', grad_fn=<MinBackward1>) tensor(0.4737, device='cuda:0', grad_fn=<MaxBackward1>)
+tensor(0., device='cuda:0') tensor(1., device='cuda:0')
+tensor(0.4668, device='cuda:0', grad_fn=<MinBackward1>) tensor(0.4737, device='cuda:0', grad_fn=<MaxBackward1>)
+tensor(0., device='cuda:0') tensor(1., device='cuda:0')
+tensor(0.4668, device='cuda:0', grad_fn=<MinBackward1>) tensor(0.4737, device='cuda:0', grad_fn=<MaxBackward1>)
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+train >>> epoch: 8/40, batch: 3/3, mean_loss 1.5989, mean_dice_loss: 0.9677, mean_ce: 0.6311
+updating weights
+epoch: 9/40, training patient 0001
+accumulating gradients, acc_step = 3
+tensor(0.4580, device='cuda:0', grad_fn=<MinBackward1>) tensor(0.4680, device='cuda:0', grad_fn=<MaxBackward1>)
+tensor(0., device='cuda:0') tensor(1., device='cuda:0')
+tensor(0.4580, device='cuda:0', grad_fn=<MinBackward1>) tensor(0.4680, device='cuda:0', grad_fn=<MaxBackward1>)
+tensor(0., device='cuda:0') tensor(1., device='cuda:0')
+tensor(0.4580, device='cuda:0', grad_fn=<MinBackward1>) tensor(0.4680, device='cuda:0', grad_fn=<MaxBackward1>)
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+train >>> epoch: 9/40, batch: 3/3, mean_loss 1.5832, mean_dice_loss: 0.9678, mean_ce: 0.6155
+updating weights
+epoch: 10/40, training patient 0001
+accumulating gradients, acc_step = 3
+tensor(0.4480, device='cuda:0', grad_fn=<MinBackward1>) tensor(0.4617, device='cuda:0', grad_fn=<MaxBackward1>)
+tensor(0., device='cuda:0') tensor(1., device='cuda:0')
+tensor(0.4480, device='cuda:0', grad_fn=<MinBackward1>) tensor(0.4617, device='cuda:0', grad_fn=<MaxBackward1>)
+tensor(0., device='cuda:0') tensor(1., device='cuda:0')
+tensor(0.4480, device='cuda:0', grad_fn=<MinBackward1>) tensor(0.4617, device='cuda:0', grad_fn=<MaxBackward1>)
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+train >>> epoch: 10/40, batch: 3/3, mean_loss 1.5657, mean_dice_loss: 0.9678, mean_ce: 0.5979
+updating weights
+epoch: 11/40, training patient 0001
+accumulating gradients, acc_step = 3
+tensor(0.4370, device='cuda:0', grad_fn=<MinBackward1>) tensor(0.4549, device='cuda:0', grad_fn=<MaxBackward1>)
+tensor(0., device='cuda:0') tensor(1., device='cuda:0')
+tensor(0.4370, device='cuda:0', grad_fn=<MinBackward1>) tensor(0.4549, device='cuda:0', grad_fn=<MaxBackward1>)
+tensor(0., device='cuda:0') tensor(1., device='cuda:0')
+tensor(0.4370, device='cuda:0', grad_fn=<MinBackward1>)

@@ -1,0 +1,126 @@
+2020-03-20-05-12-46
+train.py
+--------------------------------------------------------------------------------------------------------------------
+batchSize: 4
+bottleneckFeatures: 1
+brightness: None
+contrast: None
+cropSize: None
+dir_lf: D:\Data\cs-8395-dl
+dir_project: ..
+encoder: resnet34
+epoch: 40
+folderData: assignment3\Training
+folderPartition: train_test_org
+lossWeight: [0.0, 1.0]
+loss_weights: None
+lr: 0.001
+overrideLR: 1
+path_kfold: D:\Projects\cs-8395-dl\Assignment_3_segmentation\partition\kfold_5.bin
+resize: None
+resume_from: None
+to_ram: 0
+--------------------------------------------------------------------------------------------------------------------
+creating directory to save model at D:\Data\cs-8395-dl\model\2020-03-20-05-12-46
+epoch: 1/40, training patient 0001
+accumulating gradients
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(0.9964, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(0.9820, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(0.9716, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(0.9631, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(0.9383, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(0.9246, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(0.9233, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(0.9307, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(0.9561, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(0.9962, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+train >>> epoch: 1/40, batch: 37/37, mean_loss 0.1771, mean_dice_loss: 0.2489, mean_ce: 0.1771
+updating weights
+epoch: 2/40, training patient 0001
+accumulating gradients
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(0.9964, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(0.9820, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(0.9717, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(0.9631, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(0.9384, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(0.9248, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(0.9235, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(0.9309, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(0.9562, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(0.9962, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+train >>> epoch: 2/40, batch: 37/37, mean_loss 0.1687, mean_dice_loss: 0.2489, mean_ce: 0.1687
+updating weights
+epoch: 3/40, training patient 0001
+accumulating gradients
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)
+tensor(1.0000, device='cuda:0', grad_fn=<MulBackward0>)

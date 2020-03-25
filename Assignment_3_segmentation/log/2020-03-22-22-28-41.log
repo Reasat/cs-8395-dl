@@ -1,0 +1,158 @@
+2020-03-22-22-28-41
+train_ms.py
+--------------------------------------------------------------------------------------------------------------------
+batchSize: 16
+bottleneckFeatures: 0
+brightness: None
+contrast: None
+cropSize: None
+dir_lf: D:\Data\cs-8395-dl
+dir_project: ..
+encoder: resnet18
+epoch: 48
+extract_spleen: False
+folderData: assignment3\Training
+folderPartition: train_test_org
+lossWeight: [0.3, 0.7]
+loss_weights: None
+lr: 0.01
+msg: None
+overrideLR: 1
+path_kfold: D:\Projects\cs-8395-dl\Assignment_3_segmentation\partition\kfold_5.bin
+resize: None
+resume_from: None
+resume_training: None
+to_ram: 0
+--------------------------------------------------------------------------------------------------------------------
+creating directory to save model at D:\Data\cs-8395-dl\model\2020-03-22-22-28-41
+executing fold 1/5
+training patients  ['0001' '0002' '0003' '0004' '0005' '0006' '0007' '0008' '0021' '0022'
+ '0023' '0024' '0025' '0027' '0029' '0030' '0031' '0032' '0033' '0035'
+ '0036' '0037' '0039' '0040']
+validation patients  ['0009' '0010' '0026' '0028' '0034' '0038']
+freezing feature extracting layers
+train >>> fold 1/5, epoch: 1/48, patient 1/24, mean_loss 3.4134, mean_acc 0.7260
+train >>> fold 1/5, epoch: 1/48, patient 2/24, mean_loss 4.3284, mean_acc 0.7500
+train >>> fold 1/5, epoch: 1/48, patient 3/24, mean_loss 3.7834, mean_acc 0.6976
+train >>> fold 1/5, epoch: 1/48, patient 4/24, mean_loss 3.0698, mean_acc 0.7078
+train >>> fold 1/5, epoch: 1/48, patient 5/24, mean_loss 2.5965, mean_acc 0.7111
+train >>> fold 1/5, epoch: 1/48, patient 6/24, mean_loss 2.4312, mean_acc 0.6990
+train >>> fold 1/5, epoch: 1/48, patient 7/24, mean_loss 2.3442, mean_acc 0.6902
+train >>> fold 1/5, epoch: 1/48, patient 8/24, mean_loss 2.1905, mean_acc 0.6622
+train >>> fold 1/5, epoch: 1/48, patient 9/24, mean_loss 2.1402, mean_acc 0.6425
+train >>> fold 1/5, epoch: 1/48, patient 10/24, mean_loss 2.1306, mean_acc 0.6533
+train >>> fold 1/5, epoch: 1/48, patient 11/24, mean_loss 2.0618, mean_acc 0.6417
+train >>> fold 1/5, epoch: 1/48, patient 12/24, mean_loss 2.0381, mean_acc 0.6532
+train >>> fold 1/5, epoch: 1/48, patient 13/24, mean_loss 1.9621, mean_acc 0.6556
+train >>> fold 1/5, epoch: 1/48, patient 14/24, mean_loss 1.8613, mean_acc 0.6622
+train >>> fold 1/5, epoch: 1/48, patient 15/24, mean_loss 1.8786, mean_acc 0.6525
+train >>> fold 1/5, epoch: 1/48, patient 16/24, mean_loss 1.8211, mean_acc 0.6516
+train >>> fold 1/5, epoch: 1/48, patient 17/24, mean_loss 1.7537, mean_acc 0.6642
+train >>> fold 1/5, epoch: 1/48, patient 18/24, mean_loss 1.6961, mean_acc 0.6681
+train >>> fold 1/5, epoch: 1/48, patient 19/24, mean_loss 1.6630, mean_acc 0.6649
+train >>> fold 1/5, epoch: 1/48, patient 20/24, mean_loss 1.6221, mean_acc 0.6719
+train >>> fold 1/5, epoch: 1/48, patient 21/24, mean_loss 1.5634, mean_acc 0.6718
+train >>> fold 1/5, epoch: 1/48, patient 22/24, mean_loss 1.5661, mean_acc 0.6586
+train >>> fold 1/5, epoch: 1/48, patient 23/24, mean_loss 1.5718, mean_acc 0.6722
+train >>> fold 1/5, epoch: 1/48, patient 24/24, mean_loss 1.5541, mean_acc 0.6633
+valid >>> epoch: 1/48, mean_loss: 0.7648, mean_acc: 0.7347
+criteria decreased from inf to 0.7648, saving best model at D:\Data\cs-8395-dl\model\2020-03-22-22-28-41\2020-03-22-22-28-41_1_fold-resnet18_best.pt
+train >>> fold 1/5, epoch: 2/48, patient 1/24, mean_loss 1.0301, mean_acc 0.8151
+train >>> fold 1/5, epoch: 2/48, patient 2/24, mean_loss 1.3188, mean_acc 0.5872
+train >>> fold 1/5, epoch: 2/48, patient 3/24, mean_loss 1.2531, mean_acc 0.5422
+train >>> fold 1/5, epoch: 2/48, patient 4/24, mean_loss 1.2499, mean_acc 0.6118
+train >>> fold 1/5, epoch: 2/48, patient 5/24, mean_loss 1.2864, mean_acc 0.5808
+train >>> fold 1/5, epoch: 2/48, patient 6/24, mean_loss 1.3064, mean_acc 0.6197
+train >>> fold 1/5, epoch: 2/48, patient 7/24, mean_loss 1.2507, mean_acc 0.5891
+train >>> fold 1/5, epoch: 2/48, patient 8/24, mean_loss 1.2922, mean_acc 0.6117
+train >>> fold 1/5, epoch: 2/48, patient 9/24, mean_loss 1.2817, mean_acc 0.6243
+train >>> fold 1/5, epoch: 2/48, patient 10/24, mean_loss 1.3397, mean_acc 0.6190
+train >>> fold 1/5, epoch: 2/48, patient 11/24, mean_loss 1.3412, mean_acc 0.6273
+train >>> fold 1/5, epoch: 2/48, patient 12/24, mean_loss 1.2691, mean_acc 0.6193
+train >>> fold 1/5, epoch: 2/48, patient 13/24, mean_loss 1.2866, mean_acc 0.6390
+train >>> fold 1/5, epoch: 2/48, patient 14/24, mean_loss 1.2857, mean_acc 0.6262
+train >>> fold 1/5, epoch: 2/48, patient 15/24, mean_loss 1.3439, mean_acc 0.6354
+train >>> fold 1/5, epoch: 2/48, patient 16/24, mean_loss 1.3179, mean_acc 0.6455
+train >>> fold 1/5, epoch: 2/48, patient 17/24, mean_loss 1.4608, mean_acc 0.6409
+train >>> fold 1/5, epoch: 2/48, patient 18/24, mean_loss 1.5362, mean_acc 0.6219
+train >>> fold 1/5, epoch: 2/48, patient 19/24, mean_loss 1.5254, mean_acc 0.6276
+train >>> fold 1/5, epoch: 2/48, patient 20/24, mean_loss 1.4870, mean_acc 0.6307
+train >>> fold 1/5, epoch: 2/48, patient 21/24, mean_loss 1.4450, mean_acc 0.6422
+train >>> fold 1/5, epoch: 2/48, patient 22/24, mean_loss 1.4194, mean_acc 0.6448
+train >>> fold 1/5, epoch: 2/48, patient 23/24, mean_loss 1.3984, mean_acc 0.6507
+train >>> fold 1/5, epoch: 2/48, patient 24/24, mean_loss 1.3982, mean_acc 0.6525
+valid >>> epoch: 2/48, mean_loss: 1.8659, mean_acc: 0.7347
+train >>> fold 1/5, epoch: 3/48, patient 1/24, mean_loss 1.0572, mean_acc 0.5437
+train >>> fold 1/5, epoch: 3/48, patient 2/24, mean_loss 1.5298, mean_acc 0.7255
+train >>> fold 1/5, epoch: 3/48, patient 3/24, mean_loss 1.5111, mean_acc 0.7008
+train >>> fold 1/5, epoch: 3/48, patient 4/24, mean_loss 1.9477, mean_acc 0.7292
+train >>> fold 1/5, epoch: 3/48, patient 5/24, mean_loss 1.9764, mean_acc 0.6845
+train >>> fold 1/5, epoch: 3/48, patient 6/24, mean_loss 1.8998, mean_acc 0.6743
+train >>> fold 1/5, epoch: 3/48, patient 7/24, mean_loss 1.7670, mean_acc 0.6808
+train >>> fold 1/5, epoch: 3/48, patient 8/24, mean_loss 1.8146, mean_acc 0.6644
+train >>> fold 1/5, epoch: 3/48, patient 9/24, mean_loss 1.8351, mean_acc 0.6486
+train >>> fold 1/5, epoch: 3/48, patient 10/24, mean_loss 1.6769, mean_acc 0.6665
+train >>> fold 1/5, epoch: 3/48, patient 11/24, mean_loss 1.7823, mean_acc 0.6751
+train >>> fold 1/5, epoch: 3/48, patient 12/24, mean_loss 1.8591, mean_acc 0.6508
+train >>> fold 1/5, epoch: 3/48, patient 13/24, mean_loss 1.7275, mean_acc 0.6662
+train >>> fold 1/5, epoch: 3/48, patient 14/24, mean_loss 1.7197, mean_acc 0.6751
+train >>> fold 1/5, epoch: 3/48, patient 15/24, mean_loss 1.6627, mean_acc 0.6689
+train >>> fold 1/5, epoch: 3/48, patient 16/24, mean_loss 1.6188, mean_acc 0.6763
+train >>> fold 1/5, epoch: 3/48, patient 17/24, mean_loss 1.5551, mean_acc 0.6766
+train >>> fold 1/5, epoch: 3/48, patient 18/24, mean_loss 1.6546, mean_acc 0.6643
+train >>> fold 1/5, epoch: 3/48, patient 19/24, mean_loss 1.7294, mean_acc 0.6690
+train >>> fold 1/5, epoch: 3/48, patient 20/24, mean_loss 1.8155, mean_acc 0.6508
+train >>> fold 1/5, epoch: 3/48, patient 21/24, mean_loss 1.8262, mean_acc 0.6506
+train >>> fold 1/5, epoch: 3/48, patient 22/24, mean_loss 1.8401, mean_acc 0.6575
+train >>> fold 1/5, epoch: 3/48, patient 23/24, mean_loss 1.8507, mean_acc 0.6477
+train >>> fold 1/5, epoch: 3/48, patient 24/24, mean_loss 1.9308, mean_acc 0.6486
+valid >>> epoch: 3/48, mean_loss: 0.8747, mean_acc: 0.7436
+train >>> fold 1/5, epoch: 4/48, patient 1/24, mean_loss 1.4102, mean_acc 0.6394
+train >>> fold 1/5, epoch: 4/48, patient 2/24, mean_loss 1.2028, mean_acc 0.6349
+train >>> fold 1/5, epoch: 4/48, patient 3/24, mean_loss 1.1088, mean_acc 0.6803
+train >>> fold 1/5, epoch: 4/48, patient 4/24, mean_loss 1.0076, mean_acc 0.6736
+train >>> fold 1/5, epoch: 4/48, patient 5/24, mean_loss 1.1776, mean_acc 0.6565
+train >>> fold 1/5, epoch: 4/48, patient 6/24, mean_loss 1.2358, mean_acc 0.6295
+train >>> fold 1/5, epoch: 4/48, patient 7/24, mean_loss 1.1694, mean_acc 0.6488
+train >>> fold 1/5, epoch: 4/48, patient 8/24, mean_loss 1.1204, mean_acc 0.6636
+train >>> fold 1/5, epoch: 4/48, patient 9/24, mean_loss 1.0909, mean_acc 0.6579
+train >>> fold 1/5, epoch: 4/48, patient 10/24, mean_loss 1.3350, mean_acc 0.6554
+train >>> fold 1/5, epoch: 4/48, patient 11/24, mean_loss 1.2883, mean_acc 0.6477
+train >>> fold 1/5, epoch: 4/48, patient 12/24, mean_loss 1.2793, mean_acc 0.6540
+train >>> fold 1/5, epoch: 4/48, patient 13/24, mean_loss 1.2656, mean_acc 0.6421
+train >>> fold 1/5, epoch: 4/48, patient 14/24, mean_loss 1.2902, mean_acc 0.6593
+train >>> fold 1/5, epoch: 4/48, patient 15/24, mean_loss 1.2653, mean_acc 0.6528
+train >>> fold 1/5, epoch: 4/48, patient 16/24, mean_loss 1.2473, mean_acc 0.6690
+train >>> fold 1/5, epoch: 4/48, patient 17/24, mean_loss 1.2718, mean_acc 0.6591
+train >>> fold 1/5, epoch: 4/48, patient 18/24, mean_loss 1.2930, mean_acc 0.6660
+train >>> fold 1/5, epoch: 4/48, patient 19/24, mean_loss 1.2681, mean_acc 0.6624
+train >>> fold 1/5, epoch: 4/48, patient 20/24, mean_loss 1.2607, mean_acc 0.6694
+train >>> fold 1/5, epoch: 4/48, patient 21/24, mean_loss 1.2353, mean_acc 0.6648
+train >>> fold 1/5, epoch: 4/48, patient 22/24, mean_loss 1.2225, mean_acc 0.6692
+train >>> fold 1/5, epoch: 4/48, patient 23/24, mean_loss 1.2172, mean_acc 0.6635
+train >>> fold 1/5, epoch: 4/48, patient 24/24, mean_loss 1.3104, mean_acc 0.6691
+valid >>> epoch: 4/48, mean_loss: 2.0085, mean_acc: 0.7347
+train >>> fold 1/5, epoch: 5/48, patient 1/24, mean_loss 1.9398, mean_acc 0.3542
+train >>> fold 1/5, epoch: 5/48, patient 2/24, mean_loss 2.1190, mean_acc 0.4896
+train >>> fold 1/5, epoch: 5/48, patient 3/24, mean_loss 1.5700, mean_acc 0.6458
+train >>> fold 1/5, epoch: 5/48, patient 4/24, mean_loss 1.3578, mean_acc 0.6652
+train >>> fold 1/5, epoch: 5/48, patient 5/24, mean_loss 1.2749, mean_acc 0.7104
+train >>> fold 1/5, epoch: 5/48, patient 6/24, mean_loss 1.2719, mean_acc 0.6699
+train >>> fold 1/5, epoch: 5/48, patient 7/24, mean_loss 1.3127, mean_acc 0.6892
+train >>> fold 1/5, epoch: 5/48, patient 8/24, mean_loss 1.3620, mean_acc 0.6656
+train >>> fold 1/5, epoch: 5/48, patient 9/24, mean_loss 1.3621, mean_acc 0.6879
+train >>> fold 1/5, epoch: 5/48, patient 10/24, mean_loss 1.3273, mean_acc 0.6783
+train >>> fold 1/5, epoch: 5/48, patient 11/24, mean_loss 1.6496, mean_acc 0.6748
+train >>> fold 1/5, epoch: 5/48, patient 12/24, mean_loss 1.9539, mean_acc 0.6345
+train >>> fold 1/5, epoch: 5/48, patient 13/24, mean_loss 1.9849, mean_acc 0.6459
+train >>> fold 1/5, epoch: 5/48, patient 14/24, mean_loss 1.8802, mean_acc 0.6615
+train >>> fold 1/5, epoch: 5/48, patient 15/24, mean_loss 1.8575, mean_acc 0.6596
+train >>> fold 1/5, epoch: 5/48, patient 16/24, mean_loss 1.8849, mean_acc 0.6681
+train >>> fold 1/5, epoch: 5/48, patient 17/24, mean_loss 1.8354, mean_acc 0.6616
+train >>> fold 1/5, epoch: 5/48, patient 18/24, mean_loss 1.7911, mean_acc 0.6597
+train >>> fold 1/5, epoch: 5/48, patient 19/24, mean_loss 1.7626, mean_acc 0.6675
+train >>> fold 1/5, epoch: 5/48, patient 20/24, mean_loss 1.7090, mean_acc 0.6677
+train >>> fold 1/5, epoch: 5/48, patient 21/24, mean_loss 1.6918, mean_acc 0.6693
+train >>> fold 1/5, epoch: 5/48, patient 22/24, mean_loss 1.6493, mean_acc 0.6664
+train >>> fold 1/5, epoch: 5/48, patient 23/24, mean_loss 1.6274, mean_acc 0.6691
+train >>> fold 1/5, epoch: 5/48, patient 24/24, mean_loss 1.6037, mean_acc 0.6650

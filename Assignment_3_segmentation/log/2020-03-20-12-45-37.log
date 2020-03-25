@@ -1,0 +1,61 @@
+2020-03-20-12-45-37
+train.py
+--------------------------------------------------------------------------------------------------------------------
+batchSize: 8
+bottleneckFeatures: 1
+brightness: None
+contrast: None
+cropSize: None
+dir_lf: D:\Data\cs-8395-dl
+dir_project: ..
+encoder: resnet34
+epoch: 1
+folderData: assignment3\Training
+folderPartition: train_test_org
+lossWeight: [1.0, 1.0]
+loss_weights: None
+lr: 0.001
+msg: None
+overrideLR: 1
+path_kfold: D:\Projects\cs-8395-dl\Assignment_3_segmentation\partition\kfold_5.bin
+resize: None
+resume_from: None
+resume_training: None
+to_ram: 0
+--------------------------------------------------------------------------------------------------------------------
+creating directory to save model at D:\Data\cs-8395-dl\model\2020-03-20-12-45-37
+executing fold 1/5
+training patients  ['0001' '0002' '0003' '0004' '0005' '0006' '0007' '0008' '0021' '0022'
+ '0023' '0024' '0025' '0027' '0029' '0030' '0031' '0032' '0033' '0035'
+ '0036' '0037' '0039' '0040']
+validation patients  ['0009' '0010' '0026' '0028' '0034' '0038']
+train >>> epoch: 1/1, patient 0/24, mean_loss 1.7059, mean_dice_loss: 0.9976, mean_ce: 0.7083
+accumulating gradients, acc_step = 19
+accumulating gradients, acc_step = 19
+accumulating gradients, acc_step = 17
+accumulating gradients, acc_step = 12
+accumulating gradients, acc_step = 13
+accumulating gradients, acc_step = 13
+valid >>> epoch: 1/1, mean_dice: 0.0152
+criteria decreased from inf to 1.7059, saving best model at D:\Data\cs-8395-dl\model\2020-03-20-12-45-37\2020-03-20-12-45-37_1_fold-resnet34_best.pt
+executing fold 2/5
+training patients  ['0002' '0003' '0004' '0006' '0007' '0008' '0009' '0010' '0021' '0022'
+ '0024' '0025' '0026' '0028' '0029' '0030' '0031' '0032' '0033' '0034'
+ '0036' '0037' '0038' '0040']
+validation patients  ['0001' '0005' '0023' '0027' '0035' '0039']
+train >>> epoch: 1/1, patient 0/24, mean_loss 1.7241, mean_dice_loss: 0.9957, mean_ce: 0.7284
+accumulating gradients, acc_step = 19
+accumulating gradients, acc_step = 15
+accumulating gradients, acc_step = 12
+accumulating gradients, acc_step = 11
+accumulating gradients, acc_step = 12
+accumulating gradients, acc_step = 12
+valid >>> epoch: 1/1, mean_dice: 0.0084
+criteria decreased from inf to 1.7241, saving best model at D:\Data\cs-8395-dl\model\2020-03-20-12-45-37\2020-03-20-12-45-37_2_fold-resnet34_best.pt
+executing fold 3/5
+training patients  ['0001' '0004' '0005' '0007' '0008' '0009' '0010' '0021' '0023' '0025'
+ '0026' '0027' '0028' '0029' '0030' '0031' '0032' '0034' '0035' '0036'
+ '0037' '0038' '0039' '0040']
+validation patients  ['0002' '0003' '0006' '0022' '0024' '0033']
+train >>> epoch: 1/1, patient 0/24, mean_loss 1.7312, mean_dice_loss: 0.9957, mean_ce: 0.7355
+accumulating gradients, acc_step = 18

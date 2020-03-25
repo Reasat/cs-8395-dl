@@ -1,0 +1,24 @@
+2020-03-20-03-48-29
+train.py
+--------------------------------------------------------------------------------------------------------------------
+batchSize: 32
+bottleneckFeatures: 1
+brightness: None
+contrast: None
+cropSize: None
+dir_lf: D:\Data\cs-8395-dl
+dir_project: ..
+encoder: resnet34
+epoch: 400
+folderData: assignment3\Training
+folderPartition: train_test_org
+lossWeight: [0.2, 0.8]
+loss_weights: None
+lr: 0.001
+overrideLR: 1
+path_kfold: D:\Projects\cs-8395-dl\Assignment_3_segmentation\partition\kfold_5.bin
+resize: None
+resume_from: None
+to_ram: 0
+--------------------------------------------------------------------------------------------------------------------
+creating directory to save model at D:\Data\cs-8395-dl\model\2020-03-20-03-48-29

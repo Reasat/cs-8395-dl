@@ -1,0 +1,110 @@
+2020-03-20-07-52-12
+train.py
+--------------------------------------------------------------------------------------------------------------------
+batchSize: 8
+bottleneckFeatures: 1
+brightness: None
+contrast: None
+cropSize: None
+dir_lf: D:\Data\cs-8395-dl
+dir_project: ..
+encoder: resnet34
+epoch: 100
+folderData: assignment3\Training
+folderPartition: train_test_org
+lossWeight: [1.0, 1.0]
+loss_weights: None
+lr: 0.001
+msg: trying to overfit on a section of a spleen
+overrideLR: 1
+path_kfold: D:\Projects\cs-8395-dl\Assignment_3_segmentation\partition\kfold_5.bin
+resize: None
+resume_from: None
+resume_training: None
+to_ram: 0
+--------------------------------------------------------------------------------------------------------------------
+creating directory to save model at D:\Data\cs-8395-dl\model\2020-03-20-07-52-12
+executing fold 1/5
+epoch: 1/100, training patient 0001
+accumulating gradients, acc_step = 1
+updating weights
+train >>> epoch: 1/100, mean_loss 1.6292, mean_dice_loss: 0.9270, mean_ce: 0.7022
+criteria decreased from inf to 1.6292, saving best model at D:\Data\cs-8395-dl\model\2020-03-20-07-52-12\2020-03-20-07-52-12_1_fold-resnet34_best.pt
+epoch: 2/100, training patient 0001
+accumulating gradients, acc_step = 1
+updating weights
+train >>> epoch: 2/100, mean_loss 1.6077, mean_dice_loss: 0.9270, mean_ce: 0.6807
+criteria decreased from 1.6292 to 1.6077, saving best model at D:\Data\cs-8395-dl\model\2020-03-20-07-52-12\2020-03-20-07-52-12_1_fold-resnet34_best.pt
+epoch: 3/100, training patient 0001
+accumulating gradients, acc_step = 1
+updating weights
+train >>> epoch: 3/100, mean_loss 1.0934, mean_dice_loss: 0.8981, mean_ce: 0.1954
+criteria decreased from 1.6077 to 1.0934, saving best model at D:\Data\cs-8395-dl\model\2020-03-20-07-52-12\2020-03-20-07-52-12_1_fold-resnet34_best.pt
+epoch: 4/100, training patient 0001
+accumulating gradients, acc_step = 1
+updating weights
+train >>> epoch: 4/100, mean_loss 4.3544, mean_dice_loss: 1.0000, mean_ce: 3.3544
+epoch: 5/100, training patient 0001
+accumulating gradients, acc_step = 1
+updating weights
+train >>> epoch: 5/100, mean_loss 0.9477, mean_dice_loss: 0.8036, mean_ce: 0.1441
+criteria decreased from 1.0934 to 0.9477, saving best model at D:\Data\cs-8395-dl\model\2020-03-20-07-52-12\2020-03-20-07-52-12_1_fold-resnet34_best.pt
+epoch: 6/100, training patient 0001
+accumulating gradients, acc_step = 1
+updating weights
+train >>> epoch: 6/100, mean_loss 1.3847, mean_dice_loss: 0.9127, mean_ce: 0.4721
+epoch: 7/100, training patient 0001
+accumulating gradients, acc_step = 1
+updating weights
+train >>> epoch: 7/100, mean_loss 1.5184, mean_dice_loss: 0.9240, mean_ce: 0.5944
+epoch: 8/100, training patient 0001
+accumulating gradients, acc_step = 1
+updating weights
+train >>> epoch: 8/100, mean_loss 1.5415, mean_dice_loss: 0.9252, mean_ce: 0.6163
+epoch: 9/100, training patient 0001
+accumulating gradients, acc_step = 1
+updating weights
+train >>> epoch: 9/100, mean_loss 1.5390, mean_dice_loss: 0.9251, mean_ce: 0.6139
+epoch: 10/100, training patient 0001
+accumulating gradients, acc_step = 1
+updating weights
+train >>> epoch: 10/100, mean_loss 1.5103, mean_dice_loss: 0.9236, mean_ce: 0.5867
+epoch: 11/100, training patient 0001
+accumulating gradients, acc_step = 1
+updating weights
+train >>> epoch: 11/100, mean_loss 1.4213, mean_dice_loss: 0.9174, mean_ce: 0.5039
+epoch: 12/100, training patient 0001
+accumulating gradients, acc_step = 1
+updating weights
+train >>> epoch: 12/100, mean_loss 1.2085, mean_dice_loss: 0.8884, mean_ce: 0.3201
+epoch: 13/100, training patient 0001
+accumulating gradients, acc_step = 1
+updating weights
+train >>> epoch: 13/100, mean_loss 0.9441, mean_dice_loss: 0.8012, mean_ce: 0.1430
+criteria decreased from 0.9477 to 0.9441, saving best model at D:\Data\cs-8395-dl\model\2020-03-20-07-52-12\2020-03-20-07-52-12_1_fold-resnet34_best.pt
+epoch: 14/100, training patient 0001
+accumulating gradients, acc_step = 1
+updating weights
+train >>> epoch: 14/100, mean_loss 0.7461, mean_dice_loss: 0.6753, mean_ce: 0.0708
+criteria decreased from 0.9441 to 0.7461, saving best model at D:\Data\cs-8395-dl\model\2020-03-20-07-52-12\2020-03-20-07-52-12_1_fold-resnet34_best.pt
+epoch: 15/100, training patient 0001
+accumulating gradients, acc_step = 1
+updating weights
+train >>> epoch: 15/100, mean_loss 0.6986, mean_dice_loss: 0.6367, mean_ce: 0.0618
+criteria decreased from 0.7461 to 0.6986, saving best model at D:\Data\cs-8395-dl\model\2020-03-20-07-52-12\2020-03-20-07-52-12_1_fold-resnet34_best.pt
+epoch: 16/100, training patient 0001
+accumulating gradients, acc_step = 1
+updating weights
+train >>> epoch: 16/100, mean_loss 0.6704, mean_dice_loss: 0.6115, mean_ce: 0.0589
+criteria decreased from 0.6986 to 0.6704, saving best model at D:\Data\cs-8395-dl\model\2020-03-20-07-52-12\2020-03-20-07-52-12_1_fold-resnet34_best.pt
+epoch: 17/100, training patient 0001
+accumulating gradients, acc_step = 1
+updating weights
+train >>> epoch: 17/100, mean_loss 0.6148, mean_dice_loss: 0.5613, mean_ce: 0.0535
+criteria decreased from 0.6704 to 0.6148, saving best model at D:\Data\cs-8395-dl\model\2020-03-20-07-52-12\2020-03-20-07-52-12_1_fold-resnet34_best.pt
+epoch: 18/100, training patient 0001
+accumulating gradients, acc_step = 1
+updating weights
+train >>> epoch: 18/100, mean_loss 0.5566, mean_dice_loss: 0.5106, mean_ce: 0.0460
+criteria decreased from 0.6148 to 0.5566, saving best model at D:\Data\cs-8395-dl\model\2020-03-20-07-52-12\2020-03-20-07-52-12_1_fold-resnet34_best.pt
+epoch: 19/100, training patient 0001

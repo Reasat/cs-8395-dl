@@ -1,0 +1,44 @@
+2020-03-20-04-49-04
+train.py
+--------------------------------------------------------------------------------------------------------------------
+batchSize: 4
+bottleneckFeatures: 1
+brightness: None
+contrast: None
+cropSize: None
+dir_lf: D:\Data\cs-8395-dl
+dir_project: ..
+encoder: resnet34
+epoch: 400
+folderData: assignment3\Training
+folderPartition: train_test_org
+lossWeight: [1.0, 0.0]
+loss_weights: None
+lr: 0.001
+overrideLR: 1
+path_kfold: D:\Projects\cs-8395-dl\Assignment_3_segmentation\partition\kfold_5.bin
+resize: None
+resume_from: None
+to_ram: 0
+--------------------------------------------------------------------------------------------------------------------
+creating directory to save model at D:\Data\cs-8395-dl\model\2020-03-20-04-49-04
+accumulating gradients
+tensor(0.6716, device='cuda:0') tensor(0., device='cuda:0')
+tensor(0.6549, device='cuda:0') tensor(0., device='cuda:0')
+tensor(0.6495, device='cuda:0') tensor(0., device='cuda:0')
+tensor(0.6497, device='cuda:0') tensor(0., device='cuda:0')
+tensor(0.6467, device='cuda:0') tensor(0., device='cuda:0')
+tensor(0.6309, device='cuda:0') tensor(0., device='cuda:0')
+tensor(0.6058, device='cuda:0') tensor(0., device='cuda:0')
+tensor(0.5834, device='cuda:0') tensor(0., device='cuda:0')
+tensor(0.5968, device='cuda:0') tensor(0., device='cuda:0')
+tensor(0.6129, device='cuda:0') tensor(0., device='cuda:0')
+tensor(0.6219, device='cuda:0') tensor(0., device='cuda:0')
+tensor(1., device='cuda:0') tensor(0., device='cuda:0')
+tensor(0.7043, device='cuda:0') tensor(0., device='cuda:0')
+tensor(0.6241, device='cuda:0') tensor(0., device='cuda:0')
+tensor(0.5987, device='cuda:0') tensor(0., device='cuda:0')
+tensor(0.5859, device='cuda:0') tensor(0., device='cuda:0')
+tensor(0.5796, device='cuda:0') tensor(0., device='cuda:0')
+tensor(0.6167, device='cuda:0') tensor(0., device='cuda:0')
+tensor(0.5859, device='cuda:0') tensor(0., device='cuda:0')

@@ -1,0 +1,37 @@
+2020-03-20-04-44-18
+train.py
+--------------------------------------------------------------------------------------------------------------------
+batchSize: 4
+bottleneckFeatures: 1
+brightness: None
+contrast: None
+cropSize: None
+dir_lf: D:\Data\cs-8395-dl
+dir_project: ..
+encoder: resnet34
+epoch: 400
+folderData: assignment3\Training
+folderPartition: train_test_org
+lossWeight: [1.0, 0.0]
+loss_weights: None
+lr: 0.001
+overrideLR: 1
+path_kfold: D:\Projects\cs-8395-dl\Assignment_3_segmentation\partition\kfold_5.bin
+resize: None
+resume_from: None
+to_ram: 0
+--------------------------------------------------------------------------------------------------------------------
+creating directory to save model at D:\Data\cs-8395-dl\model\2020-03-20-04-44-18
+accumulating gradients
+train >>> epoch: 0/400, mean_loss -0.0570, mean_dice: 0.0570, mean_ce: 0.1785
+updating weights
+accumulating gradients
+train >>> epoch: 0/400, mean_loss -0.0471, mean_dice: 0.0471, mean_ce: 0.1810
+updating weights
+accumulating gradients
+train >>> epoch: 0/400, mean_loss -0.0432, mean_dice: 0.0432, mean_ce: 0.1846
+updating weights
+accumulating gradients
+train >>> epoch: 0/400, mean_loss -0.0556, mean_dice: 0.0556, mean_ce: 0.1899
+updating weights
+accumulating gradients

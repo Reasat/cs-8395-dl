@@ -1,0 +1,44 @@
+2020-03-20-06-52-19
+train.py
+--------------------------------------------------------------------------------------------------------------------
+batchSize: 8
+bottleneckFeatures: 1
+brightness: None
+contrast: None
+cropSize: None
+dir_lf: D:\Data\cs-8395-dl
+dir_project: ..
+encoder: resnet34
+epoch: 100
+folderData: assignment3\Training
+folderPartition: train_test_org
+lossWeight: [1.0, 1.0]
+loss_weights: None
+lr: 0.001
+msg: trying to overfit on a section of a spleen
+overrideLR: 1
+path_kfold: D:\Projects\cs-8395-dl\Assignment_3_segmentation\partition\kfold_5.bin
+resize: None
+resume_from: None
+to_ram: 0
+--------------------------------------------------------------------------------------------------------------------
+creating directory to save model at D:\Data\cs-8395-dl\model\2020-03-20-06-52-19
+epoch: 1/100, training patient 0001
+[128]
+accumulating gradients, acc_step = 1
+train >>> epoch: 1/100, batch: 1/1, mean_loss 1.6453, mean_dice_loss: 0.9269, mean_ce: 0.7184
+updating weights
+{'loss_train': [1.6452687978744507], 'loss_d_train': [0.9268828630447388], 'loss_ce_train': [0.7183859348297119]}
+epoch: 2/100, training patient 0001
+[128]
+accumulating gradients, acc_step = 1
+train >>> epoch: 2/100, batch: 1/1, mean_loss 1.6295, mean_dice_loss: 0.9269, mean_ce: 0.7025
+updating weights
+{'loss_train': [1.6452687978744507, 1.629470705986023], 'loss_d_train': [0.9268828630447388, 0.9269441366195679], 'loss_ce_train': [0.7183859348297119, 0.7025265693664551]}
+epoch: 3/100, training patient 0001
+[128]
+accumulating gradients, acc_step = 1
+train >>> epoch: 3/100, batch: 1/1, mean_loss 1.3597, mean_dice_loss: 0.9160, mean_ce: 0.4438
+updating weights
+{'loss_train': [1.6452687978744507, 1.629470705986023, 1.3597450256347656], 'loss_d_train': [0.9268828630447388, 0.9269441366195679, 0.9159809350967407], 'loss_ce_train': [0.7183859348297119, 0.7025265693664551, 0.4437641501426697]}
+epoch: 4/100, training patient 0001

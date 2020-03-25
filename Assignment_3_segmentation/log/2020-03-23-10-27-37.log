@@ -1,0 +1,38 @@
+2020-03-23-10-27-37
+train.py
+--------------------------------------------------------------------------------------------------------------------
+axis: sagittal
+batchSize: 12
+bottleneckFeatures: 0
+brightness: None
+contrast: None
+cropSize: None
+dir_lf: D:\Data\cs-8395-dl
+dir_project: ..
+encoder: dpn68
+epoch: 24
+extract_spleen: False
+folderData: assignment3\Training
+folderPartition: train_test_org
+lossWeight: [0.3, 0.7]
+loss_weights: None
+lr: 1e-05
+msg: None
+overrideLR: 1
+path_kfold: D:\Projects\cs-8395-dl\Assignment_3_segmentation\partition\kfold_5.bin
+resize: None
+resume_from: D:\Data\cs-8395-dl\model\2020-03-23-09-02-36\2020-03-23-09-02-36_1_fold-dpn68_best.pt
+resume_training: None
+to_ram: 0
+--------------------------------------------------------------------------------------------------------------------
+creating directory to save model at D:\Data\cs-8395-dl\model\2020-03-23-10-27-37
+executing fold 1/5
+training patients  ['0001' '0002' '0003' '0004' '0005' '0006' '0007' '0008' '0021' '0022'
+ '0023' '0024' '0025' '0027' '0029' '0030' '0031' '0032' '0033' '0035'
+ '0036' '0037' '0039' '0040']
+validation patients  ['0009' '0010' '0026' '0028' '0034' '0038']
+train >>> fold 1/5, epoch: 1/24, patient 1/24, mean_loss 0.6051, mean_acc 0.7655
+train >>> fold 1/5, epoch: 1/24, patient 2/24, mean_loss 0.5649, mean_acc 0.8140
+train >>> fold 1/5, epoch: 1/24, patient 3/24, mean_loss 0.5802, mean_acc 0.7823
+train >>> fold 1/5, epoch: 1/24, patient 4/24, mean_loss 0.5417, mean_acc 0.8101
+train >>> fold 1/5, epoch: 1/24, patient 5/24, mean_loss 0.5241, mean_acc 0.8186

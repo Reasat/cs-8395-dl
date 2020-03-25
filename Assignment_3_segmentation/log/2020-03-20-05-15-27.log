@@ -1,0 +1,263 @@
+2020-03-20-05-15-27
+train.py
+--------------------------------------------------------------------------------------------------------------------
+batchSize: 8
+bottleneckFeatures: 1
+brightness: None
+contrast: None
+cropSize: None
+dir_lf: D:\Data\cs-8395-dl
+dir_project: ..
+encoder: resnet34
+epoch: 40
+folderData: assignment3\Training
+folderPartition: train_test_org
+lossWeight: [1.0, 1.0]
+loss_weights: None
+lr: 0.001
+overrideLR: 1
+path_kfold: D:\Projects\cs-8395-dl\Assignment_3_segmentation\partition\kfold_5.bin
+resize: None
+resume_from: None
+to_ram: 0
+--------------------------------------------------------------------------------------------------------------------
+creating directory to save model at D:\Data\cs-8395-dl\model\2020-03-20-05-15-27
+epoch: 1/40, training patient 0001
+accumulating gradients
+train >>> epoch: 1/40, batch: 19/19, mean_loss 1.6923, mean_dice_loss: 0.9890, mean_ce: 0.7033
+updating weights
+epoch: 2/40, training patient 0001
+accumulating gradients
+train >>> epoch: 2/40, batch: 19/19, mean_loss 1.6757, mean_dice_loss: 0.9890, mean_ce: 0.6867
+updating weights
+epoch: 3/40, training patient 0001
+accumulating gradients
+train >>> epoch: 3/40, batch: 19/19, mean_loss 1.1415, mean_dice_loss: 0.9897, mean_ce: 0.1518
+updating weights
+epoch: 4/40, training patient 0001
+accumulating gradients
+train >>> epoch: 4/40, batch: 19/19, mean_loss 3.3128, mean_dice_loss: 0.8908, mean_ce: 2.4220
+updating weights
+epoch: 5/40, training patient 0001
+accumulating gradients
+train >>> epoch: 5/40, batch: 19/19, mean_loss 1.0235, mean_dice_loss: 0.9717, mean_ce: 0.0518
+updating weights
+epoch: 6/40, training patient 0001
+accumulating gradients
+train >>> epoch: 6/40, batch: 19/19, mean_loss 1.3930, mean_dice_loss: 0.9861, mean_ce: 0.4069
+updating weights
+epoch: 7/40, training patient 0001
+accumulating gradients
+train >>> epoch: 7/40, batch: 19/19, mean_loss 1.5455, mean_dice_loss: 0.9884, mean_ce: 0.5571
+updating weights
+epoch: 8/40, training patient 0001
+accumulating gradients
+train >>> epoch: 8/40, batch: 19/19, mean_loss 1.5576, mean_dice_loss: 0.9885, mean_ce: 0.5691
+updating weights
+epoch: 9/40, training patient 0001
+accumulating gradients
+train >>> epoch: 9/40, batch: 19/19, mean_loss 1.4940, mean_dice_loss: 0.9879, mean_ce: 0.5061
+updating weights
+epoch: 10/40, training patient 0001
+accumulating gradients
+train >>> epoch: 10/40, batch: 19/19, mean_loss 1.2948, mean_dice_loss: 0.9841, mean_ce: 0.3107
+updating weights
+epoch: 11/40, training patient 0001
+accumulating gradients
+train >>> epoch: 11/40, batch: 19/19, mean_loss 1.0613, mean_dice_loss: 0.9747, mean_ce: 0.0866
+updating weights
+epoch: 12/40, training patient 0001
+accumulating gradients
+train >>> epoch: 12/40, batch: 19/19, mean_loss 1.0099, mean_dice_loss: 0.9823, mean_ce: 0.0276
+updating weights
+epoch: 13/40, training patient 0001
+accumulating gradients
+train >>> epoch: 13/40, batch: 19/19, mean_loss 1.0206, mean_dice_loss: 0.9915, mean_ce: 0.0292
+updating weights
+epoch: 14/40, training patient 0001
+accumulating gradients
+train >>> epoch: 14/40, batch: 19/19, mean_loss 1.0263, mean_dice_loss: 0.9932, mean_ce: 0.0331
+updating weights
+epoch: 15/40, training patient 0001
+accumulating gradients
+train >>> epoch: 15/40, batch: 19/19, mean_loss 1.0255, mean_dice_loss: 0.9934, mean_ce: 0.0322
+updating weights
+epoch: 16/40, training patient 0001
+accumulating gradients
+train >>> epoch: 16/40, batch: 19/19, mean_loss 1.0204, mean_dice_loss: 0.9915, mean_ce: 0.0289
+updating weights
+epoch: 17/40, training patient 0001
+accumulating gradients
+train >>> epoch: 17/40, batch: 19/19, mean_loss 1.0114, mean_dice_loss: 0.9866, mean_ce: 0.0248
+updating weights
+epoch: 18/40, training patient 0001
+accumulating gradients
+train >>> epoch: 18/40, batch: 19/19, mean_loss 0.9984, mean_dice_loss: 0.9774, mean_ce: 0.0209
+updating weights
+epoch: 19/40, training patient 0001
+accumulating gradients
+train >>> epoch: 19/40, batch: 19/19, mean_loss 0.9834, mean_dice_loss: 0.9646, mean_ce: 0.0188
+updating weights
+epoch: 20/40, training patient 0001
+accumulating gradients
+train >>> epoch: 20/40, batch: 19/19, mean_loss 0.9705, mean_dice_loss: 0.9519, mean_ce: 0.0186
+updating weights
+epoch: 21/40, training patient 0001
+accumulating gradients
+train >>> epoch: 21/40, batch: 19/19, mean_loss 0.9590, mean_dice_loss: 0.9401, mean_ce: 0.0189
+updating weights
+epoch: 22/40, training patient 0001
+accumulating gradients
+train >>> epoch: 22/40, batch: 19/19, mean_loss 0.9471, mean_dice_loss: 0.9287, mean_ce: 0.0185
+updating weights
+epoch: 23/40, training patient 0001
+accumulating gradients
+train >>> epoch: 23/40, batch: 19/19, mean_loss 0.9355, mean_dice_loss: 0.9180, mean_ce: 0.0175
+updating weights
+epoch: 24/40, training patient 0001
+accumulating gradients
+train >>> epoch: 24/40, batch: 19/19, mean_loss 0.9242, mean_dice_loss: 0.9081, mean_ce: 0.0161
+updating weights
+epoch: 25/40, training patient 0001
+accumulating gradients
+train >>> epoch: 25/40, batch: 19/19, mean_loss 0.9141, mean_dice_loss: 0.9004, mean_ce: 0.0137
+updating weights
+epoch: 26/40, training patient 0001
+accumulating gradients
+train >>> epoch: 26/40, batch: 19/19, mean_loss 0.9012, mean_dice_loss: 0.8901, mean_ce: 0.0112
+updating weights
+epoch: 27/40, training patient 0001
+accumulating gradients
+train >>> epoch: 27/40, batch: 19/19, mean_loss 0.8883, mean_dice_loss: 0.8793, mean_ce: 0.0089
+updating weights
+epoch: 28/40, training patient 0001
+accumulating gradients
+train >>> epoch: 28/40, batch: 19/19, mean_loss 0.7759, mean_dice_loss: 0.7682, mean_ce: 0.0077
+updating weights
+epoch: 29/40, training patient 0001
+accumulating gradients
+train >>> epoch: 29/40, batch: 19/19, mean_loss 0.5779, mean_dice_loss: 0.2632, mean_ce: 0.3147
+updating weights
+epoch: 30/40, training patient 0001
+accumulating gradients
+train >>> epoch: 30/40, batch: 19/19, mean_loss 0.5903, mean_dice_loss: 0.4598, mean_ce: 0.1305
+updating weights
+epoch: 31/40, training patient 0001
+accumulating gradients
+train >>> epoch: 31/40, batch: 19/19, mean_loss 0.4891, mean_dice_loss: 0.4130, mean_ce: 0.0762
+updating weights
+epoch: 32/40, training patient 0001
+accumulating gradients
+train >>> epoch: 32/40, batch: 19/19, mean_loss 0.8525, mean_dice_loss: 0.2631, mean_ce: 0.5893
+updating weights
+epoch: 33/40, training patient 0001
+accumulating gradients
+train >>> epoch: 33/40, batch: 19/19, mean_loss 0.4954, mean_dice_loss: 0.2667, mean_ce: 0.2287
+updating weights
+epoch: 34/40, training patient 0001
+accumulating gradients
+train >>> epoch: 34/40, batch: 19/19, mean_loss 0.3921, mean_dice_loss: 0.3033, mean_ce: 0.0887
+updating weights
+epoch: 35/40, training patient 0001
+accumulating gradients
+train >>> epoch: 35/40, batch: 19/19, mean_loss 0.4375, mean_dice_loss: 0.2632, mean_ce: 0.1743
+updating weights
+epoch: 36/40, training patient 0001
+accumulating gradients
+train >>> epoch: 36/40, batch: 19/19, mean_loss 0.4402, mean_dice_loss: 0.2683, mean_ce: 0.1720
+updating weights
+epoch: 37/40, training patient 0001
+accumulating gradients
+train >>> epoch: 37/40, batch: 19/19, mean_loss 0.3837, mean_dice_loss: 0.2786, mean_ce: 0.1051
+updating weights
+epoch: 38/40, training patient 0001
+accumulating gradients
+train >>> epoch: 38/40, batch: 19/19, mean_loss 0.3510, mean_dice_loss: 0.2872, mean_ce: 0.0639
+updating weights
+epoch: 39/40, training patient 0001
+accumulating gradients
+train >>> epoch: 39/40, batch: 19/19, mean_loss 0.3245, mean_dice_loss: 0.2659, mean_ce: 0.0586
+updating weights
+epoch: 40/40, training patient 0001
+accumulating gradients
+train >>> epoch: 40/40, batch: 19/19, mean_loss 0.3224, mean_dice_loss: 0.2664, mean_ce: 0.0560
+updating weights
+2020-03-20-05-15-27
+epoch: 1/40, training patient 0001
+accumulating gradients
+train >>> epoch: 1/40, batch: 19/19, mean_loss 1.7358, mean_dice_loss: 0.9890, mean_ce: 0.7468
+updating weights
+epoch: 2/40, training patient 0001
+accumulating gradients
+train >>> epoch: 2/40, batch: 19/19, mean_loss 1.7173, mean_dice_loss: 0.9890, mean_ce: 0.7284
+updating weights
+epoch: 3/40, training patient 0001
+accumulating gradients
+train >>> epoch: 3/40, batch: 19/19, mean_loss 1.2140, mean_dice_loss: 0.9899, mean_ce: 0.2241
+updating weights
+epoch: 4/40, training patient 0001
+accumulating gradients
+train >>> epoch: 4/40, batch: 19/19, mean_loss 2.8305, mean_dice_loss: 0.9641, mean_ce: 1.8664
+updating weights
+epoch: 5/40, training patient 0001
+accumulating gradients
+train >>> epoch: 5/40, batch: 19/19, mean_loss 1.0287, mean_dice_loss: 0.9747, mean_ce: 0.0540
+updating weights
+epoch: 6/40, training patient 0001
+accumulating gradients
+train >>> epoch: 6/40, batch: 19/19, mean_loss 1.3143, mean_dice_loss: 0.9843, mean_ce: 0.3300
+updating weights
+epoch: 7/40, training patient 0001
+accumulating gradients
+train >>> epoch: 7/40, batch: 19/19, mean_loss 1.4294, mean_dice_loss: 0.9871, mean_ce: 0.4422
+updating weights
+epoch: 8/40, training patient 0001
+accumulating gradients
+train >>> epoch: 8/40, batch: 19/19, mean_loss 1.3134, mean_dice_loss: 0.9862, mean_ce: 0.3273
+updating weights
+epoch: 9/40, training patient 0001
+accumulating gradients
+train >>> epoch: 9/40, batch: 19/19, mean_loss 1.0858, mean_dice_loss: 0.9862, mean_ce: 0.0996
+updating weights
+epoch: 10/40, training patient 0001
+accumulating gradients
+train >>> epoch: 10/40, batch: 19/19, mean_loss 1.0239, mean_dice_loss: 0.9882, mean_ce: 0.0357
+updating weights
+epoch: 11/40, training patient 0001
+accumulating gradients
+train >>> epoch: 11/40, batch: 19/19, mean_loss 1.0242, mean_dice_loss: 0.9932, mean_ce: 0.0310
+updating weights
+epoch: 12/40, training patient 0001
+accumulating gradients
+train >>> epoch: 12/40, batch: 19/19, mean_loss 1.0223, mean_dice_loss: 0.9911, mean_ce: 0.0312
+updating weights
+epoch: 13/40, training patient 0001
+accumulating gradients
+train >>> epoch: 13/40, batch: 19/19, mean_loss 1.0084, mean_dice_loss: 0.9831, mean_ce: 0.0252
+updating weights
+epoch: 14/40, training patient 0001
+accumulating gradients
+train >>> epoch: 14/40, batch: 19/19, mean_loss 0.9905, mean_dice_loss: 0.9700, mean_ce: 0.0204
+updating weights
+epoch: 15/40, training patient 0001
+accumulating gradients
+train >>> epoch: 15/40, batch: 19/19, mean_loss 0.9735, mean_dice_loss: 0.9540, mean_ce: 0.0195
+updating weights
+epoch: 16/40, training patient 0001
+accumulating gradients
+train >>> epoch: 16/40, batch: 19/19, mean_loss 0.9609, mean_dice_loss: 0.9398, mean_ce: 0.0211
+updating weights
+epoch: 17/40, training patient 0001
+accumulating gradients
+train >>> epoch: 17/40, batch: 19/19, mean_loss 0.9488, mean_dice_loss: 0.9273, mean_ce: 0.0215
+updating weights
+epoch: 18/40, training patient 0001
+accumulating gradients
+train >>> epoch: 18/40, batch: 19/19, mean_loss 0.9382, mean_dice_loss: 0.9185, mean_ce: 0.0197
+updating weights
+epoch: 19/40, training patient 0001
+accumulating gradients
+train >>> epoch: 19/40, batch: 19/19, mean_loss 0.9288, mean_dice_loss: 0.9123, mean_ce: 0.0166
+updating weights
+epoch: 20/40, training patient 0001
+accumulating gradients

@@ -1,0 +1,60 @@
+2020-03-20-06-00-55
+train.py
+--------------------------------------------------------------------------------------------------------------------
+batchSize: 8
+bottleneckFeatures: 1
+brightness: None
+contrast: None
+cropSize: None
+dir_lf: D:\Data\cs-8395-dl
+dir_project: ..
+encoder: resnet34
+epoch: 40
+folderData: assignment3\Training
+folderPartition: train_test_org
+lossWeight: [1.0, 1.0]
+loss_weights: None
+lr: 0.01
+overrideLR: 1
+path_kfold: D:\Projects\cs-8395-dl\Assignment_3_segmentation\partition\kfold_5.bin
+resize: None
+resume_from: None
+to_ram: 0
+--------------------------------------------------------------------------------------------------------------------
+creating directory to save model at D:\Data\cs-8395-dl\model\2020-03-20-06-00-55
+epoch: 1/40, training patient 0001
+[128 136 144]
+accumulating gradients, acc_step = 3
+tensor(0.5262, device='cuda:0', grad_fn=<MinBackward1>) tensor(0.5286, device='cuda:0', grad_fn=<MaxBackward1>)
+tensor(0., device='cuda:0') tensor(1., device='cuda:0')
+tensor(0.5261, device='cuda:0', grad_fn=<MinBackward1>) tensor(0.5286, device='cuda:0', grad_fn=<MaxBackward1>)
+tensor(0., device='cuda:0') tensor(1., device='cuda:0')
+tensor(0.5261, device='cuda:0', grad_fn=<MinBackward1>) tensor(0.5287, device='cuda:0', grad_fn=<MaxBackward1>)
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+train >>> epoch: 1/40, batch: 3/3, mean_loss 1.7148, mean_dice_loss: 0.9675, mean_ce: 0.7473
+updating weights
+epoch: 2/40, training patient 0001
+[128 136 144]
+accumulating gradients, acc_step = 3
+tensor(0., device='cuda:0', grad_fn=<MinBackward1>) tensor(1.0345e-10, device='cuda:0', grad_fn=<MaxBackward1>)
+tensor(0., device='cuda:0') tensor(1., device='cuda:0')
+tensor(0., device='cuda:0', grad_fn=<MinBackward1>) tensor(7.4452e-11, device='cuda:0', grad_fn=<MaxBackward1>)
+tensor(0., device='cuda:0') tensor(1., device='cuda:0')
+tensor(0., device='cuda:0', grad_fn=<MinBackward1>) tensor(6.2303e-11, device='cuda:0', grad_fn=<MaxBackward1>)
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+train >>> epoch: 2/40, batch: 3/3, mean_loss 52.3477, mean_dice_loss: 0.6666, mean_ce: 51.6810
+updating weights
+epoch: 3/40, training patient 0001
+[128 136 144]
+accumulating gradients, acc_step = 3
+tensor(0.4228, device='cuda:0', grad_fn=<MinBackward1>) tensor(0.5256, device='cuda:0', grad_fn=<MaxBackward1>)
+tensor(0., device='cuda:0') tensor(1., device='cuda:0')
+tensor(0.4267, device='cuda:0', grad_fn=<MinBackward1>) tensor(0.5256, device='cuda:0', grad_fn=<MaxBackward1>)
+tensor(0., device='cuda:0') tensor(1., device='cuda:0')
+tensor(0.4262, device='cuda:0', grad_fn=<MinBackward1>) tensor(0.5255, device='cuda:0', grad_fn=<MaxBackward1>)
+tensor(0., device='cuda:0') tensor(0., device='cuda:0')
+train >>> epoch: 3/40, batch: 3/3, mean_loss 1.6514, mean_dice_loss: 0.9676, mean_ce: 0.6838
+updating weights
+epoch: 4/40, training patient 0001
+[128 136 144]
+accumulating gradients, acc_step = 3

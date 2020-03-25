@@ -1,0 +1,39 @@
+2020-03-22-00-07-32
+train.py
+--------------------------------------------------------------------------------------------------------------------
+batchSize: 12
+bottleneckFeatures: 1
+brightness: None
+contrast: None
+cropSize: None
+dir_lf: D:\Data\cs-8395-dl
+dir_project: ..
+encoder: resnet34
+epoch: 48
+extract_spleen: 1
+folderData: assignment3\Training
+folderPartition: train_test_org
+lossWeight: [1.0, 1.0]
+loss_weights: None
+lr: 0.1
+msg: None
+overrideLR: 1
+path_kfold: D:\Projects\cs-8395-dl\Assignment_3_segmentation\partition\kfold_5.bin
+resize: None
+resume_from: None
+resume_training: None
+to_ram: 0
+--------------------------------------------------------------------------------------------------------------------
+creating directory to save model at D:\Data\cs-8395-dl\model\2020-03-22-00-07-32
+executing fold 1/5
+training patients  ['0001']
+validation patients  ['0009']
+train >>> epoch: 1/48, patient 1/1, mean_loss 1.6348, mean_dice_loss: 0.9534, mean_ce: 0.6815
+valid >>> epoch: 1/48, mean_dice: 0.0000
+criteria decreased from inf to 1341520727786077280010240.0000, saving best model at D:\Data\cs-8395-dl\model\2020-03-22-00-07-32\2020-03-22-00-07-32_1_fold-resnet34_best.pt
+train >>> epoch: 2/48, patient 1/1, mean_loss 3796052803584.0000, mean_dice_loss: 1.0000, mean_ce: 3796052803584.0000
+valid >>> epoch: 2/48, mean_dice: 0.0892
+train >>> epoch: 3/48, patient 1/1, mean_loss 6997.9119, mean_dice_loss: 0.9520, mean_ce: 6996.9597
+valid >>> epoch: 3/48, mean_dice: 0.0894
+criteria decreased from 1341520727786077280010240.0000 to 5860392173568.0000, saving best model at D:\Data\cs-8395-dl\model\2020-03-22-00-07-32\2020-03-22-00-07-32_1_fold-resnet34_best.pt
+train >>> epoch: 4/48, patient 1/1, mean_loss 1.8958, mean_dice_loss: 0.9477, mean_ce: 0.9481
